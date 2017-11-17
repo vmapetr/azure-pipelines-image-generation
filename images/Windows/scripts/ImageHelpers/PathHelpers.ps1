@@ -47,3 +47,22 @@ function Get-MachinePath{
     $currentPath = (Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).Path
     return $currentPath
 }
+
+function Get-SystemVariable{
+    [CmdletBinding()]
+    param(
+        [string]$SystemVariable
+    )
+    $currentPath = (Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name $SystemVariable).$SystemVariable
+    return $currentPath
+}
+
+function Set-SystemVariable{
+    [CmdletBinding()]
+    param(
+        [string]$SystemVariable,
+        [string]$Value
+    )
+    Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name $SystemVariable -Value $Value
+    return $Value
+}

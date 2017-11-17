@@ -8,4 +8,6 @@ Export-ModuleMember -Function @(
     'Get-MachinePath'
     'Set-MachinePath'
     'Add-MachinePathItem'
+    'Get-SystemVariable'
+    'Set-SystemVariable'
 )
