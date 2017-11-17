@@ -52,4 +52,9 @@ $SharedManagementObjectsExitCode = InstallMSI -MsiUrl "https://download.microsof
 
 $PowerShellToolsExitCode = InstallMSI -MsiUrl "https://download.microsoft.com/download/8/7/2/872BCECA-C849-4B40-8EBE-21D48CDF1456/ENU/x64/PowerShellTools.msi" -MsiName "PowerShellTools.msi"
 
+$env:PSModulePath = $env:PSModulePath + ";C:\Program Files\Microsoft SQL Server"
+$modules = Get-Module -Name SQLPS -ListAvailable
+Write-Host "The SQLPS Modules present are:"
+$modules | Select-Object Name,Version,Path | Format-Table
+
 exit $PowerShellToolsExitCode
