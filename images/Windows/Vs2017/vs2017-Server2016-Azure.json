@@ -221,6 +221,12 @@
         {
             "type": "powershell",
             "scripts":[
+                "./scripts/Install-SQLPowerShellTools.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
                 "./scripts/Install-WindowsUpdates.ps1"
             ]
         },
