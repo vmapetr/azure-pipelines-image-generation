@@ -1,4 +1,10 @@
-﻿Function InstallMSI
+﻿################################################################################
+##  File:  Install-SQLPowerShellTools.ps1
+##  Team:  ReleaseManagement
+##  Desc:  Install SQL PowerShell tool
+################################################################################
+
+Function InstallMSI
 {
     Param
     (
@@ -41,7 +47,9 @@
 }
 
 $SQLSysClrTypesExitCode = InstallMSI -MsiUrl "https://download.microsoft.com/download/8/7/2/872BCECA-C849-4B40-8EBE-21D48CDF1456/ENU/x64/SQLSysClrTypes.msi" -MsiName "SQLSysClrTypes.msi"
+
 $SharedManagementObjectsExitCode = InstallMSI -MsiUrl "https://download.microsoft.com/download/8/7/2/872BCECA-C849-4B40-8EBE-21D48CDF1456/ENU/x64/SharedManagementObjects.msi" -MsiName "SharedManagementObjects.msi"
+
 $PowerShellToolsExitCode = InstallMSI -MsiUrl "https://download.microsoft.com/download/8/7/2/872BCECA-C849-4B40-8EBE-21D48CDF1456/ENU/x64/PowerShellTools.msi" -MsiName "PowerShellTools.msi"
 
 exit $PowerShellToolsExitCode
