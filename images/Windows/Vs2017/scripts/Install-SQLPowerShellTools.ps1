@@ -4,6 +4,8 @@
 ##  Desc:  Install SQL PowerShell tool
 ################################################################################
 
+Import-Module -Name ImageHelpers -Force
+
 Function InstallMSI
 {
     Param
@@ -46,13 +48,15 @@ Function InstallMSI
     }
 }
 
+# install required MSIs
 $SQLSysClrTypesExitCode = InstallMSI -MsiUrl "https://download.microsoft.com/download/8/7/2/872BCECA-C849-4B40-8EBE-21D48CDF1456/ENU/x64/SQLSysClrTypes.msi" -MsiName "SQLSysClrTypes.msi"
 
 $SharedManagementObjectsExitCode = InstallMSI -MsiUrl "https://download.microsoft.com/download/8/7/2/872BCECA-C849-4B40-8EBE-21D48CDF1456/ENU/x64/SharedManagementObjects.msi" -MsiName "SharedManagementObjects.msi"
 
 $PowerShellToolsExitCode = InstallMSI -MsiUrl "https://download.microsoft.com/download/8/7/2/872BCECA-C849-4B40-8EBE-21D48CDF1456/ENU/x64/PowerShellTools.msi" -MsiName "PowerShellTools.msi"
 
-$env:PSModulePath = $env:PSModulePath + ";C:\Program Files\Microsoft SQL Server"
+# Validate the installation
+$env:PSModulePath = Get-SystemVariable "PSModulePath"
 $modules = Get-Module -Name SQLPS -ListAvailable
 Write-Host "The SQLPS Modules present are:"
 $modules | Select-Object Name,Version,Path | Format-Table
