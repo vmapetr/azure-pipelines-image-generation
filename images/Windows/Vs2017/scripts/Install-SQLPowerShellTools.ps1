@@ -4,6 +4,8 @@
 ##  Desc:  Install SQL PowerShell tool
 ################################################################################
 
+Import-Module -Name ImageHelpers -Force
+
 Function InstallMSI
 {
     Param
