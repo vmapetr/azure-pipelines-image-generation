@@ -32,10 +32,9 @@ $latestJava8Install = $javaInstalls.FullName;
 $newPath = [string]::Join(';', $newPathSegments)
 $newPath = $latestJava8Install + '\bin;' + $newPath
 
-$env:Path = Set-MachinePath -NewPath $newPath
+Set-MachinePath -NewPath $newPath
 
 setx JAVA_HOME $latestJava8Install /M
-$env:JAVA_HOME = $latestJava8Install
 
 #Move maven variables to Machine, they may not be in the environment for this script so we need to read them from the registry.
 $userSid = (Get-WmiObject win32_useraccount -Filter "name = '$env:USERNAME' AND domain = '$env:USERDOMAIN'").SID
@@ -52,8 +51,3 @@ setx M2 $m2 /M
 setx M2_HOME $m2_home /M
 setx M2_REPO $m2_repo /M
 setx MAVEN_OPTS $maven_opts /M
-
-Write-Host "Java $(java -version) on path"
-Write-Host "Maven $(mvn -version) on path"
-Write-Host "Ant $(ant -version) on path"
-exit 0
