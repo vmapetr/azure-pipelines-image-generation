@@ -12,5 +12,3 @@ New-Item -Path $temp_install_dir -ItemType Directory -Force
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
 WebpiCmd.exe /Install /Products:MicrosoftAzure-ServiceFabric-CoreSDK /AcceptEula
-
-Get-Content $env:Temp\InstallFabricRuntime.log
