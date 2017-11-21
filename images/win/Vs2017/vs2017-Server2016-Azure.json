@@ -117,6 +117,12 @@
         {
             "type": "powershell",
             "scripts":[
+                "./scripts/Validate-Docker.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
                 "./scripts/Update-DockerImages.ps1"
             ]
         },
@@ -169,6 +175,24 @@
         {
             "type": "windows-restart",
             "restart_timeout": "10m"
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "./scripts/Validate-NET471.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "./scripts/Validate-ServiceFabricSDK.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "./scripts/Validate-Python.ps1"
+            ]
         },
         {
             "type": "powershell",
@@ -233,6 +257,42 @@
         {
             "type": "windows-restart",
             "restart_timeout": "10m"
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "./scripts/Validate-AzureModules.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "./scripts/Validate-AzureCli.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "./scripts/Validate-Git.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "./scripts/Validate-NodeLts.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "./scripts/Validate-JavaTools.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "./scripts/Validate-Cmake.ps1"
+            ]
         },
         {
             "type": "powershell",
