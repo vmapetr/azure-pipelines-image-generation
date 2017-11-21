@@ -21,11 +21,8 @@ $currentPath = Get-MachinePath
 if ($currentPath | Select-String -SimpleMatch $pythonDir.FullName)
 {
     Write-Host $pythonDir.FullName ' is already in path'
-    #exit 0
+    exit 0
 }
 
-$env:Path = Add-MachinePathItem -PathItem $pythonDir.FullName
+Add-MachinePathItem -PathItem $pythonDir.FullName
 setx PYTHON_HOME $pythonDir.FullName /M
-
-Write-Host "Python $(python --version) on path"
-exit 0
