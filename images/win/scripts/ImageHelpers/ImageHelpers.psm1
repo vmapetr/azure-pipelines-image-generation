@@ -2,6 +2,7 @@
 param()
 
 . $PSScriptRoot\PathHelpers.ps1
+. $PSScriptRoot\InstallHelpers.ps1
 
 Export-ModuleMember -Function @(
     'Test-MachinePath'
@@ -10,4 +11,5 @@ Export-ModuleMember -Function @(
     'Add-MachinePathItem'
     'Get-SystemVariable'
     'Set-SystemVariable'
+    'Install-MSI'
 )
