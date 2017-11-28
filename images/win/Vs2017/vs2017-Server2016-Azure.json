@@ -239,6 +239,12 @@
         {
             "type": "powershell",
             "scripts":[
+                "./scripts/Install-DACFx.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
                 "./scripts/Update-AndroidSDK.ps1"
             ]
         },
@@ -292,6 +298,12 @@
             "type": "powershell",
             "scripts":[
                 "./scripts/Validate-Cmake.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "./scripts/Validate-DACFx.ps1"
             ]
         },
         {
