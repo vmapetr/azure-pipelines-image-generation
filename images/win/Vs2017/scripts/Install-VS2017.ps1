@@ -63,14 +63,6 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.VisualStudio.Component.PowerShell.Tools ' + `
                 '--add Microsoft.VisualStudio.Component.VC.140 ' + `
                 '--add Component.Dotfuscator ' + `
-                '--add Microsoft.Net.Component.4.6.2.SDK ' + `
-                '--add Microsoft.Net.Component.4.6.2.TargetingPack ' + `
-                '--add Microsoft.Net.Component.4.7.SDK ' + `
-                '--add Microsoft.Net.Component.4.7.TargetingPack ' + `
-                '--add Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools ' + `
-                '--add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ' + `
-                '--add Microsoft.Net.Core.Component.SDK.1x ' + `
-                '--add Microsoft.VisualStudio.Component.VC.140 ' + `
                 '--add Microsoft.VisualStudio.Component.VC.ATL ' + `
                 '--add Microsoft.VisualStudio.Component.VC.ATLMFC ' + `
                 '--add Microsoft.VisualStudio.Component.VC.ClangC2 ' + `
@@ -82,37 +74,14 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop ' + `
                 '--add Component.Unreal ' + `
                 '--add Component.Unreal.Android ' + `
-                '--add Microsoft.VisualStudio.Component.Windows10SDK.10240 ' + `
-                '--add Microsoft.VisualStudio.Component.Windows10SDK.10586 ' + `
-                '--add Microsoft.VisualStudio.Component.Windows10SDK.14393 ' + `
-                '--add Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop ' + `
                 '--add Component.Android.SDK23 ' + `
-                '--add Microsoft.Net.Core.Component.SDK.1x ' + `
-                '--add Microsoft.NetCore.1x.ComponentGroup.Web ' + `
-                '--add Microsoft.Net.Component.4.6.2.SDK ' + `
-                '--add Microsoft.Net.Component.4.6.2.TargetingPack ' + `
-                '--add Microsoft.Net.Component.4.7.SDK ' + `
-                '--add Microsoft.Net.Component.4.7.TargetingPack ' + `
-                '--add Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools ' + `
-                '--add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ' + `
-                '--add Microsoft.Net.Core.Component.SDK.1x ' + `
-                '--add Microsoft.NetCore.1x.ComponentGroup.Web ' + `
                 '--add Microsoft.VisualStudio.Component.TestTools.WebLoadTest ' + `
                 '--add Microsoft.VisualStudio.Web.Mvc4.ComponentGroup ' + `
                 '--add Component.CPython2.x64 ' + `
                 '--add Microsoft.Component.PythonTools.UWP ' + `
-                '--add Microsoft.VisualStudio.Component.VC.140 ' + `
-                '--add Microsoft.VisualStudio.Component.Windows10SDK.10586 ' + `
                 '--add Microsoft.Component.VC.Runtime.OSSupport ' + `
                 '--add Microsoft.VisualStudio.Component.VC.Tools.ARM ' + `
-                '--add Microsoft.VisualStudio.Component.Windows10SDK.10240 ' + `
-                '--add Microsoft.VisualStudio.Component.Windows10SDK.10586 ' + `
-                '--add Microsoft.VisualStudio.Component.Windows10SDK.14393 ' + `
                 '--add Microsoft.VisualStudio.ComponentGroup.UWP.VC ' + `
-                '--add Component.Dotfuscator ' + `
-                '--add Microsoft.Component.VC.Runtime.OSSupport ' + `
-                '--add Microsoft.VisualStudio.Component.VC.ATL ' + `
-                '--add Microsoft.VisualStudio.Component.VC.ATLMFC ' + `
                 '--add Microsoft.VisualStudio.Component.VSSDK ' + `
                 '--add Microsoft.VisualStudio.Component.LinqToSql ' + `
                 '--add Microsoft.VisualStudio.Component.TestTools.CodedUITest ' + `
