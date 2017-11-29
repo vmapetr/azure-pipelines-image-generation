@@ -221,28 +221,3 @@ $pathToModule = "C:\Modules\azurerm_4.2.1"
 mkdir $pathToModule
 Save-Module -Name AzureRM -RequiredVersion 4.2.1 -Path $pathToModule -Force
 
-
-$pathToModule = "C:\Modules\azure_5.0.0"
-mkdir $pathToModule
-Save-Module -Name Azure -RequiredVersion 5.0.0 -Path $pathToModule -Force
-
-
-$pathToModule = "C:\Modules\azurerm_5.0.0"
-mkdir $pathToModule
-Save-Module -Name AzureRM -RequiredVersion 5.0.0 -Path $pathToModule -Force
-
-$env:PSModulePath = $env:PSModulePath + ";C:\Modules"
-
-### Finally we print all available modules one last time
-
-$modules = Get-Module -Name Azure -ListAvailable
-Write-Host "The Azure Modules finally present are:"
-$modules | Select-Object Name,Version,Path | Format-Table
-
-$modules = Get-Module -Name AzureRM -ListAvailable
-Write-Host "The AzureRM Modules finally present are:"
-$modules | Select-Object Name,Version,Path | Format-Table
-
-Write-Host "The contents of the C:\Modules directory are:"
-Get-ChildItem -Path "C:\Modules" | Format-Table
-
