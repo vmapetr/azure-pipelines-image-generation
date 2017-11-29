@@ -221,3 +221,12 @@ $pathToModule = "C:\Modules\azurerm_4.2.1"
 mkdir $pathToModule
 Save-Module -Name AzureRM -RequiredVersion 4.2.1 -Path $pathToModule -Force
 
+
+$pathToModule = "C:\Modules\azure_5.0.0"
+mkdir $pathToModule
+Save-Module -Name Azure -RequiredVersion 5.0.0 -Path $pathToModule -Force
+
+
+$pathToModule = "C:\Modules\azurerm_5.0.0"
+mkdir $pathToModule
+Save-Module -Name AzureRM -RequiredVersion 5.0.0 -Path $pathToModule -Force
