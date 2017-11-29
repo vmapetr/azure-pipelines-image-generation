@@ -257,6 +257,12 @@
         {
             "type": "powershell",
             "scripts":[
+                "./scripts/Install-DotnetSDK.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
                 "./scripts/Install-WindowsUpdates.ps1"
             ]
         },
@@ -304,6 +310,12 @@
             "type": "powershell",
             "scripts":[
                 "./scripts/Validate-DACFx.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "./scripts/Validate-DotnetSDK.ps1"
             ]
         },
         {
