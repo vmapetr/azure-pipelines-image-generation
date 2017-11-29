@@ -16,11 +16,13 @@ New-Item -Path $CachePath -Force -ItemType Directory
 choco install nodejs-lts --version 6.11.5 -y --force
 
 Add-MachinePathItem $PrefixPath
-Add-MachinePathItem $CachePath
 $env:Path = Get-MachinePath
 
-npm config set cache $PrefixPath
-npm config set prefix $CachePath
+setx NPM_CONFIG_PREFIX $PrefixPath /M
+$env:NPM_CONFIG_PREFIX = $PrefixPath
+
+setx NPM_CONFIG_CACHE $CachePath /M
+$env:NPM_CONFIG_CACHE = $CachePath
 
 npm install -g gulp-cli
 npm install -g grunt-cli
