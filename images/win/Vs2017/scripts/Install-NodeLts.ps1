@@ -19,9 +19,6 @@ Add-MachinePathItem $PrefixPath
 Add-MachinePathItem $CachePath
 $env:Path = Get-MachinePath
 
-Write-Host "Node $(node --version) on path"
-Write-Host "Npm $(npm -version) on path"
-
 npm config set cache $PrefixPath
 npm config set prefix $CachePath
 
