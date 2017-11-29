@@ -20,7 +20,7 @@ function Disable-UserAccessControl {
 Import-Module -Name ImageHelpers -Force
 
 Write-Host "Disable Antivirus"
-Set-MpPreference -DisableRealtimeMonitoring $true
+## TODO need to figure this out for Server 2012
 
 # Disable Windows Update
 $AutoUpdatePath = "HKLM:SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU"
