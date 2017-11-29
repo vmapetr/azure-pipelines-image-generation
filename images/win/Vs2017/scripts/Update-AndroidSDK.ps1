@@ -34,6 +34,7 @@ setx ANDROID_NDK_PATH $ndk_path /M
 Push-Location -Path $sdk.FullName
 
 & '.\tools\bin\sdkmanager.bat' --sdk_root=$sdk_root `
+    "platforms;android-27" `
     "platforms;android-26" `
     "platforms;android-25" `
     "platforms;android-24" `
@@ -44,7 +45,8 @@ Push-Location -Path $sdk.FullName
     "platforms;android-17" `
     "platforms;android-15" `
     "platforms;android-10" `
-    "build-tools;26.0.2" `
+    "build-tools;27.0.1" `
+    "build-tools;26.0.3" `
     "build-tools;26.0.1" `
     "build-tools;25.0.3" `
     "build-tools;24.0.3" `
@@ -57,10 +59,14 @@ Push-Location -Path $sdk.FullName
     "extras;android;m2repository" `
     "extras;google;m2repository" `
     "extras;google;google_play_services" `
+    "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2" `
+    "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.1" `
     "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2" `
     "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.1" `
     "add-ons;addon-google_apis-google-23" `
     "add-ons;addon-google_apis-google-22" `
-    "add-ons;addon-google_apis-google-21"
+    "add-ons;addon-google_apis-google-21" `
+    "cmake;3.6.4111459" `
+    "patcher;v4"
 
 Pop-Location
