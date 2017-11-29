@@ -5,36 +5,21 @@
 ##         cache.  Should run after VS and Node
 ################################################################################
 
-function Install-SDK {
-    [CmdletBinding()]
-    param (
-        [string]$DownloadUrl
-    )
-
-    Write-Host "Downloading from" $DownloadUrl
-    Invoke-WebRequest -Uri $DownloadUrl -OutFile C:\Temp\dotnet.zip -UseBasicParsing
-    Expand-Archive C:\Temp\dotnet.zip -DestinationPath $Env:ProgramFiles\dotnet -Force
-    Remove-Item -Force C:\Temp\dotnet.zip -ErrorAction SilentlyContinue
-}
-
 # ensure temp
 New-Item -Path C:\Temp -Force -ItemType Directory
-
-# versions we don't want to install
-$blacklist = @('1.0.0-preview2-1-003177', '1.0.0-preview2-003148','1.0.0-preview2-003156', '1.0.0-preview2-003121', '1.0.0-preview2-003131', '2.0.0-preview1-005977','2.0.0-preview2-006497')
 
 Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dotnet/core/master/release-notes/releases.json' -UseBasicParsing -OutFile 'dotnet-releases.json'
 $dotnetReleases = Get-Content -Path 'dotnet-releases.json' | ConvertFrom-Json
 $dotnetReleases = $dotnetReleases | Sort-Object -Property 'version-runtime'
 
+Invoke-WebRequest -Uri 'https://dot.net/v1/dotnet-install.ps1' -UseBasicParsing -OutFile 'dotnet-install.ps1'
+
 $dotnetReleases | ForEach-Object {
     $release = $_
-    $releaseUrl = $release.'blob-sdk'
-    $releasePackage = $release.'sdk-win-x64'
     $sdkVersion = $release.'version-sdk'
-    if(!($blacklist.Contains($sdkVersion)) -and !(Test-Path -Path $(Join-Path -Path $env:ProgramFiles -ChildPath $('\dotnet\sdk\' + $sdkVersion))))
+    if(!$sdkVersion.Contains('preview'))
     {
-        Install-SDK -DownloadUrl ($releaseUrl + $releasePackage)
+        .\dotnet-install.ps1 -Architecture x64 -Version $sdkVersion -InstallDir $(Join-Path -Path $env:ProgramFiles -ChildPath 'dotnet')
     }
 }
 
