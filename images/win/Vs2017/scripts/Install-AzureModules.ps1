@@ -176,14 +176,6 @@ else {
         }
     }
 
-# the following listings should show that the azure module 2.1.0 and azurerm module 2.1.0 are the only Azure,AzureRM modules present
-Get-Module -ListAvailable -Name Azure | Select-Object Name,Version,Path | Format-Table
-Get-Module -ListAvailable -Name AzureRM | Select-Object Name,Version,Path | Format-Table
-
-##################### NOW WE HAVE Installations of Azure and AzureRM Module , both are version 2.1.0, no other installation is present
-
-
-
 #### NOW The correct Modules need to be saved in C:\Modules
 
 if($(Test-Path -LiteralPath "C:\Modules") -eq $true)
@@ -228,19 +220,4 @@ Save-Module -Name Azure -RequiredVersion 4.2.1 -Path $pathToModule -Force
 $pathToModule = "C:\Modules\azurerm_4.2.1"
 mkdir $pathToModule
 Save-Module -Name AzureRM -RequiredVersion 4.2.1 -Path $pathToModule -Force
-
-$env:PSModulePath = $env:PSModulePath + ";C:\Modules"
-
-### Finally we print all available modules one last time
-
-$modules = Get-Module -Name Azure -ListAvailable
-Write-Host "The Azure Modules finally present are:"
-$modules | Select-Object Name,Version,Path | Format-Table
-
-$modules = Get-Module -Name AzureRM -ListAvailable
-Write-Host "The AzureRM Modules finally present are:"
-$modules | Select-Object Name,Version,Path | Format-Table
-
-Write-Host "The contents of the C:\Modules directory are:"
-Get-ChildItem -Path "C:\Modules" | Format-Table
 
