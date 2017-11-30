@@ -13,7 +13,7 @@ $CachePath = 'C:\npm\cache'
 New-Item -Path $PrefixPath -Force -ItemType Directory
 New-Item -Path $CachePath -Force -ItemType Directory
 
-choco install nodejs-lts --version 6.11.5 -y --force
+choco install nodejs-lts --version 8.9.1 -y --force
 
 Add-MachinePathItem $PrefixPath
 $env:Path = Get-MachinePath
