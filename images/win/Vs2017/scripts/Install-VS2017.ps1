@@ -91,16 +91,8 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.VisualStudio.Component.TypeScript.2.2 ' + `
                 '--add Microsoft.VisualStudio.Component.VC.Tools.ARM64 ' + `
                 '--add Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm ' + `
-                '--remove Component.Xamarin.Inspector ' + `
-                '--remove Component.Xamarin.Profiler ' + `
-                '--remove Component.Xamarin.RemotedSimulator ' + `
-                '--remove Microsoft.VisualStudio.Component.CodeClone ' + `
-                '--remove Microsoft.VisualStudio.Component.CodeMap ' + `
-                '--remove Microsoft.VisualStudio.Component.Git ' + `
-                '--remove Microsoft.VisualStudio.Component.Graphics.Tools ' + `
-                '--remove Microsoft.VisualStudio.Component.Graphics.Win81 ' + `
-                '--remove Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd ' + `
-                '--remove Microsoft.VisualStudio.Component.VC.DiagnosticTools '
+                '--add Microsoft.VisualStudio.Component.DslTools ' + `
+                '--remove Microsoft.VisualStudio.Component.Git '
 
 $Sku = 'Enterprise'
 $VSBootstrapperURL = 'https://aka.ms/vs/15/release/vs_enterprise.exe'
