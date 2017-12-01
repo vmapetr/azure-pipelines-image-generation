@@ -147,6 +147,16 @@
                 3010
             ],
             "scripts":[
+                "./scripts/Install-SSDT.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "valid_exit_codes": [
+                0,
+                3010
+            ],
+            "scripts":[
                 "./scripts/Install-NET471.ps1"
             ]
         },
