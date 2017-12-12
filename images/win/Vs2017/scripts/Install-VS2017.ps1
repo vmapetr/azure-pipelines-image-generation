@@ -92,7 +92,11 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.VisualStudio.Component.VC.Tools.ARM64 ' + `
                 '--add Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm ' + `
                 '--add Microsoft.VisualStudio.Component.DslTools ' + `
-                '--remove Microsoft.VisualStudio.Component.Git '
+                '--add Microsoft.VisualStudio.Component.Windows81SDK ' + `
+                '--add Microsoft.VisualStudio.Component.WinXP' + `
+                '--add Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81' + `
+                '--add Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP' + `
+                '--add Microsoft.Component.Blend.SDK.WPF'
 
 $Sku = 'Enterprise'
 $VSBootstrapperURL = 'https://aka.ms/vs/15/release/vs_enterprise.exe'
