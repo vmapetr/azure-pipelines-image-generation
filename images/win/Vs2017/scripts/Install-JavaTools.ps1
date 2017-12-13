@@ -26,8 +26,11 @@ foreach ($pathSegment in $pathSegments)
     }
 }
 
-$javaInstalls = Get-ChildItem -Path 'C:\Program Files\Java' -Filter 'jdk*8*' | Sort-Object -Property Name -Descending | Select-Object -First 1
-$latestJava8Install = $javaInstalls.FullName;
+$java8Installs = Get-ChildItem -Path 'C:\Program Files\Java' -Filter 'jdk*8*' | Sort-Object -Property Name -Descending | Select-Object -First 1
+$latestJava8Install = $java8Installs.FullName;
+
+$java9Installs = Get-ChildItem -Path 'C:\Program Files\Java' -Filter 'jdk*9*' | Sort-Object -Property Name -Descending | Select-Object -First 1
+$latestJava9Install = $java9Installs.FullName;
 
 $newPath = [string]::Join(';', $newPathSegments)
 $newPath = $latestJava8Install + '\bin;' + $newPath
@@ -35,6 +38,8 @@ $newPath = $latestJava8Install + '\bin;' + $newPath
 Set-MachinePath -NewPath $newPath
 
 setx JAVA_HOME $latestJava8Install /M
+setx JAVA_HOME_8_X64 $latestJava8Install /M
+setx JAVA_HOME_9_X64 $latestJava9Install /M
 
 #Move maven variables to Machine, they may not be in the environment for this script so we need to read them from the registry.
 $userSid = (Get-WmiObject win32_useraccount -Filter "name = '$env:USERNAME' AND domain = '$env:USERDOMAIN'").SID
