@@ -12,4 +12,5 @@ Export-ModuleMember -Function @(
     'Get-SystemVariable'
     'Set-SystemVariable'
     'Install-MSI'
+    'Install-EXE'
 )
