@@ -10,7 +10,7 @@
 # Build VS2017 Image
 Packer should be in your path and you will need to gather your service principal and resource group information based on the Azure document above
 ```
-cd images\Windows\Vs2017
+cd images\Win\Vs2017
 
 packer.exe build^
     -var "client_id=<spn.applicationId>"^
