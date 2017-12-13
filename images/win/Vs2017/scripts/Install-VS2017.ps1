@@ -53,10 +53,13 @@ Function InstallVS
 $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.Net.Component.4.6.2.SDK ' + `
                 '--add Microsoft.Net.Component.4.6.2.TargetingPack ' + `
+                '--add Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools ' + `
                 '--add Microsoft.Net.Component.4.7.SDK ' + `
                 '--add Microsoft.Net.Component.4.7.TargetingPack ' + `
-                '--add Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools ' + `
                 '--add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ' + `
+                '--add Microsoft.Net.Component.4.7.1.SDK ' + `
+                '--add Microsoft.Net.Component.4.7.1.TargetingPack ' + `
+                '--add Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools ' + `
                 '--add Microsoft.Net.Core.Component.SDK.1x ' + `
                 '--add Microsoft.NetCore.1x.ComponentGroup.Web ' + `
                 '--add Microsoft.VisualStudio.Component.Azure.Storage.AzCopy ' + `
@@ -93,9 +96,9 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm ' + `
                 '--add Microsoft.VisualStudio.Component.DslTools ' + `
                 '--add Microsoft.VisualStudio.Component.Windows81SDK ' + `
-                '--add Microsoft.VisualStudio.Component.WinXP' + `
-                '--add Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81' + `
-                '--add Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP' + `
+                '--add Microsoft.VisualStudio.Component.WinXP ' + `
+                '--add Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 ' + `
+                '--add Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP ' + `
                 '--add Microsoft.Component.Blend.SDK.WPF'
 
 $Sku = 'Enterprise'
