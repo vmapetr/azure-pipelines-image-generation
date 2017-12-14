@@ -71,13 +71,13 @@ function Install-EXE
         else
         {
             Write-Host -Object "Non zero exit code returned by the installation process : $exitCode."
-            exit $exitCode
+            return $exitCode
         }
     }
     catch
     {
         Write-Host -Object "Failed to install the Executable $Name"
         Write-Host -Object $_.Exception.Message
-        exit -1
+        return -1
     }
 }
