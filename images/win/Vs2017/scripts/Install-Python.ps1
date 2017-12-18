@@ -7,7 +7,7 @@
 
 Import-Module -Name ImageHelpers -Force
 
-$pythonDir = Get-Item -Path 'C:\Program Files\Python3*'
+$pythonDir = Get-Item -Path 'C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python3*'
 
 if($pythonDir -is [array])
 {
