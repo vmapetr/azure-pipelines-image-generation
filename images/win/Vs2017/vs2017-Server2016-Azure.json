@@ -83,7 +83,7 @@
         },
         {
             "type": "file",
-            "source": "../scripts/ImageHelpers",
+            "source": "{{ template_dir }}/../scripts/ImageHelpers",
             "destination": "{{user `helper_script_folder`}}"
         },
         {
@@ -96,7 +96,7 @@
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Initialize-VM.ps1"
+                "{{ template_dir }}/scripts/Initialize-VM.ps1"
             ]
         },
         {
@@ -106,7 +106,7 @@
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Install-ContainersFeature.ps1"
+                "{{ template_dir }}/scripts/Install-ContainersFeature.ps1"
             ]
         },
         {
@@ -116,7 +116,7 @@
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Install-Docker.ps1"
+                "{{ template_dir }}/scripts/Install-Docker.ps1"
             ]
         },
         {
@@ -126,13 +126,13 @@
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Validate-Docker.ps1"
+                "{{ template_dir }}/scripts/Validate-Docker.ps1"
             ]
         },
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Update-DockerImages.ps1"
+                "{{ template_dir }}/scripts/Update-DockerImages.ps1"
             ]
         },
         {
@@ -142,7 +142,7 @@
                 3010
             ],
             "scripts":[
-                "./scripts/Install-VS2017.ps1"
+                "{{ template_dir }}/scripts/Install-VS2017.ps1"
             ],
             "elevated_user": "{{user `install_user`}}",
             "elevated_password": "{{user `install_password`}}"
@@ -158,7 +158,7 @@
                 3010
             ],
             "scripts":[
-                "./scripts/Install-SSDT.ps1"
+                "{{ template_dir }}/scripts/Install-SSDT.ps1"
             ]
         },
         {
@@ -168,7 +168,7 @@
                 3010
             ],
             "scripts":[
-                "./scripts/Install-NET471.ps1"
+                "{{ template_dir }}/scripts/Install-NET471.ps1"
             ]
         },
         {
@@ -178,113 +178,19 @@
                 3010
             ],
             "scripts":[
-                "./scripts/Install-NET471DevPack.ps1"
+                "{{ template_dir }}/scripts/Install-NET471DevPack.ps1"
             ]
         },
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Install-ServiceFabricSDK.ps1"
+                "{{ template_dir }}/scripts/Install-ServiceFabricSDK.ps1"
             ]
         },
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Install-Python.ps1"
-            ]
-        },
-        {
-            "type": "windows-restart",
-            "restart_timeout": "30m"
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Validate-NET471.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Validate-ServiceFabricSDK.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Validate-Python.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Install-AzureModules.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Install-AzureCli.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Install-Git.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Install-Wix.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Install-NodeLts.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Install-JavaTools.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Install-Cmake.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Install-DACFx.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Update-AndroidSDK.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Install-SQLPowerShellTools.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Install-DotnetSDK.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "./scripts/Install-WindowsUpdates.ps1"
+                "{{ template_dir }}/scripts/Install-Python.ps1"
             ]
         },
         {
@@ -294,55 +200,91 @@
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Validate-AzureModules.ps1"
+                "{{ template_dir }}/scripts/Validate-NET471.ps1"
             ]
         },
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Validate-AzureCli.ps1"
+                "{{ template_dir }}/scripts/Validate-ServiceFabricSDK.ps1"
             ]
         },
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Validate-Git.ps1"
+                "{{ template_dir }}/scripts/Validate-Python.ps1"
             ]
         },
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Validate-NodeLts.ps1"
+                "{{ template_dir }}/scripts/Install-AzureModules.ps1"
             ]
         },
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Validate-JavaTools.ps1"
+                "{{ template_dir }}/scripts/Install-AzureCli.ps1"
             ]
         },
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Validate-Cmake.ps1"
+                "{{ template_dir }}/scripts/Install-Git.ps1"
             ]
         },
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Validate-DACFx.ps1"
+                "{{ template_dir }}/scripts/Install-Wix.ps1"
             ]
         },
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Validate-DotnetSDK.ps1"
+                "{{ template_dir }}/scripts/Install-NodeLts.ps1"
             ]
         },
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Finalize-VM.ps1"
+                "{{ template_dir }}/scripts/Install-JavaTools.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Install-Cmake.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Install-DACFx.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Update-AndroidSDK.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Install-SQLPowerShellTools.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Install-DotnetSDK.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Install-WindowsUpdates.ps1"
             ]
         },
         {
@@ -352,7 +294,65 @@
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Run-Antivirus.ps1"
+                "{{ template_dir }}/scripts/Validate-AzureModules.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Validate-AzureCli.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Validate-Git.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Validate-NodeLts.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Validate-JavaTools.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Validate-Cmake.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Validate-DACFx.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Validate-DotnetSDK.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Finalize-VM.ps1"
+            ]
+        },
+        {
+            "type": "windows-restart",
+            "restart_timeout": "30m"
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Run-Antivirus.ps1"
             ]
         },
         {
