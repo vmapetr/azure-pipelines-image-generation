@@ -216,6 +216,10 @@
             ]
         },
         {
+            "type": "windows-shell",
+            "inline": ["wmic product where \"name like '%%microsoft azure powershell%%'\" call uninstall /nointeractive"]
+        },
+        {
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Install-AzureModules.ps1"
