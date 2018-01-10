@@ -133,7 +133,9 @@
             ],
             "scripts":[
                 "{{ template_dir }}/scripts/Install-SSDT.ps1"
-            ]
+            ],
+            "elevated_user": "{{user `install_user`}}",
+            "elevated_password": "{{user `install_password`}}"
         },
         {
             "type": "powershell",
