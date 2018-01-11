@@ -132,18 +132,6 @@
                 3010
             ],
             "scripts":[
-                "{{ template_dir }}/scripts/Install-SSDT.ps1"
-            ],
-            "elevated_user": "{{user `install_user`}}",
-            "elevated_password": "{{user `install_password`}}"
-        },
-        {
-            "type": "powershell",
-            "valid_exit_codes": [
-                0,
-                3010
-            ],
-            "scripts":[
                 "{{ template_dir }}/scripts/Install-NET471.ps1"
             ]
         },
@@ -327,7 +315,9 @@
             ],
             "scripts":[
                 "{{ template_dir }}/scripts/Install-SSDT.ps1"
-            ]
+            ],
+            "elevated_user": "{{user `install_user`}}",
+            "elevated_password": "{{user `install_password`}}"
         },
         {
             "type": "powershell",
