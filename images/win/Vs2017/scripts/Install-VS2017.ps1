@@ -53,10 +53,13 @@ Function InstallVS
 $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.Net.Component.4.6.2.SDK ' + `
                 '--add Microsoft.Net.Component.4.6.2.TargetingPack ' + `
+                '--add Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools ' + `
                 '--add Microsoft.Net.Component.4.7.SDK ' + `
                 '--add Microsoft.Net.Component.4.7.TargetingPack ' + `
-                '--add Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools ' + `
                 '--add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ' + `
+                '--add Microsoft.Net.Component.4.7.1.SDK ' + `
+                '--add Microsoft.Net.Component.4.7.1.TargetingPack ' + `
+                '--add Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools ' + `
                 '--add Microsoft.Net.Core.Component.SDK.1x ' + `
                 '--add Microsoft.NetCore.1x.ComponentGroup.Web ' + `
                 '--add Microsoft.VisualStudio.Component.Azure.Storage.AzCopy ' + `
@@ -92,7 +95,11 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.VisualStudio.Component.VC.Tools.ARM64 ' + `
                 '--add Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm ' + `
                 '--add Microsoft.VisualStudio.Component.DslTools ' + `
-                '--remove Microsoft.VisualStudio.Component.Git '
+                '--add Microsoft.VisualStudio.Component.Windows81SDK ' + `
+                '--add Microsoft.VisualStudio.Component.WinXP ' + `
+                '--add Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 ' + `
+                '--add Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP ' + `
+                '--add Microsoft.Component.Blend.SDK.WPF'
 
 $Sku = 'Enterprise'
 $VSBootstrapperURL = 'https://aka.ms/vs/15/release/vs_enterprise.exe'
@@ -116,5 +123,9 @@ if($instanceFolders -is [array])
 $catalogContent = Get-Content -Path ($instanceFolders.FullName + '\catalog.json')
 $catalog = $catalogContent | ConvertFrom-Json
 Write-Host "Visual Studio version" $catalog.info.id "installed"
+
+# Updating content of MachineState.json file to disable autoupdate of VSIX extensions
+$newContent = '{"Extensions":[{"Key":"1e906ff5-9da8-4091-a299-5c253c55fdc9","Value":{"ShouldAutoUpdate":false}},{"Key":"Microsoft.VisualStudio.Web.AzureFunctions","Value":{"ShouldAutoUpdate":false}}],"ShouldAutoUpdate":true,"ShouldCheckForUpdates":true}'
+Set-Content -Path "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\MachineState.json" -Value $newContent
 
 exit $exitCode

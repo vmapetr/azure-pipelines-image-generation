@@ -23,10 +23,7 @@ $dotnetReleases | ForEach-Object {
     }
 }
 
-# warm up dotnet for first time experience and nuget cache
-$env:NUGET_PACKAGES = 'C:\nuget'
-& setx NUGET_PACKAGES C:\nuget /M
-
+# warm up dotnet for first time experience
 $templates = @(
     'console',
     'classlib',
