@@ -11,7 +11,7 @@ $azureModules = Get-Module -Name Azure -ListAvailable | Select-Object Name,Versi
 Write-Host "The Azure Modules finally present are:"
 $azureModules
 
-if( ($azureModules -match "2.1.0") -and ($azureModules -match "3.8.0") -and ($azureModules -match "4.2.1") -and ($azureModules -match "5.0.0"))
+if( ($azureModules -match "2.1.0") -and ($azureModules -match "3.8.0") -and ($azureModules -match "4.2.1") -and ($azureModules -match "5.1.1"))
 {
     Write-Host "Required Azure modules are present"
 }
@@ -26,7 +26,7 @@ $azureRMModules = Get-Module -Name AzureRM -ListAvailable | Select-Object Name,V
 Write-Host "The AzureRM Modules finally present are:"
 $azureRMModules
 
-if( ($azureRMModules -match "2.1.0") -and ($azureRMModules -match "3.8.0") -and ($azureRMModules -match "4.2.1") -and ($azureRMModules -match "5.0.0"))
+if( ($azureRMModules -match "2.1.0") -and ($azureRMModules -match "3.8.0") -and ($azureRMModules -match "4.2.1") -and ($azureRMModules -match "5.1.1"))
 {
     Write-Host "Required AzureRM modules are present"
 
