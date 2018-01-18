@@ -210,6 +210,12 @@
         {
             "type": "powershell",
             "scripts":[
+                "{{ template_dir }}/scripts/Install-Svn.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
                 "{{ template_dir }}/scripts/Install-Wix.ps1"
             ]
         },
@@ -291,6 +297,12 @@
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Validate-Git.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Validate-Svn.ps1"
             ]
         },
         {

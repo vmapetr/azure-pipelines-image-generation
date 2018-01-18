@@ -173,6 +173,12 @@ _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
 
+## Subversion *
+
+_Version:_ 1.8.15<br/>
+_Environment:_
+* PATH: contains location of svn.exe
+
 ## Node.js *
 
 _Version:_ 6.11.5<br/>
