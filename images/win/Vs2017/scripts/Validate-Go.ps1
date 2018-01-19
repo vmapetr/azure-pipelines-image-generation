@@ -1,16 +1,16 @@
 ################################################################################
-##  File:  Validate-Svn.ps1
+##  File:  Validate-Go.ps1
 ##  Team:  CI-X
-##  Desc:  Validate Subversion
+##  Desc:  Validate Go
 ################################################################################
 
-if(Get-Command -Name 'svn')
+if(Get-Command -Name 'go')
 {
-    Write-Host "Subversion $(svn --version --quiet) is on the path."
+    Write-Host "$(go version) is on the path."
     exit 0
 }
 else
 {
-    Write-Host "Subversion is not on the path."
+    Write-Host "Go is not on the path."
     exit 1
 }

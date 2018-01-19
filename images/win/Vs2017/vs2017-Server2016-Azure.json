@@ -210,6 +210,12 @@
         {
             "type": "powershell",
             "scripts":[
+                "{{ template_dir }}/scripts/Install-Go.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
                 "{{ template_dir }}/scripts/Install-Svn.ps1"
             ]
         },
@@ -297,6 +303,12 @@
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Validate-Git.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Validate-Go.ps1"
             ]
         },
         {
