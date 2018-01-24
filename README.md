@@ -1,43 +1,10 @@
-# Getting started with Packer on Azure
-## Windows
-[How to use Packer to create Windows virtual machine images in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/build-image-with-packer)
-## Linux
-[How to use Packer to create Linux virtual machine images in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/build-image-with-packer)
+# Visual Studio Team Services Hosted Images
+![Images](/docs/ImageGenBanner.png "Images")
 
-# General Packer
-[https://www.packer.io/](https://www.packer.io/)
+## Overview
 
-# Build VS2017 Image
-Packer should be in your path and you will need to gather your service principal and resource group information based on the Azure document above
-```
-cd images\Win\Vs2017
+This repo contains the scripts and instructions to generate the images used for the VSTS hosted pool images.  Specifically for Hosted VS2017, VS2015 and Linux.
 
-packer.exe build^
-    -var "client_id=<spn.applicationId>"^
-    -var "client_secret=<spn_password>"^
-    -var "subscription_id=<spn.subscriptionId>"^
-    -var "tenant_id=<spn.tenantId>"^
-    -var "object_id=<spn.Id>"^
-    -var "location=<rg_location>"^
-    -var "resource_group=<capture_rg>"^
-    -var "storage_account=<capture_storage_account>"^
-    vs2017-Server2016-Azure.json
-```
-You can shortcut the command line by creating a JSON file that has all of your variable values in it.
-```
-{
-    "client_id": "<spn.applicationId>",
-    "client_secret": "<spn_password>",
-    "subscription_id": "<spn.subscriptionId>",
-    "tenant_id": "<spn.tenantId>",
-    "object_id": "<spn.Id>",
-    "resource_group": "<capture_rg>",
-    "storage_account": "<capture_storage_account>"
-    "location": "<rg location>"
-}
-
-packer build -var-file=<path to variables file> -var "commit_id=$(git log --pretty=format:'%H' -n 1)" vs2017-Server2016-Azure.json
-```
 
 # Contributing
 
@@ -52,3 +19,24 @@ provided by the bot. You will only need to do this once across all repos using o
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+## Issues and Requests
+
+If you have an issue with one of the images or you have a request to add or change a tool on one of our images:
+
+  1.  Create an issue in this repo
+  2.  Wait for approval or comments.  Our images have real constraints.  Primarily, disk space.  So it's a value (broad adoption of that tool) vs. cost (disk space and on-going maintenance) proposition.  Specify whether you will create a PR or if you are requesting for us to add it to the image.
+  3.  Optionally, create a PR.
+
+## Generating Images
+
+The images are generated using [Packer](https://www.packer.io/).
+
+## Windows
+[How to use Packer to create Windows virtual machine images in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/build-image-with-packer)
+## Linux
+[How to use Packer to create Linux virtual machine images in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/build-image-with-packer)
+
+## Instructions to Build Images
+[VS2017](docs/vs2017.md)
+
