@@ -57,7 +57,7 @@
         },
         {
             "type": "file",
-            "source": "../scripts/ImageHelpers",
+            "source": "{{ template_dir }}/scripts/ImageHelpers",
             "destination": "{{user `helper_script_folder`}}"
         },
         {
@@ -70,7 +70,7 @@
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Initialize-VM.ps1"
+                "{{ template_dir }}/scripts/Installers/Vs2015/Initialize-VM.ps1"
             ]
         },
         {
@@ -80,7 +80,7 @@
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Install-WMF.ps1"
+                "{{ template_dir }}/scripts/Installers/Vs2015/Install-WMF.ps1"
             ],
             "elevated_user": "{{user `install_user`}}",
             "elevated_password": "{{user `install_password`}}",
@@ -96,7 +96,7 @@
         {
             "type": "powershell",
             "scripts":[
-                "./scripts/Install-PowerShellGet.ps1"
+                "{{ template_dir }}/scripts/Installers/Vs2015/Install-PowerShellGet.ps1"
             ]
         },
         {
