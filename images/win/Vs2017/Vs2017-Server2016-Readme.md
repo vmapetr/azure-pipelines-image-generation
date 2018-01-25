@@ -181,7 +181,7 @@ _Environment:_
 
 ## Go *
 
-_Version:_ 1.9.2<br/>
+_Version:_ 1.9.3<br/>
 _Environment:_
 * PATH: contains location of go.exe
 * GOROOT: root directory of the Go installation
