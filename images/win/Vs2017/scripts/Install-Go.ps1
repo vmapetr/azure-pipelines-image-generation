@@ -6,12 +6,15 @@
 
 Import-Module -Name ImageHelpers
 
-# Install Go 1.9.2
-$goVersion = "1.9.2"
+# Install Go 1.9.3
+$goVersion = "1.9.3"
 # Download the Go zip archive.
 Invoke-WebRequest -UseBasicParsing -Uri "https://dl.google.com/go/go$goVersion.windows-amd64.zip" -OutFile go$goVersion.windows-amd64.zip
 # Extract the zip archive.  It contains a single directory named "go".
-Expand-Archive -Path go$goVersion.windows-amd64.zip -DestinationPath 'C:\' -Force
+Expand-Archive -Path go$goVersion.windows-amd64.zip -DestinationPath "C:\" -Force
+# Delete unnecessary files to conserve space
+Remove-Item -Recurse -Force "C:\go\blog"
+Remove-Item -Recurse -Force "C:\go\doc"
 # Rename the extracted "go" directory to include the Go version number (to support side-by-side versions of Go).
 Rename-Item -path "C:\go" -newName "Go$goVersion"
 # Delete the Go zip archive.
