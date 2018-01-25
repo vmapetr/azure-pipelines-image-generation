@@ -179,6 +179,13 @@ _Version:_ 1.8.15<br/>
 _Environment:_
 * PATH: contains location of svn.exe
 
+## Go *
+
+_Version:_ 1.9.3<br/>
+_Environment:_
+* PATH: contains location of go.exe
+* GOROOT: root directory of the Go installation
+
 ## Node.js *
 
 _Version:_ 6.11.5<br/>

@@ -6,7 +6,7 @@
 
 if(Get-Command -Name 'svn')
 {
-    Write-Host "Subversion $(svn --version) is on the path."
+    Write-Host "Subversion $(svn --version --quiet) is on the path."
     exit 0
 }
 else
