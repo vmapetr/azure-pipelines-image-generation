@@ -97,7 +97,8 @@
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Vs2015/Install-PowerShellGet.ps1"
-            ]
+            ],
+            "pause_before": "10m"
         },
         {
             "type": "windows-restart",
@@ -125,6 +126,12 @@
             "elevated_password": "{{user `install_password`}}"
         },
         {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Install-NodeLts.ps1"
+            ]
+        },
+        {
             "type": "windows-restart",
             "restart_timeout": "10m"
         },
@@ -138,6 +145,12 @@
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-ServiceFabricSDK.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Validate-NodeLts.ps1"
             ]
         },
         {
@@ -203,12 +216,6 @@
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Install-Svn.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "{{ template_dir }}/scripts/Installers/Install-NodeLts.ps1"
             ]
         },
         {
@@ -291,12 +298,6 @@
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-Svn.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "{{ template_dir }}/scripts/Installers/Validate-NodeLts.ps1"
             ]
         },
         {
