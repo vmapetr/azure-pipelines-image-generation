@@ -113,7 +113,8 @@
                 "{{ template_dir }}/scripts/Installers/Install-NET471DevPack.ps1"
             ],
             "elevated_user": "{{user `install_user`}}",
-            "elevated_password": "{{user `install_password`}}"
+            "elevated_password": "{{user `install_password`}}",
+            "pause_before": "10m"
         },
         {
             "type": "powershell",
@@ -171,22 +172,13 @@
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Vs2015/Install-Python.ps1"
-            ]
+            ],
+            "pause_before": "10m"
         },
         {
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Vs2015/Install-Wix.ps1"
-            ]
-        },
-        {
-            "type": "windows-restart",
-            "restart_timeout": "30m"
-        },
-        {
-            "type": "powershell",
-            "scripts":[
-                "{{ template_dir }}/scripts/Installers/Validate-Python.ps1"
             ]
         },
         {
@@ -270,6 +262,12 @@
         {
             "type": "windows-restart",
             "restart_timeout": "30m"
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Validate-Python.ps1"
+            ]
         },
         {
             "type": "powershell",
