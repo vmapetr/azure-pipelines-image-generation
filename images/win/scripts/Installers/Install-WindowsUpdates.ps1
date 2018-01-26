@@ -6,6 +6,6 @@
 ################################################################################
 
 Write-Host "Run windows updates"
-Install-Module -Name PSWindowsUpdate -Force -AllowClobber
+Install-Module -Name PSWindowsUpdate -Force -AllowClobber -confirm:$false
 Get-WUInstall -WindowsUpdate -AcceptAll -UpdateType Software -IgnoreReboot
 Get-WUInstall -MicrosoftUpdate -AcceptAll -IgnoreUserInput -IgnoreReboot
