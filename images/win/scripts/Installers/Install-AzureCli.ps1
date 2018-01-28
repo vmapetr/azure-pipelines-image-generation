@@ -4,5 +4,5 @@
 ##  Desc:  Install Azure CLI
 ################################################################################
 
-choco install azure-cli --version 2.0.20 -y
+choco install azure-cli -y
 
