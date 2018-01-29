@@ -99,6 +99,7 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.VisualStudio.Component.WinXP ' + `
                 '--add Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 ' + `
                 '--add Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP ' + `
+                '--add Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed ' + `
                 '--add Microsoft.Component.Blend.SDK.WPF'
 
 $Sku = 'Enterprise'
