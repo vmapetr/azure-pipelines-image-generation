@@ -23,6 +23,8 @@ $dotnetReleases | ForEach-Object {
     }
 }
 
+Add-MachinePathItem "C:\Program Files\dotnet"
+
 # warm up dotnet for first time experience
 $templates = @(
     'console',
