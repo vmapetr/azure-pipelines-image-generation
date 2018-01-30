@@ -24,7 +24,7 @@ $version = $(docker version --format '{{.Server.Version}}')
 $Description = @"
 _Version:_ $version<br/>
 _Environment:_
-* PATH: $((Get-Command docker).Source)
+* PATH: contains location of docker.exe
 "@
 
 Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
@@ -38,7 +38,7 @@ $version = $(docker-compose version) | %{ if( ($_.Split(' ')[0]).Trim() -like "d
 $Description = @"
 _Version:_ $version<br/>
 _Environment:_
-* PATH: $((Get-Command docker-compose).Source)
+* PATH: contains location of docker-compose.exe
 "@
 
 Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description

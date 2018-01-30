@@ -166,6 +166,7 @@ In addition the following optional components are installed:
 
 Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
 
+# Adding explicitly added Workloads details to markdown by parsing $Workloads
 Add-ContentToMarkdown -Content $($WorkLoads.Split('--') | % { if( ($_.Split(" "))[0] -like "add") { "* " +($_.Split(" "))[1] }  } )
 
 
