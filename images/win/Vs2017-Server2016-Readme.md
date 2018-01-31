@@ -9,7 +9,7 @@ Components marked with **\*** have been upgraded since the previous version of t
 
 ## Visual Studio 2017 Enterprise *
 
-_Version:_ 15.4.5+27004.2010<br/>
+_Version:_ 15.5.6+27130.2027<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
 
 The following workloads including required and recommended components are installed with Visual Studio 2017:
@@ -76,19 +76,29 @@ In addition the following optional components are installed:
 * Microsoft.VisualStudio.Component.VC.Tools.ARM64
 * Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm
 * Microsoft.VisualStudio.Component.DslTools
+* Microsoft.VisualStudio.Component.Windows81SDK *
+* Microsoft.VisualStudio.Component.WinXP *
+* Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 *
+* Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP *
+* Microsoft.Component.Blend.SDK.WPF *
+* Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed
 
-## .NET 4.7.1 *
+## .NET 4.7.1
 
 _Version:_ 4.7.02558
 
-## SQL Server Data Tools for VS 2017 *
+## SQL Server Data Tools for VS 2017
 
 _Version:_ 15.1.61707.200<br/>
 _SQL Server Data Tier Application Framework (x64) Version:_  14.0.3757.2
 
-## SQL Server BI Tools for VS 2017 *
+## SQL Server BI Tools for VS 2017
 
 _Version:_ 14.0.1012.227
+
+## SQL PowerShell Modules *
+
+_Version:_ 1.0
 
 ## WIX Tools
 
@@ -97,7 +107,7 @@ _WIX Toolset Studio 2017 Extension Version:_ 0.9.21.62588<br/>
 _Environment:_
 * WIX: Installation root of WIX
 
-## .NET Core *
+## .NET Core
 
 The following runtimes and SDKs are installed:
 
@@ -105,6 +115,8 @@ _Environment:_
 * PATH: contains location of dotnet.exe
 
 _SDK:_
+* 2.1.4 C:\Program Files\dotnet\sdk\2.1.4
+* 2.1.2 C:\Program Files\dotnet\sdk\2.1.2
 * 2.0.3 C:\Program Files\dotnet\sdk\2.0.3
 * 2.0.2 C:\Program Files\dotnet\sdk\2.0.2
 * 2.0.0 C:\Program Files\dotnet\sdk\2.0.0
@@ -114,6 +126,7 @@ _SDK:_
 * 1.0.1 C:\Program Files\dotnet\sdk\1.0.1
 
 _Runtime:_
+* 2.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.5
 * 2.0.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.3
 * 2.0.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.0
 * 1.1.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.5
@@ -145,35 +158,35 @@ _Location:_ C:\Modules\azure_3.8.0 and C:\Modules\azurerm_3.8.0
 This version is saved but not installed.<br/>
 _Location:_ C:\Modules\azure_4.2.1 and C:\Modules\azurerm_4.2.1
 
-#### 5.0.0 *
+#### 5.1.1
 This version is saved by not installed
-_Location:_ C:\Modules\azure_5.0.0 and C:\Modules\azurerm_5.0.0
+_Location:_ C:\Modules\azure_5.1.1 and C:\Modules\azurerm_5.1.1
 
 ## Azure CLI *
 
-_Version:_ 2.0.20<br/>
+_Version:_ 2.0.25<br/>
 _Environment:_
 * PATH: contains location of az.cmd
 
 ## Azure Service Fabric *
 
-_SDK Version:_ 2.8.232<br/>
-_Runtime Version:_ 6.0.232
+_SDK Version:_ 3.0.456<br/>
+_Runtime Version:_ 6.1.456
 
-## Git *
+## Git
 
 _Version:_ 2.15.0<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
-## Git LFS *
+## Git LFS
 
 _Version:_ 2.3.4<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
 
-## Subversion *
+## Subversion
 
 _Version:_ 1.8.15<br/>
 _Environment:_
@@ -186,9 +199,9 @@ _Environment:_
 * PATH: contains location of go.exe
 * GOROOT: root directory of the Go installation
 
-## Node.js *
+## Node.js
 
-_Version:_ 6.11.5<br/>
+_Version:_ 8.9.1<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
 
@@ -196,42 +209,42 @@ _Environment:_
 
 ## npm
 
-_Version:_ 3.10.10<br/>
+_Version:_ 5.5.1<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
-## Docker
+## Docker *
 
 _Version:_ 17.06.2-ee-6<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
 The following container images have been cached:
-* microsoft/windowsservercore:latest (sha256:c2ab4a537f6f312fe147e259011025561f8a1c4ee3bcc2c62f688b528ea57b28)
-* microsoft/nanoserver:latest (sha256:df59b79514786730283cd2df9dbcfdde086454cdbcefbe5e90e142f4d2e97d25)
-* microsoft/aspnetcore-build:1.0-2.0  (sha256:52e65f20870543adc21cdea4d2c0339f7730d1503f2dc5fc484a788793305688)
-* microsoft/aspnet:latest (sha256:069dfeae9810f449cd951108e338ff0388dfffde9ad6bf88cdc8d3e788e34e9c)
-* microsoft/dotnet-framework:latest (sha256:97d2d694076bdebc23f83b23ac0b2cce27dcdbe506bf13781d99f3a94aae1299)
+* microsoft/windowsservercore:latest (sha256:ebdf8f069e8941803a19bb3da4d70070c9d3b2f77c38476a9132022bab6e59a0)
+* microsoft/nanoserver:latest (sha256:3d2948c5af9f4bece59b13f199f5bec59d6dc4930fb15aa9b6a223d2ea8d8471)
+* microsoft/aspnetcore-build:1.0-2.0  (sha256:84686dd5bc596df1e81f106937b4aaa44af7d307a2d3f29610a418cd6ede1a8d)
+* microsoft/aspnet:latest (sha256:7f671d072c49a4ebfce342b492a1274cfb2e5fac5a58d5e604a4e283fb791496)
+* microsoft/dotnet-framework:latest (sha256:54ab0e9ed41614f7fdec081734c8f5d8228bb0778252fdf7f71a78ff48be3549)
 
 ## Docker-compose *
 
-_Version:_ 1.17.1<br/>
+_Version:_ 1.18.0<br/>
 _Environment:_
 * PATH: contains location of docker-compose.exe
 
 ## Java Development Kit
 
-#### 1.8.0_152 *
+#### 1.8.0.162 *
 
 _Environment:_
 * JAVA_HOME: location of JDK
 * PATH: contains bin folder of JDK
 
-#### 1.9.0_1 *
+#### 1.9.0.1
 
 _Location:_ C:\Program Files\Java\jdk-9.0.1\
 
-## Ant *
+## Ant
 
 _Version:_ 1.10.1<br/>
 _Environment:_
@@ -239,22 +252,27 @@ _Environment:_
 * ANT_HOME: location of ant.cmd
 * COBERTURA_HOME: location of cobertura-2.1.1.jar
 
-## Maven *
+## Maven
 
 _Version:_ 3.5.2<br/>
 _Environment:_
 * PATH: contains location of mvn.bat
 * M2_HOME: Maven installation root
 
-## Cmake *
+## Gradle *
+_Version:_ 4.3.0</br/>
+_Environment:_
+* PATH: contains location of gradle
+
+## Cmake
 
 _Version:_ 3.9.4<br/>
 _Environment:_
 * PATH: contains location of cmake.exe
 
-## Python (64 bit)
+## Python (64 bit) *
 
-#### 3.6.2
+#### 3.6.3
 _Environment:_
 * PATH: contains location of python.exe
 
@@ -264,7 +282,15 @@ _Location:_ C:\Python27amd64
 
 ## Android SDK Build Tools
 
-#### 26.0.2 *
+### 27.0.1
+
+_Location:_ C:\Program Files (x86)\Android\android-sdk\build-tools\27.0.1
+
+#### 26.0.3
+
+_Location:_ C:\Program Files (x86)\Android\android-sdk\build-tools\26.0.3
+
+#### 26.0.2
 
 _Location:_ C:\Program Files (x86)\Android\android-sdk\build-tools\26.0.2
 
@@ -336,7 +362,10 @@ _Location:_ C:\Program Files (x86)\Android\android-sdk\build-tools\19.1.0
 
 ## Android SDK Platforms
 
-#### 8.0.0 (API 26) *
+#### 8.1.0 (API 27)
+
+_Location:_ C:\Program Files (x86)\Android\android-sdk\platforms\android-27
+#### 8.0.0 (API 26)
 
 _Location:_ C:\Program Files (x86)\Android\android-sdk\platforms\android-26
 
