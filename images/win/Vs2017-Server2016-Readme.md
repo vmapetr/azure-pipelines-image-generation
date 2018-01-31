@@ -1,7 +1,7 @@
 # VSTS Hosted VS2017 image
 
-[Version 1712](https://github.com/Microsoft/vsts-image-generation/blob/releases/1712/images/win/Vs2017/vs2017-Server2016-Azure.json)
-Built Friday December 1, 2017
+[Version 1801.1](https://github.com/Microsoft/vsts-image-generation/edit/releases/1801.1/images/win/Vs2017-Server2016-Readme.md)
+Built Tuesday January 30, 2018
 
 The following software is installed on machines in the VSTS **Hosted VS2017** pool.
 
