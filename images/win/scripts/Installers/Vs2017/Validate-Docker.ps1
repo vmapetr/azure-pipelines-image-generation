@@ -33,10 +33,13 @@ Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $
 
 $SoftwareName = "Docker-compose"
 
-$version = $(docker-compose version) | %{ if( ($_.Split(' ')[0]).Trim() -like "docker-compose") { ($_.Split(' ')[2]).Split(',')[0] } }
+if( $(docker-compose --version) -match  'docker-compose version (?<version>.*), build.*' )
+{
+   $dockerComposeVersion = $Matches.version
+}
 
 $Description = @"
-_Version:_ $version<br/>
+_Version:_ $dockerComposeVersion<br/>
 _Environment:_
 * PATH: contains location of docker-compose.exe
 "@

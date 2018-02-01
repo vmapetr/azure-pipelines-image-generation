@@ -70,3 +70,46 @@ Push-Location -Path $sdk.FullName
     "patcher;v4"
 
 Pop-Location
+
+
+
+# Adding description of the software to Markdown
+$Header = @"
+
+## Android SDK Build Tools
+
+"@
+
+Add-ContentToMarkdown -Content $Header
+
+$BuildTools =(Get-ChildItem "C:\Program Files (x86)\Android\android-sdk\build-tools\") `
+           | Where { $_.Name -match "[0-9].*" } `
+           | Sort-Object -Descending `
+           | % { "#### $($_.Name)`n`n_Location:_ $($_.FullName)`n" }
+
+Add-ContentToMarkdown -Content $BuildTools
+
+
+# Adding description of the software to Markdown
+$Header = @"
+
+## Android SDK Platforms
+
+"@
+
+Add-ContentToMarkdown -Content $Header
+
+$SdkList =(Get-ChildItem "C:\Program Files (x86)\Android\android-sdk\platforms\") | Sort-Object -Descending | %{ $_.FullName }
+
+foreach($sdk in $SdkList)
+{
+    $sdkProps = ConvertFrom-StringData (Get-Content "$sdk\source.properties" -Raw)
+
+    $content = @"
+#### $($sdkProps.'Platform.Version') (API $($sdkProps.'AndroidVersion.ApiLevel'))
+
+_Location:_ $sdk
+
+"@
+    Add-ContentToMarkdown -Content $content
+}

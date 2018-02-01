@@ -16,4 +16,19 @@ else
     throw "DACFx is not installed!"
 }
 
+function Get-DacFxVersion
+{
+    $regKey = "HKLM:\SOFTWARE\Microsoft\Microsoft SQL Server\Data-Tier Application Framework\CurrentVersion"
+    $Version = (Get-ItemProperty -Path $regKey).'(Default)'
+    return $Version
+}
 
+
+# Adding description of the software to Markdown
+$SoftwareName = "SQL Server Data Tier Application Framework (x64)"
+
+$Description = @"
+_Version:_ $(Get-DacFxVersion)<br/>
+"@
+
+Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description

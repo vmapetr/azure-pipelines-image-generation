@@ -4,7 +4,7 @@ function Add-ContentToMarkdown {
         $Content = ""
     )
 
-    Add-Content 'C:\InstalledSoftware.md' $Content
+    Add-Content 'D:\InstalledSoftware.md' $Content
 }
 
 
@@ -19,7 +19,7 @@ $Content = @"
 
 ## $SoftwareName
 
-$Description
+$DescriptionMarkdown
 "@
    Add-ContentToMarkdown -Content $Content
 }
