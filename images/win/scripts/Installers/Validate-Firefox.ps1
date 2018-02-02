@@ -6,8 +6,7 @@
 
 if(Test-Path "HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe")
 {
-	$path = (Get-ItemProperty -Path "HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe").Path
-	Write-Host "Mozilla Firefox installed at " $path
+	(Get-Item (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe').'(Default)').VersionInfo
 	exit 0
 }
 else

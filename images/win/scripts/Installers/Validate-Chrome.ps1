@@ -6,8 +6,7 @@
 
 if(Test-Path "HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe")
 {
-	$path = Get-ChildItem "HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe" | Get-ItemProperty -Name Path
-	Write-Host "Google Chrome installed at " $path
+	(Get-Item (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe').'(Default)').VersionInfo
 	exit 0
 }
 else
