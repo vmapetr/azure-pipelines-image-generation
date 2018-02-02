@@ -74,12 +74,6 @@
             ]
         },
         {
-            "type": "file",
-            "source": "D:\\InstalledSoftware.md",
-            "destination": "D:\\InstalledSoftware.md",
-            "direction": "download"
-        },
-        {
             "type": "windows-restart",
             "restart_timeout": "30m"
         },
