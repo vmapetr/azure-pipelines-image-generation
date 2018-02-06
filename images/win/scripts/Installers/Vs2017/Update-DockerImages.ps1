@@ -25,3 +25,15 @@ DockerPull microsoft/aspnetcore-build:1.0-2.0
 DockerPull microsoft/aspnet
 DockerPull microsoft/dotnet-framework
 
+
+# Adding description of the software to Markdown
+
+$SoftwareName = "Docker images"
+
+$Description = @"
+The following container images have been cached:
+"@
+
+Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
+
+Add-ContentToMarkdown -Content $(docker images --digests --format "* {{.Repository}}:({{.Digest}})")

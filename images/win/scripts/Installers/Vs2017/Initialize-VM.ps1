@@ -97,3 +97,17 @@ choco feature enable -n allowGlobalConfirmation
 
 # Install webpi
 choco install webpicmd -y
+
+
+# Adding description of the software to Markdown
+
+$Content = @"
+# VSTS Hosted VS2017 image
+
+The following software is installed on machines in the VSTS **Hosted VS2017** pool.
+
+Components marked with **\*** have been upgraded since the previous version of the image.
+
+"@
+
+Add-ContentToMarkdown -Content $Content

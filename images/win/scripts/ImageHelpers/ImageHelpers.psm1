@@ -3,6 +3,7 @@ param()
 
 . $PSScriptRoot\PathHelpers.ps1
 . $PSScriptRoot\InstallHelpers.ps1
+. $PSScriptRoot\MarkdownHelpers.ps1
 
 Export-ModuleMember -Function @(
     'Test-MachinePath'
@@ -13,4 +14,6 @@ Export-ModuleMember -Function @(
     'Set-SystemVariable'
     'Install-MSI'
     'Install-EXE'
+    'Add-ContentToMarkdown'
+    'Add-SoftwareDetailsToMarkdown'
 )

@@ -143,6 +143,12 @@
         },
         {
             "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Vs2017/Install-Wix.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
             "valid_exit_codes": [
                 0,
                 3010
@@ -176,6 +182,18 @@
         {
             "type": "windows-restart",
             "restart_timeout": "30m"
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Vs2017/Validate-SSDT.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Vs2017/Validate-Wix.ps1"
+            ]
         },
         {
             "type": "powershell",

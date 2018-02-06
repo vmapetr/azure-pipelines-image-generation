@@ -4,6 +4,10 @@
 ##  Desc:  Validate Azure PowerShell modules
 ################################################################################
 
+Import-Module -Name ImageHelpers -Force
+
+$DefaultModule = Get-Module -Name AzureRM -ListAvailable | Select-Object -First 1
+
 $env:PSModulePath = $env:PSModulePath + ";C:\Modules"
 
 $azureModules = Get-Module -Name Azure -ListAvailable | Select-Object Name,Version,Path | Format-Table | Out-String
@@ -36,3 +40,33 @@ else {
     throw "One or more required AzureRM modules are not present."
 }
 
+
+$azureModules = Get-Module -Name AzureRM -ListAvailable
+
+
+# Adding description of the software to Markdown
+$SoftwareName = "Azure/AzureRM Powershell modules"
+
+$Description = @"
+#### $($DefaultModule.Version)
+
+This version is installed and is available via `Get-Module -ListAvailable`
+"@
+
+Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
+
+foreach( $module in $azureModules)
+{
+    if($module.Version -ne $DefaultModule.Version)
+    {
+
+        $CurrentModule = @"
+#### $($module.Version)
+
+This version is saved but not installed
+_Location:_ $($module.Path)
+
+"@
+        Add-ContentToMarkdown -Content $CurrentModule
+    }
+}
