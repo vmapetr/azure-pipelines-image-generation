@@ -54,7 +54,7 @@ $versionResult = mysql -V
 $version = [regex]::match($versionResult,'(\d+\.)(\d+\.)(\d+)').value
 
 $Description = @"
-_Version:_$version
+_Version:_ $version<br/>
 _Environment:_
 * PATH: contains location of mysql.exe
 "@
