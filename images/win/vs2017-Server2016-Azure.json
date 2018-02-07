@@ -269,6 +269,9 @@
         },
 	{
             "type": "powershell",
+            "valid_exit_codes": [
+                0
+            ],
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Install-MysqlCli.ps1"
             ]
