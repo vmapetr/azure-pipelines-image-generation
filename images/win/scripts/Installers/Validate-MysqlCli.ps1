@@ -4,7 +4,7 @@
 ##  Desc:  Validate Mysql Cli
 ################################################################################
 
-function Test-Leaf 
+function Test-Leaf
 {
     [CmdletBinding()]
     param(
@@ -19,15 +19,16 @@ function Test-Leaf
     return $false
 }
 
-function Test-Mysql-Installed 
+function Test-Mysql-Installed
 {
     # Getting system environment path
     $systemPath = [Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVariableTarget]::Machine)
     $paths = $systemPath.split(';')
-    foreach ($path in $paths) 
+    foreach ($path in $paths)
     {
 	    if(Test-Leaf $path"\mysql.exe")
         {
+            $mysqlPath = $path
             return $true;
         }
     }
@@ -49,7 +50,11 @@ else
 # Adding description of the software to Markdown
 $SoftwareName = "Mysql"
 
+$versionResult = mysql -V
+$version = [regex]::match($versionResult,'(\d+\.)(\d+\.)(\d+)').value
+
 $Description = @"
+_Version:_$version
 _Environment:_
 * PATH: contains location of mysql.exe
 "@
