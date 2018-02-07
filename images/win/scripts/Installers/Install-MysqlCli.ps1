@@ -29,7 +29,7 @@ if ($exitCode -eq 0 -or $exitCode -eq 3010)
     # Adding mysql in system environment path
     Add-MachinePathItem $mysqlPath
 
-    retutn 0;
+    return 0;
 }
 else
 {
