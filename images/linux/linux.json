@@ -54,6 +54,14 @@
             "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
         },
         {
+            "type": "shell",
+            "inline": [
+              "apt-get update",
+              "apt-get install mysql-client -y"
+            ],
+            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+        },
+        {
             "type": "file",
             "source": "{{template_dir}}/scripts/helpers",
             "destination": "{{user `helper_script_folder`}}"
@@ -94,15 +102,6 @@
                 "/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync"
             ],
             "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
-        },
-        {
-            "type": "shell",
-            "inline": [
-              "apt-get update",
-              "apt-get upgrade -y",
-              "apt-get -y install mysql-client"
-            ],
-            "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'"
         }
     ]
 }
