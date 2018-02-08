@@ -4,39 +4,7 @@
 ##  Desc:  Validate Mysql Cli
 ################################################################################
 
-function Test-Leaf
-{
-    [CmdletBinding()]
-    param(
-        [Parameter(Mandatory = $true)]
-        [string]$LiteralPath)
-
-    if ((Test-Path -LiteralPath $LiteralPath -PathType Leaf))
-    {
-        return $true
-    }
-
-    return $false
-}
-
-function Test-Mysql-Installed
-{
-    # Getting system environment path
-    $systemPath = [Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVariableTarget]::Machine)
-    $paths = $systemPath.split(';')
-    foreach ($path in $paths)
-    {
-	    if(Test-Leaf $path"\mysql.exe")
-        {
-            $mysqlPath = $path
-            return $true;
-        }
-    }
-
-    return $false;
-}
-
-if(Test-Mysql-Installed)
+if(Get-Command -Name 'mysql')
 {
     Write-Host "Mysql is on path"
 }
@@ -45,7 +13,6 @@ else
     Write-Host 'Mysql not on path'
     exit 1
 }
-
 
 # Adding description of the software to Markdown
 $SoftwareName = "Mysql"
