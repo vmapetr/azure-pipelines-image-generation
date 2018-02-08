@@ -4,7 +4,8 @@
 ##  Desc:  Validate Mysql Cli
 ################################################################################
 
-if(Get-Command -Name 'mysql')
+$command = Get-Command -Name 'mysql' 
+if($command)
 {
     Write-Host "Mysql is on path"
 }
@@ -16,9 +17,7 @@ else
 
 # Adding description of the software to Markdown
 $SoftwareName = "Mysql"
-
-$versionResult = mysql -V
-$version = [regex]::match($versionResult,'(\d+\.)(\d+\.)(\d+)').value
+$version = $command.Version.ToString();
 
 $Description = @"
 _Version:_ $version<br/>
