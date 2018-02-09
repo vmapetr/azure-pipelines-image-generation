@@ -36,6 +36,7 @@ setx ANDROID_NDK_PATH $latestAndroidNDK /M
 Push-Location -Path $sdk.FullName
 
 & '.\tools\bin\sdkmanager.bat' --sdk_root=$sdk_root `
+    "platform-tools" `
     "platforms;android-27" `
     "platforms;android-26" `
     "platforms;android-25" `
