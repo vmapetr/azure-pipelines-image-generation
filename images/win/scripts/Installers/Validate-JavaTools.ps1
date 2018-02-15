@@ -23,6 +23,14 @@ if( $( $(& $env:comspec "/s /c java -version 2>&1") | Out-String) -match  'java 
    $javaVersion = $Matches.version
 }
 
+$env:Path = $env:JAVA_HOME_9_X64 + "\bin;" + $env:Path
+
+if( $( $(& $env:comspec "/s /c java -version 2>&1") | Out-String) -match  'java version "(?<version>.*)".*' )
+{
+   $java9Version = $Matches.version
+}
+
+
 if( $(ant -version) -match  'Apache Ant\(TM\) version (?<version>.*) compiled.*' )
 {
    $antVersion = $Matches.version
@@ -47,6 +55,10 @@ $Description = @"
 _Environment:_
 * JAVA_HOME: location of JDK
 * PATH: contains bin folder of JDK
+
+#### $java9Version
+
+_Location:_ $env:JAVA_HOME_9_X64
 "@
 
 Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
