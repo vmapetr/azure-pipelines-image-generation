@@ -4,7 +4,9 @@
 ##  Desc:  Install various JDKs and java tools
 ################################################################################
 
-choco install jdk8 -y
+#Installing Both x86 and x64 versions of Java
+choco install jdk8 -params "both=true" -y
+
 choco install jdk9 -y
 choco install ant -y
 choco install cobertura -y
