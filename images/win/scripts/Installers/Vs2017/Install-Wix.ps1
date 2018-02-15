@@ -46,7 +46,7 @@ function Install-VsixExtension
 }
 
 
-choco install wixtoolset --version 3.11.0.20170506 -y --force
+choco install wixtoolset -y --force
 
 #Installing VS extension 'Wix Toolset Visual Studio 2017 Extension'
 $exitCode = Install-VsixExtension -Url 'https://robmensching.gallerycdn.vsassets.io/extensions/robmensching/wixtoolsetvisualstudio2017extension/0.9.21.62588/1494013210879/250616/4/Votive2017.vsix' -Name 'Votive2017.vsix'
