@@ -64,7 +64,9 @@
             "type": "windows-shell",
             "inline": [
                 "net user {{user `install_user`}} {{user `install_password`}} /add /passwordchg:no /passwordreq:yes /active:yes" ,
-                "net localgroup Administrators {{user `install_user`}} /add"
+                "net localgroup Administrators {{user `install_user`}} /add",
+                "winrm set winrm/config/service/auth @{Basic=\"true\"}",
+                "winrm get winrm/config/service/auth"
             ]
         },
         {
@@ -394,6 +396,12 @@
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-MysqlCli.ps1"
             ]
+        },
+        {
+            "type": "file",
+            "source": "C:\\InstalledSoftware.md",
+            "destination": "{{ template_dir }}/InstalledSoftware.md",
+            "direction": "download"
         },
         {
             "type": "powershell",

@@ -4,4 +4,4 @@
 ##  Desc:  Install Subversion
 ################################################################################
 
-choco install svn --version 1.8.15 -y
+choco install svn -y
