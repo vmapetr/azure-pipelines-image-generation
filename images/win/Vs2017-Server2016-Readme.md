@@ -194,10 +194,15 @@ _Environment:_
 
 ## Go *
 
-_Version:_ 1.9.3<br/>
+_Version:_ 1.9.4<br/>
+_Environment:_
+* GOROOT_1_9_X64: root directory of the Go 1.9 installation
+
+_Version:_ 1.10<br/>
 _Environment:_
 * PATH: contains location of go.exe
-* GOROOT: root directory of the Go installation
+* GOROOT: root directory of the Go 1.10 installation
+* GOROOT_1_10_X64: root directory of the Go 1.10 installation
 
 ## Node.js
 
