@@ -18,3 +18,9 @@ New-ItemProperty "HKLM:\SOFTWARE\Policies\Google\Update" -Name "DisableAutoUpdat
 New-ItemProperty "HKLM:\SOFTWARE\Policies\Google\Update" -Name "Update{8A69D345-D564-463C-AFF1-A69D9E530F96}" -Value 00000000 -Force
 New-Item -Path "HKLM:\SOFTWARE\Policies\Google\Chrome" -Force
 New-ItemProperty "HKLM:\SOFTWARE\Policies\Google\Chrome" -Name "DefaultBrowserSettingEnabled" -Value 00000000 -Force
+
+
+$content = @"
+## Google Chrome 64.0.3282.168
+"@
+Add-ContentToMarkdown -Content $content
