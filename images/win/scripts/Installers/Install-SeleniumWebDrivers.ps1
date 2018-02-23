@@ -15,9 +15,24 @@ setx GeckoSeleniumDriverPath "C:\SeleniumWebDrivers\GeckoDriver" /M
 setx ChromeSeleniumDriverPath "C:\SeleniumWebDrivers\ChromeDriver" /M
 
 $content = @"
-## Selenium Chrome driver 2.35
-## Selenium Gecko driver 0.19.1
-## Selenium IE driver 3.8.0.0
+
+## Selenium Web Drivers
+
+### Chrome Driver 2.35
+
+_Environment:_
+ChromeSeleniumDriverPath : Contains location of chromedriver.exe
+
+### Gecko driver 0.19.1
+
+_Environment:_
+GeckoSeleniumDriverPath : Contains location of geckodriver.exe
+
+### IE driver 3.8.0.0
+
+_Environment:_
+IESeleniumDriverPath : Contains location of IEDriverServer.exe
+
 "@
 Add-ContentToMarkdown -Content $content
 

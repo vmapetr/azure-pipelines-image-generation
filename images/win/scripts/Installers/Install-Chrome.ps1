@@ -21,6 +21,8 @@ New-ItemProperty "HKLM:\SOFTWARE\Policies\Google\Chrome" -Name "DefaultBrowserSe
 
 
 $content = @"
+
 ## Google Chrome 64.0.3282.168
+
 "@
 Add-ContentToMarkdown -Content $content

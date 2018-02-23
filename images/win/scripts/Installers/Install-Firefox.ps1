@@ -17,6 +17,8 @@ New-Item -path $path -Name 'local-settings.js' -Value 'pref("general.config.obsc
 pref("general.config.filename", "mozilla.cfg");' -ItemType file -force
 
 $content = @"
+
 ## Mozilla Firefox ${version}
+
 "@
 Add-ContentToMarkdown -Content $content
