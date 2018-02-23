@@ -201,7 +201,7 @@ _Environment:_
 #### 1.10
 
 _Environment:_
-* PATH: contains location of go.exe
+* PATH: contains the location of go.exe version 1.10
 * GOROOT: root directory of the Go 1.10 installation
 * GOROOT_1_10_X64: root directory of the Go 1.10 installation
 
