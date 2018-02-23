@@ -4,6 +4,26 @@
 ##  Desc:  Validate Go
 ################################################################################
 
+# Function that gets the version of Go at the specified path
+function Get-GoVersion
+{
+    Param
+    (
+        [String]$goRootPath
+    )
+
+    $env:Path = "$goRootPath\bin;" + $env:Path
+    if( $(go version) -match 'go version go(?<version>.*) win.*' )
+    {
+        $goVersion = $Matches.version
+        return $goVersion
+    }
+
+    Write-Host "Unable to determine Go version at " + $goRootPath
+    exit 1
+}
+
+# Verify that go.exe is on the path
 if(Get-Command -Name 'go')
 {
     Write-Host "$(go version) is on the path."
@@ -14,21 +34,24 @@ else
     exit 1
 }
 
-
-if( $(go version) -match  'go version go(?<version>.*) win.*' )
-{
-   $goVersion = $Matches.version
-}
-
+# Get available versions of Go
+$goVersion1_9 = Get-GoVersion -goRootPath $env:GOROOT_1_9_X64
+$goVersionOnPath = Get-GoVersion -goRootPath $env:GOROOT_1_10_X64
 
 # Adding description of the software to Markdown
-$SoftwareName = "Go"
-
+$SoftwareName = "Go (x64)"
 $Description = @"
-_Version:_ $goVersion<br/>
+#### $goVersion1_9
+
 _Environment:_
-* PATH: contains location of go.exe
-* GOROOT: root directory of the Go installation
+* GOROOT_1_9_X64: root directory of the Go $goVersion1_9 installation
+
+#### $goVersionOnPath
+
+_Environment:_
+* PATH: contains the location of go.exe version $goVersionOnPath
+* GOROOT: root directory of the Go $goVersionOnPath installation
+* GOROOT_1_10_X64: root directory of the Go $goVersionOnPath installation
 "@
 
 Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
