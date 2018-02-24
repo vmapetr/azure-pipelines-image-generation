@@ -4,31 +4,37 @@
 ##  Desc:  Validate Ruby
 ################################################################################
 
-if(Get-Command -Name 'go')
+if (Get-Command -Name 'ruby')
 {
-    Write-Host "$(go version) is on the path."
+    Write-Host "$(ruby.exe -v) is on the path."
 }
 else
 {
-    Write-Host "Go is not on the path."
+    Write-Host "Ruby.exe is not on the path."
     exit 1
 }
 
-
-if( $(go version) -match  'go version go(?<version>.*) win.*' )
-{
-   $goVersion = $Matches.version
-}
-
-
-# Adding description of the software to Markdown
-$SoftwareName = "Go"
-
+# Add details of available versions in Markdown
+$SoftwareName = "Ruby (x64)"
 $Description = @"
-_Version:_ $goVersion<br/>
+#### 2.3.3
+
 _Environment:_
-* PATH: contains location of go.exe
-* GOROOT: root directory of the Go installation
+* RUBYOPT: -Eutf-8
+* RUBY_2_3_X64: root directory of the Ruby 2.3.3 installation
+
+#### 2.4.3-1
+
+_Environment:_
+* RUBYOPT: -Eutf-8
+* PATH: contains the location of ruby.exe version 2.4.3-1
+* RUBY_2_4_X64: root directory of the Ruby 2.4.3-1 installation
+
+#### 2.5.0-1
+
+_Environment:_
+* RUBYOPT: -Eutf-8
+* RUBY_2_5_X64: root directory of the Ruby 2.5.0-1 installation
 "@
 
 Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
