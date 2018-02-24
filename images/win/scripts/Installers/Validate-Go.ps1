@@ -35,10 +35,10 @@ else
 }
 
 # Get available versions of Go
-$goVersion1_9 = Get-GoVersion -goRootPath $env:GOROOT_1_9_X64
-$goVersionOnPath = Get-GoVersion -goRootPath $env:GOROOT_1_10_X64
+$goVersion1_9 = Get-GoVersion -goRootPath "C:\Go1.9.4"
+$goVersionOnPath = Get-GoVersion -goRootPath "C:\Go1.10"
 
-# Adding description of the software to Markdown
+# Add details of available versions in Markdown
 $SoftwareName = "Go (x64)"
 $Description = @"
 #### $goVersion1_9
