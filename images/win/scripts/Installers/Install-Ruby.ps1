@@ -36,7 +36,7 @@ function Install-RubyVersion
     if ($addToDefaultPath)
     {
         Write-Host "Adding $installDirectory\bin to the default path..."
-        Add-MachinePathItem "$installDirectory\bin"
+        Add-MachinePathItem "$installDirectory\bin" | Out-Null
     }
 
     # Done
