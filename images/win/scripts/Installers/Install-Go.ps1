@@ -41,9 +41,9 @@ function Install-GoVersion
     {
         Write-Host "Adding Go $goVersion to the path..."
         # Add the Go binaries to the path.
-        Add-MachinePathItem "C:\$newDirName\bin"
+        Add-MachinePathItem "C:\$newDirName\bin" | Out-Null
         # Set the GOROOT environment variable.
-        setx GOROOT "C:\$newDirName" /M
+        setx GOROOT "C:\$newDirName" /M | Out-Null
     }
 
     # Done
