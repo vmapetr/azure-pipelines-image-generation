@@ -14,21 +14,35 @@ setx IESeleniumDriverPath "C:\SeleniumWebDrivers\IEDriver" /M
 setx GeckoSeleniumDriverPath "C:\SeleniumWebDrivers\GeckoDriver" /M
 setx ChromeSeleniumDriverPath "C:\SeleniumWebDrivers\ChromeDriver" /M
 
+
+$chromedriverversion = Get-Content -Path "C:\SeleniumWebDrivers\ChromeDriver\versioninfo.txt"
+$geckodriverversion = Get-Content -Path "C:\SeleniumWebDrivers\GeckoDriver\versioninfo.txt"
+$iedriverversion = Get-Content -Path "C:\SeleniumWebDrivers\IEDriver\versioninfo.txt"
+
 $content = @"
 
 ## Selenium Web Drivers
 
-### Chrome Driver 2.35
+### Chrome Driver
+
+_version:_
+$(chromedriverversion)
 
 _Environment:_
 ChromeSeleniumDriverPath : Contains location of chromedriver.exe
 
-### Gecko driver 0.19.1
+### Gecko driver
+
+_version:_
+$(geckodriverversion)
 
 _Environment:_
 GeckoSeleniumDriverPath : Contains location of geckodriver.exe
 
-### IE driver 3.8.0.0
+### IE driver
+
+_version:_
+$(iedriverversion)
 
 _Environment:_
 IESeleniumDriverPath : Contains location of IEDriverServer.exe
