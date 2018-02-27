@@ -22,6 +22,43 @@ if(($IEDriverPath -like "C:\SeleniumWebDrivers\IEDriver") -and ($GeckoDriverPath
 	Write-Host "Chrome Driver installed at "
 	(Get-Item "C:\SeleniumWebDrivers\ChromeDriver\chromedriver.exe").VersionInfo
 	
+	$chromedriverversion = Get-Content -Path "C:\SeleniumWebDrivers\ChromeDriver\versioninfo.txt"
+	$geckodriverversion = Get-Content -Path "C:\SeleniumWebDrivers\GeckoDriver\versioninfo.txt"
+	$iedriverversion = Get-Content -Path "C:\SeleniumWebDrivers\IEDriver\versioninfo.txt"
+
+	# Adding description of the software to Markdown
+	$SoftwareName = "Selenium Web Drivers"
+
+	$Description = @"
+	
+	#### Chrome Driver
+	
+	_version:_
+	$(chromedriverversion)
+	
+	_Environment:_
+	* ChromeSeleniumDriverPath: location of chromedriver.exe
+	
+	#### Gecko Driver
+	
+	_version:_
+	$(geckodriverversion)
+	
+	_Environment:_
+	* GeckoSeleniumDriverPath: location of geckodriver.exe
+	
+	#### IE Driver
+	
+	_Environment:_
+	* IESeleniumDriverPath: location of IEDriverServer.exe
+	
+	_version:_
+	$(iedriverversion)
+	
+	"@
+
+	Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
+	
 	exit 0
 }
 else

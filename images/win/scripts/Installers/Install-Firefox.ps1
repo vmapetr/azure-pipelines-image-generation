@@ -15,10 +15,3 @@ pref("app.update.enabled", false);' -ItemType file -force
 $path = '{0}\Program Files\Mozilla Firefox\defaults\pref\' -f $env:SystemDrive;
 New-Item -path $path -Name 'local-settings.js' -Value 'pref("general.config.obscure_value", 0);
 pref("general.config.filename", "mozilla.cfg");' -ItemType file -force
-
-$content = @"
-
-## Mozilla Firefox ${version}
-
-"@
-Add-ContentToMarkdown -Content $content
