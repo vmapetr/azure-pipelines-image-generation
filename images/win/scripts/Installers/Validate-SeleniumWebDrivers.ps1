@@ -30,32 +30,32 @@ if(($IEDriverPath -like "C:\SeleniumWebDrivers\IEDriver") -and ($GeckoDriverPath
 	$SoftwareName = "Selenium Web Drivers"
 
 	$Description = @"
-	
-	#### Chrome Driver
-	
-	_version:_
-	$(chromedriverversion)
-	
-	_Environment:_
-	* ChromeSeleniumDriverPath: location of chromedriver.exe
-	
-	#### Gecko Driver
-	
-	_version:_
-	$(geckodriverversion)
-	
-	_Environment:_
-	* GeckoSeleniumDriverPath: location of geckodriver.exe
-	
-	#### IE Driver
-	
-	_Environment:_
-	* IESeleniumDriverPath: location of IEDriverServer.exe
-	
-	_version:_
-	$(iedriverversion)
-	
-	"@
+
+#### Chrome Driver
+
+_version:_
+$chromedriverversion
+
+_Environment:_
+* ChromeSeleniumDriverPath: location of chromedriver.exe
+
+#### Gecko Driver
+
+_version:_
+$geckodriverversion
+
+_Environment:_
+* GeckoSeleniumDriverPath: location of geckodriver.exe
+
+#### IE Driver
+
+_version:_
+$iedriverversion
+
+_Environment:_
+* IESeleniumDriverPath: location of IEDriverServer.exe
+
+"@
 
 	Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
 	

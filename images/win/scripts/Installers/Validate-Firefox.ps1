@@ -11,9 +11,9 @@ if(Test-Path "HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.e
 	$fileVersion = (Get-Item (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe').'(Default)').VersionInfo.FileVersion
 	$SoftwareName = "Mozilla Firefox"
 	$Description = @"
-	_version:_
-	$(fileVersion)
-	"@
+_version:_
+$fileVersion
+"@
 	
 	Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
 	

@@ -11,9 +11,9 @@ if(Test-Path "HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.ex
 	$SoftwareName = "Google Chrome"
 	$fileVersion = (Get-Item (Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe').'(Default)').VersionInfo.FileVersion
 	$Description = @"
-	_version:_
-	$(fileVersion)
-	"@
+_version:_
+$fileVersion
+"@
 	
 	Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
 	
