@@ -4,9 +4,9 @@
 ##  Desc:  Validate Google Chrome installation.
 ################################################################################
 
-$IEDriverPath = $env:IESeleniumDriverPath
-$GeckoDriverPath = $env:GeckoSeleniumDriverPath
-$ChromeDriverPath = $env:ChromeSeleniumDriverPath
+$IEDriverPath = $env:IEWebDriver
+$GeckoDriverPath = $env:GeckoWebDriver
+$ChromeDriverPath = $env:ChromeWebDriver
 
 if(($IEDriverPath -like "C:\SeleniumWebDrivers\IEDriver") -and ($GeckoDriverPath -like "C:\SeleniumWebDrivers\GeckoDriver") -and ($ChromeDriverPath -like "C:\SeleniumWebDrivers\ChromeDriver"))
 {	
@@ -37,7 +37,7 @@ _version:_
 $chromedriverversion
 
 _Environment:_
-* ChromeSeleniumDriverPath: location of chromedriver.exe
+* ChromeWebDriver: location of chromedriver.exe
 
 #### Gecko Driver
 
@@ -45,7 +45,7 @@ _version:_
 $geckodriverversion
 
 _Environment:_
-* GeckoSeleniumDriverPath: location of geckodriver.exe
+* GeckoWebDriver: location of geckodriver.exe
 
 #### IE Driver
 
@@ -53,7 +53,7 @@ _version:_
 $iedriverversion
 
 _Environment:_
-* IESeleniumDriverPath: location of IEDriverServer.exe
+* IEWebDriver: location of IEDriverServer.exe
 
 "@
 

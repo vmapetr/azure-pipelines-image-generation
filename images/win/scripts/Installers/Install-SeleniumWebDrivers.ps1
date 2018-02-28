@@ -10,9 +10,9 @@ Expand-Archive -Path SeleniumWebDrivers.zip -DestinationPath "C:\" -Force
 
 Remove-Item SeleniumWebDrivers.zip
 
-setx IESeleniumDriverPath "C:\SeleniumWebDrivers\IEDriver" /M
-setx GeckoSeleniumDriverPath "C:\SeleniumWebDrivers\GeckoDriver" /M
-setx ChromeSeleniumDriverPath "C:\SeleniumWebDrivers\ChromeDriver" /M
+setx IEWebDriver "C:\SeleniumWebDrivers\IEDriver" /M
+setx GeckoWebDriver "C:\SeleniumWebDrivers\GeckoDriver" /M
+setx ChromeWebDriver "C:\SeleniumWebDrivers\ChromeDriver" /M
 
 exit 0
 
