@@ -1,7 +1,7 @@
 ################################################################################
-##  File:  Install-ToolCache.ps1
+##  File:  Download-ToolCache.ps1
 ##  Team:  CI-Build
-##  Desc:  Install tool cache
+##  Desc:  Download tool cache
 ################################################################################
 
 $SourceUrl = "https://vstsagenttools.blob.core.windows.net/tools"
