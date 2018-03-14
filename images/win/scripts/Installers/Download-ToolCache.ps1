@@ -12,6 +12,8 @@ $Path = "hostedtoolcache/windows"
 
 $env:Path = "C:\Program Files (x86)\Microsoft SDKs\Azure\AzCopy;" + $env:Path
 
+Write-Host "Started AzCopy from $SourceUrl to $Dest"
+
 AzCopy /Source:$SourceUrl /Dest:$Dest  /S /V /Pattern:$Path
 
 $ToolsDirectory = $Dest + $Path
