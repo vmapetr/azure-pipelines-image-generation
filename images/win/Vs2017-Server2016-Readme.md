@@ -4,6 +4,11 @@ The following software is installed on machines in the VSTS **Hosted VS2017** po
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
+## Chocolatey
+
+_Version:_ 0.10.8<br/>
+_Environment:_
+* PATH: contains location for choco.exe
 
 ## Docker
 
