@@ -111,3 +111,19 @@ Components marked with **\*** have been upgraded since the previous version of t
 "@
 
 Add-ContentToMarkdown -Content $Content
+
+
+$SoftwareName = "Chocolatey"
+
+if( $( $(choco version) | Out-String) -match  'Chocolatey v(?<version>.*).*' )
+{
+   $chocoVersion = $Matches.version.Trim()
+}
+
+$Description = @"
+_Version:_ $chocoVersion<br/>
+_Environment:_
+* PATH: contains location for choco.exe
+"@
+
+Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
