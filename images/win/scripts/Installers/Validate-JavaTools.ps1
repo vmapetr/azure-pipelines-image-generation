@@ -61,6 +61,11 @@ _Environment:_
 _Location:_ $env:JAVA_HOME_9_X64
 "@
 
+#### $java10Version
+
+_Location:_ $env:JAVA_HOME_10_X64
+"@
+
 Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
 
 
