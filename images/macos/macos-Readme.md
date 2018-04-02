@@ -17,7 +17,6 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - PowerShell 6.0.1
 - Python 2.7.10
 - Python 3.6.4
-- Ruby 2.5.0p0
 - .NET Core SDK 1.0.4, 2.0.3
 - Go 1.10
 
