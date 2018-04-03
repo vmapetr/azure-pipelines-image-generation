@@ -8,6 +8,7 @@
 choco install jdk8 -params "both=true" -y
 
 choco install jdk9 -y
+choco install jdk10 -y
 choco install ant -y
 choco install cobertura -y
 choco install maven -y
@@ -34,6 +35,9 @@ $latestJava8Install = $java8Installs.FullName;
 $java9Installs = Get-ChildItem -Path 'C:\Program Files\Java' -Filter 'jdk*9*' | Sort-Object -Property Name -Descending | Select-Object -First 1
 $latestJava9Install = $java9Installs.FullName;
 
+$java10Installs = Get-ChildItem -Path 'C:\Program Files\Java' -Filter 'jdk*10*' | Sort-Object -Property Name -Descending | Select-Object -First 1
+$latestJava10Install = $java10Installs.FullName;
+
 $newPath = [string]::Join(';', $newPathSegments)
 $newPath = $latestJava8Install + '\bin;' + $newPath
 
@@ -42,6 +46,7 @@ Set-MachinePath -NewPath $newPath
 setx JAVA_HOME $latestJava8Install /M
 setx JAVA_HOME_8_X64 $latestJava8Install /M
 setx JAVA_HOME_9_X64 $latestJava9Install /M
+setx JAVA_HOME_10_X64 $latestJava10Install /M
 
 #Move maven variables to Machine, they may not be in the environment for this script so we need to read them from the registry.
 $userSid = (Get-WmiObject win32_useraccount -Filter "name = '$env:USERNAME' AND domain = '$env:USERDOMAIN'").SID
