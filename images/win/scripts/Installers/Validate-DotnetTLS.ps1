@@ -5,7 +5,7 @@
 ################################################################################
 
 $protocols = [Net.ServicePointManager]::SecurityProtocol
-$protocolArr = $protocols -split ','
+$protocolArr = $protocols -split ', '
 if($protocolArr.Contains('Tls12'))
 {
     Write-Host "Tls 1.2 has been enabled."
