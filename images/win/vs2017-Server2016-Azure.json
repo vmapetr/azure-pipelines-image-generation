@@ -287,7 +287,7 @@
                 "{{ template_dir }}/scripts/Installers/Update-AndroidSDK.ps1"
             ]
         },
-	{
+        {
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Install-MysqlCli.ps1"
@@ -321,10 +321,16 @@
                 "{{ template_dir }}/scripts/Installers/Install-AzureModules.ps1"
             ]
         },
-	{
+        {
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Update-DotnetTLS.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Install-MinGW.ps1"
             ]
         },
         {
@@ -409,16 +415,22 @@
                 "{{ template_dir }}/scripts/Installers/Validate-DotnetSDK.ps1"
             ]
         },
-  	{
+        {
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-MysqlCli.ps1"
             ]
         },
-	{
+        {
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-DotnetTLS.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Validate-MinGW.ps1"
             ]
         },
         {
