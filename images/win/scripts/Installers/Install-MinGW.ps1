@@ -4,7 +4,7 @@
 ##  Desc:  Install GNU tools for Windows to C:\tools\mingw64
 ################################################################################
 
-Import-Module -Name PathHelpers -Force
+Import-Module -Name ImageHelpers -Force
 
 choco install -y mingw
 $installDir = "C:\tools\mingw64\bin"
