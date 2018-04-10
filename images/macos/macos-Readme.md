@@ -14,20 +14,20 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Java 1.8.0_162
 - Java 9.0.4
 - Java 10
-- Node.js 6.13.1
+- Node.js 6.14.1
 - PowerShell 6.0.2
 - Python 2.7.10
-- Python 3.6.4
-- Ruby 2.5.0p0
+- Python 3.6.5
+- Ruby 2.5.1p57
 - .NET Core SDK 1.0.4, 2.0.3
-- Go 1.10
+- Go 1.10.1
 
 ### Package Management
 
 - Bundler 1.16.1
 - Carthage 0.29.0
 - CocoaPods 1.4.0
-- Homebrew 1.5.12
+- Homebrew 1.5.14
 - NPM 3.10.10
 - Yarn 1.5.1
 - NuGet 4.3.0.4406
@@ -41,20 +41,20 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 ### Utilities
 
 - curl 7.54.0 (libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
-- Git 2.16.2
+- Git 2.16.3
 - Git LFS 2.4.0
 - GNU Wget 1.19.4
 - Subversion (SVN) 1.9.7
 
 ### Tools
 
-- fastlane 2.86.2
+- fastlane 2.88.0
 - App Center CLI 1.0.11
-- Azure-CLI 2.0.29
+- Azure-CLI 2.0.30
 
 ## Xcode
 
-- Xcode 9.3 beta 4
+- Xcode 9.3
 - Xcode 9.2
 - Xcode 9.1
 - Xcode 9.0.1
@@ -174,20 +174,20 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | iOS 10.3 | 14E269 |
 | iOS 11.1 | 15B87 |
 | iOS 11.2 | 15C107 |
-| iOS 11.3 | 15E5201e |
+| iOS 11.3 | 15E217 |
 | tvOS 10.0 | 14T328 |
 | tvOS 10.1 | 14U591 |
 | tvOS 10.2 | 14W260 |
 | tvOS 11.1 | 15J580 |
 | tvOS 11.2 | 15K104 |
-| tvOS 11.3 | 15L5198d |
+| tvOS 11.3 | 15L211 |
 | watchOS 3.0 | 14S326 |
 | watchOS 3.1 | 14S471a |
 | watchOS 3.2 | 14V243 |
 | watchOS 4.0 | 15R372 |
 | watchOS 4.1 | 15R844 |
 | watchOS 4.2 | 15S100 |
-| watchOS 4.3 | 15T5199e |
+| watchOS 4.3 | 15T212 |
 
 #### Devices
 
