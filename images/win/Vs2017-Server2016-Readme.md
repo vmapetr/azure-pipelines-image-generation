@@ -4,36 +4,37 @@ The following software is installed on machines in the VSTS **Hosted VS2017** po
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
+
 ## Chocolatey
 
-_Version:_ 0.10.8<br/>
+_Version:_ 0.10.9<br/>
 _Environment:_
 * PATH: contains location for choco.exe
 
 ## Docker
 
-_Version:_ 17.06.2-ee-6<br/>
+_Version:_ 17.06.2-ee-7<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
 ## Docker-compose
 
-_Version:_ 1.19.0<br/>
+_Version:_ 1.20.1<br/>
 _Environment:_
 * PATH: contains location of docker-compose.exe
 
 ## Docker images
 
 The following container images have been cached:
-* microsoft/aspnetcore-build:(sha256:8a4a6f76af05e0c518f5d9500334d2c543376813249e940b71ddaa67476874db)
-* microsoft/aspnet:(sha256:e4dcdc3c543f0b6a481aabd8ddba0d86472a0c965ea9c13b271d319c676f9d3b)
-* microsoft/dotnet-framework:(sha256:88e174003cb579e506d6d5db9d7e8ceaf5d04de95fe9b8a9bbf5f803fa315f0d)
-* microsoft/windowsservercore:(sha256:554b69722f31381f10a2f3ddd81e4cb50beba7af8561e9014a9e431a52c8f825)
-* microsoft/nanoserver:(sha256:8033bb347108ce994ff56ecc2aa731ef76eb371afdfbf059a69dc50a2f69a437)
+* microsoft/aspnetcore-build:(sha256:ba82d3ff7e04b20fa304b12e77b7edacfd16226bf6812efedf78e09f54e89cd1)
+* microsoft/aspnet:(sha256:4b4063b85c4ae4e7fc415c65f919401e7e2744bdfde035ee3e24025b2b30cbab)
+* microsoft/dotnet-framework:(sha256:96a7c8981e03acd5aa9f0a59a22c7b447cae389815133b7e481689a03107b7df)
+* microsoft/windowsservercore:(sha256:f0e539ed8bc4a1f5f059ede3ba165364be0dfead1d5a0cc6a5aa33ee909fbfe8)
+* microsoft/nanoserver:(sha256:204c41542c0927ac0296802e44c56b886b47e99cf8220fb49d46951bd5fc1742)
 
 ## Visual Studio 2017 Enterprise
 
-_Version:_ VisualStudio/15.6.0+27428.1<br/>
+_Version:_ VisualStudio/15.6.5+27428.2027<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
 
 The following workloads including required and recommended components are installed with Visual Studio 2017:
@@ -134,8 +135,8 @@ _Version:_ 4.7.02558
 
 ## Azure Service Fabric
 
-_SDK Version:_ 3.0.467.9494<br/>
-_Runtime Version:_ 6.1.467.9494
+_SDK Version:_ 3.0.480.9494<br/>
+_Runtime Version:_ 6.1.480.9494
 
 ## Python (64 bit)
 
@@ -265,19 +266,19 @@ _Location:_ C:\Modules\azurerm_5.1.1\AzureRM\5.1.1\AzureRM.psd1
 
 ## Azure CLI
 
-_Version:_ 2.0.28<br/>
+_Version:_ 2.0.29<br/>
 _Environment:_
 * PATH: contains location of az.cmd
 
 ## Git
 
-_Version:_ 2.16.2<br/>
+_Version:_ 2.17.0<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
 ## Git LFS
 
-_Version:_ 2.3.4<br/>
+_Version:_ 2.4.0<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
@@ -296,37 +297,16 @@ _Environment:_
 * GOROOT: root directory of the Go 1.10 installation
 * GOROOT_1_10_X64: root directory of the Go 1.10 installation
 
-## Ruby (x64)
-
-#### 2.3.3
-
-_Environment:_
-* RUBYOPT: -Eutf-8
-* RUBY_2_3_X64: root directory of the Ruby 2.3.3 installation
-
-#### 2.4.3-1
-
-_Environment:_
-* RUBYOPT: -Eutf-8
-* PATH: contains the location of ruby.exe version 2.4.3-1
-* RUBY_2_4_X64: root directory of the Ruby 2.4.3-1 installation
-
-#### 2.5.0-1
-
-_Environment:_
-* RUBYOPT: -Eutf-8
-* RUBY_2_5_X64: root directory of the Ruby 2.5.0-1 installation
-
 ## Subversion
 
-_Version:_ 1.8.15<br/>
+_Version:_ 1.8.17<br/>
 _Environment:_
 * PATH: contains location of svn.exe
 
 ## Google Chrome
 
 _version:_
-64.0.3282.186
+65.0.3325.181
 
 ## Mozilla Firefox
 
@@ -363,7 +343,7 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 8.9.4<br/>
+_Version:_ 8.11.1<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
 
@@ -387,6 +367,10 @@ _Environment:_
 
 _Location:_ C:\Program Files\Java\jdk-9.0.4
 
+#### 10
+
+_Location:_ C:\Program Files\Java\jdk-10
+
 ## Ant
 
 _Version:_ 1.10.1<br/>
@@ -397,7 +381,7 @@ _Environment:_
 
 ## Maven
 
-_Version:_ 3.5.2<br/>
+_Version:_ 3.5.3<br/>
 _Environment:_
 * PATH: contains location of mvn.bat
 * M2_HOME: Maven installation root
@@ -410,7 +394,7 @@ _Environment:_
 
 ## Cmake
 
-_Version:_ 3.10.2<br/>
+_Version:_ 3.11.0<br/>
 _Environment:_
 * PATH: contains location of cmake.exe
 
@@ -428,9 +412,14 @@ _Environment:_
 _SDK:_
 * 2.1.4 C:\Program Files\dotnet\sdk\2.1.4
 * 2.1.2 C:\Program Files\dotnet\sdk\2.1.2
+* 2.1.104 C:\Program Files\dotnet\sdk\2.1.104
+* 2.1.103 C:\Program Files\dotnet\sdk\2.1.103
+* 2.1.102 C:\Program Files\dotnet\sdk\2.1.102
+* 2.1.101 C:\Program Files\dotnet\sdk\2.1.101
 * 2.1.100 C:\Program Files\dotnet\sdk\2.1.100
 * 2.0.3 C:\Program Files\dotnet\sdk\2.0.3
 * 2.0.0 C:\Program Files\dotnet\sdk\2.0.0
+* 1.1.8 C:\Program Files\dotnet\sdk\1.1.8
 * 1.1.7 C:\Program Files\dotnet\sdk\1.1.7
 * 1.1.5 C:\Program Files\dotnet\sdk\1.1.5
 * 1.1.4 C:\Program Files\dotnet\sdk\1.1.4
@@ -438,9 +427,11 @@ _SDK:_
 * 1.0.1 C:\Program Files\dotnet\sdk\1.0.1
 
 _Runtime:_
+* 2.0.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.6
 * 2.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.5
 * 2.0.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.3
 * 2.0.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.0
+* 1.1.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.7
 * 1.1.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.6
 * 1.1.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.5
 * 1.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.4
@@ -451,9 +442,16 @@ _Runtime:_
 * 1.0.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.7
 * 1.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.5
 * 1.0.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.4
+* 1.0.10 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.10
 
 ## Mysql
 
 _Version:_ 5.7.21.0<br/>
 _Environment:_
 * PATH: contains location of mysql.exe
+
+## TLS12
+
+_Version:_ 1.2<br/>
+_Environment:_
+* PATH: contains location of tls1.2
