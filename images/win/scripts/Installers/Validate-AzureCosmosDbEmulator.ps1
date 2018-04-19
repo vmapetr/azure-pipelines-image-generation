@@ -9,10 +9,11 @@ $regKey = 'HKCU:\SOFTWARE\Microsoft\CosmosDBEmulator'
 
 if(Test-Path $regKey)
 {
-    $fileVersion = (Get-Item (Join-Path (Get-ItemProperty $regKey).'InstallDir' 'CosmosDB.Emulator.exe')).VersionInfo.FileVersion
+    $installDir = (Get-ItemProperty $regKey).'InstallDir'
+    $fileVersion = (Get-Item (Join-Path $installDir 'CosmosDB.Emulator.exe')).VersionInfo.FileVersion
     $Description = @"
-_version:_
-$fileVersion
+_Version:_ $fileVersion<br/>
+_Location:_ $installDir
 "@
 
     Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
