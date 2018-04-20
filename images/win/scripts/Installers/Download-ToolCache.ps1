@@ -25,7 +25,10 @@ Get-ChildItem -Recurse -Depth 4 -Filter install_to_tools_cache.bat | ForEach-Obj
     Write-Host $_.DirectoryName
     Set-Location -Path $_.DirectoryName
     Get-Location | Write-Host
-    Expand-Archive 'tool.zip' -DestinationPath '.'
+    if (Test-Path 'tool.zip')
+    {
+        Expand-Archive 'tool.zip' -DestinationPath '.'
+    }
     cmd.exe /c 'install_to_tools_cache.bat'
 }
 Set-Location -Path $current
