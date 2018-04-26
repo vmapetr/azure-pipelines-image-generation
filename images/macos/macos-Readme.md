@@ -4,7 +4,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ## Operating System
 
-- OS X 10.13.2 (17C205) **High Sierra**
+- OS X 10.13.4 (17E199) **High Sierra**
 
 ## Installed Software
 
@@ -26,8 +26,8 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 - Bundler 1.16.1
 - Carthage 0.29.0
-- CocoaPods 1.4.0
-- Homebrew 1.5.14
+- CocoaPods 1.5.0
+- Homebrew 1.6.0
 - NPM 3.10.10
 - Yarn 1.5.1
 - NuGet 4.3.0.4406
@@ -48,12 +48,13 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Tools
 
-- fastlane 2.88.0
-- App Center CLI 1.0.11
-- Azure-CLI 2.0.30
+- fastlane 2.89.0
+- App Center CLI 1.0.15
+- Azure-CLI 2.0.31
 
 ## Xcode
 
+- Xcode 9.4 beta
 - Xcode 9.3
 - Xcode 9.2
 - Xcode 9.1
@@ -87,6 +88,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | iOS 11.1                  | iphoneos11.1 |
 | iOS 11.2                  | iphoneos11.2 |
 | iOS 11.3                  | iphoneos11.3 |
+| iOS 11.4                  | iphoneos11.4 |
 | iOS Simulator 10.0        | iphonesimulator10.0 |
 | iOS Simulator 10.1        | iphonesimulator10.1 |
 | iOS Simulator 10.2        | iphonesimulator10.2 |
@@ -95,6 +97,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | iOS Simulator 11.1        | iphonesimulator11.1 |
 | iOS Simulator 11.2        | iphonesimulator11.2 |
 | iOS Simulator 11.3        | iphonesimulator11.3 |
+| iOS Simulator 11.4        | iphonesimulator11.4 |
 | tvOS 10.0                 | appletvos10.0 |
 | tvOS 10.1                 | appletvos10.1 |
 | tvOS 10.2                 | appletvos10.2 |
@@ -102,6 +105,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | tvOS 11.1                 | appletvos11.1 |
 | tvOS 11.2                 | appletvos11.2 |
 | tvOS 11.3                 | appletvos11.3 |
+| tvOS 11.4                 | appletvos11.4 |
 | tvOS Simulator 10.0       | appletvsimulator10.0 |
 | tvOS Simulator 10.1       | appletvsimulator10.1 |
 | tvOS Simulator 10.2       | appletvsimulator10.2 |
@@ -109,6 +113,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | tvOS Simulator 11.1       | appletvsimulator11.1 |
 | tvOS Simulator 11.2       | appletvsimulator11.2 |
 | tvOS Simulator 11.3       | appletvsimulator11.3 |
+| tvOS Simulator 11.4       | appletvsimulator11.4 |
 | watchOS 3.0               | watchos3.0 |
 | watchOS 3.1               | watchos3.1 |
 | watchOS 3.2               | watchos3.2 |
@@ -175,12 +180,14 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | iOS 11.1 | 15B87 |
 | iOS 11.2 | 15C107 |
 | iOS 11.3 | 15E217 |
+| iOS 11.4 | 15F5037c |
 | tvOS 10.0 | 14T328 |
 | tvOS 10.1 | 14U591 |
 | tvOS 10.2 | 14W260 |
 | tvOS 11.1 | 15J580 |
 | tvOS 11.2 | 15K104 |
 | tvOS 11.3 | 15L211 |
+| tvOS 11.4 | 15L5536b |
 | watchOS 3.0 | 14S326 |
 | watchOS 3.1 | 14S471a |
 | watchOS 3.2 | 14V243 |
@@ -409,6 +416,27 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - iPad Pro (12.9-inch) (2nd generation)
 - iPad Pro (10.5-inch)
 
+#### iOS 11.4
+
+- iPhone 5s
+- iPhone 6
+- iPhone 6 Plus
+- iPhone 6s
+- iPhone 6s Plus
+- iPhone 7
+- iPhone 7 Plus
+- iPhone 8
+- iPhone 8 Plus
+- iPhone SE
+- iPhone X
+- iPad Air
+- iPad Air 2
+- iPad (5th generation)
+- iPad Pro (9.7-inch)
+- iPad Pro (12.9-inch)
+- iPad Pro (12.9-inch) (2nd generation)
+- iPad Pro (10.5-inch)
+
 #### tvOS 10
 
 - Apple TV 1080p
@@ -440,6 +468,12 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Apple TV 4K (at 1080p)
 
 #### tvOS 11.3
+
+- Apple TV
+- Apple TV 4K
+- Apple TV 4K (at 1080p)
+
+#### tvOS 11.4
 
 - Apple TV
 - Apple TV 4K
