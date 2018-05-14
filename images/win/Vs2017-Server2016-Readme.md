@@ -7,34 +7,34 @@ Components marked with **\*** have been upgraded since the previous version of t
 
 ## Chocolatey
 
-_Version:_ 0.10.9<br/>
+_Version:_ 0.10.10<br/>
 _Environment:_
 * PATH: contains location for choco.exe
 
 ## Docker
 
-_Version:_ 17.06.2-ee-7<br/>
+_Version:_ 17.06.2-ee-10<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
 ## Docker-compose
 
-_Version:_ 1.20.1<br/>
+_Version:_ 1.21.1<br/>
 _Environment:_
 * PATH: contains location of docker-compose.exe
 
 ## Docker images
 
 The following container images have been cached:
-* microsoft/aspnetcore-build:(sha256:ba82d3ff7e04b20fa304b12e77b7edacfd16226bf6812efedf78e09f54e89cd1)
-* microsoft/aspnet:(sha256:4b4063b85c4ae4e7fc415c65f919401e7e2744bdfde035ee3e24025b2b30cbab)
-* microsoft/dotnet-framework:(sha256:96a7c8981e03acd5aa9f0a59a22c7b447cae389815133b7e481689a03107b7df)
-* microsoft/windowsservercore:(sha256:f0e539ed8bc4a1f5f059ede3ba165364be0dfead1d5a0cc6a5aa33ee909fbfe8)
-* microsoft/nanoserver:(sha256:204c41542c0927ac0296802e44c56b886b47e99cf8220fb49d46951bd5fc1742)
+* microsoft/aspnetcore-build:(sha256:0571725c26004c06a24cf77d89b17ca4d20c5339f0cad78b7e30d5f58f5c1abc)
+* microsoft/aspnet:(sha256:15aa9edb121259f4a3e499f01437962460f9d8e56b0a7783ed76472e19ae49d9)
+* microsoft/dotnet-framework:(sha256:1a66e2b5f3a5b8b98ac703a8bfd4902ae60d307ed9842978df40dbc04ac86b1b)
+* microsoft/windowsservercore:(sha256:c8585000d7008088b86aa3a3cf55330b37d6ae57eaf18b085c560cdb42a0097d)
+* microsoft/nanoserver:(sha256:59558bd57c0d14a4df5b827a676fb061abacefebfa2089038f018cf9eea17ecb)
 
 ## Visual Studio 2017 Enterprise
 
-_Version:_ VisualStudio/15.6.5+27428.2027<br/>
+_Version:_ VisualStudio/15.6.7+27428.2043<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
 
 The following workloads including required and recommended components are installed with Visual Studio 2017:
@@ -149,6 +149,10 @@ _Environment:_
 _Location:_ C:\Python27amd64
 
 ## Android SDK Build Tools
+
+#### 27.0.3
+
+_Location:_ C:\Program Files (x86)\Android\android-sdk\build-tools\27.0.3
 
 #### 27.0.1
 
@@ -266,7 +270,7 @@ _Location:_ C:\Modules\azurerm_5.1.1\AzureRM\5.1.1\AzureRM.psd1
 
 ## Azure CLI
 
-_Version:_ 2.0.29<br/>
+_Version:_ 2.0.30<br/>
 _Environment:_
 * PATH: contains location of az.cmd
 
@@ -343,7 +347,7 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 8.11.1<br/>
+_Version:_ 10.0.0<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
 
@@ -357,19 +361,19 @@ _Environment:_
 
 ## Java Development Kit
 
-#### 1.8.0_162
+#### 1.8.0_172
 
 _Environment:_
 * JAVA_HOME: location of JDK
 * PATH: contains bin folder of JDK
 
-#### 9.0.4
+#### 1.8.0_172
 
-_Location:_ C:\Program Files\Java\jdk-9.0.4
+_Location:_ 
 
-#### 10
+#### 10.0.1
 
-_Location:_ C:\Program Files\Java\jdk-10
+_Location:_ C:\Program Files\Java\jdk-10.0.1
 
 ## Ant
 
@@ -388,19 +392,19 @@ _Environment:_
 
 ## Gradle
 
-_Version:_ 4.6<br/>
+_Version:_ 4.7<br/>
 _Environment:_
 * PATH: contains location of gradle
 
 ## Cmake
 
-_Version:_ 3.11.0<br/>
+_Version:_ 3.11.1<br/>
 _Environment:_
 * PATH: contains location of cmake.exe
 
 ## SQL Server Data Tier Application Framework (x64)
 
-_Version:_ 14.0.3811.1<br/>
+_Version:_ 14.0.3917.1<br/>
 
 ## .NET Core
 
@@ -412,6 +416,7 @@ _Environment:_
 _SDK:_
 * 2.1.4 C:\Program Files\dotnet\sdk\2.1.4
 * 2.1.2 C:\Program Files\dotnet\sdk\2.1.2
+* 2.1.105 C:\Program Files\dotnet\sdk\2.1.105
 * 2.1.104 C:\Program Files\dotnet\sdk\2.1.104
 * 2.1.103 C:\Program Files\dotnet\sdk\2.1.103
 * 2.1.102 C:\Program Files\dotnet\sdk\2.1.102
@@ -419,6 +424,7 @@ _SDK:_
 * 2.1.100 C:\Program Files\dotnet\sdk\2.1.100
 * 2.0.3 C:\Program Files\dotnet\sdk\2.0.3
 * 2.0.0 C:\Program Files\dotnet\sdk\2.0.0
+* 1.1.9 C:\Program Files\dotnet\sdk\1.1.9
 * 1.1.8 C:\Program Files\dotnet\sdk\1.1.8
 * 1.1.7 C:\Program Files\dotnet\sdk\1.1.7
 * 1.1.5 C:\Program Files\dotnet\sdk\1.1.5
@@ -427,10 +433,12 @@ _SDK:_
 * 1.0.1 C:\Program Files\dotnet\sdk\1.0.1
 
 _Runtime:_
+* 2.0.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.7
 * 2.0.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.6
 * 2.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.5
 * 2.0.3 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.3
 * 2.0.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.0
+* 1.1.8 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.8
 * 1.1.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.7
 * 1.1.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.6
 * 1.1.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.5
@@ -442,6 +450,7 @@ _Runtime:_
 * 1.0.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.7
 * 1.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.5
 * 1.0.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.4
+* 1.0.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.11
 * 1.0.10 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.10
 
 ## Mysql
@@ -455,3 +464,24 @@ _Environment:_
 _Version:_ 1.2<br/>
 _Environment:_
 * PATH: contains location of tls1.2
+
+## MinGW
+
+_Version:_ 5.3.0<br/>
+_Environment:_
+* PATH: contains location of the MinGW 'bin' directory
+
+## TypeScript
+
+_Version:_ Version 2.8.3<br/>
+
+## Miniconda
+
+_Version:_ conda 4.4.10<br/>
+_Environment:_
+* CONDA: contains location of the root of the Miniconda installation
+
+## Azure CosmosDb Emulator
+
+_Version:_ 1.22.0.0<br/>
+_Location:_ C:\Program Files\Azure Cosmos DB Emulator\
