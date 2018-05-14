@@ -4,4 +4,4 @@
 ##  Desc:  Install Latest TypeScript
 ################################################################################
 
-choco install typescript
+npm install -g typescript
