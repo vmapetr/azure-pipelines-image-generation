@@ -197,13 +197,13 @@ else {
     Write-Host "The Directory is clean. There are no contents present in it"
 }
 
-# Download and unzip the stored AzurePSModules from the public blob : https://xaxle.blob.core.windows.net/azurepsmodules -- change the blob uri
+# Download and unzip the stored AzurePSModules from the public blob : https://xaxle.blob.core.windows.net/azurepowershellmodules -- change the blob uri to poiny to vstsagentools blob
 
-$blobUri = "https://xaxle.blob.core.windows.net/azurepsmodules/AzurePSModules.1.20180503.31312.zip"
+$blobUri = "https://xaxle.blob.core.windows.net/azurepowershellmodules/AzurePSModules.m135.20180516.37553.zip"
 $downloadLocation = "${ENV:Temp}\AzurePSModules.zip"
 $extractLocation = "C:\Modules"
 
-Write-Host "Downloading content from blob location $blob"
+Write-Host "Downloading content from blob location $blobUri"
 $webClient = New-Object Net.WebClient
 $webClient.DownloadFile($blobUri, $downloadLocation)
 
