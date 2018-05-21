@@ -6,9 +6,9 @@
 
 Import-Module -Name ImageHelpers -Force
 
-# .NET 4.7.2
-$InstallerURI = "http://download.microsoft.com/download/5/A/3/5A3607CA-53B1-4717-8845-4389B11931FA/NDP472-KB4054530-x86-x64-AllOS-ENU.exe"
-$InstallerName = "NDP472.exe"
+# .NET 4.7.2 Dev pack
+$InstallerURI = "https://download.microsoft.com/download/5/F/E/5FE505D0-E753-4F1A-B8D6-D9E73C0C28C7/NDP472-DevPack-ENU.exe"
+$InstallerName = "NDP472-DevPack-ENU.exe"
 $ArgumentList = ('Setup', '/passive', '/norestart' )
 
 Install-EXE -Url $InstallerURI -Name $InstallerName -ArgumentList $ArgumentList
