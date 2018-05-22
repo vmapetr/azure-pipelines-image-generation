@@ -7,30 +7,30 @@ Components marked with **\*** have been upgraded since the previous version of t
 
 ## Chocolatey
 
-_Version:_ 0.10.10<br/>
+_Version:_ 0.10.11<br/>
 _Environment:_
 * PATH: contains location for choco.exe
 
 ## Docker
 
-_Version:_ 17.06.2-ee-10<br/>
+_Version:_ 17.06.2-ee-11<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
 ## Docker-compose
 
-_Version:_ 1.21.1<br/>
+_Version:_ 1.21.2<br/>
 _Environment:_
 * PATH: contains location of docker-compose.exe
 
 ## Docker images
 
 The following container images have been cached:
-* microsoft/aspnetcore-build:(sha256:0571725c26004c06a24cf77d89b17ca4d20c5339f0cad78b7e30d5f58f5c1abc)
-* microsoft/aspnet:(sha256:15aa9edb121259f4a3e499f01437962460f9d8e56b0a7783ed76472e19ae49d9)
-* microsoft/dotnet-framework:(sha256:1a66e2b5f3a5b8b98ac703a8bfd4902ae60d307ed9842978df40dbc04ac86b1b)
-* microsoft/windowsservercore:(sha256:c8585000d7008088b86aa3a3cf55330b37d6ae57eaf18b085c560cdb42a0097d)
-* microsoft/nanoserver:(sha256:59558bd57c0d14a4df5b827a676fb061abacefebfa2089038f018cf9eea17ecb)
+* microsoft/aspnetcore-build:(sha256:caeea299801aa18cd24da0abec8ee048ec25045402b8a4cd599971c2a3ba1013)
+* microsoft/aspnet:(sha256:3a5a43bede31b21cf4d60eca462b619559939027a2b3606041471897fb2cd822)
+* microsoft/dotnet-framework:(sha256:880e70413da3483e92b958996d709075fe8cc6fd8955590eb868a8e834eb96e4)
+* microsoft/windowsservercore:(sha256:e9ab5f44a62b86174eccd7c1f8ca9570e1f5821aedaff98e7d7f01f844f5bac6)
+* microsoft/nanoserver:(sha256:d3cc51de184f3bdf9262c53077886f78e3fc13282bcfc6daf172df7f47f86806)
 
 ## Visual Studio 2017 Enterprise
 
@@ -129,14 +129,14 @@ _WIX Toolset Studio 2017 Extension Version:_ 0.9.21.62588<br/>
 _Environment:_
 * WIX: Installation root of WIX
 
-## .NET 4.7.1
+## .NET 4.7.2
 
-_Version:_ 4.7.02558
+_Version:_ 4.7.03062
 
 ## Azure Service Fabric
 
-_SDK Version:_ 3.0.480.9494<br/>
-_Runtime Version:_ 6.1.480.9494
+_SDK Version:_ 3.1.274.9494<br/>
+_Runtime Version:_ 6.2.274.9494
 
 ## Python (64 bit)
 
@@ -270,7 +270,7 @@ _Location:_ C:\Modules\azurerm_5.1.1\AzureRM\5.1.1\AzureRM.psd1
 
 ## Azure CLI
 
-_Version:_ 2.0.30<br/>
+_Version:_ 2.0.32<br/>
 _Environment:_
 * PATH: contains location of az.cmd
 
@@ -301,6 +301,18 @@ _Environment:_
 * GOROOT: root directory of the Go 1.10 installation
 * GOROOT_1_10_X64: root directory of the Go 1.10 installation
 
+## Ruby (x64)
+
+#### 2.4.3p205
+
+_Location:_ C:\hostedtoolcache\windows\Ruby\2.4.3\x64\bin
+
+#### 2.5.0p0
+
+_Environment:_
+* Location: C:\hostedtoolcache\windows\Ruby\2.5.0\x64\bin
+* PATH: contains the location of ruby.exe version 2.5.0p0
+
 ## Subversion
 
 _Version:_ 1.8.17<br/>
@@ -310,7 +322,7 @@ _Environment:_
 ## Google Chrome
 
 _version:_
-65.0.3325.181
+66.0.3359.181
 
 ## Mozilla Firefox
 
@@ -347,7 +359,7 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 10.0.0<br/>
+_Version:_ 8.11.2<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
 
@@ -398,7 +410,7 @@ _Environment:_
 
 ## Cmake
 
-_Version:_ 3.11.1<br/>
+_Version:_ 3.11.2<br/>
 _Environment:_
 * PATH: contains location of cmake.exe
 
@@ -415,6 +427,8 @@ _Environment:_
 
 _SDK:_
 * 2.1.4 C:\Program Files\dotnet\sdk\2.1.4
+* 2.1.300-rc1-008673 C:\Program Files\dotnet\sdk\2.1.300-rc1-008673
+* 2.1.200 C:\Program Files\dotnet\sdk\2.1.200
 * 2.1.2 C:\Program Files\dotnet\sdk\2.1.2
 * 2.1.105 C:\Program Files\dotnet\sdk\2.1.105
 * 2.1.104 C:\Program Files\dotnet\sdk\2.1.104
@@ -433,6 +447,7 @@ _SDK:_
 * 1.0.1 C:\Program Files\dotnet\sdk\1.0.1
 
 _Runtime:_
+* 2.1.0-rc1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.0-rc1
 * 2.0.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.7
 * 2.0.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.6
 * 2.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.5
@@ -477,7 +492,7 @@ _Version:_ Version 2.8.3<br/>
 
 ## Miniconda
 
-_Version:_ conda 4.4.10<br/>
+_Version:_ conda 4.5.1<br/>
 _Environment:_
 * CONDA: contains location of the root of the Miniconda installation
 
