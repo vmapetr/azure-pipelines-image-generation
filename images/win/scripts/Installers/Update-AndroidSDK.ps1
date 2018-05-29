@@ -26,12 +26,23 @@ Expand-Archive -Path .\android-sdk-licenses.zip -DestinationPath 'C:\Program Fil
 
 $sdk_root = "C:\Program Files (x86)\Android\android-sdk"
 
-$androidNDKs = Get-ChildItem -Path 'C:\ProgramData\Microsoft\AndroidNDK64\' | Sort-Object -Property Name -Descending | Select-Object -First 1
-$latestAndroidNDK = $androidNDKs.FullName;
+#NDK is installed by VS
+$ndk_root = "C:\Microsoft\AndroidNDK64\"
 
-setx ANDROID_HOME $sdk_root /M
-setx ANDROID_NDK_HOME $latestAndroidNDK /M
-setx ANDROID_NDK_PATH $latestAndroidNDK /M
+if(Test-Path $ndk_root){
+
+    $androidNDKs = Get-ChildItem -Path $ndk_root | Sort-Object -Property Name -Descending | Select-Object -First 1
+    $latestAndroidNDK = $androidNDKs.FullName;
+
+    setx ANDROID_HOME $sdk_root /M
+    setx ANDROID_NDK_HOME $latestAndroidNDK /M
+    setx ANDROID_NDK_PATH $latestAndroidNDK /M
+}
+else {
+    Write-Host "NDK is not installed at path $ndk_root"
+    exit 1
+}
+
 
 Push-Location -Path $sdk.FullName
 
