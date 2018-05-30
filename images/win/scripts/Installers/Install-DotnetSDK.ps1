@@ -17,7 +17,8 @@ Invoke-WebRequest -Uri 'https://dot.net/v1/dotnet-install.ps1' -UseBasicParsing 
 $dotnetReleases | ForEach-Object {
     $release = $_
     $sdkVersion = $release.'version-sdk'
-    if(!$sdkVersion.Contains('preview'))
+    #Filtering dotnet sdk and runtime versions which does not have "-" in their name, based on naming pattern they are either preview or rc versions
+    if(!$sdkVersion.Contains('-'))
     {
         .\dotnet-install.ps1 -Architecture x64 -Version $sdkVersion -InstallDir $(Join-Path -Path $env:ProgramFiles -ChildPath 'dotnet')
     }
