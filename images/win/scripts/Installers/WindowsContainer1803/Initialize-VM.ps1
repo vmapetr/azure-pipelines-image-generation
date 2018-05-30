@@ -73,8 +73,22 @@ Invoke-Expression ((new-object net.webclient).DownloadString('https://chocolatey
 # Turn off confirmation
 choco feature enable -n allowGlobalConfirmation
 
-# Install webpi
-choco install webpicmd -y
+
+
+# Expand disk size of OS drive
+
+New-Item -Path d:\ -Name cmds.txt -ItemType File -Force
+
+Add-Content -Path d:\cmds.txt "SELECT VOLUME=C`r`nEXTEND"
+
+$expandResult = (diskpart /s 'd:\cmds.txt')
+
+Write-Host $expandResult
+
+Write-Host "Disk sizes after expansion"
+
+wmic logicaldisk get size,freespace,caption
+
 
 
 # Adding description of the software to Markdown
