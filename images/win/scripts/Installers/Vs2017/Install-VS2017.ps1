@@ -103,7 +103,8 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.Component.Blend.SDK.WPF'
 
 $Sku = 'Enterprise'
-$VSBootstrapperURL = 'https://aka.ms/vs/15/release/vs_enterprise.exe'
+#VS 15.6.7
+$VSBootstrapperURL = 'https://download.visualstudio.microsoft.com/download/pr/12135702/6190530128c1014deff48203735ec888/vs_Enterprise.exe'
 
 $ErrorActionPreference = 'Stop'
 
