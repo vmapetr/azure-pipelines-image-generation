@@ -14,24 +14,24 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Java 1.8.0_172
 - Java 9.0.4
 - Java 10.0.1
-- Node.js 6.14.1
+- Node.js 6.14.2
 - PowerShell 6.0.2
 - Python 2.7.10
 - Python 3.6.5
 - Ruby 2.5.1p57
 - .NET Core SDK 1.0.4, 2.0.3
-- Go 1.10.1
+- Go 1.10.2
 
 ### Package Management
 
 - Bundler 1.16.1
 - Carthage 0.29.0
-- CocoaPods 1.5.0
-- Homebrew 1.6.2
+- CocoaPods 1.5.2
+- Homebrew 1.6.3
 - NPM 3.10.10
 - Yarn 1.6.0
 - NuGet 4.3.0.4406
-- pip 9.0.3
+- pip 10.0.1
 
 ### Project Management
 
@@ -43,18 +43,19 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - curl 7.54.0 (libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
 - Git 2.17.0
 - Git LFS 2.4.0
-- GNU Wget 1.19.4
+- GNU Wget 1.19.5
 - Subversion (SVN) 1.10.0
 
 ### Tools
 
-- fastlane 2.93.1
+- fastlane 2.95.0
 - App Center CLI 1.0.16
-- Azure-CLI 2.0.31
+- Azure-CLI 2.0.32
 
 ## Xcode
 
 - Xcode 9.4 beta
+- Xcode 9.3.1
 - Xcode 9.3
 - Xcode 9.2
 - Xcode 9.1
@@ -418,7 +419,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 |-----------------------|-------------------------------------------|
 | cmake                 | 3.6.4111459                               |
 | lldb                  | 2.3.3614996                               |
-| ndk-bundle            | 16.1.4479499                              |
+| ndk-bundle            | 17.0.4754217                              |
 | ProGuard              | 5.3.3                                     |
 | Android Emulator      | 27.1.12                                    |
 
@@ -436,7 +437,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | Package name                      | Description                              |
 |-----------------------------------|------------------------------------------|
 | extra-android-m2repository        | Android Support Repository, revision 47  |
-| extra-google-google_play_services | Google Play services, revision 48        |
+| extra-google-google_play_services | Google Play services, revision 49        |
 | extra-google-m2repository         | Google Repository, revision 58           |
 | Hardware_Accelerated_Execution_Manager | Intel x86 Emulator Accelerator 6.2.1     |
 
