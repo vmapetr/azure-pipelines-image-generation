@@ -13,7 +13,7 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 17.06.2-ee-11<br/>
+_Version:_ 17.06.2-ee-12<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
@@ -34,7 +34,7 @@ The following container images have been cached:
 
 ## Visual Studio 2017 Enterprise
 
-_Version:_ VisualStudio/15.6.7+27428.2043<br/>
+_Version:_ VisualStudio/15.7.2+27703.2018<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
 
 The following workloads including required and recommended components are installed with Visual Studio 2017:
@@ -113,7 +113,7 @@ In addition the following optional components are installed:
 
 ## SQL Server Data Tools for VS 2017
 
-_Version:_ 15.1.61801.210<br/>
+_Version:_ 15.1.61804.210<br/>
 
 The following components are installed:
 
@@ -135,12 +135,12 @@ _Version:_ 4.7.03062
 
 ## Azure Service Fabric
 
-_SDK Version:_ 3.1.274.9494<br/>
-_Runtime Version:_ 6.2.274.9494
+_SDK Version:_ 3.1.283.9494<br/>
+_Runtime Version:_ 6.2.283.9494
 
 ## Python (64 bit)
 
-#### Python 3.6.3
+#### Python 3.6.5
 _Environment:_
 * PATH: contains location of python.exe
 
@@ -276,13 +276,13 @@ _Environment:_
 
 ## Git
 
-_Version:_ 2.17.0<br/>
+_Version:_ 2.17.1<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
 ## Git LFS
 
-_Version:_ 2.4.0<br/>
+_Version:_ 2.4.2<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
@@ -322,7 +322,7 @@ _Environment:_
 ## Google Chrome
 
 _version:_
-66.0.3359.181
+67.0.3396.62
 
 ## Mozilla Firefox
 
@@ -427,7 +427,8 @@ _Environment:_
 
 _SDK:_
 * 2.1.4 C:\Program Files\dotnet\sdk\2.1.4
-* 2.1.300-rc1-008673 C:\Program Files\dotnet\sdk\2.1.300-rc1-008673
+* 2.1.300 C:\Program Files\dotnet\sdk\2.1.300
+* 2.1.201 C:\Program Files\dotnet\sdk\2.1.201
 * 2.1.200 C:\Program Files\dotnet\sdk\2.1.200
 * 2.1.2 C:\Program Files\dotnet\sdk\2.1.2
 * 2.1.105 C:\Program Files\dotnet\sdk\2.1.105
@@ -447,7 +448,7 @@ _SDK:_
 * 1.0.1 C:\Program Files\dotnet\sdk\1.0.1
 
 _Runtime:_
-* 2.1.0-rc1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.0-rc1
+* 2.1.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.0
 * 2.0.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.7
 * 2.0.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.6
 * 2.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.5
@@ -488,7 +489,7 @@ _Environment:_
 
 ## TypeScript
 
-_Version:_ Version 2.8.3<br/>
+_Version:_ Version 2.8.4<br/>
 
 ## Miniconda
 
