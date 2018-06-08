@@ -26,10 +26,10 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 - Bundler 1.16.1
 - Carthage 0.29.0
-- CocoaPods 1.5.2
-- Homebrew 1.6.3
+- CocoaPods 1.5.3
+- Homebrew 1.6.6
 - NPM 3.10.10
-- Yarn 1.6.0
+- Yarn 1.7.0
 - NuGet 4.3.0.4406
 - pip 10.0.1
 
@@ -41,20 +41,20 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 ### Utilities
 
 - curl 7.54.0 (libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
-- Git 2.17.0
-- Git LFS 2.4.0
+- Git 2.17.1
+- Git LFS 2.4.2
 - GNU Wget 1.19.5
 - Subversion (SVN) 1.10.0
 
 ### Tools
 
-- fastlane 2.95.0
-- App Center CLI 1.0.16
-- Azure-CLI 2.0.32
+- fastlane 2.96.1
+- App Center CLI 1.0.17
+- Azure-CLI 2.0.33
 
 ## Xcode
 
-- Xcode 9.4 beta
+- Xcode 9.4
 - Xcode 9.3.1
 - Xcode 9.3
 - Xcode 9.2
@@ -181,14 +181,14 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | iOS 11.1 | 15B87 |
 | iOS 11.2 | 15C107 |
 | iOS 11.3 | 15E217 |
-| iOS 11.4 | 15F5037c |
+| iOS 11.4 | 15F79 |
 | tvOS 10.0 | 14T328 |
 | tvOS 10.1 | 14U591 |
 | tvOS 10.2 | 14W260 |
 | tvOS 11.1 | 15J580 |
 | tvOS 11.2 | 15K104 |
 | tvOS 11.3 | 15L211 |
-| tvOS 11.4 | 15L5536b |
+| tvOS 11.4 | 15L576 |
 | watchOS 3.0 | 14S326 |
 | watchOS 3.1 | 14S471a |
 | watchOS 3.2 | 14V243 |
@@ -366,7 +366,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 27.0.1 |
+| platform-tools        | Android SDK Platform-tools, revision 27.0.3 |
 
 ### Android SDK Platforms
 
@@ -421,7 +421,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | lldb                  | 2.3.3614996                               |
 | ndk-bundle            | 17.0.4754217                              |
 | ProGuard              | 5.3.3                                     |
-| Android Emulator      | 27.1.12                                    |
+| Android Emulator      | 27.2.9                                    |
 
 ### Google APIs
 
@@ -439,16 +439,17 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | extra-android-m2repository        | Android Support Repository, revision 47  |
 | extra-google-google_play_services | Google Play services, revision 49        |
 | extra-google-m2repository         | Google Repository, revision 58           |
-| Hardware_Accelerated_Execution_Manager | Intel x86 Emulator Accelerator 6.2.1     |
+| Hardware_Accelerated_Execution_Manager | Intel x86 Emulator Accelerator 7.2.0     |
 
 ## Xamarin
 
 ### Visual Studio for Mac
 
-- 7.4.2.12
+- 7.5.0.1254
 
 ### Mono
 
+- 5.10.1
 - 5.8.1
 - 5.8.0
 - 5.4.1.7
@@ -459,6 +460,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Xamarin.iOS SDK
 
+- 11.10.1.177
 - 11.9.1.24
 - 11.8.0.20
 - 11.6.1.4
@@ -469,6 +471,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Xamarin.Android SDK
 
+- 8.3.0-19
 - 8.2.0-16
 - 8.2.0-15
 - 8.1.5-0
@@ -479,6 +482,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Xamarin.Mac SDK
 
+- 4.4.1.176
 - 4.2.1.28
 - 4.2.0.20
 - 4.0.0.216
