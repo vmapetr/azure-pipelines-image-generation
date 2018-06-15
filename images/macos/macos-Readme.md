@@ -4,7 +4,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ## Operating System
 
-- OS X 10.13.4 (17E199) **High Sierra**
+- OS X 10.13.5 (17А77) **High Sierra**
 
 ## Installed Software
 
@@ -20,14 +20,14 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Python 3.6.5
 - Ruby 2.5.1p57
 - .NET Core SDK 1.0.4, 2.0.3
-- Go 1.10.2
+- Go 1.10.3
 
 ### Package Management
 
 - Bundler 1.16.1
 - Carthage 0.29.0
 - CocoaPods 1.5.3
-- Homebrew 1.6.6
+- Homebrew 1.6.7
 - NPM 3.10.10
 - Yarn 1.7.0
 - NuGet 4.3.0.4406
@@ -36,7 +36,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 ### Project Management
 
 - Apache Maven 3.5.3
-- Gradle 4.7
+- Gradle 4.8
 
 ### Utilities
 
@@ -48,12 +48,13 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Tools
 
-- fastlane 2.96.1
+- fastlane 2.97.0
 - App Center CLI 1.0.17
-- Azure-CLI 2.0.33
+- Azure-CLI 2.0.35
 
 ## Xcode
 
+- Xcode 10 beta
 - Xcode 9.4
 - Xcode 9.3.1
 - Xcode 9.3
@@ -81,6 +82,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 |---------------------------|-------------|
 | macOS 10.12               | macosx10.12 |
 | macOS 10.13               | macosx10.13 |
+| macOS 10.14               | macosx10.14 |
 | iOS 10.0                  | iphoneos10.0 |
 | iOS 10.1                  | iphoneos10.1 |
 | iOS 10.2                  | iphoneos10.2 |
@@ -90,6 +92,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | iOS 11.2                  | iphoneos11.2 |
 | iOS 11.3                  | iphoneos11.3 |
 | iOS 11.4                  | iphoneos11.4 |
+| iOS 12.0                  | iphoneos12.0 |
 | iOS Simulator 10.0        | iphonesimulator10.0 |
 | iOS Simulator 10.1        | iphonesimulator10.1 |
 | iOS Simulator 10.2        | iphonesimulator10.2 |
@@ -99,6 +102,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | iOS Simulator 11.2        | iphonesimulator11.2 |
 | iOS Simulator 11.3        | iphonesimulator11.3 |
 | iOS Simulator 11.4        | iphonesimulator11.4 |
+| iOS Simulator 12.0        | iphonesimulator12.0 |
 | tvOS 10.0                 | appletvos10.0 |
 | tvOS 10.1                 | appletvos10.1 |
 | tvOS 10.2                 | appletvos10.2 |
@@ -107,6 +111,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | tvOS 11.2                 | appletvos11.2 |
 | tvOS 11.3                 | appletvos11.3 |
 | tvOS 11.4                 | appletvos11.4 |
+| tvOS 12.0                 | appletvos12.0 |
 | tvOS Simulator 10.0       | appletvsimulator10.0 |
 | tvOS Simulator 10.1       | appletvsimulator10.1 |
 | tvOS Simulator 10.2       | appletvsimulator10.2 |
@@ -115,6 +120,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | tvOS Simulator 11.2       | appletvsimulator11.2 |
 | tvOS Simulator 11.3       | appletvsimulator11.3 |
 | tvOS Simulator 11.4       | appletvsimulator11.4 |
+| tvOS Simulator 12.0       | appletvsimulator12.0 |
 | watchOS 3.0               | watchos3.0 |
 | watchOS 3.1               | watchos3.1 |
 | watchOS 3.2               | watchos3.2 |
@@ -122,6 +128,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | watchOS 4.1               | watchos4.1 |
 | watchOS 4.2               | watchos4.2 |
 | watchOS 4.3               | watchos4.3 |
+| watchOS 5.0               | watchos5.0 |
 | watchOS Simulator 3.0     | watchsimulator3.0 |
 | watchOS Simulator 3.1     | watchsimulator3.1 |
 | watchOS Simulator 3.2     | watchsimulator3.2 |
@@ -129,6 +136,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | watchOS Simulator 4.1     | watchsimulator4.1 |
 | watchOS Simulator 4.2     | watchsimulator4.2 |
 | watchOS Simulator 4.3     | watchsimulator4.3 |
+| watchOS Simulator 5.0     | watchsimulator5.0 |
 
 ### Installed Simulators
 
@@ -156,6 +164,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - iPad Pro (12.9-inch)
 - iPad Pro (12.9-inch) (2nd generation)
 - iPad Pro (10.5-inch)
+- iPad (6th generation)
 - Apple TV
 - Apple TV 4K
 - Apple TV 4K (at 1080p)
@@ -182,6 +191,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | iOS 11.2 | 15C107 |
 | iOS 11.3 | 15E217 |
 | iOS 11.4 | 15F79 |
+| iOS 12.0 | 16A5288q |
 | tvOS 10.0 | 14T328 |
 | tvOS 10.1 | 14U591 |
 | tvOS 10.2 | 14W260 |
@@ -189,6 +199,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | tvOS 11.2 | 15K104 |
 | tvOS 11.3 | 15L211 |
 | tvOS 11.4 | 15L576 |
+| tvOS 12.0 | 16J5283n |
 | watchOS 3.0 | 14S326 |
 | watchOS 3.1 | 14S471a |
 | watchOS 3.2 | 14V243 |
@@ -196,6 +207,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | watchOS 4.1 | 15R844 |
 | watchOS 4.2 | 15S100 |
 | watchOS 4.3 | 15T212 |
+| watchOS 5.0 | 16R5283q |
 
 #### Devices
 
@@ -255,7 +267,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - iPad Pro (9.7 inch)
 - iPad Pro (12.9 inch)
 
-#### iOS 11, 11.1
+#### iOS 11, 11.1, 11.2, 11.3, 11.4
 
 - iPhone 5s
 - iPhone 6
@@ -276,7 +288,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - iPad Pro (12.9-inch) (2nd generation)
 - iPad Pro (10.5-inch)
 
-#### iOS 11.2
+#### iOS 12
 
 - iPhone 5s
 - iPhone 6
@@ -285,9 +297,9 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - iPhone 6s Plus
 - iPhone 7
 - iPhone 7 Plus
+- iPhone SE
 - iPhone 8
 - iPhone 8 Plus
-- iPhone SE
 - iPhone X
 - iPad Air
 - iPad Air 2
@@ -296,32 +308,13 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - iPad Pro (12.9-inch)
 - iPad Pro (12.9-inch) (2nd generation)
 - iPad Pro (10.5-inch)
-
-#### iOS 11.3, 11.4
-
-- iPhone 5s
-- iPhone 6
-- iPhone 6 Plus
-- iPhone 6s
-- iPhone 6s Plus
-- iPhone 7
-- iPhone 7 Plus
-- iPhone 8
-- iPhone 8 Plus
-- iPhone SE
-- iPhone X
-- iPad Air
-- iPad Air 2
-- iPad (5th generation)
-- iPad Pro (9.7-inch)
-- iPad Pro (12.9-inch)
-- iPad Pro (12.9-inch) (2nd generation)
+- iPad (6th generation)
 
 #### tvOS 10, 10.1, 10.2
 
 - Apple TV 1080p
 
-#### tvOS 11, 11.1, 11.2, 11.3, 11.4
+#### tvOS 11, 11.1, 11.2, 11.3, 11.4, 12
 
 - Apple TV
 - Apple TV 4K
@@ -334,7 +327,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Apple Watch Series 2 - 38mm
 - Apple Watch Series 2 - 42mm
 
-#### watchOS 4.0, 4.1, 4.2, 4.3
+#### watchOS 4.0, 4.1, 4.2, 4.3, 5.0
 
 - Apple Watch - 38mm
 - Apple Watch - 42mm
@@ -366,7 +359,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 27.0.3 |
+| platform-tools        | Android SDK Platform-tools, revision 28.0.0 |
 
 ### Android SDK Platforms
 
@@ -384,7 +377,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | android-24            | Android SDK Platform 24, Revision 2       |
 | android-25            | Android SDK Platform 25, Revision 3       |
 | android-26            | Android SDK Platform 26, Revision 2       |
-| android-27            | Android SDK Platform 27, Revision 1       |
+| android-27            | Android SDK Platform 27, Revision 3       |
 
 ### Android SDK Build-tools
 
@@ -445,7 +438,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Visual Studio for Mac
 
-- 7.5.0.1254
+- 7.5.2.40
 
 ### Mono
 
@@ -460,7 +453,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Xamarin.iOS SDK
 
-- 11.10.1.177
+- 11.12.0.4
 - 11.9.1.24
 - 11.8.0.20
 - 11.6.1.4
@@ -471,7 +464,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Xamarin.Android SDK
 
-- 8.3.0-19
+- 8.3.3-2
 - 8.2.0-16
 - 8.2.0-15
 - 8.1.5-0
@@ -482,7 +475,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Xamarin.Mac SDK
 
-- 4.4.1.176
+- 4.4.1.193
 - 4.2.1.28
 - 4.2.0.20
 - 4.0.0.216
