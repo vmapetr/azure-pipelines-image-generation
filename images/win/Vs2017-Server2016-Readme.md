@@ -13,7 +13,7 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 17.06.2-ee-11<br/>
+_Version:_ 17.06.2-ee-13<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
@@ -26,15 +26,15 @@ _Environment:_
 ## Docker images
 
 The following container images have been cached:
-* microsoft/aspnetcore-build:(sha256:caeea299801aa18cd24da0abec8ee048ec25045402b8a4cd599971c2a3ba1013)
-* microsoft/aspnet:(sha256:3a5a43bede31b21cf4d60eca462b619559939027a2b3606041471897fb2cd822)
-* microsoft/dotnet-framework:(sha256:880e70413da3483e92b958996d709075fe8cc6fd8955590eb868a8e834eb96e4)
-* microsoft/windowsservercore:(sha256:e9ab5f44a62b86174eccd7c1f8ca9570e1f5821aedaff98e7d7f01f844f5bac6)
-* microsoft/nanoserver:(sha256:d3cc51de184f3bdf9262c53077886f78e3fc13282bcfc6daf172df7f47f86806)
+* microsoft/dotnet-framework:(sha256:adde228b16c03f05f18c8bb12d09a9dc00510c0ee0b1ae52a1770f97c945dc39)
+* microsoft/aspnet:(sha256:7cdafe834e1c08ed880cd54183ba33d4760c8b19e651ef1cbff0cf3118684e88)
+* microsoft/windowsservercore:(sha256:c06b4bfaf634215ea194e6005450740f3a230b27c510cf8facab1e9c678f3a99)
+* microsoft/nanoserver:(sha256:8f78a4a7da4464973a5cd239732626141aec97e69ba3e4023357628630bc1ee2)
+* microsoft/aspnetcore-build:(sha256:8af31ea26e87e24ac092eb29ec9b84bf4029f4e0e39f2a4f16e5cb2f8f26ce4c)
 
 ## Visual Studio 2017 Enterprise
 
-_Version:_ VisualStudio/15.6.7+27428.2043<br/>
+_Version:_ VisualStudio/15.7.4+27703.2035<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
 
 The following workloads including required and recommended components are installed with Visual Studio 2017:
@@ -113,7 +113,7 @@ In addition the following optional components are installed:
 
 ## SQL Server Data Tools for VS 2017
 
-_Version:_ 15.1.61801.210<br/>
+_Version:_ 15.1.61804.210<br/>
 
 The following components are installed:
 
@@ -135,12 +135,12 @@ _Version:_ 4.7.03062
 
 ## Azure Service Fabric
 
-_SDK Version:_ 3.1.274.9494<br/>
-_Runtime Version:_ 6.2.274.9494
+_SDK Version:_ 3.1.283.9494<br/>
+_Runtime Version:_ 6.2.283.9494
 
 ## Python (64 bit)
 
-#### Python 3.6.3
+#### Python 3.6.5
 _Environment:_
 * PATH: contains location of python.exe
 
@@ -270,19 +270,19 @@ _Location:_ C:\Modules\azurerm_5.1.1\AzureRM\5.1.1\AzureRM.psd1
 
 ## Azure CLI
 
-_Version:_ 2.0.32<br/>
+_Version:_ 2.0.37<br/>
 _Environment:_
 * PATH: contains location of az.cmd
 
 ## Git
 
-_Version:_ 2.17.0<br/>
+_Version:_ 2.17.1<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
 ## Git LFS
 
-_Version:_ 2.4.0<br/>
+_Version:_ 2.4.2<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
@@ -322,7 +322,7 @@ _Environment:_
 ## Google Chrome
 
 _version:_
-66.0.3359.181
+67.0.3396.87
 
 ## Mozilla Firefox
 
@@ -359,7 +359,7 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 8.11.2<br/>
+_Version:_ 8.11.3<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
 
@@ -404,13 +404,13 @@ _Environment:_
 
 ## Gradle
 
-_Version:_ 4.7<br/>
+_Version:_ 4.8<br/>
 _Environment:_
 * PATH: contains location of gradle
 
 ## Cmake
 
-_Version:_ 3.11.2<br/>
+_Version:_ 3.11.4<br/>
 _Environment:_
 * PATH: contains location of cmake.exe
 
@@ -427,7 +427,8 @@ _Environment:_
 
 _SDK:_
 * 2.1.4 C:\Program Files\dotnet\sdk\2.1.4
-* 2.1.300-rc1-008673 C:\Program Files\dotnet\sdk\2.1.300-rc1-008673
+* 2.1.300 C:\Program Files\dotnet\sdk\2.1.300
+* 2.1.201 C:\Program Files\dotnet\sdk\2.1.201
 * 2.1.200 C:\Program Files\dotnet\sdk\2.1.200
 * 2.1.2 C:\Program Files\dotnet\sdk\2.1.2
 * 2.1.105 C:\Program Files\dotnet\sdk\2.1.105
@@ -447,7 +448,7 @@ _SDK:_
 * 1.0.1 C:\Program Files\dotnet\sdk\1.0.1
 
 _Runtime:_
-* 2.1.0-rc1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.0-rc1
+* 2.1.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.0
 * 2.0.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.7
 * 2.0.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.6
 * 2.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.0.5
@@ -488,11 +489,11 @@ _Environment:_
 
 ## TypeScript
 
-_Version:_ Version 2.8.3<br/>
+_Version:_ Version 2.9.2<br/>
 
 ## Miniconda
 
-_Version:_ conda 4.5.1<br/>
+_Version:_ conda 4.5.4<br/>
 _Environment:_
 * CONDA: contains location of the root of the Miniconda installation
 
