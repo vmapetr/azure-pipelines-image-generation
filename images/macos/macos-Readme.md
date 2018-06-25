@@ -14,7 +14,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Java 1.8.0_172
 - Java 9.0.4
 - Java 10.0.1
-- Node.js 6.14.2
+- Node.js 6.14.3
 - PowerShell 6.0.2
 - Python 2.7.10
 - Python 3.6.5
@@ -27,7 +27,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Bundler 1.16.1
 - Carthage 0.29.0
 - CocoaPods 1.5.3
-- Homebrew 1.6.7
+- Homebrew 1.6.8
 - NPM 3.10.10
 - Yarn 1.7.0
 - NuGet 4.3.0.4406
@@ -50,11 +50,12 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 - fastlane 2.97.0
 - App Center CLI 1.0.17
-- Azure-CLI 2.0.35
+- Azure-CLI 2.0.37
 
 ## Xcode
 
 - Xcode 10 beta
+- Xcode 9.4.1
 - Xcode 9.4
 - Xcode 9.3.1
 - Xcode 9.3
