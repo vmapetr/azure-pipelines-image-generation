@@ -1,12 +1,12 @@
 #!/bin/bash
 ################################################################################
-##  File:  preparemetadata.sh
+##  File:  ruby.sh
 ##  Team:  CI-Platform
-##  Desc:  This script adds a image title information to the metadata
-##         document
+##  Desc:  Installs Ruby requirements
 ################################################################################
 
+## Source the helpers for use with the script
 source $HELPER_SCRIPTS/document.sh
 
-AddTitle "Linux Image ($(lsb_release -ds))"
-AddSubTitle "What's on this image"
+# Install Ruby requirements
+apt-get install -y libz-dev openssl libssl-dev
