@@ -13,57 +13,30 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 17.06.2-ee-12<br/>
+_Version:_ 17.06.2-ee-15<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
 ## Docker-compose
 
-_Version:_ 1.21.2<br/>
+_Version:_ 1.22.0<br/>
 _Environment:_
 * PATH: contains location of docker-compose.exe
 
 ## Docker images
 
 The following container images have been cached:
-* microsoft/dotnet-framework:(sha256:80101bfa6a343dd560bdce3843d0e5a8afd00a7861d2048d11bf9b3075d3aaae)
-* microsoft/aspnetcore-build:(sha256:0c9b645176a83b484c4f46b17302e0b682fba57a359108f3834a8bb746825953)
-* microsoft/aspnet:(sha256:507145dc88e7e91e21b5ef4fa4e1a8b1b23874c08b81981579b63eae1b3825da)
-* microsoft/windowsservercore:(sha256:e0bcd704a32172cf2add51c144bb1742d6ca4a754f7856f320b03ff48b1407c3)
-* microsoft/nanoserver:(sha256:ae68221b0f4b5d25ff4d42040cb6a044b5011dbbbe02902d8b5ca689a3a71193)
-
-## Visual Studio 2017 BuildTools
-
-_Version:_ VisualStudio/15.7.2+27703.2018<br/>
-_Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools
-
-The following workloads including required and recommended components are installed with Visual Studio 2017:
-
-* Universal Windows Platform development
-* .NET desktop development
-* Desktop development with C++
-* ASP.NET and web development
-* Azure development
-* Node.js development
-* Data storage and processing
-* Data science and analytical applications
-* Game development with Unity
-* Linux development with C++
-* Game development with C++
-* Mobile development with C++
-* Office/SharePoint development
-* Mobile development with .NET
-* .NET Core cross-platform development
-* Visual Studio extension development
-* Python development *
-* Mobile development with JavaScript
-
-In addition the following optional components are installed:
-
+* microsoft/aspnet:(sha256:36655834fca5eec6150e0f26bb1290423104a52836cfcbfc67c4cfa0dcee3ba9)
+* microsoft/aspnetcore-build:(sha256:900f6d08617b725fa2aebb53db983cc8de4acf247fed3c8781011d3358706c32)
+* microsoft/dotnet-framework:(sha256:cfcd42bdc1646318cb8a314c298e8ba0b7e962829460c49ba2c609eb125e5e7f)
+* microsoft/windowsservercore:(sha256:7bc56e2d8249415620d0f2a890689ea623caa7df52b9252dc336c32d240db1ef)
+* microsoft/nanoserver:(sha256:da21725ae14e9fa65aa33c8f3cb2e1822184e476bbb8487a15cc40df00b98eba)
+* microsoft/windowsservercore:(sha256:06349a37774c52fd65cf87485ab7455e1745ea1f752da52bf4c1b1f44b242fb7)
+* microsoft/nanoserver:(sha256:0b788ec819b0eb1c1f62677206fdb536eeba44d805cfcc21e7240e860eeeb5e0)
 
 ## Git
 
-_Version:_ 2.17.1<br/>
+_Version:_ 2.18.0<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
