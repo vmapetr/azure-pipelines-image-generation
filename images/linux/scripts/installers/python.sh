@@ -13,7 +13,7 @@ apt-get install -y --no-install-recommends python python-pip python3 python3-pip
 
 ## Document what was added to the image
 echo "Lastly, documenting what we added to the metadata file"
-DocumentInstalledItem "python"
-DocumentInstalledItem "python-pip"
-DocumentInstalledItem "python3"
-DocumentInstalledItem "python3-pip"
+DocumentInstalledItem "Python ($(python --version))"
+DocumentInstalledItem "pip ($(pip --version))"
+DocumentInstalledItem "Python3 ($(python3 --version))"
+DocumentInstalledItem "pip3 ($(pip3 --version))"
