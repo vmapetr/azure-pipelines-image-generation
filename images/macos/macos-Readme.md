@@ -11,11 +11,13 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 ### Language and Runtime
 
 - Java 1.7.0_80
-- Java 1.8.0_172
+- Java 1.8.0_181
 - Java 9.0.4
-- Java 10.0.1
+- Java 10.0.2
 - Node.js 6.14.3
-- PowerShell 6.0.2
+- Node.js 8.11.3
+- NVM 0.33.11
+- PowerShell 6.0.3
 - Python 2.7.10
 - Python 3.7.0
 - Ruby 2.5.1p57
@@ -27,7 +29,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Bundler 1.16.1
 - Carthage 0.30.1
 - CocoaPods 1.5.3
-- Homebrew 1.6.9
+- Homebrew 1.7.0
 - NPM 3.10.10
 - Yarn 1.7.0
 - NuGet 4.3.0.4406
@@ -37,7 +39,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 ### Project Management
 
 - Apache Maven 3.5.4
-- Gradle 4.8.1
+- Gradle 4.9
 
 ### Utilities
 
@@ -45,13 +47,13 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Git 2.18.0
 - Git LFS 2.4.2
 - GNU Wget 1.19.5
-- Subversion (SVN) 1.10.0
+- Subversion (SVN) 1.10.2
 
 ### Tools
 
-- fastlane 2.99.0
+- fastlane 2.100.1
 - App Center CLI 1.1.0
-- Azure-CLI 2.0.41
+- Azure-CLI 2.0.42
 
 ## Xcode
 
