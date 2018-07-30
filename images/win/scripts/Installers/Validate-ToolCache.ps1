@@ -40,3 +40,21 @@ foreach ($version in $pythonVersions)
         exit 1
     }
 }
+
+# Adding description of the software to Markdown
+$SoftwareName = "Python"
+$Description = ""
+
+foreach ($version in $pythonVersions)
+{
+    $v = $version[0]
+    $arch = $version[1]
+    $Description += "_Version:_ $v ($arch)<br/>"
+}
+
+$Description += @"
+<br/>
+> Note: These versions of Python are available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task.
+"@
+
+Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
