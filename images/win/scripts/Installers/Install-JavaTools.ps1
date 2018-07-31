@@ -66,12 +66,12 @@ setx MAVEN_OPTS $maven_opts /M
 
 
 ## Downloading cobertura jars
-$uri = 'https://sourceforge.net/projects/cobertura/files/cobertura/2.1.1/cobertura-2.1.1-bin.zip'
+$uri = 'https://ayera.dl.sourceforge.net/project/cobertura/cobertura/2.1.1/cobertura-2.1.1-bin.zip'
 $coberturaPath = "C:\cobertura-2.1.1"
 
 cd $env:TEMP
 
-Invoke-WebRequest -UseBasicParsing -Uri $uri -OutFile cobertura.zip -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::InternetExplorer
+Invoke-WebRequest -UseBasicParsing -Uri $uri -OutFile cobertura.zip
 
 # Expand the zip
 Expand-Archive -Path cobertura.zip -DestinationPath "C:\" -Force
