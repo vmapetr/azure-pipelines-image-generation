@@ -117,7 +117,7 @@
         {
             "type": "file",
             "source": "{{user `metadata_file`}}",
-            "destination": "./metadata.txt",
+            "destination": "./Ubuntu1604-README.md",
             "direction": "download"
         },
         {
