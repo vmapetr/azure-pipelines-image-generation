@@ -29,11 +29,11 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Bundler 1.16.1
 - Carthage 0.30.1
 - CocoaPods 1.5.3
-- Homebrew 1.7.0
+- Homebrew 1.7.1
 - NPM 3.10.10
-- Yarn 1.7.0
+- Yarn 1.9.2
 - NuGet 4.3.0.4406
-- pip 10.0.1
+- pip 18.0
 - Miniconda 4.5.4
 
 ### Project Management
@@ -45,7 +45,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 - curl 7.54.0 (libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
 - Git 2.18.0
-- Git LFS 2.4.2
+- Git LFS 2.5.0
 - GNU Wget 1.19.5
 - Subversion (SVN) 1.10.2
 
