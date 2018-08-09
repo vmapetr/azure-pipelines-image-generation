@@ -5,23 +5,24 @@
 - Basic CLI
 - build-essential
 - CMake (cmake version 3.10.2)
-- Docker (Docker version 18.06.0-ce, build 0ffa825)
+- Docker (Docker version 18.06.1-ce-rc1, build 0928140)
 - .NET Core SDKs 2.1.302 [/usr/share/dotnet/sdk]
 - Git (git version 2.18.0)
 - Go 1.10 (go version go1.10 linux/amd64)
+- Google Chrome (Google Chrome 68.0.3440.106 )
 - HHVM (HipHop VM 3.27.1 (rel))
 - OpenJDK (8)
 - Ant (Apache Ant(TM) version 1.9.6 compiled on July 20 2018)
 - Gradle 4.6
 - Maven (Apache Maven 3.3.9)
 - Miniconda (conda 4.5.4)
-- Mono (Mono JIT compiler version 5.12.0.301 (tarball Wed Jul 25 15:47:18 UTC 2018))
+- Mono (Mono JIT compiler version 5.14.0.177 (tarball Mon Aug  6 09:13:43 UTC 2018))
 - MySQL (mysql  Ver 14.14 Distrib 5.7.23, for Linux (x86_64) using  EditLine wrapper)
 - Node.js (v8.11.3)
 - Bower (1.8.4)
 - Grunt (grunt-cli v1.2.0)
-- Gulp ([15:28:01] CLI version 3.9.1)
-- Powershell core
+- Gulp ([17:49:02] CLI version 3.9.1)
+- Powershell (PowerShell v6.0.3)
 - Python (Python 2.7.12)
 - pip (pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7))
 - Python3 (Python 3.5.2)
