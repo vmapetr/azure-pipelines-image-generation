@@ -31,7 +31,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - CocoaPods 1.5.3
 - Homebrew 1.7.1
 - NPM 3.10.10
-- Yarn 1.9.2
+- Yarn 1.9.4
 - NuGet 4.3.0.4406
 - pip 18.0
 - Miniconda 4.5.4
@@ -45,15 +45,18 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 - curl 7.54.0 (libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
 - Git 2.18.0
-- Git LFS 2.5.0
+- Git LFS 2.5.1
 - GNU Wget 1.19.5
 - Subversion (SVN) 1.10.2
 
 ### Tools
 
-- fastlane 2.100.1
-- App Center CLI 1.1.0
-- Azure-CLI 2.0.42
+- fastlane 2.101.1
+- App Center CLI 1.1.1
+- Azure-CLI 2.0.43
+
+### Pre-cached tools
+- Python 2.7.15 3.4.8 3.5.5 3.6.5 3.7.0
 
 ## Xcode
 
