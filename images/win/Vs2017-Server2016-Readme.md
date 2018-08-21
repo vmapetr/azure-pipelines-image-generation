@@ -26,15 +26,15 @@ _Environment:_
 ## Docker images
 
 The following container images have been cached:
-* microsoft/aspnet:(sha256:171d49caa97fafd497f673a325cbe85de8d2d147dc7f258a3621daee80a2ed1a)
-* microsoft/aspnetcore-build:(sha256:b48f8deb56f1bfa817b8da8dd68d172441436a759992d7c97bd6a384395e11f4)
-* microsoft/dotnet-framework:(sha256:e101b9af8b2c6e22477300dc2dac861f5ee900be9c4b953f26adb50d0f4789dc)
-* microsoft/windowsservercore:(sha256:750440935dd3ef8ea148a8e4f83a0397540a8014938ae7b59eb78211da1d5969)
-* microsoft/nanoserver:(sha256:ebce10ace5c562384aae8e5e52a351841fc817b25a222d9c3791b8201097b868)
+* microsoft/aspnetcore-build:(sha256:9ecc7c5a8a7a11dca5f08c860165646cb30d084606360a3a72b9cbe447241c0c)
+* microsoft/aspnet:(sha256:ebbaf320b4dd0492079490fb83b3788925087987fde955cd5d4c32d82e9ce5f0)
+* microsoft/dotnet-framework:(sha256:11ebb3b67738ce1132a92b55d0558f11d7dd6bb8ccf44caf94d8e90516d36251)
+* microsoft/windowsservercore:(sha256:1abdafc502a7e0d18af4d844c6f88f0b225eb928619b79086e895b95ecc26fdc)
+* microsoft/nanoserver:(sha256:ba322999264cd8ecdfb3fcaec020c7a479ff63e6c4333d89d11d67ecbd96b2b3)
 
 ## Visual Studio 2017 Enterprise
 
-_Version:_ VisualStudio/15.7.5+27703.2042<br/>
+_Version:_ VisualStudio/15.8.1+28010.2003<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
 
 The following workloads including required and recommended components are installed with Visual Studio 2017:
@@ -113,7 +113,7 @@ In addition the following optional components are installed:
 
 ## SQL Server Data Tools for VS 2017
 
-_Version:_ 15.1.61804.210<br/>
+_Version:_ 15.1.61808.7030<br/>
 
 The following components are installed:
 
@@ -140,7 +140,7 @@ _Runtime Version:_ 6.3.162.9494
 
 ## Python (64 bit)
 
-#### Python 3.6.5
+#### Python 3.6.6
 _Environment:_
 * PATH: contains location of python.exe
 
@@ -267,10 +267,15 @@ _Location:_ C:\Modules\azurerm_4.2.1\AzureRM\4.2.1\AzureRM.psd1
 This version is saved but not installed
 _Location:_ C:\Modules\azurerm_5.1.1\AzureRM\5.1.1\AzureRM.psd1
 
+#### 6.7.0
+
+This version is saved but not installed
+_Location:_ C:\Modules\azurerm_6.7.0\AzureRM\6.7.0\AzureRM.psd1
+
 
 ## Azure CLI
 
-_Version:_ 2.0.41<br/>
+_Version:_ 2.0.44<br/>
 _Environment:_
 * PATH: contains location of az.cmd
 
@@ -327,7 +332,7 @@ _Environment:_
 ## Google Chrome
 
 _version:_
-67.0.3396.99
+68.0.3440.106
 
 ## Mozilla Firefox
 
@@ -364,11 +369,11 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 8.11.3<br/>
+_Version:_ 8.11.4<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
 
-> Note: You can install and use another version of Node on the hosted agents using the [Node tool installer](https://docs.microsoft.com/en-us/vsts/build-release/tasks/tool/node-js) task.
+> Note: You can install and use another version of Node.js on Microsoft-hosted agent pools using the [Node tool installer](https://docs.microsoft.com/vsts/pipelines/tasks/tool/node-js) task.
 
 ## npm
 
@@ -415,7 +420,7 @@ _Environment:_
 
 ## Cmake
 
-_Version:_ 3.12.0<br/>
+_Version:_ 3.12.1<br/>
 _Environment:_
 * PATH: contains location of cmake.exe
 
@@ -431,6 +436,7 @@ _Environment:_
 * PATH: contains location of dotnet.exe
 
 _SDK:_
+* 2.1.400 C:\Program Files\dotnet\sdk\2.1.400
 * 2.1.4 C:\Program Files\dotnet\sdk\2.1.4
 * 2.1.302 C:\Program Files\dotnet\sdk\2.1.302
 * 2.1.301 C:\Program Files\dotnet\sdk\2.1.301
