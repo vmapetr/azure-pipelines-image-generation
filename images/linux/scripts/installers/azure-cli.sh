@@ -20,7 +20,7 @@ apt-get install -y --no-install-recommends apt-transport-https azure-cli
 echo "Testing to make sure that script performed as expected, and basic scenarios work"
 if ! command -v az; then
     echo "azure-cli was not installed"
-    return -1
+    exit 1
 fi
 
 ## Document what was added to the image

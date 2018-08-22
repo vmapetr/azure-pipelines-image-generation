@@ -2,7 +2,7 @@
 ################################################################################
 ##  File:  docker-ce.sh
 ##  Team:  CI-Platform
-##  Desc:  Installs the docker onto the image, but does not pre-pull any images
+##  Desc:  Installs docker onto the image, but does not pre-pull any images
 ################################################################################
 
 source $HELPER_SCRIPTS/apt.sh
@@ -25,6 +25,13 @@ if ! IsInstalled $docker_package; then
     apt-get install -y docker-ce
 else
     echo "Docker ($docker_package) is already installed"
+fi
+
+## Run tests to determine that the software installed as expected
+echo "Testing to make sure that script performed as expected, and basic scenarios work"
+if ! command -v docker; then
+    echo "docker was not installed"
+    exit 1
 fi
 
 ## Add version information to the metadata file

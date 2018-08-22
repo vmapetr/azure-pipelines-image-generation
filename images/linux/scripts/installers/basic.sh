@@ -17,8 +17,15 @@ apt-get install -y --no-install-recommends \
     ftp \
     iproute2 \
     iputils-ping \
+    jq \
+    libcurl3 \
+    libicu55 \
+    libunwind 8 \
     locales \
+    netcat \
     openssh-client \
+    rsync \
+    shellcheck \
     sudo \
     telnet \
     time \

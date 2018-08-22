@@ -17,11 +17,11 @@ apt-get install -y powershell
 echo "Testing to make sure that script performed as expected, and basic scenarios work"
 if ! command -v pwsh; then
     echo "pwsh was not installed"
-    return 1
+    exit 1
 fi
 if ! pwsh -c ''; then
     echo "pwsh failed to run"
-    return 1
+    exit 1
 fi
 
 ## Document what was added to the image

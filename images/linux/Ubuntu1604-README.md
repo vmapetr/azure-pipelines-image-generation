@@ -1,31 +1,61 @@
 # Linux Image (Ubuntu 16.04.5 LTS)
 ## What's on this image
 - AzCopy (azcopy 7.3.0-netcore)
-- Azure CLI (azure-cli (2.0.43))
+- Azure CLI (azure-cli (2.0.44))
 - Basic CLI
 - build-essential
 - CMake (cmake version 3.10.2)
-- Docker (Docker version 18.06.1-ce-rc1, build 0928140)
-- .NET Core SDKs 2.1.302 [/usr/share/dotnet/sdk]
+- Docker (Docker version 18.06.1-ce-rc2, build e2e08f8)
+- Docker (compose_version)
+- .NET Core SDKs 2.1.401 [/usr/share/dotnet/sdk]
+- Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.0))
+- Firefox ()
 - Git (git version 2.18.0)
 - Go 1.10 (go version go1.10 linux/amd64)
 - Google Chrome (Google Chrome 68.0.3440.106 )
-- HHVM (HipHop VM 3.27.1 (rel))
-- OpenJDK (8)
+- Haskell (The Glorious Glasgow Haskell Compilation System, version 7.10.3)
+- Heroku (heroku/7.9.3 linux-x64 node-v10.9.0)
+- HHVM (HipHop VM 3.27.2 (rel))
+- ImageMagick
+- OpenJDK (7) (java version "1.7.0_95")
+- OpenJDK (8) (openjdk version "1.8.0_181")
+- OpenJDK (9) (openjdk version "9.0.4")
+- OpenJDK (10) (openjdk version "10.0.2" 2018-07-17)
+- OpenJDK (11) (openjdk version "11" 2018-09-25)
 - Ant (Apache Ant(TM) version 1.9.6 compiled on July 20 2018)
-- Gradle 4.6
+- Gradle 4.9
 - Maven (Apache Maven 3.3.9)
+- kubectl (Client Version: v1.11.2)
+- helm (Client: v2.10.0-rc.3+g9ad53aa)
+- Mercurial (Mercurial Distributed SCM (version 3.7.3))
 - Miniconda (conda 4.5.4)
 - Mono (Mono JIT compiler version 5.14.0.177 (tarball Mon Aug  6 09:13:43 UTC 2018))
 - MySQL (mysql  Ver 14.14 Distrib 5.7.23, for Linux (x86_64) using  EditLine wrapper)
-- Node.js (v8.11.3)
+- MySQL Server
+- MS SQL Server Client Tools
+- Node.js (v8.11.4)
 - Bower (1.8.4)
 - Grunt (grunt-cli v1.2.0)
-- Gulp ([17:49:02] CLI version 3.9.1)
-- Powershell (PowerShell v6.0.3)
+- Gulp ([20:54:07] CLI version 3.9.1)
+- Webpack (4.17.0)
+- Parcel (1.9.7)
+- PhantomJS (2.1.1)
+- PHP 5.6 (PHP 5.6.37-1+ubuntu16.04.1+deb.sury.org+1 (cli) )
+- PHP 7.0 (PHP 7.0.31-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Jul 25 2018 10:00:37) ( NTS ))
+- PHP 7.1 (PHP 7.1.20-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Jul 25 2018 10:06:40) ( NTS ))
+- PHP 7.2 (PHP 7.2.9-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Aug 19 2018 07:16:12) ( NTS ))
+- Composer  (Composer version @package_branch_alias_version@ (1.0.0-beta2) 2016-03-27 16:00:34)
+- PHPUnit (PHPUnit 7.3.1 by Sebastian Bergmann and contributors.)
+- Pollinate
+- Powershell (PowerShell v6.0.4)
 - Python (Python 2.7.12)
 - pip (pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7))
 - Python3 (Python 3.5.2)
 - pip3 (pip 8.1.1 from /usr/lib/python3/dist-packages (python 3.5))
+- PyPy2 ([PyPy 6.0.0 with GCC 6.2.0 20160901])
+- PyPy3 ([PyPy 6.0.0 with GCC 6.2.0 20160901])
 - Scala
+- Sphinx Open Source Search Server
 - Subversion (svn, version 1.9.3 (r1718519))
+- Terraform
+- Xvfb

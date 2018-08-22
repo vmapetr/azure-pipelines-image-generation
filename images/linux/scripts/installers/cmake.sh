@@ -23,7 +23,7 @@ fi
 echo "Testing to make sure that script performed as expected, and basic scenarios work"
 if ! command -v cmake; then
     echo "cmake was not installed"
-    return -1
+    exit 1
 fi
 
 ## Document what was added to the image
