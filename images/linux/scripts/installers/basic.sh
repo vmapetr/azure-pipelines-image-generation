@@ -20,7 +20,7 @@ apt-get install -y --no-install-recommends \
     jq \
     libcurl3 \
     libicu55 \
-    libunwind 8 \
+    libunwind8 \
     locales \
     netcat \
     openssh-client \

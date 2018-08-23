@@ -42,6 +42,15 @@ unzip -d /usr/share gradle-"${gradle_version}".zip
 ln -s /usr/share/gradle-"${gradle_version}"/bin/gradle /usr/bin/gradle
 rm gradle-"${gradle_version}".zip
 
+## Run tests to determine that the software installed as expected
+echo "Testing to make sure that script performed as expected, and basic scenarios work"
+for cmd in gradle java javac mvn ant; do
+    if ! command -v $cmd; then
+        echo "$cmd was not installed or found on path"
+        exit 1
+    fi
+done
+
 echo "GRADLE_HOME=/usr/share/gradle" | tee -a /etc/environment
 
 ## Document what was added to the image

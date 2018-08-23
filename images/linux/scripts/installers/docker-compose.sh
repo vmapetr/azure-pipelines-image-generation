@@ -30,5 +30,5 @@ fi
 
 ## Add version information to the metadata file
 echo "Documenting Docker Compose version"
-docker-compose_version=$(docker-compose -v)
-DocumentInstalledItem "Docker (${docker-compose_version})"
+docker_compose_version=$(docker-compose -v)
+DocumentInstalledItem "Docker (${docker_compose_version})"

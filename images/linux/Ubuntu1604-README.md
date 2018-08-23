@@ -5,16 +5,16 @@
 - Basic CLI
 - build-essential
 - CMake (cmake version 3.10.2)
-- Docker (Docker version 18.06.1-ce-rc2, build e2e08f8)
-- Docker (compose_version)
+- Docker (Docker version 18.09.0-ce-tp0, build 4bb0619)
+- Docker (docker-compose version 1.8.0, build unknown)
 - .NET Core SDKs 2.1.401 [/usr/share/dotnet/sdk]
-- Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.0))
+- Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.0)
 - Firefox ()
 - Git (git version 2.18.0)
 - Go 1.10 (go version go1.10 linux/amd64)
 - Google Chrome (Google Chrome 68.0.3440.106 )
 - Haskell (The Glorious Glasgow Haskell Compilation System, version 7.10.3)
-- Heroku (heroku/7.9.3 linux-x64 node-v10.9.0)
+- Heroku (heroku/7.11.0 linux-x64 node-v10.9.0)
 - HHVM (HipHop VM 3.27.2 (rel))
 - ImageMagick
 - OpenJDK (7) (java version "1.7.0_95")
@@ -36,8 +36,8 @@
 - Node.js (v8.11.4)
 - Bower (1.8.4)
 - Grunt (grunt-cli v1.2.0)
-- Gulp ([20:54:07] CLI version 3.9.1)
-- Webpack (4.17.0)
+- Gulp ([22:08:31] CLI version 3.9.1)
+- Webpack (4.17.1)
 - Parcel (1.9.7)
 - PhantomJS (2.1.1)
 - PHP 5.6 (PHP 5.6.37-1+ubuntu16.04.1+deb.sury.org+1 (cli) )
@@ -45,7 +45,7 @@
 - PHP 7.1 (PHP 7.1.20-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Jul 25 2018 10:06:40) ( NTS ))
 - PHP 7.2 (PHP 7.2.9-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Aug 19 2018 07:16:12) ( NTS ))
 - Composer  (Composer version @package_branch_alias_version@ (1.0.0-beta2) 2016-03-27 16:00:34)
-- PHPUnit (PHPUnit 7.3.1 by Sebastian Bergmann and contributors.)
+- PHPUnit (PHPUnit 7.3.2 by Sebastian Bergmann and contributors.)
 - Pollinate
 - Powershell (PowerShell v6.0.4)
 - Python (Python 2.7.12)
