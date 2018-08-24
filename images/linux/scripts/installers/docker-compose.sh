@@ -8,18 +8,11 @@
 source $HELPER_SCRIPTS/apt.sh
 source $HELPER_SCRIPTS/document.sh
 
-docker_compose_package=docker-compose
+version="1.22.0"
 
-LSB_CODENAME=$(lsb_release -cs)
-
-## Check to see if docker-compose is already installed
-echo "Determing if Docker (${docker_compose_package}) is installed"
-if ! IsInstalled ${docker_compose_package}; then
-    echo "Docker (${docker_compose_package}) was not found. Installing..."
-    apt-get install -y --no-install-recommends ${docker_compose_package}
-else
-    echo "Docker (${docker_compose_package}) is already installed"
-fi
+# Install latest docker-compose from releases
+curl -L "https://github.com/docker/compose/releases/download/$version/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
 
 ## Run tests to determine that the software installed as expected
 echo "Testing to make sure that script performed as expected, and basic scenarios work"
