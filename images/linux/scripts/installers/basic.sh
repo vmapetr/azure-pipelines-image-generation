@@ -34,6 +34,15 @@ apt-get install -y --no-install-recommends \
     zip \
     tzdata
 
+## Run tests to determine that the software installed as expected
+echo "Testing to make sure that script performed as expected, and basic scenarios work"
+for cmd in curl file ftp jq netcat ssh rsync shellcheck sudo telnet time unzip wget zip; do
+    if ! command -v $cmd; then
+        echo "$cmd was not installed"
+        exit 1
+    fi
+done
+
 ## Document what was added to the image
 echo "Lastly, documenting what we added to the metadata file"
 DocumentInstalledItem "Basic CLI"
