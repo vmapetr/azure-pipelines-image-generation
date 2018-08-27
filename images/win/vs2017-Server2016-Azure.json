@@ -63,10 +63,16 @@
         {
             "type": "windows-shell",
             "inline": [
-                "net user {{user `install_user`}} {{user `install_password`}} /add /passwordchg:no /passwordreq:yes /active:yes" ,
+                "net user {{user `install_user`}} {{user `install_password`}} /add /passwordchg:no /passwordreq:yes /active:yes /Y" ,
                 "net localgroup Administrators {{user `install_user`}} /add",
                 "winrm set winrm/config/service/auth @{Basic=\"true\"}",
                 "winrm get winrm/config/service/auth"
+            ]
+        },
+        {
+            "type": "powershell",
+            "inline": [
+                "if (-not ((net localgroup Administrators) -contains '{{user `install_user`}}')) { exit 1 }"
             ]
         },
         {
