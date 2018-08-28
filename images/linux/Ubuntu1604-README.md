@@ -5,18 +5,18 @@
 - Basic CLI
 - build-essential
 - CMake (cmake version 3.10.2)
-- Docker (Docker version 18.09.0-ce-tp4, build 33764aa)
-- Docker (docker-compose version 1.22.0, build f46880fe)
+- Docker (Docker version 18.06.1-ce, build e68fc7a)
+- Docker Compose (docker-compose version 1.22.0, build f46880fe)
 - .NET Core SDKs 2.1.401 [/usr/share/dotnet/sdk]
-- Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.0.5)
-- Firefox ()
+- Erlang (Erlang (SMP,ASYNC_THREADS,HIPE) (BEAM) emulator version 10.0.5)
+- Firefox (Mozilla Firefox 61.1.0)
 - Git (git version 2.18.0)
 - Go 1.9 (go version go1.9.7 linux/amd64)
 - Go 1.10 (go version go1.10.3 linux/amd64)
 - Go 1.11 (go version go1.11rc2 linux/amd64)
 - Google Chrome (Google Chrome 68.0.3440.106 )
 - Haskell (The Glorious Glasgow Haskell Compilation System, version 7.10.3)
-- Heroku (heroku/7.12.2 linux-x64 node-v10.9.0)
+- Heroku (heroku/7.12.3 linux-x64 node-v10.9.0)
 - HHVM (HipHop VM 3.27.2 (rel))
 - ImageMagick
 - OpenJDK (7) (java version "1.7.0_95")
@@ -38,7 +38,7 @@
 - Node.js (v8.11.4)
 - Bower (1.8.4)
 - Grunt (grunt-cli v1.2.0)
-- Gulp ([14:54:33] CLI version 3.9.1)
+- Gulp ([16:13:46] CLI version 3.9.1)
 - Webpack (4.17.1)
 - Parcel (1.9.7)
 - PhantomJS (2.1.1)
@@ -59,7 +59,7 @@
 - Scala
 - Sphinx Open Source Search Server
 - Subversion (svn, version 1.9.3 (r1718519))
-- Terraform
+- Terraform (Terraform v0.11.8)
 - Xvfb
 - Cached container images
   - jekyll/builder
