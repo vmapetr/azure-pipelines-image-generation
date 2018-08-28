@@ -4,7 +4,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ## Operating System
 
-- OS X 10.13.5 (17А77) **High Sierra**
+- OS X 10.13.6 (17G65) **High Sierra**
 
 ## Installed Software
 
@@ -14,14 +14,14 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Java 1.8.0_181
 - Java 9.0.4
 - Java 10.0.2
-- Node.js 6.14.3
+- Node.js 6.14.4
 - Node.js 8.11.3
 - NVM 0.33.11
-- PowerShell 6.0.3
+- PowerShell 6.0.4
 - Python 2.7.10
 - Python 3.7.0
 - Ruby 2.5.1p57
-- .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4
+- .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400
 - Go 1.10.3
 
 ### Package Management
@@ -51,9 +51,9 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Tools
 
-- fastlane 2.101.1
+- fastlane 2.102.0
 - App Center CLI 1.1.1
-- Azure-CLI 2.0.43
+- Azure-CLI 2.0.44
 
 ### Pre-cached tools
 - Python 2.7.15 3.4.8 3.5.5 3.6.5 3.7.0
@@ -81,7 +81,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 - Nomad CLI 2.7.6
 - Nomad CLI IPA 0.14.3
-- xcpretty 0.2.8
+- xcpretty 0.3.0
 - xctool 0.3.4
 
 ### Installed SDKs
@@ -412,6 +412,9 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | build-tools-27.0.1    | Android SDK Build-tools, Revision 27.0.1  |
 | build-tools-27.0.2    | Android SDK Build-tools, Revision 27.0.2  |
 | build-tools-27.0.3    | Android SDK Build-tools, Revision 27.0.3  |
+| build-tools-28.0.0    | Android SDK Build-tools, Revision 28.0.0  |
+| build-tools-28.0.1    | Android SDK Build-tools, Revision 28.0.1  |
+| build-tools-28.0.2    | Android SDK Build-tools, Revision 28.0.2  |
 
 ### Utils
 

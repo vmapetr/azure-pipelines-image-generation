@@ -31,5 +31,5 @@ done
 
 ## Document what was added to the image
 echo "Lastly, documenting what we added to the metadata file"
-erlang_version="$(erl -version 2>&1)"
-DocumentInstalledItem "Erlang ($erlang_version))"
+erlang_version="$(erl -version 2>&1 | tr -d '\n')"
+DocumentInstalledItem "Erlang ($erlang_version)"
