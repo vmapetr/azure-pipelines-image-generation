@@ -105,6 +105,7 @@
                 "{{template_dir}}/scripts/installers/hosted-tool-cache.sh",
                 "{{template_dir}}/scripts/installers/image-magick.sh",
                 "{{template_dir}}/scripts/installers/java-tools.sh",
+                "{{template_dir}}/scripts/installers/android.sh",
                 "{{template_dir}}/scripts/installers/kubernetes-tools.sh",
                 "{{template_dir}}/scripts/installers/mercurial.sh",
                 "{{template_dir}}/scripts/installers/miniconda.sh",
