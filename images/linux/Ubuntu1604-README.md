@@ -1,7 +1,7 @@
 # Linux Image (Ubuntu 16.04.5 LTS)
 ## What's on this image
 - AzCopy (azcopy 7.3.0-netcore)
-- Azure CLI (azure-cli (2.0.44))
+- Azure CLI (azure-cli (2.0.45))
 - Basic CLI
 - build-essential
 - CMake (cmake version 3.10.2)
@@ -12,12 +12,12 @@
 - Firefox (Mozilla Firefox 61.1.0)
 - Git (git version 2.18.0)
 - Go 1.9 (go version go1.9.7 linux/amd64)
-- Go 1.10 (go version go1.10.3 linux/amd64)
-- Go 1.11 (go version go1.11rc2 linux/amd64)
+- Go 1.10 (go version go1.10.4 linux/amd64)
+- Go 1.11 (go version go1.11 linux/amd64)
 - Google Chrome (Google Chrome 68.0.3440.106 )
 - Haskell (The Glorious Glasgow Haskell Compilation System, version 7.10.3)
-- Heroku (heroku/7.12.3 linux-x64 node-v10.9.0)
-- HHVM (HipHop VM 3.27.2 (rel))
+- Heroku (heroku/7.12.5 linux-x64 node-v10.9.0)
+- HHVM (HipHop VM 3.28.0 (rel))
 - ImageMagick
 - OpenJDK (7) (java version "1.7.0_95")
 - OpenJDK (8) (openjdk version "1.8.0_181")
@@ -38,7 +38,7 @@
 - Node.js (v8.11.4)
 - Bower (1.8.4)
 - Grunt (grunt-cli v1.2.0)
-- Gulp ([16:13:46] CLI version 3.9.1)
+- Gulp ([19:45:55] CLI version 3.9.1)
 - Webpack (4.17.1)
 - Parcel (1.9.7)
 - PhantomJS (2.1.1)
@@ -61,5 +61,6 @@
 - Subversion (svn, version 1.9.3 (r1718519))
 - Terraform (Terraform v0.11.8)
 - Xvfb
+
 - Cached container images
   - jekyll/builder
