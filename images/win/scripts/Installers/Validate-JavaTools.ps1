@@ -23,13 +23,6 @@ if( $( $(& $env:comspec "/s /c java -version 2>&1") | Out-String) -match  'java 
    $javaVersion = $Matches.version
 }
 
-$env:Path = $env:JAVA_HOME_9_X64 + "\bin;" + $env:Path
-
-if( $( $(& $env:comspec "/s /c java -version 2>&1") | Out-String) -match  'java version "(?<version>.*)".*' )
-{
-   $java9Version = $Matches.version
-}
-
 $env:Path = $env:JAVA_HOME_10_X64 + "\bin;" + $env:Path
 
 if( $( $(& $env:comspec "/s /c java -version 2>&1") | Out-String) -match  'java version "(?<version>.*)".*' )
@@ -62,10 +55,6 @@ $Description = @"
 _Environment:_
 * JAVA_HOME: location of JDK
 * PATH: contains bin folder of JDK
-
-#### $java9Version
-
-_Location:_ $env:JAVA_HOME_9_X64
 
 #### $java10Version
 

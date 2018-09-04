@@ -7,7 +7,6 @@
 #Installing Both x86 and x64 versions of Java
 choco install jdk8 -params "both=true" -y
 
-choco install jdk9 -y
 choco install jdk10 -y
 choco install ant -y
 choco install maven -y
@@ -31,9 +30,6 @@ foreach ($pathSegment in $pathSegments)
 $java8Installs = Get-ChildItem -Path 'C:\Program Files\Java' -Filter 'jdk*8*' | Sort-Object -Property Name -Descending | Select-Object -First 1
 $latestJava8Install = $java8Installs.FullName;
 
-$java9Installs = Get-ChildItem -Path 'C:\Program Files\Java' -Filter 'jdk*9*' | Sort-Object -Property Name -Descending | Select-Object -First 1
-$latestJava9Install = $java9Installs.FullName;
-
 $java10Installs = Get-ChildItem -Path 'C:\Program Files\Java' -Filter 'jdk*10*' | Sort-Object -Property Name -Descending | Select-Object -First 1
 $latestJava10Install = $java10Installs.FullName;
 
@@ -44,7 +40,6 @@ Set-MachinePath -NewPath $newPath
 
 setx JAVA_HOME $latestJava8Install /M
 setx JAVA_HOME_8_X64 $latestJava8Install /M
-setx JAVA_HOME_9_X64 $latestJava9Install /M
 setx JAVA_HOME_10_X64 $latestJava10Install /M
 
 #Move maven variables to Machine, they may not be in the environment for this script so we need to read them from the registry.
