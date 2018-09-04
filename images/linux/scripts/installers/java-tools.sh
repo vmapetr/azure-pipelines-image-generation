@@ -36,7 +36,7 @@ echo "ANT_HOME=/usr/share/ant" | tee -a /etc/environment
 echo "M2_HOME=/usr/share/maven" | tee -a /etc/environment
 
 # Install Gradle
-gradle_version="4.9"
+gradle_version="4.10"
 curl -sL https://services.gradle.org/distributions/gradle-"${gradle_version}"-bin.zip -o gradle-"${gradle_version}".zip
 unzip -d /usr/share gradle-"${gradle_version}".zip
 ln -s /usr/share/gradle-"${gradle_version}"/bin/gradle /usr/bin/gradle
