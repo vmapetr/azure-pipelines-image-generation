@@ -65,11 +65,46 @@ echo "y" | ${ANDROID_ROOT}/tools/bin/sdkmanager --sdk_root=${ANDROID_ROOT_SDK} \
 
 # Document what was added to the image
 echo "Lastly, documenting what we added to the metadata file"
-
-for sdk in ${ANDROID_ROOT_SDK}/*
-do
-    DocumentInstalledItem "${sdk##*/}"
-done
-
+DocumentInstalledItem "Google Repository 58"
+DocumentInstalledItem "Google Play services 49"
+DocumentInstalledItem "Google APIs 24"
+DocumentInstalledItem "Google APIs 23"
+DocumentInstalledItem "Google APIs 22"
+DocumentInstalledItem "Google APIs 21"
+DocumentInstalledItem "CMake 3.6.4111459"
+DocumentInstalledItem "Android Support Repository 47.0.0"
+DocumentInstalledItem "Android Solver for ConstraintLayout 1.0.2"
+DocumentInstalledItem "Android Solver for ConstraintLayout 1.0.1"
+DocumentInstalledItem "Android SDK Platform-Tools 28.0.0"
+DocumentInstalledItem "Android SDK Platform 28"
+DocumentInstalledItem "Android SDK Platform 27"
+DocumentInstalledItem "Android SDK Platform 26"
+DocumentInstalledItem "Android SDK Platform 25"
+DocumentInstalledItem "Android SDK Platform 24"
+DocumentInstalledItem "Android SDK Platform 23"
+DocumentInstalledItem "Android SDK Platform 22"
+DocumentInstalledItem "Android SDK Platform 21"
+DocumentInstalledItem "Android SDK Platform 19"
+DocumentInstalledItem "Android SDK Platform 17"
+DocumentInstalledItem "Android SDK Platform 15"
+DocumentInstalledItem "Android SDK Platform 10"
+DocumentInstalledItem "Android SDK Patch Applier v4"
+DocumentInstalledItem "Android SDK Build-Tools 28.0.2"
+DocumentInstalledItem "Android SDK Build-Tools 28.0.0"
+DocumentInstalledItem "Android SDK Build-Tools 27.0.3"
+DocumentInstalledItem "Android SDK Build-Tools 27.0.1"
+DocumentInstalledItem "Android SDK Build-Tools 26.0.3"
+DocumentInstalledItem "Android SDK Build-Tools 26.0.1"
+DocumentInstalledItem "Android SDK Build-Tools 25.0.3"
+DocumentInstalledItem "Android SDK Build-Tools 24.0.3"
+DocumentInstalledItem "Android SDK Build-Tools 23.0.3"
+DocumentInstalledItem "Android SDK Build-Tools 23.0.1"
+DocumentInstalledItem "Android SDK Build-Tools 22.0.1"
+DocumentInstalledItem "Android SDK Build-Tools 21.1.2"
+DocumentInstalledItem "Android SDK Build-Tools 19.1.0"
+DocumentInstalledItem "Android SDK Build-Tools 17.0.0"
+DocumentInstalledItem "Android NDK 17.1.4828580"
+DocumentInstalledItem "Android ConstraintLayout 1.0.2"
+DocumentInstalledItem "Android ConstraintLayour 1.0.1"
 
 
