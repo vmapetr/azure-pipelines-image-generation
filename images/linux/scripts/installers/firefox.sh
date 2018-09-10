@@ -20,4 +20,7 @@ fi
 
 ## Document what was added to the image
 echo "Lastly, documenting what we added to the metadata file"
+# Resolves: Running Firefox as root in a regular user's session is not supported.
+#           ($HOME is /home/packer which is owned by packer.)
+HOME=/root
 DocumentInstalledItem "Firefox ($(firefox --version))"

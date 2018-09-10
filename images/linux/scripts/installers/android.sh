@@ -106,5 +106,3 @@ DocumentInstalledItem "Android SDK Build-Tools 17.0.0"
 DocumentInstalledItem "Android NDK 17.1.4828580"
 DocumentInstalledItem "Android ConstraintLayout 1.0.2"
 DocumentInstalledItem "Android ConstraintLayour 1.0.1"
-
-
