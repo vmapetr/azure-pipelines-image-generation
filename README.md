@@ -1,9 +1,9 @@
-# Visual Studio Team Services Hosted Images
+# Azure Pipelines Hosted Images
 ![Banner](/docs/resources/ImageGenBanner.png "Banner")
 
 ## Overview
 
-This repo contains the scripts and instructions to generate the images used for the VSTS hosted pool images.  Specifically for Hosted VS2017, VS2015 and Linux.
+This repo contains the scripts and instructions to generate the images used for the Azure Pipelines hosted pool images.  Specifically for Hosted VS2017, VS2015 and Ubuntu.
 
 
 # Contributing
