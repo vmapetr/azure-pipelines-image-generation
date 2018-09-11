@@ -29,17 +29,17 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Bundler 1.16.1
 - Carthage 0.30.1
 - CocoaPods 1.5.3
-- Homebrew 1.7.2
+- Homebrew 1.7.3
 - NPM 3.10.10
 - Yarn 1.9.4
 - NuGet 4.7.0.5148
 - pip 18.0
-- Miniconda 4.5.4
+- Miniconda 4.5.11
 
 ### Project Management
 
 - Apache Maven 3.5.4
-- Gradle 4.9
+- Gradle 4.10
 
 ### Utilities
 
@@ -51,9 +51,9 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Tools
 
-- fastlane 2.102.0
+- fastlane 2.103.0
 - App Center CLI 1.1.2
-- Azure-CLI 2.0.44
+- Azure-CLI 2.0.45
 
 ### Pre-cached tools
 - Python 2.7.15 3.4.8 3.5.5 3.6.5 3.7.0
@@ -366,7 +366,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 28.0.0 |
+| platform-tools        | Android SDK Platform-tools, revision 28.0.1 |
 
 ### Android SDK Platforms
 
@@ -442,13 +442,13 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | extra-android-m2repository        | Android Support Repository, revision 47  |
 | extra-google-google_play_services | Google Play services, revision 49        |
 | extra-google-m2repository         | Google Repository, revision 58           |
-| Hardware_Accelerated_Execution_Manager | Intel x86 Emulator Accelerator 7.2.0     |
+| Hardware_Accelerated_Execution_Manager | Intel x86 Emulator Accelerator 7.3.0     |
 
 ## Xamarin
 
 ### Visual Studio for Mac
 
-- 7.6.0.2188
+- 7.6.1.9
 
 ### Mono
 
@@ -464,6 +464,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Xamarin.iOS SDK
 
+- 11.99.3.538
 - 11.14.0.13
 - 11.12.0.4
 - 11.9.1.24
@@ -488,6 +489,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Xamarin.Mac SDK
 
+- 4.99.3.658
 - 4.6.0.13
 - 4.4.1.193
 - 4.2.1.28
