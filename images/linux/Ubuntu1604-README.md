@@ -54,8 +54,10 @@
 - pip (pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7))
 - Python3 (Python 3.5.2)
 - pip3 (pip 8.1.1 from /usr/lib/python3/dist-packages (python 3.5))
+- Python 2.7.15, 3.4.8, 3.5.5, 3.6.5 and 3.7.0 (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
 - PyPy2 ([PyPy 6.0.0 with GCC 6.2.0 20160901])
 - PyPy3 ([PyPy 6.0.0 with GCC 6.2.0 20160901])
+- Ruby 2.3.7, 2.4.4 and 2.5.1 (available through the [Use Ruby Version](https://go.microsoft.com/fwlink/?linkid=2005989) task)
 - Scala
 - Sphinx Open Source Search Server
 - Subversion (svn, version 1.9.3 (r1718519))
