@@ -21,4 +21,4 @@ fi
 
 ## Document what was added to the image
 echo "Lastly, documenting what we added to the metadata file"
-DocumentInstalledItem "ansible ($(ansible --version |& head -n 1))"
+DocumentInstalledItem "Ansible ($(ansible --version |& head -n 1))"

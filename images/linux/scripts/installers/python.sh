@@ -9,7 +9,7 @@
 source $HELPER_SCRIPTS/document.sh
 
 # Install Python, Python 3, pip, pip3
-apt-get install -y --no-install-recommends python python-pip python3 python3-pip
+apt-get install -y --no-install-recommends python python-dev python-pip python3 python3-dev python3-pip
 
 # Instally PyPy2
 wget -q -P /tmp https://bitbucket.org/pypy/pypy/downloads/pypy2-v6.0.0-linux64.tar.bz2
