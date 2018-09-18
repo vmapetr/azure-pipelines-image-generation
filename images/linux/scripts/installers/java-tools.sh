@@ -5,7 +5,7 @@
 ##  Desc:  Installs Java and related tooling (Ant, Gradle, Maven)
 ################################################################################
 
-## Source the helpers for use with the script
+# Source the helpers for use with the script
 source $HELPER_SCRIPTS/document.sh
 
 DEFAULT_JDK_VERSION=8
@@ -42,7 +42,7 @@ unzip -d /usr/share gradle-"${gradle_version}".zip
 ln -s /usr/share/gradle-"${gradle_version}"/bin/gradle /usr/bin/gradle
 rm gradle-"${gradle_version}".zip
 
-## Run tests to determine that the software installed as expected
+# Run tests to determine that the software installed as expected
 echo "Testing to make sure that script performed as expected, and basic scenarios work"
 for cmd in gradle java javac mvn ant; do
     if ! command -v $cmd; then
@@ -53,7 +53,7 @@ done
 
 echo "GRADLE_HOME=/usr/share/gradle" | tee -a /etc/environment
 
-## Document what was added to the image
+# Document what was added to the image
 echo "Lastly, documenting what we added to the metadata file"
 DocumentInstalledItem "OpenJDK (7) ($(/usr/lib/jvm/java-7-openjdk-amd64/bin/java -showversion |& head -n 1))"
 DocumentInstalledItem "OpenJDK (8) ($(/usr/lib/jvm/java-8-openjdk-amd64/bin/java -showversion |& head -n 1))"

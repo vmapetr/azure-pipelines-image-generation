@@ -5,7 +5,7 @@
 ##  Desc:  Installs MySQL Client
 ################################################################################
 
-## Source the helpers for use with the script
+# Source the helpers for use with the script
 source $HELPER_SCRIPTS/document.sh
 
 export ACCEPT_EULA=Y
@@ -14,7 +14,7 @@ export ACCEPT_EULA=Y
 apt-get install mysql-client -y
 
 # Install MySQL Server
-MYSQL_ROOT_PASSWORD=root
+MYSQL_ROOT_PASSWORD=
 echo "mysql-server mysql-server/root_password password $MYSQL_ROOT_PASSWORD" | debconf-set-selections
 echo "mysql-server mysql-server/root_password_again password $MYSQL_ROOT_PASSWORD" | debconf-set-selections
 
@@ -34,6 +34,11 @@ if ! command -v mysql; then
     echo "mysql was not installed"
     exit 1
 fi
+
+set -e
+mysql -vvv -e 'CREATE DATABASE testdb' -uroot -proot
+mysql -vvv -e 'CREATE DATABASE testdb_nopasswd'
+set +e
 
 # Document what was added to the image
 echo "Lastly, documenting what we added to the metadata file"
