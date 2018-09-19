@@ -21,7 +21,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Python 2.7.10
 - Python 3.7.0
 - Ruby 2.5.1p57
-- .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401
+- .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402
 - Go 1.11
 
 ### Package Management
@@ -29,7 +29,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Bundler 1.16.1
 - Carthage 0.30.1
 - CocoaPods 1.5.3
-- Homebrew 1.7.3
+- Homebrew 1.7.4
 - NPM 3.10.10
 - Yarn 1.9.4
 - NuGet 4.7.0.5148
@@ -44,14 +44,14 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 ### Utilities
 
 - curl 7.54.0 (libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
-- Git 2.18.0
+- Git 2.19.0
 - Git LFS 2.5.1
 - GNU Wget 1.19.5
 - Subversion (SVN) 1.10.2
 
 ### Tools
 
-- fastlane 2.103.0
+- fastlane 2.104.0
 - App Center CLI 1.1.2
 - Azure-CLI 2.0.45
 
@@ -162,6 +162,9 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - iPhone 8 Plus
 - iPhone SE
 - iPhone X
+- iPhone XR
+- iPhone XS
+- iPhone XS Max
 - iPad 2
 - iPad Retina
 - iPad Air
@@ -181,6 +184,8 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Apple Watch Series 2 - 42mm
 - Apple Watch Series 3 - 38mm
 - Apple Watch Series 3 - 42mm
+- Apple Watch Series 4 - 40mm 
+- Apple Watch Series 4 - 44mm
 
 #### Runtimes
 | OS      | Version |
@@ -353,6 +358,8 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | Apple Watch Series 2 - 42mm | iPhone 7 Plus  |
 | Apple Watch Series 3 - 38mm | iPhone 8       |
 | Apple Watch Series 3 - 42mm | iPhone 8 Plus  |
+| Apple Watch Series 4 - 40mm | iPhone XS      |
+| Apple Watch Series 4 - 44mm | iPhone XS Max  |
 
 ## Android
 
@@ -422,7 +429,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 |-----------------------|-------------------------------------------|
 | cmake                 | 3.6.4111459                               |
 | lldb                  | 2.3.3614996                               |
-| ndk-bundle            | 17.0.4754217                              |
+| ndk-bundle            | 17.2.4988734                              |
 | ProGuard              | 5.3.3                                     |
 | Android Emulator      | 27.2.9                                    |
 
@@ -477,6 +484,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Xamarin.Android SDK
 
+- 9.0.0-20
 - 9.0.0-18
 - 8.3.3-2
 - 8.2.0-16
