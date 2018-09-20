@@ -58,7 +58,11 @@
             "type": "shell",
             "inline": [
                 "apt-get update",
-                "apt-get dist-upgrade -y"
+                "apt-get dist-upgrade -y",
+                "systemctl disable apt-daily.service",
+                "systemctl disable apt-daily.timer",
+                "systemctl disable apt-daily-upgrade.timer",
+                "systemctl disable apt-daily-upgrade.service"
             ],
             "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
         },
@@ -91,6 +95,7 @@
                 "{{template_dir}}/scripts/installers/azure-cli.sh",
                 "{{template_dir}}/scripts/installers/basic.sh",
                 "{{template_dir}}/scripts/installers/build-essential.sh",
+                "{{template_dir}}/scripts/installers/clang.sh",
                 "{{template_dir}}/scripts/installers/cmake.sh",
                 "{{template_dir}}/scripts/installers/docker-ce.sh",
                 "{{template_dir}}/scripts/installers/docker-compose.sh",
@@ -126,7 +131,8 @@
             ],
             "environment_vars": [
                 "METADATA_FILE={{user `metadata_file`}}",
-                "HELPER_SCRIPTS={{user `helper_script_folder`}}"
+                "HELPER_SCRIPTS={{user `helper_script_folder`}}",
+                "DEBIAN_FRONTEND=noninteractive"
             ],
             "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
         },

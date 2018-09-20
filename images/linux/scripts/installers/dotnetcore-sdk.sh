@@ -12,6 +12,15 @@ LATEST_DOTNET_PACKAGE=dotnet-sdk-2.1
 
 LSB_RELEASE=$(lsb_release -rs)
 
+echo "Determing if .NET Core ($LATEST_DOTNET_PACKAGE) is installed"
+if ! IsInstalled $LATEST_DOTNET_PACKAGE; then
+    echo "Could not find .NET Core ($LATEST_DOTNET_PACKAGE), installing..."
+    apt-get install $LATEST_DOTNET_PACKAGE -y
+    DocumentInstalledItem ".NET Core SDK $LATEST_DOTNET_PACKAGE"
+else
+    echo ".NET Core ($LATEST_DOTNET_PACKAGE) is already installed"
+fi
+
 release_url="https://raw.githubusercontent.com/dotnet/core/master/release-notes/releases.json"
 sdks=$(curl $release_url | grep version-sdk | grep -v preview | grep -v rc | grep -v display | cut -d\" -f4)
 for sdk in $sdks; do
@@ -28,11 +37,3 @@ for sdk in $sdks; do
         rm -rf "$sdk"
     fi
 done
-
-echo "Determing if .NET Core ($LATEST_DOTNET_PACKAGE) is installed"
-if ! IsInstalled $LATEST_DOTNET_PACKAGE; then
-    echo "Could not find .NET Core ($LATEST_DOTNET_PACKAGE), installing..."
-    apt-get install $LATEST_DOTNET_PACKAGE -y
-else
-    echo ".NET Core ($LATEST_DOTNET_PACKAGE) is already installed"
-fi
