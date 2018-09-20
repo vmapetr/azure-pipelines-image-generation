@@ -49,8 +49,4 @@ $dotnetReleases | ForEach-Object {
     }
 }
 
-#Add-MachinePathItem "C:\Program Files\dotnet"
-
-
-
-
+Add-MachinePathItem "C:\Program Files\dotnet"
