@@ -17,7 +17,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Node.js 6.14.4
 - Node.js 8.11.3
 - NVM 0.33.11
-- PowerShell 6.0.4
+- PowerShell 6.1.0
 - Python 2.7.10
 - Python 3.7.0
 - Ruby 2.5.1p57
@@ -29,7 +29,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Bundler 1.16.1
 - Carthage 0.30.1
 - CocoaPods 1.5.3
-- Homebrew 1.7.4
+- Homebrew 1.7.5
 - NPM 3.10.10
 - Yarn 1.9.4
 - NuGet 4.7.0.5148
@@ -39,13 +39,13 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 ### Project Management
 
 - Apache Maven 3.5.4
-- Gradle 4.10
+- Gradle 4.10.1
 
 ### Utilities
 
 - curl 7.54.0 (libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
 - Git 2.19.0
-- Git LFS 2.5.1
+- Git LFS 2.5.2
 - GNU Wget 1.19.5
 - Subversion (SVN) 1.10.2
 
@@ -60,7 +60,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ## Xcode
 
-- Xcode 10 beta
+- Xcode 10
 - Xcode 9.4.1
 - Xcode 9.4
 - Xcode 9.3.1
@@ -455,7 +455,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Visual Studio for Mac
 
-- 7.6.1.9
+- 7.6.5.20
 
 ### Mono
 
@@ -471,7 +471,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Xamarin.iOS SDK
 
-- 11.99.3.538
+- 12.0.0.10
 - 11.14.0.13
 - 11.12.0.4
 - 11.9.1.24
@@ -497,7 +497,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Xamarin.Mac SDK
 
-- 4.99.3.658
+- 4.99.3.740
 - 4.6.0.13
 - 4.4.1.193
 - 4.2.1.28
