@@ -25,8 +25,14 @@ function Install-GoVersion
 
     # Delete unnecessary files to conserve space
     Write-Host "Cleaning directories of Go $goVersion..."
-    Remove-Item -Recurse -Force "C:\go\blog"
-    Remove-Item -Recurse -Force "C:\go\doc"
+    if (Test-Path "C:\go\doc")
+    {
+        Remove-Item -Recurse -Force "C:\go\doc"
+    }
+    if (Test-Path "C:\go\blog")
+    {
+        Remove-Item -Recurse -Force "C:\go\blog"
+    }
 
     # Rename the extracted "go" directory to include the Go version number (to support side-by-side versions of Go).
     $newDirName = "Go$goVersion"
