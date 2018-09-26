@@ -39,7 +39,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 ### Project Management
 
 - Apache Maven 3.5.4
-- Gradle 4.10.1
+- Gradle 4.10.2
 
 ### Utilities
 
@@ -60,6 +60,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ## Xcode
 
+- Xcode 10.1 beta
 - Xcode 10
 - Xcode 9.4.1
 - Xcode 9.4
@@ -100,6 +101,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | iOS 11.3                  | iphoneos11.3 |
 | iOS 11.4                  | iphoneos11.4 |
 | iOS 12.0                  | iphoneos12.0 |
+| iOS 12.1                  | iphoneos12.1 |
 | iOS Simulator 10.0        | iphonesimulator10.0 |
 | iOS Simulator 10.1        | iphonesimulator10.1 |
 | iOS Simulator 10.2        | iphonesimulator10.2 |
@@ -110,6 +112,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | iOS Simulator 11.3        | iphonesimulator11.3 |
 | iOS Simulator 11.4        | iphonesimulator11.4 |
 | iOS Simulator 12.0        | iphonesimulator12.0 |
+| iOS Simulator 12.1        | iphonesimulator12.1 |
 | tvOS 10.0                 | appletvos10.0 |
 | tvOS 10.1                 | appletvos10.1 |
 | tvOS 10.2                 | appletvos10.2 |
@@ -119,6 +122,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | tvOS 11.3                 | appletvos11.3 |
 | tvOS 11.4                 | appletvos11.4 |
 | tvOS 12.0                 | appletvos12.0 |
+| tvOS 12.1                 | appletvos12.1 |
 | tvOS Simulator 10.0       | appletvsimulator10.0 |
 | tvOS Simulator 10.1       | appletvsimulator10.1 |
 | tvOS Simulator 10.2       | appletvsimulator10.2 |
@@ -128,6 +132,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | tvOS Simulator 11.3       | appletvsimulator11.3 |
 | tvOS Simulator 11.4       | appletvsimulator11.4 |
 | tvOS Simulator 12.0       | appletvsimulator12.0 |
+| tvOS Simulator 12.1       | appletvsimulator12.1 |
 | watchOS 3.0               | watchos3.0 |
 | watchOS 3.1               | watchos3.1 |
 | watchOS 3.2               | watchos3.2 |
@@ -136,6 +141,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | watchOS 4.2               | watchos4.2 |
 | watchOS 4.3               | watchos4.3 |
 | watchOS 5.0               | watchos5.0 |
+| watchOS 5.1               | watchos5.1 |
 | watchOS Simulator 3.0     | watchsimulator3.0 |
 | watchOS Simulator 3.1     | watchsimulator3.1 |
 | watchOS Simulator 3.2     | watchsimulator3.2 |
@@ -144,6 +150,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | watchOS Simulator 4.2     | watchsimulator4.2 |
 | watchOS Simulator 4.3     | watchsimulator4.3 |
 | watchOS Simulator 5.0     | watchsimulator5.0 |
+| watchOS Simulator 5.1     | watchsimulator5.1 |
 
 ### Installed Simulators
 
@@ -184,7 +191,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - Apple Watch Series 2 - 42mm
 - Apple Watch Series 3 - 38mm
 - Apple Watch Series 3 - 42mm
-- Apple Watch Series 4 - 40mm 
+- Apple Watch Series 4 - 40mm
 - Apple Watch Series 4 - 44mm
 
 #### Runtimes
@@ -429,7 +436,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 |-----------------------|-------------------------------------------|
 | cmake                 | 3.6.4111459                               |
 | lldb                  | 2.3.3614996                               |
-| ndk-bundle            | 17.2.4988734                              |
+| ndk-bundle            | 18.0.5002713                              |
 | ProGuard              | 5.3.3                                     |
 | Android Emulator      | 27.2.9                                    |
 
@@ -455,7 +462,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Visual Studio for Mac
 
-- 7.6.5.20
+- 7.6.6.17
 
 ### Mono
 
@@ -471,6 +478,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 
 ### Xamarin.iOS SDK
 
+- 12.0.0.15
 - 12.0.0.10
 - 11.14.0.13
 - 11.12.0.4
