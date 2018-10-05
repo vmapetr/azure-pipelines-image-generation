@@ -43,6 +43,10 @@ function Install-PHPVersion
         setx PHPROOT "C:\$newDirName" /M | Out-Null
     }
 
+    # Add php.ini file
+    $configSetting = "[PHP]"+ "`r`n" + "extension_dir=C:\$newDirName\ext" + "`r`n" + "extension=curl" + "`r`n" + "extension=mbstring"
+    New-Item -path "C:\$newDirName" -type file -name "php.ini" -value $configSetting
+
     # Done
     Write-Host "Done installing PHP $phpversion."
     return "C:\$newDirName"

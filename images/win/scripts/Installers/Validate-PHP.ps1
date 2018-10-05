@@ -36,7 +36,6 @@ else
 
 # Get available versions of PHP
 $phpVersion7_2 = Get-PHPVersion -phpRootPath "C:\php7.2.10"
-# Write-Host "Writing..3" + $phpVersion7_2
 $phpVersionOnPath = Get-PHPVersion -phpRootPath "C:\php7.2.10"
 
 # Add details of available versions in Markdown
