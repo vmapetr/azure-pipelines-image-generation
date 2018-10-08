@@ -37,6 +37,21 @@ ENV PATH ${NODE_PATH}:$PATH
 # NODE Tools
 #------------------------------------------------------------------
 # 45 MB
-RUN npm install -g typescript \
-    # install globally per: https://bower.io/  (26MB)
-    && npm install -g bower
+# RUN npm install -g npm \
+#     # install globally per: https://bower.io/  (26MB)
+#     && npm install -g typescript \
+#     && npm install -g grunt \
+#     && npm install -g gulp \
+#     && npm install -g parcel-bundler \
+#     && npm install -g webpack webpack-cli \
+#     && npm install -g parcel-bundler
+RUN npm install -g npm \
+    && npm install -g typescript
+
+# Install Yarn repository and key
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
+    && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends yarn \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /etc/apt/sources.list.d/*
