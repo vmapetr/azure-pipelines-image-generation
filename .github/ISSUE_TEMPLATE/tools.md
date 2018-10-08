@@ -3,7 +3,7 @@
 This is the template for requesting new or updated tools on the hosted images.
 If you intended to file a bug, please switch to the Bugs template.
 
-# If this is a request for a new tool...
+# If this is a request for a new tool or tool version...
 
 ## Tool info
 - Tool name: <!--- name -->
@@ -16,22 +16,23 @@ If you intended to file a bug, please switch to the Bugs template.
 ## Areas and ecosystems
 <!--- This helps us route to the right owner: check one or two, don't worry about getting it perfect -->
 
-- [ ] iOS, macOS, and Apple-specific tools
 - [ ] Android
-- [ ] Xamarin
-- [ ] .NET Core
-- [ ] .NET Desktop
-- [ ] Javascript, Node.js, and TypeScript
-- [ ] Go
 - [ ] C / C++
-- [ ] Python
-- [ ] Java
-- [ ] Ruby
-- [ ] PHP
-- [ ] Rust
+- [ ] Container tools
 - [ ] Database servers or clients
-- [ ] Testing and code coverage
 - [ ] General purpose tools
+- [ ] Go
+- [ ] Java
+- [ ] Javascript, Node.js, and TypeScript
+- [ ] iOS, macOS, and Apple-specific tools
+- [ ] .NET Core or .NET Desktop
+- [ ] PHP
+- [ ] Python
+- [ ] Ruby
+- [ ] Rust
+- [ ] Scala
+- [ ] Testing and code coverage
+- [ ] Xamarin
 - [ ] Other
 
 ## Hosted pools

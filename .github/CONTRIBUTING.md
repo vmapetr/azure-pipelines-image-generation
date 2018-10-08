@@ -17,7 +17,7 @@ We have to balance the value (broad adoption of that tool) vs. cost (disk space 
 3.  Optionally, create a PR.
 For a new tool, it's probably not worth your time to create the PR until some discussion happens.
 However, if you're just bumping a minor or patch version, feel free to create a PR and reference the issue.
-4. After we approve a new or updated tool, someone from our team will make the change.
+4. After we approve a new or updated tool, someone from our team will make the change or merge your PR.
 
 ## Release process
 
