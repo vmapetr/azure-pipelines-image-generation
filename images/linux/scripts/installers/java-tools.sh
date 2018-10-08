@@ -10,14 +10,10 @@ source $HELPER_SCRIPTS/document.sh
 
 DEFAULT_JDK_VERSION=8
 
-# Install Java OpenJDKs
+# Install Java OpenJDKs, fast
 apt-add-repository -y ppa:openjdk-r/ppa
 apt-get update
-apt-get install -y --no-install-recommends openjdk-7-jdk
-apt-get install -y --no-install-recommends openjdk-8-jdk
-apt-get install -y --no-install-recommends openjdk-9-jdk
-apt-get install -y --no-install-recommends openjdk-10-jdk
-apt-get install -y --no-install-recommends openjdk-11-jdk
+apt-fast install -y --no-install-recommends openjdk-7-jdk openjdk-8-jdk openjdk-9-jdk openjdk-10-jdk openjdk-11-jdk
 update-alternatives --set java /usr/lib/jvm/java-"${DEFAULT_JDK_VERSION}"-openjdk-amd64/jre/bin/java
 
 echo "JAVA_HOME_7_X64=/usr/lib/jvm/java-7-openjdk-amd64" | tee -a /etc/environment
@@ -28,11 +24,15 @@ echo "JAVA_HOME_11_X64=/usr/lib/jvm/java-11-openjdk-amd64" | tee -a /etc/environ
 echo "JAVA_HOME=/usr/lib/jvm/java-${DEFAULT_JDK_VERSION}-openjdk-amd64" | tee -a /etc/environment
 echo "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8" | tee -a /etc/environment
 
-# Install Ant and Maven
-apt-get install -y --no-install-recommends ant ant-optional
-apt-get install -y --no-install-recommends maven
-
+# Install Ant
+apt-fast install -y --no-install-recommends ant ant-optional
 echo "ANT_HOME=/usr/share/ant" | tee -a /etc/environment
+
+# Install Maven
+curl -sL http://www-eu.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.zip -o maven.zip
+unzip -d /usr/share maven.zip
+rm maven.zip
+ln -s /usr/share/apache-maven-3.5.4/bin/mvn /usr/bin/mvn
 echo "M2_HOME=/usr/share/maven" | tee -a /etc/environment
 
 # Install Gradle
@@ -41,6 +41,7 @@ curl -sL https://services.gradle.org/distributions/gradle-"${gradle_version}"-bi
 unzip -d /usr/share gradle-"${gradle_version}".zip
 ln -s /usr/share/gradle-"${gradle_version}"/bin/gradle /usr/bin/gradle
 rm gradle-"${gradle_version}".zip
+echo "GRADLE_HOME=/usr/share/gradle" | tee -a /etc/environment
 
 # Run tests to determine that the software installed as expected
 echo "Testing to make sure that script performed as expected, and basic scenarios work"
@@ -51,7 +52,6 @@ for cmd in gradle java javac mvn ant; do
     fi
 done
 
-echo "GRADLE_HOME=/usr/share/gradle" | tee -a /etc/environment
 
 # Document what was added to the image
 echo "Lastly, documenting what we added to the metadata file"

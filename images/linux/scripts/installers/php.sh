@@ -16,7 +16,7 @@ apt-add-repository ppa:ondrej/php -y
 
 # Install php5.6
 apt-get update
-apt-get install -y --no-install-recommends \
+apt-fast install -y --no-install-recommends \
     php5.6 \
     php5.6-amqp \
     php5.6-bcmath \
@@ -58,7 +58,7 @@ apt-get install -y --no-install-recommends \
 apt-get remove --purge -yq php5.6-dev
 
 # Install php7.0
-apt-get install -y --no-install-recommends \
+apt-fast install -y --no-install-recommends \
     php7.0 \
     php7.0-amqp \
     php7.0-bcmath \
@@ -100,7 +100,7 @@ apt-get install -y --no-install-recommends \
 apt-get remove --purge -yq php7.0-dev
 
 # Install php7.1
-apt-get install -y --no-install-recommends \
+apt-fast install -y --no-install-recommends \
     php7.1 \
     php7.1-amqp \
     php7.1-bcmath \
@@ -142,7 +142,7 @@ apt-get install -y --no-install-recommends \
 apt-get remove --purge -yq php7.1-dev
 
 # Install php7.2
-apt-get install -y --no-install-recommends \
+apt-fast install -y --no-install-recommends \
     php7.2 \
     php7.2-apcu \
     php7.2-amqp \
@@ -182,7 +182,7 @@ apt-get install -y --no-install-recommends \
     php7.2-xsl \
     php7.2-zip
 
-apt-get install -y --no-install-recommends \
+apt-fast install -y --no-install-recommends \
     php-igbinary \
     php-memcache \
     php-memcached \
@@ -194,10 +194,10 @@ apt-get install -y --no-install-recommends \
 
 apt-get remove --purge -yq php7.2-dev
 
-apt-get install -y --no-install-recommends snmp
+apt-fast install -y --no-install-recommends snmp
 
 # Install composer
-apt-get install -y composer
+apt-fast install -y composer
 
 # Install phpunit (for PHP)
 wget -q -O phpunit https://phar.phpunit.de/phpunit-7.phar

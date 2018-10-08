@@ -21,9 +21,6 @@ echo "mysql-server mysql-server/root_password_again password $MYSQL_ROOT_PASSWOR
 apt-get install -y mysql-server
 
 # Install MS SQL Server client tools (https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-setup-tools?view=sql-server-2017)
-# curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
-# curl "https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/prod.list" | tee /etc/apt/sources.list.d/msprod.list
-# apt-get update
 apt-get install -y mssql-tools unixodbc-dev
 apt-get -f install
 ln -s /opt/mssql-tools/bin/* /usr/local/bin/
