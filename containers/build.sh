@@ -13,8 +13,8 @@ fi
 
 docker build -t base/stretch base/stretch
 
-docker build -t "$registry"/dotnetcore/stretch/x86_64:2.1 dotnetcore/2.1/stretch/x86_64
-docker build -t "$registry"/node8-typescript/stretch/x86_64 node8-typescript/stretch/x86_64
+docker build -t "$registry"/dotnetcore/stretch/amd64:2.1 dotnetcore/2.1/stretch/amd64
+docker build -t "$registry"/node8-typescript/stretch/amd64 node8-typescript/stretch/amd64
 
-docker push "$registry"/node8-typescript/stretch/x86_64
-docker push "$registry"/dotnetcore/stretch/x86_64:2.1
+docker push "$registry"/node8-typescript/stretch/amd64
+docker push "$registry"/dotnetcore/stretch/amd64:2.1

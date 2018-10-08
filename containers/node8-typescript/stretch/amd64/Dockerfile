@@ -25,7 +25,7 @@ FROM base/stretch
 #------------------------------------------------------------------
 # NODE / NPM
 #------------------------------------------------------------------
-ENV NODE_VER 8.11.2
+ENV NODE_VER 8.12.0
 ENV NODE_PATH /usr/local/bin/node-v${NODE_VER}/bin
 RUN mkdir -p ${NODE_PATH}
 RUN curl -fsSLO https://nodejs.org/download/release/v${NODE_VER}/node-v${NODE_VER}-linux-x64.tar.gz \
