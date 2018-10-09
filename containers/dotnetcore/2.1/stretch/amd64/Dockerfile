@@ -1,5 +1,6 @@
 FROM base/stretch
 
+# Install dotnet sdk
 RUN wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg \
     && mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/ \
     && wget -q https://packages.microsoft.com/config/debian/9/prod.list \
