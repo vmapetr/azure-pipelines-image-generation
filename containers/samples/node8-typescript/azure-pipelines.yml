@@ -1,0 +1,73 @@
+resources:
+  containers:
+  - container: node8-typescript
+    image: mcr.microsoft.com/azure-pipelines/node8-typescript
+
+jobs:
+- job: 'Build_in_node8_typescript_and_copy_to_deployment_container'
+  container: node8-typescript
+  pool:
+    vmImage: 'Ubuntu-16.04'
+
+  steps:
+  - script: |
+      node --version && npm --version && tsc --version
+      docker --version
+      ls -la /usr/local/bin/kubectl
+      kubectl version -c
+    displayName: Check container prereqs
+
+  - task: Npm@1
+    displayName: 'npm install'
+    inputs:
+      workingDir: TypeScript-Node-Starter
+      verbose: false
+
+  - task: Npm@1
+    displayName: 'npm run build'
+    inputs:
+      command: custom
+      customCommand: 'run build'
+      workingDir: TypeScript-Node-Starter
+      verbose: false
+
+  - script: |
+      echo "Copying built dist into container (pseudo-multistage)"
+      sudo docker build -t sample/typescript-node:single -f TypeScript-Node-Starter/Dockerfile.singlestage TypeScript-Node-Starter
+    displayName: Build container artifact
+
+  - script: |
+      echo "Checking docker images on host (pseudo-multistage)"
+      sudo docker images
+    displayName: Check docker images
+
+- job: 'In_node8_typescript_build_container_multistage'
+  container: node8-typescript
+  pool:
+    vmImage: 'Ubuntu-16.04'
+
+  steps:
+  - script: |
+      echo "Building in one command (real multistage, from container)"
+      sudo docker build -t sample/typescript-node:multi -f TypeScript-Node-Starter/Dockerfile.multistage TypeScript-Node-Starter
+    displayName: Build from Dockerfile
+
+  - script: |
+      echo "Checking docker images on host (pseudo-multistage)"
+      sudo docker images
+    displayName: Check docker images
+
+- job: 'On_host_build_container_multistage'
+  pool:
+    vmImage: 'Ubuntu-16.04'
+
+  steps:
+  - script: |
+      echo "Building in one command (real multistage, from host)"
+      docker build -t sample/typescript-node:multi -f TypeScript-Node-Starter/Dockerfile.multistage TypeScript-Node-Starter
+    displayName: Build from Dockerfile
+
+  - script: |
+      echo "Checking docker images on host (real multistage, from host)"
+      docker images
+    displayName: Check docker images

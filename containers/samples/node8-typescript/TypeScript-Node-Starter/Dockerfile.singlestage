@@ -1,0 +1,7 @@
+FROM node:carbon-alpine
+
+WORKDIR /opt/app
+
+COPY dist dist
+
+CMD node dist/server.js
