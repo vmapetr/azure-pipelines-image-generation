@@ -1,7 +1,7 @@
 # Help us route
 
 This is the template for reporting a bug with image generation.
-If you intended to request a new tool, please switch to the Tools template.
+If you intended to request a new tool, please switch to the Tools template: https://github.com/Microsoft/azure-pipelines-image-generation/issues/new?template=tools.md
 
 # If this is related to image generation...
 
