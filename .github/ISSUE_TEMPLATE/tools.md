@@ -1,7 +1,7 @@
 # Help us route
 
 This is the template for requesting new or updated tools on the hosted images.
-If you intended to file a bug, please switch to the Bugs template.
+If you intended to file a bug, please switch to the Bugs template: https://github.com/Microsoft/azure-pipelines-image-generation/issues/new?template=bugs.md
 
 # If this is a request for a new tool or tool version...
 
