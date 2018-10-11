@@ -20,7 +20,7 @@ jobs:
   - task: Npm@1
     displayName: 'npm install'
     inputs:
-      workingDir: TypeScript-Node-Starter
+      workingDir: containers/samples/node8-typescript/TypeScript-Node-Starter
       verbose: false
 
   - task: Npm@1
@@ -28,12 +28,14 @@ jobs:
     inputs:
       command: custom
       customCommand: 'run build'
-      workingDir: TypeScript-Node-Starter
+      workingDir: containers/samples/node8-typescript/TypeScript-Node-Starter
       verbose: false
 
   - script: |
       echo "Copying built dist into container (pseudo-multistage)"
-      sudo docker build -t sample/typescript-node:single -f TypeScript-Node-Starter/Dockerfile.singlestage TypeScript-Node-Starter
+      sudo docker build -t sample/typescript-node:single \
+        -f containers/samples/node8-typescript/TypeScript-Node-Starter/Dockerfile.singlestage \
+        containers/samples/node8-typescript/TypeScript-Node-Starter
     displayName: Build container artifact
 
   - script: |
@@ -49,7 +51,9 @@ jobs:
   steps:
   - script: |
       echo "Building in one command (real multistage, from container)"
-      sudo docker build -t sample/typescript-node:multi -f TypeScript-Node-Starter/Dockerfile.multistage TypeScript-Node-Starter
+      sudo docker build -t sample/typescript-node:multi \
+        -f containers/samples/node8-typescript/TypeScript-Node-Starter/Dockerfile.multistage \
+        containers/samples/node8-typescript/TypeScript-Node-Starter
     displayName: Build from Dockerfile
 
   - script: |
@@ -64,7 +68,9 @@ jobs:
   steps:
   - script: |
       echo "Building in one command (real multistage, from host)"
-      docker build -t sample/typescript-node:multi -f TypeScript-Node-Starter/Dockerfile.multistage TypeScript-Node-Starter
+      docker build -t sample/typescript-node:multi \
+        -f containers/samples/node8-typescript/TypeScript-Node-Starter/Dockerfile.multistage \
+        containers/samples/node8-typescript/TypeScript-Node-Starter
     displayName: Build from Dockerfile
 
   - script: |
