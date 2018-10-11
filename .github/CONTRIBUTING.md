@@ -3,14 +3,14 @@
 ## Filing bugs
 
 Having an issue with image generation?
-[File an issue](/issues/new?template=bugs.md).
+[File an issue](https://github.com/Microsoft/azure-pipelines-image-generation/issues/new?template=bugs.md).
 
 ## Requesting an add or update
 
 So you want to request a new tool, a new version of a tool, or a change to a tool? Great!
 At a high level, the process looks like this:
 
-1.  [Create an issue](/issues/new?template=tools.md) in this repo. Be sure to fill out the issue template to help us route your request quickly.
+1.  [Create an issue](https://github.com/Microsoft/azure-pipelines-image-generation/issues/new?template=tools.md) in this repo. Be sure to fill out the issue template to help us route your request quickly.
 2.  Participate in the discussion via comments.
 Our images have real constraints, especially disk space.
 We have to balance the value (broad adoption of that tool) vs. cost (disk space and on-going maintenance) proposition.
