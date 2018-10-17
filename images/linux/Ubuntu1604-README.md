@@ -3,7 +3,7 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 ***
 - Ansible (ansible 2.0.0.2)
 - AzCopy (azcopy 7.3.0-netcore)
-- Azure CLI (azure-cli (2.0.46))
+- Azure CLI (azure-cli (2.0.47))
 - Basic CLI
 - build-essential
 - Clang 6.0 (clang version 6.0.1-svn334776-1~exp1~20180919141756.113 (branches/release_60))
@@ -13,6 +13,7 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - .NET Core SDK 1.0.1
 - .NET Core SDK 1.0.4
 - .NET Core SDK 1.1.10
+- .NET Core SDK 1.1.11
 - .NET Core SDK 1.1.4
 - .NET Core SDK 1.1.5
 - .NET Core SDK 1.1.7
@@ -44,9 +45,9 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - Go 1.9 (go version go1.9.7 linux/amd64)
 - Go 1.10 (go version go1.10.4 linux/amd64)
 - Go 1.11 (go version go1.11 linux/amd64)
-- Google Chrome (Google Chrome 69.0.3497.100 )
+- Google Chrome (Google Chrome 70.0.3538.67 )
 - Haskell (The Glorious Glasgow Haskell Compilation System, version 7.10.3)
-- Heroku (heroku/7.16.6 linux-x64 node-v10.11.0)
+- Heroku (heroku/7.17.2 linux-x64 node-v10.12.0)
 - HHVM (HipHop VM 3.28.3 (rel))
 - ImageMagick
 - OpenJDK (7) (java version "1.7.0_95")
@@ -69,15 +70,15 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - Node.js (v8.12.0)
 - Bower (1.8.4)
 - Grunt (grunt-cli v1.2.0)
-- Gulp ([15:49:46] CLI version 3.9.1)
+- Gulp ([03:22:02] CLI version 3.9.1)
 - Webpack (4.20.2)
-- Parcel (1.10.2)
+- Parcel (1.10.3)
 - Yarn (1.10.1)
 - PhantomJS (2.1.1)
-- PHP 5.6 (PHP 5.6.38-1+ubuntu16.04.1+deb.sury.org+2 (cli) )
-- PHP 7.0 (PHP 7.0.32-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Oct  1 2018 11:45:35) ( NTS ))
-- PHP 7.1 (PHP 7.1.22-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Oct  1 2018 11:45:45) ( NTS ))
-- PHP 7.2 (PHP 7.2.10-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Oct  1 2018 11:45:50) ( NTS ))
+- PHP 5.6 (PHP 5.6.38-2+ubuntu16.04.1+deb.sury.org+1 (cli) )
+- PHP 7.0 (PHP 7.0.32-2+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Oct 15 2018 11:36:52) ( NTS ))
+- PHP 7.1 (PHP 7.1.23-2+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Oct 15 2018 11:36:43) ( NTS ))
+- PHP 7.2 (PHP 7.2.11-2+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Oct 15 2018 11:40:04) ( NTS ))
 - Composer  (Composer version @package_branch_alias_version@ (1.0.0-beta2) 2016-03-27 16:00:34)
 - PHPUnit (PHPUnit 7.4.0 by Sebastian Bergmann and contributors.)
 - Pollinate
@@ -144,5 +145,5 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
   - Ruby 2.4.4
   - Ruby 2.5.1
 ## Cached container images
-  - jekyll/builder:latest (Digest: sha256:4beb627b4fd3e78ec6d9d4ca048a1c9a6521f0f0a43235b3e5a03b7f0070e05e)
-  - mcr.microsoft.com/azure-pipelines/node8-typescript:latest (Digest: sha256:9dd2c2df2ee72537852775971b15e5dfbc7e0a30b1242f2262444532183a8c27)
+- jekyll/builder:latest (Digest: sha256:45e2dfd7c8eee79fb73813f5c2e0e7e8e71117811a8157b85c9c9791809eeb98)
+- mcr.microsoft.com/azure-pipelines/node8-typescript:latest (Digest: sha256:e52e60b9f71183969830a3664279b5d8c799b4b0ec2c25a0686f7c02f6a9669a)
