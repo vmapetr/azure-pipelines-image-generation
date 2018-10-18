@@ -14,6 +14,9 @@ ANDROID_ROOT=/usr/local/lib/android
 ANDROID_SDK_ROOT=${ANDROID_ROOT}/sdk
 echo "ANDROID_SDK_ROOT=${ANDROID_SDK_ROOT}" | tee -a /etc/environment
 
+# ANDROID_HOME is deprecated, but older versions of Gradle rely on it
+echo "ANDROID_HOME=${ANDROID_SDK_ROOT}" | tee -a /etc/environment
+
 #Install Android SDK
 wget -O android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 unzip android-sdk.zip -d ${ANDROID_ROOT}
