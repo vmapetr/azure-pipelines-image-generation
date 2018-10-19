@@ -4,6 +4,16 @@
 ##  Desc:  Validate Inno Setup
 ################################################################################
 
+if (Get-Command -Name 'iscc')
+{
+    Write-Host "iscc on path"
+}
+else
+{
+    Write-Host 'iscc is not on path'
+    exit 1
+}
+
 # Adding description of the software to Markdown
 $SoftwareName = "Inno Setup"
 
