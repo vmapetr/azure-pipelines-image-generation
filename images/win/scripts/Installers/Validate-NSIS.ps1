@@ -5,44 +5,29 @@
 ################################################################################
 
 $SoftwareName = 'Nullsoft Install System (NSIS)'
-$regKey = gci HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | gp | ? { $_.DisplayName -eq 'Nullsoft Install System' }
 
-if ($regKey -eq $null)
+if (Get-Command -Name makensis)
 {
-    Write-Host "The $regKey registry key is not set"
-    exit 1
+    Write-Host "$SoftwareName is installed"
 }
 else
-{
-    Write-Host "The $regKey registry key is set"
-}
-
-$installDir = $regKey.InstallLocation
-if ($installDir -eq $null)
-{
-    Write-Host "The $SoftwareName installation directory registry value is not set"
-    exit 1
-}
-else
-{
-    Write-Host "The $SoftwareName installation directory registry value is set to: $installDir"
-}
-
-$exeFilePath = Join-Path $installDir 'NSIS.exe'
-if (!(Test-Path $exeFilePath))
 {
     Write-Host "$SoftwareName is not installed"
     exit 1
 }
-else
-{
-    $fileVersion = $regKey.DisplayVersion
-    Write-Host "$SoftwareName is successfully installed: $fileVersion"
 
-    $Description = @"
-_Version:_ $fileVersion<br/>
-_Location:_ $installDir
+# Adding description of the software to Markdown
+$ChocoList = $(choco list --local-only nsis) | Select-String -Pattern "nsis" | Select-Object -First 1
+
+if($ChocoList -Match "\d+\.\d+")
+{
+    $Version = $Matches[0]
+}
+
+
+$Description = @"
+_Version:_ $Version<br/>
 "@
 
-    Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
-}
+#Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
+Write-Host $description
