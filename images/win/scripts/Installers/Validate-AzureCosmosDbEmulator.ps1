@@ -5,7 +5,28 @@
 ################################################################################
 
 $SoftwareName = 'Azure CosmosDb Emulator'
-$installDir = 'C:\Program Files\Azure Cosmos DB Emulator'
+$regKey = 'HKCU:\SOFTWARE\Microsoft\CosmosDBEmulator'
+
+if (!(Test-Path $regKey))
+{
+    Write-Host "The $regKey registry key is not set"
+    exit 1
+}
+else
+{
+    Write-Host "The $regKey registry key is set"
+}
+
+$installDir = (Get-ItemProperty $regKey).'InstallDir'
+if ($installDir -eq $null)
+{
+    Write-Host "The $SoftwareName installation directory registry value is not set"
+    exit 1
+}
+else
+{
+    Write-Host "The $SoftwareName installation directory registry value is set to: $installDir"
+}
 
 $exeFilePath = Join-Path $installDir 'CosmosDB.Emulator.exe'
 if (!(Test-Path $exeFilePath))
