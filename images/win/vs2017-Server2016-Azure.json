@@ -28,7 +28,7 @@
             "subscription_id": "{{user `subscription_id`}}",
             "object_id": "{{user `object_id`}}",
             "tenant_id": "{{user `tenant_id`}}",
-
+            "os_disk_size_gb": "256",
             "location": "{{user `location`}}",
             "vm_size": "{{user `vm_size`}}",
             "resource_group_name": "{{user `resource_group`}}",
@@ -143,7 +143,8 @@
                 "{{ template_dir }}/scripts/Installers/Vs2017/Install-SSDT.ps1"
             ],
             "elevated_user": "{{user `install_user`}}",
-            "elevated_password": "{{user `install_password`}}"
+            "elevated_password": "{{user `install_password`}}",
+            "pause_before": "120s"
         },
         {
             "type": "windows-restart",
