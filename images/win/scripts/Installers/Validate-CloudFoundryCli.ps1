@@ -14,12 +14,13 @@ else
     exit 1
 }
 
+# Adding description of the software to Markdown
+$SoftwareName = "Cloud Foundry CLI"
+
 if( $(cf version) -match  '\d+\.\d+\.\d+' )
 {
    $version = $Matches[0]
 }
-# Adding description of the software to Markdown
-$SoftwareName = "Cloud Foundry CLI"
 
 $Description = @"
 _Version:_ $version<br/>

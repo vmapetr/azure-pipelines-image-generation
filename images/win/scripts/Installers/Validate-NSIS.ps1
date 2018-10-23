@@ -19,7 +19,7 @@ else
 # Adding description of the software to Markdown
 $ChocoList = $(choco list --local-only nsis) | Select-String -Pattern "nsis" | Select-Object -First 1
 
-if($ChocoList -Match "\d+\.\d+")
+if ($ChocoList -Match "\d+\.\d+")
 {
     $Version = $Matches[0]
 }
