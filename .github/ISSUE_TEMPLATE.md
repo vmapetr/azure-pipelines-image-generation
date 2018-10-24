@@ -12,6 +12,7 @@ If you intended to file a bug, please switch to the Bugs template: https://githu
 - If this is an add request:
   - Brief description of tool: <!--- description -->
   - URL for tool's homepage: <!--- url -->
+  - Open source license type (Apache, MIT, GPL, etc.): <!-- license -->
 
 ## Areas and ecosystems
 <!--- This helps us route to the right owner: check one or two, don't worry about getting it perfect -->
