@@ -58,25 +58,26 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 ### Pre-cached tools
 - Python 2.7.15 3.4.8 3.5.5 3.6.5 3.7.0
 
-## Xcode
-
-- Xcode 10.1 beta
-- Xcode 10
-- Xcode 9.4.1
-- Xcode 9.4
-- Xcode 9.3.1
-- Xcode 9.3
-- Xcode 9.2
-- Xcode 9.1
-- Xcode 9.0.1
-- Xcode 9.0
-- Xcode 8.3.3
-- Xcode 8.3.2
-- Xcode 8.3.1
-- Xcode 8.2.1
-- Xcode 8.2
-- Xcode 8.1
-- Xcode 8.0
+### Xcode
+| Version                | Build   | Path                          |
+|------------------------|---------|-------------------------------|
+| 10.1 beta 1            | 10O23u  | /Applications/Xcode_10.1.app  |
+| 10.0                   | 10A255  | /Applications/Xcode_10.app    |
+| 9.4.1                  | 9F2000  | /Applications/Xcode_9.4.1.app |
+| 9.4                    | 9F1027a | /Applications/Xcode_9.4.app   |
+| 9.3.1                  | 9E501   | /Applications/Xcode_9.3.1.app |
+| 9.3                    | 9E145   | /Applications/Xcode_9.3.app   |
+| 9.2                    | 9C40b   | /Applications/Xcode_9.2.app   |
+| 9.1                    | 9B55    | /Applications/Xcode_9.1.app   |
+| 9.0.1                  | 9A1004  | /Applications/Xcode_9.0.1.app |
+| 9.0                    | 9A235   | /Applications/Xcode_9.app     |
+| 8.3.3                  | 8E3004b | /Applications/Xcode_8.3.3.app |
+| 8.3.2                  | 8E2002  | /Applications/Xcode_8.3.2.app |
+| 8.3.1                  | 8E1000a | /Applications/Xcode_8.3.1.app |
+| 8.2.1                  | 8C1002  | /Applications/Xcode_8.2.1.app |
+| 8.2                    | 8C38    | /Applications/Xcode_8.2.app   |
+| 8.1                    | 8B62    | /Applications/Xcode_8.1.app   |
+| 8.0                    | 8A218a  | /Applications/Xcode_8.app     |
 
 ### Xcode Support Tools
 
