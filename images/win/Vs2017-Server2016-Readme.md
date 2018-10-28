@@ -397,9 +397,9 @@ _Environment:_
 * JAVA_HOME: location of JDK
 * PATH: contains bin folder of JDK
 
-#### 1.8.0_192
+#### 11.0.1
 
-_Location:_ 
+_Location:_ C:\Program Files\Java\jdk-11.0.1
 
 ## Ant
 
