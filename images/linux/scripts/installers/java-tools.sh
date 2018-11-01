@@ -15,9 +15,9 @@ DEFAULT_JDK_VERSION=8
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xB1998361219BD9C9
 apt-add-repository "deb http://repos.azul.com/azure-only/zulu/apt stable main"
 apt-get -q update
-apt-get -y install zulu-7-azure-jdk=7.24.0.2
-apt-get -y install zulu-8-azure-jdk=8.31.0.2
-apt-get -y install zulu-11-azure-jdk=11.2+3
+apt-get -y install zulu-7-azure-jdk=\*
+apt-get -y install zulu-8-azure-jdk=\*
+apt-get -y install zulu-11-azure-jdk=\*
 update-java-alternatives -s /usr/lib/jvm/zulu-8-azure-amd64
 echo "JAVA_HOME_7_X64=/usr/lib/jvm/zulu-7-azure-amd64" | tee -a /etc/environment
 echo "JAVA_HOME_8_X64=/usr/lib/jvm/zulu-8-azure-amd64" | tee -a /etc/environment
