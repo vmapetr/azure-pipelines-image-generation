@@ -11,6 +11,7 @@ source $HELPER_SCRIPTS/document.sh
 DEFAULT_JDK_VERSION=8
 
 #Install Azul jdks
+#Documentation for Azul JDK installation can be found here: https://www.azul.com/downloads/azure-only/zulu/
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xB1998361219BD9C9
 apt-add-repository "deb http://repos.azul.com/azure-only/zulu/apt stable main"
 apt-get -q update
@@ -18,9 +19,9 @@ apt-get -y install zulu-7-azure-jdk=7.24.0.2
 apt-get -y install zulu-8-azure-jdk=8.31.0.2
 apt-get -y install zulu-11-azure-jdk=11.2+3
 update-java-alternatives -s /usr/lib/jvm/zulu-8-azure-amd64
-echo "JAVA_HOME_7_X64=/usr/lib/jvm/zulu-7-azure-amd64" | sudo tee -a /etc/environment
-echo "JAVA_HOME_8_X64=/usr/lib/jvm/zulu-8-azure-amd64" | sudo tee -a /etc/environment
-echo "JAVA_HOME_11_X64=/usr/lib/jvm/zulu-11-azure-amd64" | sudo tee -a /etc/environment
+echo "JAVA_HOME_7_X64=/usr/lib/jvm/zulu-7-azure-amd64" | tee -a /etc/environment
+echo "JAVA_HOME_8_X64=/usr/lib/jvm/zulu-8-azure-amd64" | tee -a /etc/environment
+echo "JAVA_HOME_11_X64=/usr/lib/jvm/zulu-11-azure-amd64" | tee -a /etc/environment
 echo "JAVA_HOME=/usr/lib/jvm/zulu-${DEFAULT_JDK_VERSION}-azure-amd64" | tee -a /etc/environment
 echo "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8" | tee -a /etc/environment
 
