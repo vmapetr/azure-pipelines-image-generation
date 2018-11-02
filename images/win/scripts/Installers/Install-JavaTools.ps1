@@ -36,10 +36,10 @@ foreach ($pathSegment in $pathSegments)
     }
 }
 
-$java8Installs = Get-ChildItem -Path 'C:\Program Files\Java' -Filter 'jdk*8*' | Sort-Object -Property Name -Descending | Select-Object -First 1
+$java8Installs = Get-ChildItem -Path 'C:\Program Files\Java' -Filter '*azure-jdk*8*' | Sort-Object -Property Name -Descending | Select-Object -First 1
 $latestJava8Install = $java8Installs.FullName;
 
-$java11Installs = Get-ChildItem -Path 'C:\Program Files\Java' -Filter 'jdk*11*' | Sort-Object -Property Name -Descending | Select-Object -First 1
+$java11Installs = Get-ChildItem -Path 'C:\Program Files\Java' -Filter '*azure-jdk*11*' | Sort-Object -Property Name -Descending | Select-Object -First 1
 $latestJava11Install = $java11Installs.FullName;
 
 $newPath = [string]::Join(';', $newPathSegments)
