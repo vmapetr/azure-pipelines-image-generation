@@ -52,8 +52,9 @@ setx JAVA_HOME_8_X64 $latestJava8Install /M
 setx JAVA_HOME_11_X64 $latestJava11Install /M
 
 #Install Java Tools
-choco install ant -y
-choco install maven -y
+#Force chocolatey to ignore dependencies on Maven and Ant or else they will download Oracle jdk8
+choco install ant -y -i
+choco install maven -y -i
 choco install gradle -y
 
 #Move maven variables to Machine, they may not be in the environment for this script so we need to read them from the registry.
