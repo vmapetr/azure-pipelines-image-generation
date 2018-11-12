@@ -21,25 +21,25 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - PowerShell 6.1.0
 - Python 2.7.10
 - Python 3.7.0
-- Ruby 2.5.3p105
+- Ruby 2.3.7p456
 - .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402
-- Go 1.11
+- Go 1.12
 
 ### Package Management
 
-- Bundler 1.16.1
-- Carthage 0.31.1
+- Bundler 1.17.1
+- Carthage 0.31.2
 - CocoaPods 1.5.3
-- Homebrew 1.8.0
+- Homebrew 1.8.1
 - NPM 3.10.10
-- Yarn 1.10.1
+- Yarn 1.12.1
 - NuGet 4.7.0.5148
 - pip 18.0
 - Miniconda 4.5.11
 
 ### Project Management
 
-- Apache Maven 3.5.4
+- Apache Maven 3.6.0
 - Gradle 4.10.2
 
 ### Utilities
@@ -52,7 +52,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Tools
 
-- fastlane 2.107.0
+- fastlane 2.108.0
 - App Center CLI 1.1.5
 - Azure-CLI 2.0.49
 
@@ -62,7 +62,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 ### Xcode
 | Version                | Build   | Path                          |
 |------------------------|---------|-------------------------------|
-| 10.1 beta 3            | 10O45e  | /Applications/Xcode_10.3.app  |
+| 10.1                   | 10B61   | /Applications/Xcode_10.3.app  |
 | 10.0                   | 10A255  | /Applications/Xcode_10.app    |
 | 9.4.1                  | 9F2000  | /Applications/Xcode_9.4.1.app |
 | 9.4                    | 9F1027a | /Applications/Xcode_9.4.app   |
@@ -82,7 +82,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Xcode Support Tools
 
-- Nomad CLI 2.7.7
+- Nomad CLI 2.5.2.3
 - Nomad CLI IPA 0.14.3
 - xcpretty 0.3.0
 - xctool 0.3.5
@@ -180,9 +180,10 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - iPad Air 2
 - iPad (5th generation)
 - iPad Pro (9.7-inch)
+- iPad Pro (10.5-inch)
+- iPad Pro (11-inch)
 - iPad Pro (12.9-inch)
 - iPad Pro (12.9-inch) (2nd generation)
-- iPad Pro (10.5-inch)
 - iPad (6th generation)
 - Apple TV
 - Apple TV 4K
@@ -326,9 +327,10 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - iPad Air 2
 - iPad (5th generation)
 - iPad Pro (9.7-inch)
+- iPad Pro (10.5-inch)
+- iPad Pro (11-inch) 
 - iPad Pro (12.9-inch)
 - iPad Pro (12.9-inch) (2nd generation)
-- iPad Pro (10.5-inch)
 - iPad (6th generation)
 
 #### tvOS 10, 10.1, 10.2
