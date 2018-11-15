@@ -18,16 +18,16 @@ else
 }
 
 
-if( $( $(& $env:comspec "/s /c java -version 2>&1") | Out-String) -match  'java version "(?<version>.*)".*' )
+if( $( $(& $env:comspec "/s /c java -version 2>&1") | Out-String) -match  '^(?<vendor>.+) version "(?<version>.+)".*' )
 {
    $javaVersion = $Matches.version
 }
 
-$env:Path = $env:JAVA_HOME_9_X64 + "\bin;" + $env:Path
+$env:Path = $env:JAVA_HOME_11_X64 + "\bin;" + $env:Path
 
-if( $( $(& $env:comspec "/s /c java -version 2>&1") | Out-String) -match  'java version "(?<version>.*)".*' )
+if( $( $(& $env:comspec "/s /c java -version 2>&1") | Out-String) -match  '^(?<vendor>.+) version "(?<version>.+)".*' )
 {
-   $java9Version = $Matches.version
+   $java11Version = $Matches.version
 }
 
 
@@ -56,14 +56,9 @@ _Environment:_
 * JAVA_HOME: location of JDK
 * PATH: contains bin folder of JDK
 
-#### $java9Version
+#### $java11Version
 
-_Location:_ $env:JAVA_HOME_9_X64
-"@
-
-#### $java10Version
-
-_Location:_ $env:JAVA_HOME_10_X64
+_Location:_ $env:JAVA_HOME_11_X64
 "@
 
 Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description

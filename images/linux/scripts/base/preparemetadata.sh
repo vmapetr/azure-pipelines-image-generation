@@ -8,5 +8,6 @@
 
 source $HELPER_SCRIPTS/document.sh
 
-AddTitle "Linux Image (Ubuntu 16.04)"
-AddSubTitle "What's on this image"
+AddTitle "Hosted Ubuntu 1604 Image ($(lsb_release -ds))"
+WriteItem "The following software is installed on machines in the Hosted Ubuntu 1604 pool"
+WriteItem "***"
