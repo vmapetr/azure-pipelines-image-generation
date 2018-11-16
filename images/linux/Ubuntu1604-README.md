@@ -79,7 +79,7 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - PHP 7.0 (PHP 7.0.32-2+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Oct 15 2018 11:36:52) ( NTS ))
 - PHP 7.1 (PHP 7.1.23-2+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Oct 15 2018 11:36:43) ( NTS ))
 - PHP 7.2 (PHP 7.2.11-2+ubuntu16.04.1+deb.sury.org+1 (cli) (built: Oct 15 2018 11:40:04) ( NTS ))
-- Composer  (Composer version @package_branch_alias_version@ (1.0.0-beta2) 2016-03-27 16:00:34)
+- Composer  (Composer version 1.7.2 2018-08-16 16:57:12)
 - PHPUnit (PHPUnit 7.4.0 by Sebastian Bergmann and contributors.)
 - Pollinate
 - Powershell (PowerShell 6.1.0)
