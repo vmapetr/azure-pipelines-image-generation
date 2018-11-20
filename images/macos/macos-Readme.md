@@ -62,7 +62,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 ### Xcode
 | Version                | Build   | Path                          |
 |------------------------|---------|-------------------------------|
-| 10.1                   | 10B61   | /Applications/Xcode_10.3.app  |
+| 10.1                   | 10B61   | /Applications/Xcode_10.1.app  |
 | 10.0                   | 10A255  | /Applications/Xcode_10.app    |
 | 9.4.1                  | 9F2000  | /Applications/Xcode_9.4.1.app |
 | 9.4                    | 9F1027a | /Applications/Xcode_9.4.app   |
