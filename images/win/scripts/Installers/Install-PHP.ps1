@@ -6,55 +6,15 @@
 
 Import-Module -Name ImageHelpers
 
-function Install-PHPVersion
-{
-    Param
-    (
-        [String]$phpVersion,
-        [Boolean]$addToDefaultPath
-    )
+# Install PHP 7.2.12
+choco install php -y --force
+$installDir = "c:\tools\php72"
 
-    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+# curl and mbstring extension needed for tests
+((Get-Content -path $installDir\php.ini -Raw) -replace ';extension=curl','extension=curl' -replace ';extension=mbstring','extension=mbstring') | Set-Content -Path $installDir\php.ini
 
-    # Download the PHP zip archive.
-    Write-Host "Downloading PHP $phpVersion..."
-    $ProgressPreference = 'SilentlyContinue'
-    Invoke-WebRequest -UseBasicParsing -Uri "https://windows.php.net/downloads/releases/php-$phpVersion-nts-Win32-VC15-x64.zip" -OutFile php$phpVersion.windows-amd64.zip
-
-    # Extract the zip archive.
-    Write-Host "Extracting PHP $phpVersion..."
-    Expand-Archive -Path php$phpVersion.windows-amd64.zip -DestinationPath "C:\php" -Force
-
-    # Rename the extracted "php" directory to include the PHP version number (to support side-by-side versions of PHP).
-    $newDirName = "php$phpVersion"
-    Rename-Item -path "C:\php" -newName $newDirName
-
-    # Delete the PHP zip archive.
-    Write-Host "Deleting downloaded archive of PHP $phpVersion..."
-    Remove-Item php$phpVersion.windows-a`md64.zip
-
-    # Make this the default version of PHP?
-    if ($addToDefaultPath)
-    {
-        Write-Host "Adding php $phpVersion to the path..."
-        # Add the php binaries to the path.
-        Add-MachinePathItem "C:\$newDirName" | Out-Null
-        # Set the PHPROOT environment variable.
-        setx PHPROOT "C:\$newDirName" /M | Out-Null
-    }
-
-    # Add php.ini file
-    $configSetting = "[PHP]"+ "`r`n" + "extension_dir=C:\$newDirName\ext" + "`r`n" + "extension=curl" + "`r`n" + "extension=mbstring"
-    New-Item -path "C:\$newDirName" -type file -name "php.ini" -value $configSetting
-
-    # Done
-    Write-Host "Done installing PHP $phpversion."
-    return "C:\$newDirName"
-}
-
-# Install PHP 7.2.10
-$installDirectory = Install-PHPVersion -phpVersion '7.2.10' -addToDefaultPath $True
-setx PHPROOT_7_2_X64 "$installDirectory" /M
+# Set the PHPROOT environment variable.
+setx PHPROOT $installDir /M
 
 # Done
 exit 0

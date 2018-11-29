@@ -35,23 +35,17 @@ else
 }
 
 # Get available versions of PHP
-$phpVersion7_2 = Get-PHPVersion -phpRootPath "C:\php7.2.10"
-$phpVersionOnPath = Get-PHPVersion -phpRootPath "C:\php7.2.10"
+$phpVersionOnPath = Get-PHPVersion -phpRootPath "C:\tools\php72"
 
 # Add details of available versions in Markdown
 $SoftwareName = "PHP (x64)"
 $Description = @"
-#### $phpVersion7_2
-
-_Environment:_
-* PHPROOT_7_2_X64: root directory of the PHP $phpVersion7_2 installation
 
 #### $phpVersionOnPath
 
 _Environment:_
 * PATH: contains the location of php.exe version $phpVersionOnPath
 * PHPROOT: root directory of the PHP $phpVersionOnPath installation
-* PHPROOT_7_2_X64: root directory of the PHP $phpVersionOnPath installation
 "@
 
 Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
