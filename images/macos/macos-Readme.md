@@ -1,6 +1,6 @@
-# VSTS Hosted macOS Preview image
+# Azure Pipelines hosted macOS image
 
-The following software is installed on machines in the VSTS **Hosted macOS Preview** pool.
+The following software is installed on machines in the Azure Pipelines **macOS-10.13** VM image ('Hosted macOS Preview' pool).
 
 ## Operating System
 
@@ -11,79 +11,81 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 ### Language and Runtime
 
 - Java 1.7.0_80
-- Java 1.8.0_181
+- Java 1.8.0_192
 - Java 9.0.4
 - Java 10.0.2
+- Java 11.0.1
 - Node.js 6.14.4
 - Node.js 8.11.3
 - NVM 0.33.11
 - PowerShell 6.1.0
 - Python 2.7.10
 - Python 3.7.0
-- Ruby 2.5.1p57
-- .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402
-- Go 1.11
+- Ruby 2.3.7p456
+- .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402
+- Go 1.12
 
 ### Package Management
 
-- Bundler 1.16.1
-- Carthage 0.30.1
+- Bundler 1.17.1
+- Carthage 0.31.2
 - CocoaPods 1.5.3
-- Homebrew 1.7.5
+- Homebrew 1.8.1
 - NPM 3.10.10
-- Yarn 1.9.4
+- Yarn 1.12.1
 - NuGet 4.7.0.5148
 - pip 18.0
 - Miniconda 4.5.11
 
 ### Project Management
 
-- Apache Maven 3.5.4
+- Apache Maven 3.6.0
 - Gradle 4.10.2
 
 ### Utilities
 
 - curl 7.54.0 (libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
-- Git 2.19.0
+- Git 2.19.1
 - Git LFS 2.5.2
 - GNU Wget 1.19.5
 - Subversion (SVN) 1.10.2
 
 ### Tools
 
-- fastlane 2.104.0
-- App Center CLI 1.1.2
-- Azure-CLI 2.0.45
+- fastlane 2.108.0
+- App Center CLI 1.1.5
+- Azure-CLI 2.0.49
 
 ### Pre-cached tools
 - Python 2.7.15 3.4.8 3.5.5 3.6.5 3.7.0
 
-## Xcode
-
-- Xcode 10.1 beta
-- Xcode 10
-- Xcode 9.4.1
-- Xcode 9.4
-- Xcode 9.3.1
-- Xcode 9.3
-- Xcode 9.2
-- Xcode 9.1
-- Xcode 9.0.1
-- Xcode 9.0
-- Xcode 8.3.3
-- Xcode 8.3.2
-- Xcode 8.3.1
-- Xcode 8.2.1
-- Xcode 8.2
-- Xcode 8.1
-- Xcode 8.0
+### Xcode
+| Version                | Build   | Path                          |
+|------------------------|---------|-------------------------------|
+| 10.1                   | 10B61   | /Applications/Xcode_10.1.app  |
+| 10.0                   | 10A255  | /Applications/Xcode_10.app    |
+| 9.4.1                  | 9F2000  | /Applications/Xcode_9.4.1.app |
+| 9.4                    | 9F1027a | /Applications/Xcode_9.4.app   |
+| 9.3.1                  | 9E501   | /Applications/Xcode_9.3.1.app |
+| 9.3                    | 9E145   | /Applications/Xcode_9.3.app   |
+| 9.2                    | 9C40b   | /Applications/Xcode_9.2.app   |
+| 9.1                    | 9B55    | /Applications/Xcode_9.1.app   |
+| 9.0.1                  | 9A1004  | /Applications/Xcode_9.0.1.app |
+| 9.0                    | 9A235   | /Applications/Xcode_9.app     |
+| 8.3.3                  | 8E3004b | /Applications/Xcode_8.3.3.app |
+| 8.3.2                  | 8E2002  | /Applications/Xcode_8.3.2.app |
+| 8.3.1                  | 8E1000a | /Applications/Xcode_8.3.1.app |
+| 8.2.1                  | 8C1002  | /Applications/Xcode_8.2.1.app |
+| 8.2                    | 8C38    | /Applications/Xcode_8.2.app   |
+| 8.1                    | 8B62    | /Applications/Xcode_8.1.app   |
+| 8.0                    | 8A218a  | /Applications/Xcode_8.app     |
 
 ### Xcode Support Tools
 
-- Nomad CLI 2.7.6
+- Nomad CLI 2.5.2.3
 - Nomad CLI IPA 0.14.3
 - xcpretty 0.3.0
-- xctool 0.3.4
+- xctool 0.3.5
 
 ### Installed SDKs
 | SDK                       | SDK name    |
@@ -178,9 +180,10 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - iPad Air 2
 - iPad (5th generation)
 - iPad Pro (9.7-inch)
+- iPad Pro (10.5-inch)
+- iPad Pro (11-inch)
 - iPad Pro (12.9-inch)
 - iPad Pro (12.9-inch) (2nd generation)
-- iPad Pro (10.5-inch)
 - iPad (6th generation)
 - Apple TV
 - Apple TV 4K
@@ -324,9 +327,10 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 - iPad Air 2
 - iPad (5th generation)
 - iPad Pro (9.7-inch)
+- iPad Pro (10.5-inch)
+- iPad Pro (11-inch) 
 - iPad Pro (12.9-inch)
 - iPad Pro (12.9-inch) (2nd generation)
-- iPad Pro (10.5-inch)
 - iPad (6th generation)
 
 #### tvOS 10, 10.1, 10.2
@@ -429,6 +433,7 @@ The following software is installed on machines in the VSTS **Hosted macOS Previ
 | build-tools-28.0.0    | Android SDK Build-tools, Revision 28.0.0  |
 | build-tools-28.0.1    | Android SDK Build-tools, Revision 28.0.1  |
 | build-tools-28.0.2    | Android SDK Build-tools, Revision 28.0.2  |
+| build-tools-28.0.3    | Android SDK Build-tools, Revision 28.0.3  |
 
 ### Utils
 

@@ -11,8 +11,11 @@ source $HELPER_SCRIPTS/apt.sh
 
 # Set env variable for SDK Root (https://developer.android.com/studio/command-line/variables)
 ANDROID_ROOT=/usr/local/lib/android
-ANDROID_ROOT_SDK=${ANDROID_ROOT}/sdk
-echo "ANDROID_ROOT_SDK=${ANDROID_ROOT_SDK}" | tee -a /etc/environment
+ANDROID_SDK_ROOT=${ANDROID_ROOT}/sdk
+echo "ANDROID_SDK_ROOT=${ANDROID_SDK_ROOT}" | tee -a /etc/environment
+
+# ANDROID_HOME is deprecated, but older versions of Gradle rely on it
+echo "ANDROID_HOME=${ANDROID_SDK_ROOT}" | tee -a /etc/environment
 
 #Install Android SDK
 wget -O android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
@@ -20,7 +23,7 @@ unzip android-sdk.zip -d ${ANDROID_ROOT}
 rm -f android-sdk.zip
 
 # Install the following build tools, pass in "y" to accept Licenses
-echo "y" | ${ANDROID_ROOT}/tools/bin/sdkmanager --sdk_root=${ANDROID_ROOT_SDK} \
+echo "y" | ${ANDROID_ROOT}/tools/bin/sdkmanager --sdk_root=${ANDROID_SDK_ROOT} \
     "ndk-bundle" \
     "platform-tools" \
     "platforms;android-28" \

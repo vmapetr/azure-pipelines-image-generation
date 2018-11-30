@@ -3,12 +3,22 @@
 
 ## Overview
 
-This repo contains the scripts and instructions to generate the images used for the Azure Pipelines hosted pool images.  Specifically for Hosted VS2017, VS2015 and Ubuntu.
+This repo contains the scripts and instructions to generate the images used for the Azure Pipelines hosted pool images.
 
+# Hosted image contents
+
+- [macOS 10.13](images/macos/macos-Readme.md)
+- [Ubuntu 16.04](images/linux/Ubuntu1604-README.md)
+- [VS 2017 + Windows Server 2016](images/win/Vs2017-Server2016-Readme.md)
+- [VS 2015 + Windows Server 2012 R2](images/win/Vs2015-Server2012R2-Readme.md)
+- [Windows Container 1803](images/win/WindowsContainer1803-Readme.md)
 
 # Contributing
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+This project welcomes contributions and suggestions.
+See the [contribution process](.github/CONTRIBUTING.md) to get started.
+
+Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.microsoft.com.
 
@@ -20,23 +30,24 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## Issues and Requests
+## Issues and requests
 
-If you have an issue with one of the images or you have a request to add or change a tool on one of our images:
+If you have an issue with one of the images, please create an issue in this repo.
 
-  1.  Create an issue in this repo
-  2.  Wait for approval or comments.  Our images have real constraints.  Primarily, disk space.  So it's a value (broad adoption of that tool) vs. cost (disk space and on-going maintenance) proposition.  Specify whether you will create a PR or if you are requesting for us to add it to the image.
-  3.  Optionally, create a PR.
+To add or change a tool on one of our images, see our [contribution process](.github/CONTRIBUTING.md).
 
-## Generating Images
+## Generating images
 
 The images are generated using [Packer](https://www.packer.io/).
 
 ## Windows
+
 [How to use Packer to create Windows virtual machine images in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/build-image-with-packer)
+
 ## Linux
+
 [How to use Packer to create Linux virtual machine images in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/build-image-with-packer)
 
-## Instructions to Build Images
-[VS2017](docs/vs2017.md)
+## Instructions to build VS2017 images
 
+[VS2017](docs/vs2017.md)

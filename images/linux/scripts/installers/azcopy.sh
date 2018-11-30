@@ -11,6 +11,7 @@ source $HELPER_SCRIPTS/document.sh
 # Install AzCopy
 wget -O azcopy.tar.gz https://aka.ms/downloadazcopylinux64
 tar -xf azcopy.tar.gz
+rm azcopy.tar.gz
 ./install.sh
 
 # Run tests to determine that the software installed as expected

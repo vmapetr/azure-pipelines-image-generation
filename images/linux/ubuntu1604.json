@@ -126,8 +126,7 @@
                 "{{template_dir}}/scripts/installers/scala.sh",
                 "{{template_dir}}/scripts/installers/sphinx.sh",
                 "{{template_dir}}/scripts/installers/subversion.sh",
-                "{{template_dir}}/scripts/installers/terraform.sh",
-                "{{template_dir}}/scripts/installers/xvfb.sh"
+                "{{template_dir}}/scripts/installers/terraform.sh"
             ],
             "environment_vars": [
                 "METADATA_FILE={{user `metadata_file`}}",
