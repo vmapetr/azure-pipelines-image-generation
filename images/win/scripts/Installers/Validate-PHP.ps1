@@ -13,7 +13,7 @@ function Get-PHPVersion
     )
 
     $env:Path = "$phpRootPath;" + $env:Path
-    if($(php --version) -match 'php (?<version>.*) \(.*')
+    if($($(php --version)| Out-String) -match 'PHP (?<version>.*) (.*cli).*')
     {
         $phpVersion = $Matches.version
         return $phpVersion
@@ -40,7 +40,6 @@ $phpVersionOnPath = Get-PHPVersion -phpRootPath "C:\tools\php72"
 # Add details of available versions in Markdown
 $SoftwareName = "PHP (x64)"
 $Description = @"
-
 #### $phpVersionOnPath
 
 _Environment:_
@@ -48,4 +47,4 @@ _Environment:_
 * PHPROOT: root directory of the PHP $phpVersionOnPath installation
 "@
 
-Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
+# Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
