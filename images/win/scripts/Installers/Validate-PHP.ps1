@@ -47,4 +47,4 @@ _Environment:_
 * PHPROOT: root directory of the PHP $phpVersionOnPath installation
 "@
 
-# Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
+Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
