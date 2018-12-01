@@ -254,6 +254,12 @@
                 "{{ template_dir }}/scripts/Installers/Install-Go.ps1"
             ]
         },
+         {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Install-PHP.ps1"
+            ]
+        },
         {
             "type": "powershell",
             "scripts":[
@@ -464,6 +470,12 @@
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-Go.ps1"
+            ]
+        },
+          {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Validate-PHP.ps1"
             ]
         },
         {
