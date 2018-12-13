@@ -4,27 +4,36 @@
 ##  Desc:  Validate WinAppDriver installation 
 ################################################################################
 
-
-if(Test-Path "C:\Program Files (x86)\Windows Application Driver" -PathType Any)
+$wad = "Windows Application Driver"; 
+if (${Env:ProgramFiles(x86)})
 {
-    Write-Host "WinAppDriver directory found."
-	
+	$wadPath = "${Env:ProgramFiles(x86)}\$wad"
 }
 else
 {
-	Write-Host "WinAppDriver is not installed."
-    exit 1
+	$wadPath = "${Env:ProgramFiles}\$wad"
+}
+
+if(Test-Path $wadPath -PathType Any)
+{
+	Write-Host "WinAppDriver directory found."
+}
+else
+{
+	Write-Host "Failed to locate WinAppDriver directory. Exiting."
+	exit 1
 }
 
 #Validate if Developer Mode is enabled
 $path = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock";
 if((Get-ItemProperty -Path $path | Select-Object -ExpandProperty "AllowDevelopmentWithoutDevLicense") -eq 1)
 {
-    Write-Host "Developer Mode is provisioned."
+	Write-Host "Developer Mode is successfully provisioned."
 }
-else{
-    Write-Host "Developer Mode was not successfully provisioned."
-    exit 1
+else
+{
+	Write-Host "Developer Mode was not successfully provisioned."
+	exit 1
 }
 
 # Adding description of the software to Markdown
