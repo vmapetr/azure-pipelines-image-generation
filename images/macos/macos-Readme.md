@@ -73,12 +73,6 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 | 9.0.1                  | 9A1004  | /Applications/Xcode_9.0.1.app |
 | 9.0                    | 9A235   | /Applications/Xcode_9.app     |
 | 8.3.3                  | 8E3004b | /Applications/Xcode_8.3.3.app |
-| 8.3.2                  | 8E2002  | /Applications/Xcode_8.3.2.app |
-| 8.3.1                  | 8E1000a | /Applications/Xcode_8.3.1.app |
-| 8.2.1                  | 8C1002  | /Applications/Xcode_8.2.1.app |
-| 8.2                    | 8C38    | /Applications/Xcode_8.2.app   |
-| 8.1                    | 8B62    | /Applications/Xcode_8.1.app   |
-| 8.0                    | 8A218a  | /Applications/Xcode_8.app     |
 
 ### Xcode Support Tools
 
