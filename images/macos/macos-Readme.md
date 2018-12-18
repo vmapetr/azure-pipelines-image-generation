@@ -194,18 +194,21 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 | iOS 11.3 | 15E217 |
 | iOS 11.4 | 15F79 |
 | iOS 12.0 | 16A5288q |
+| iOS 12.1 | 16B91 |
 | tvOS 10.2 | 14W260 |
 | tvOS 11.1 | 15J580 |
 | tvOS 11.2 | 15K104 |
 | tvOS 11.3 | 15L211 |
 | tvOS 11.4 | 15L576 |
 | tvOS 12.0 | 16J5283n |
+| tvOS 12.1 | 16J602 |
 | watchOS 3.2 | 14V243 |
 | watchOS 4.0 | 15R372 |
 | watchOS 4.1 | 15R844 |
 | watchOS 4.2 | 15S100 |
 | watchOS 4.3 | 15T212 |
 | watchOS 5.0 | 16R5283q |
+| watchOS 5.1 | 16R591 |
 
 #### Devices
 
@@ -249,7 +252,21 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - iPad Air 2
 - iPad Pro
 
-#### iOS 10.0, 10.1, 10.2, 10.3
+#### iOS 10.0
+
+- iPhone 5
+- iPhone 5s
+- iPhone 6
+- iPhone 6 Plus
+- iPhone 6s
+- iPhone 6s Plus
+- iPhone SE
+- iPad Air
+- iPad Air 2
+- iPad Pro (9.7 inch)
+- iPad Pro (12.9 inch)
+
+#### iOS 10.1, 10.2, 10.3
 
 - iPhone 5
 - iPhone 5s
@@ -265,7 +282,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - iPad Pro (9.7 inch)
 - iPad Pro (12.9 inch)
 
-#### iOS 11, 11.1, 11.2, 11.3, 11.4
+#### iOS 11.0, 11.1, 11.2, 11.3, 11.4
 
 - iPhone 5s
 - iPhone 6
@@ -286,7 +303,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - iPad Pro (12.9-inch) (2nd generation)
 - iPad Pro (10.5-inch)
 
-#### iOS 12
+#### iOS 12.0
 
 - iPhone 5s
 - iPhone 6
@@ -299,6 +316,9 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - iPhone 8
 - iPhone 8 Plus
 - iPhone X
+- iPhone XR
+- iPhone XS
+- iPhone XS Max
 - iPad Air
 - iPad Air 2
 - iPad (5th generation)
@@ -309,24 +329,52 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - iPad Pro (12.9-inch) (2nd generation)
 - iPad (6th generation)
 
-#### tvOS 10, 10.1, 10.2
+#### iOS 12.1
+
+- iPhone 5s
+- iPhone 6
+- iPhone 6 Plus
+- iPhone 6s
+- iPhone 6s Plus
+- iPhone 7
+- iPhone 7 Plus
+- iPhone SE
+- iPhone 8
+- iPhone 8 Plus
+- iPhone X
+- iPhone X
+- iPhone XS
+- iPhone XS Max
+- iPhone XR
+- iPad Air
+- iPad Air 2
+- iPad (5th generation)
+- iPad Pro (9.7-inch)
+- iPad Pro (12.9-inch)
+- iPad Pro (12.9-inch) (2nd generation)
+- iPad Pro (10.5-inch)
+- iPad (6th generation)
+- iPad Pro (11-inch)
+- iPad Pro (12.9-inch) (3rd generation)
+
+#### tvOS 10.2
 
 - Apple TV 1080p
 
-#### tvOS 11, 11.1, 11.2, 11.3, 11.4, 12
+#### tvOS 11.0, 11.1, 11.2, 11.3, 11.4, 12, 12.1
 
 - Apple TV
 - Apple TV 4K
 - Apple TV 4K (at 1080p)
 
-#### watchOS 3.0, 3.1, 3.2
+#### watchOS 3.2
 
 - Apple Watch - 38mm
 - Apple Watch - 42mm
 - Apple Watch Series 2 - 38mm
 - Apple Watch Series 2 - 42mm
 
-#### watchOS 4.0, 4.1, 4.2, 4.3, 5.0
+#### watchOS 4.0, 4.1, 4.2, 4.3
 
 - Apple Watch - 38mm
 - Apple Watch - 42mm
@@ -334,6 +382,15 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Apple Watch Series 2 - 42mm
 - Apple Watch Series 3 - 38mm
 - Apple Watch Series 3 - 42mm
+
+#### watchOS 5.0, 5.1
+
+- Apple Watch Series 2 - 38mm
+- Apple Watch Series 2 - 42mm
+- Apple Watch Series 3 - 38mm
+- Apple Watch Series 3 - 42mm
+- Apple Watch Series 4 - 40mm
+- Apple Watch Series 4 - 44mm
 
 ### Device Pairs
 
