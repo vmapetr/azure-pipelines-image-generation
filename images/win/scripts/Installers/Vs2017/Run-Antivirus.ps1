@@ -8,7 +8,7 @@
 Write-Host "Run antivirus"
 Push-Location "C:\Program Files\Windows Defender"
 
-# Tell it to use 100% of the CPU during the scan
+# Tell Defender to use 100% of the CPU during the scan
 Set-MpPreference -ScanAvgCPULoadFactor 100
 
 # Full Scan
@@ -17,4 +17,4 @@ Pop-Location
 
 Write-Host "Set antivirus parmeters"
 Set-MpPreference -ScanAvgCPULoadFactor 5 `
-                 -ExclusionPath "D:\", "C:\"
+    -ExclusionPath "D:\", "C:\"
