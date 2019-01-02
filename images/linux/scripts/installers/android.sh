@@ -38,18 +38,32 @@ echo "y" | ${ANDROID_ROOT}/tools/bin/sdkmanager --sdk_root=${ANDROID_SDK_ROOT} \
     "platforms;android-17" \
     "platforms;android-15" \
     "platforms;android-10" \
+    "build-tools;28.0.3" \
     "build-tools;28.0.2" \
+    "build-tools;28.0.1" \
     "build-tools;28.0.0" \
     "build-tools;27.0.3" \
+    "build-tools;27.0.2" \
     "build-tools;27.0.1" \
+    "build-tools;27.0.0" \
     "build-tools;26.0.3" \
+    "build-tools;26.0.2" \
     "build-tools;26.0.1" \
+    "build-tools;26.0.0" \
     "build-tools;25.0.3" \
+    "build-tools;25.0.2" \
+    "build-tools;25.0.1" \
+    "build-tools;25.0.0" \
     "build-tools;24.0.3" \
+    "build-tools;24.0.2" \
+    "build-tools;24.0.1" \
+    "build-tools;24.0.0" \
     "build-tools;23.0.3" \
+    "build-tools;23.0.2" \
     "build-tools;23.0.1" \
     "build-tools;22.0.1" \
     "build-tools;21.1.2" \
+    "build-tools;20.0.0" \
     "build-tools;19.1.0" \
     "build-tools;17.0.0" \
     "extras;android;m2repository" \
@@ -67,7 +81,7 @@ echo "y" | ${ANDROID_ROOT}/tools/bin/sdkmanager --sdk_root=${ANDROID_SDK_ROOT} \
     "patcher;v4"
 
 # Document what was added to the image
-echo "Lastly, documenting what we added to the metadata file"
+echo "Lastly, document what was added to the metadata file"
 DocumentInstalledItem "Google Repository 58"
 DocumentInstalledItem "Google Play services 49"
 DocumentInstalledItem "Google APIs 24"
@@ -92,18 +106,32 @@ DocumentInstalledItem "Android SDK Platform 17"
 DocumentInstalledItem "Android SDK Platform 15"
 DocumentInstalledItem "Android SDK Platform 10"
 DocumentInstalledItem "Android SDK Patch Applier v4"
+DocumentInstalledItem "Android SDK Build-Tools 28.0.3"
 DocumentInstalledItem "Android SDK Build-Tools 28.0.2"
+DocumentInstalledItem "Android SDK Build-Tools 28.0.1"
 DocumentInstalledItem "Android SDK Build-Tools 28.0.0"
 DocumentInstalledItem "Android SDK Build-Tools 27.0.3"
+DocumentInstalledItem "Android SDK Build-Tools 27.0.2"
 DocumentInstalledItem "Android SDK Build-Tools 27.0.1"
+DocumentInstalledItem "Android SDK Build-Tools 27.0.0"
 DocumentInstalledItem "Android SDK Build-Tools 26.0.3"
+DocumentInstalledItem "Android SDK Build-Tools 26.0.2"
 DocumentInstalledItem "Android SDK Build-Tools 26.0.1"
+DocumentInstalledItem "Android SDK Build-Tools 26.0.0"
 DocumentInstalledItem "Android SDK Build-Tools 25.0.3"
+DocumentInstalledItem "Android SDK Build-Tools 25.0.2"
+DocumentInstalledItem "Android SDK Build-Tools 25.0.1"
+DocumentInstalledItem "Android SDK Build-Tools 25.0.0"
 DocumentInstalledItem "Android SDK Build-Tools 24.0.3"
+DocumentInstalledItem "Android SDK Build-Tools 24.0.2"
+DocumentInstalledItem "Android SDK Build-Tools 24.0.1"
+DocumentInstalledItem "Android SDK Build-Tools 24.0.0"
 DocumentInstalledItem "Android SDK Build-Tools 23.0.3"
+DocumentInstalledItem "Android SDK Build-Tools 23.0.2"
 DocumentInstalledItem "Android SDK Build-Tools 23.0.1"
 DocumentInstalledItem "Android SDK Build-Tools 22.0.1"
 DocumentInstalledItem "Android SDK Build-Tools 21.1.2"
+DocumentInstalledItem "Android SDK Build-Tools 20.0.0"
 DocumentInstalledItem "Android SDK Build-Tools 19.1.0"
 DocumentInstalledItem "Android SDK Build-Tools 17.0.0"
 DocumentInstalledItem "Android NDK 17.1.4828580"
