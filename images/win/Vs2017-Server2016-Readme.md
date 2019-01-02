@@ -376,7 +376,7 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 8.12.0<br/>
+_Version:_ 10.14.2<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
 
@@ -384,7 +384,7 @@ _Environment:_
 
 ## npm
 
-_Version:_ 6.4.1<br/>
+_Version:_ 6.5.0<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
