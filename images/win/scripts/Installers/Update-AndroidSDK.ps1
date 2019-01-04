@@ -57,9 +57,6 @@ Push-Location -Path $sdk.FullName
     "platforms;android-22" `
     "platforms;android-21" `
     "platforms;android-19" `
-    "platforms;android-17" `
-    "platforms;android-15" `
-    "platforms;android-10" `
     "build-tools;28.0.3" `
     "build-tools;28.0.2" `
     "build-tools;28.0.1" `
@@ -87,7 +84,6 @@ Push-Location -Path $sdk.FullName
     "build-tools;21.1.2" `
     "build-tools;20.0.0" `
     "build-tools;19.1.0" `
-    "build-tools;17.0.0" `
     "extras;android;m2repository" `
     "extras;google;m2repository" `
     "extras;google;google_play_services" `
