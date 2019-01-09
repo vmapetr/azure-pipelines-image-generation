@@ -22,15 +22,15 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Python 2.7.10
 - Python 3.7.0
 - Ruby 2.3.7p456
-- .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402
-- Go 1.12
+- .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502 2.2.101
+- Go 1.11.4
 
 ### Package Management
 
-- Bundler 1.17.1
+- Bundler 1.17.2
 - Carthage 0.31.2
 - CocoaPods 1.5.3
-- Homebrew 1.8.4
+- Homebrew 1.8.6
 - NPM 3.10.10
 - Yarn 1.12.1
 - NuGet 4.7.0.5148
@@ -40,19 +40,19 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 ### Project Management
 
 - Apache Maven 3.6.0
-- Gradle 4.10.2
+- Gradle 5.0
 
 ### Utilities
 
 - curl 7.54.0 (libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
-- Git 2.19.2
+- Git 2.20.1
 - Git LFS 2.6.1
 - GNU Wget 1.20
 - Subversion (SVN) 1.10.2
 
 ### Tools
 
-- fastlane 2.109.0
+- fastlane 2.111.0
 - App Center CLI 1.1.9
 - Azure-CLI 2.0.51
 
@@ -476,7 +476,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 | lldb                  | 2.3.3614996                               |
 | ndk-bundle            | 18.0.5002713                              |
 | ProGuard              | 5.3.3                                     |
-| Android Emulator      | 27.2.9                                    |
+| Android Emulator      | 28.0.20                                    |
 
 ### Google APIs
 
@@ -500,10 +500,11 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Visual Studio for Mac
 
-- 7.6.6.17
+- 7.7.1.15
 
 ### Mono
 
+- 5.16.0
 - 5.12.0
 - 5.10.1
 - 5.8.1
@@ -531,6 +532,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Xamarin.Android SDK
 
+- 9.1.0-38
 - 9.0.0-20
 - 9.0.0-18
 - 8.3.3-2
@@ -544,6 +546,8 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Xamarin.Mac SDK
 
+- 5.3.1.28
+- 5.2.1.11
 - 4.99.3.740
 - 4.6.0.13
 - 4.4.1.193
