@@ -302,6 +302,26 @@
                 "{{ template_dir }}/scripts/Installers/Install-SeleniumWebDrivers.ps1"
             ]
         },
+		{
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Enable-DeveloperMode.ps1"
+            ],
+            "elevated_user": "{{user `install_user`}}",
+            "elevated_password": "{{user `install_password`}}"
+        },
+		{
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Install-WinAppDriver.ps1"
+            ]
+        },
+		{
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Validate-WinAppDriver.ps1"
+            ]
+        },
         {
             "type": "powershell",
             "scripts":[
