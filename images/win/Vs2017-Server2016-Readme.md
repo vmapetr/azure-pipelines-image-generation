@@ -309,14 +309,19 @@ _Environment:_
 #### 1.11
 
 _Environment:_
-* GOROOT_1_9_X64: root directory of the Go 1.11 installation
-
-#### 1.11
-
-_Environment:_
 * PATH: contains the location of go.exe version 1.11
 * GOROOT: root directory of the Go 1.11 installation
-* GOROOT_1_10_X64: root directory of the Go 1.11 installation
+* GOROOT_1_11_X64: root directory of the Go 1.11 installation
+
+#### 1.10
+
+_Environment:_
+* GOROOT_1_10_X64: root directory of the Go 1.10 installation
+
+#### 1.9
+
+_Environment:_
+* GOROOT_1_9_X64: root directory of the Go 1.9 installation
 
 ## Ruby (x64)
 
@@ -495,6 +500,11 @@ _Runtime:_
 * 1.0.12 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.12
 * 1.0.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.11
 * 1.0.10 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.10
+
+## Mercurial
+_Version:_ 4.6.1<br/>
+_Environment:_
+* PATH: contains location of hg.exe
 
 ## Mysql
 
