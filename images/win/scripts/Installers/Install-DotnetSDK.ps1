@@ -39,7 +39,10 @@ $dotnetReleases | ForEach-Object {
             $projectPath = Join-Path -Path C:\temp -ChildPath $template
             New-Item -Path $projectPath -Force -ItemType Directory
             Push-Location -Path $projectPath
+            & $env:ProgramFiles\dotnet\dotnet.exe new globaljson --sdk-version "$sdkVersion"
             & $env:ProgramFiles\dotnet\dotnet.exe new $template
+            & $env:ProgramFiles\dotnet\dotnet.exe restore
+            & $env:ProgramFiles\dotnet\dotnet.exe build
             Pop-Location
             Remove-Item $projectPath -Force -Recurse
         }
