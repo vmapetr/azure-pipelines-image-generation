@@ -456,7 +456,7 @@ _Environment:_
 _Version:_ 10.15.0<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
-* Gulp [[90m02:24:51[39m] CLI version 2.0.1<br/>
+* Gulp CLI version 2.0.1<br/>
 * Grunt grunt-cli v1.3.2<br/>
 * Bower 1.8.4<br/>
 * Yarn 1.13.0<br/>
