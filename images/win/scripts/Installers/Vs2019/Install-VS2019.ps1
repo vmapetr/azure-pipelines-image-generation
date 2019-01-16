@@ -1,7 +1,7 @@
 ################################################################################
-##  File:  Install-VS2017.ps1
+##  File:  Install-VS2019.ps1
 ##  Team:  CI-Build
-##  Desc:  Install Visual Studio 2017
+##  Desc:  Install Visual Studio 2019
 ################################################################################
 
 Function InstallVS
@@ -60,56 +60,12 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.Net.Component.4.7.1.SDK ' + `
                 '--add Microsoft.Net.Component.4.7.1.TargetingPack ' + `
                 '--add Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools ' + `
-                '--add Microsoft.Net.Core.Component.SDK.1x ' + `
-                '--add Microsoft.NetCore.1x.ComponentGroup.Web ' + `
-                '--add Microsoft.VisualStudio.Component.Azure.Storage.AzCopy ' + `
-                '--add Microsoft.VisualStudio.Component.PowerShell.Tools ' + `
-                '--add Microsoft.VisualStudio.Component.VC.140 ' + `
-                '--add Component.Dotfuscator ' + `
-                '--add Microsoft.VisualStudio.Component.VC.ATL ' + `
-                '--add Microsoft.VisualStudio.Component.VC.ATLMFC ' + `
-                '--add Microsoft.VisualStudio.Component.VC.ClangC2 ' + `
-                '--add Microsoft.VisualStudio.Component.VC.CLI.Support ' + `
-                '--add Microsoft.VisualStudio.Component.VC.Modules.x86.x64 ' + `
-                '--add Microsoft.VisualStudio.Component.Windows10SDK.10240 ' + `
-                '--add Microsoft.VisualStudio.Component.Windows10SDK.10586 ' + `
-                '--add Microsoft.VisualStudio.Component.Windows10SDK.14393 ' + `
-                '--add Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop ' + `
-                '--add Component.Unreal ' + `
-                '--add Component.Unreal.Android ' + `
-                '--add Component.Android.SDK23 ' + `
-                '--add Microsoft.VisualStudio.Component.TestTools.WebLoadTest ' + `
-                '--add Microsoft.VisualStudio.Web.Mvc4.ComponentGroup ' + `
-                '--add Component.CPython2.x64 ' + `
-                '--add Microsoft.Component.PythonTools.UWP ' + `
-                '--add Microsoft.Component.VC.Runtime.OSSupport ' + `
-                '--add Microsoft.VisualStudio.Component.VC.Tools.ARM ' + `
-                '--add Microsoft.VisualStudio.ComponentGroup.UWP.VC ' + `
-                '--add Microsoft.VisualStudio.Component.VSSDK ' + `
-                '--add Microsoft.VisualStudio.Component.LinqToSql ' + `
-                '--add Microsoft.VisualStudio.Component.TestTools.CodedUITest ' + `
-                '--add Microsoft.VisualStudio.Component.TestTools.Core ' + `
-                '--add Microsoft.VisualStudio.Component.TypeScript.2.0 ' + `
-                '--add Microsoft.VisualStudio.Component.TypeScript.2.1 ' + `
-                '--add Microsoft.VisualStudio.Component.TypeScript.2.2 ' + `
-                '--add Microsoft.VisualStudio.Component.VC.Tools.ARM64 ' + `
-                '--add Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm ' + `
-                '--add Microsoft.VisualStudio.Component.DslTools ' + `
-                '--add Microsoft.VisualStudio.Component.Windows81SDK ' + `
-                '--add Microsoft.VisualStudio.Component.WinXP ' + `
-                '--add Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 ' + `
-                '--add Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP ' + `
-                '--add Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed ' + `
-                '--add Microsoft.Component.Blend.SDK.WPF ' + `
-                '--add Microsoft.Component.VC.Runtime.UCRTSDK ' + `
-                '--add Microsoft.VisualStudio.Component.VC.ATL.Spectre ' + `
-                '--add Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre ' + `
                 '--add Microsoft.VisualStudio.Component.Windows10SDK.17134 ' + `
-                '--add Microsoft.VisualStudio.Component.Windows10SDK.17763 ' + `
-                '--add Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre '
+                '--add Microsoft.VisualStudio.Component.Windows10SDK.17763 '
 
+$ReleaseInPath = 'Preview'
 $Sku = 'Enterprise'
-$VSBootstrapperURL = 'https://aka.ms/vs/15/release/vs_enterprise.exe'
+$VSBootstrapperURL = 'https://download.visualstudio.microsoft.com/download/pr/24b5224f-c1ec-400b-943a-3bbcdd6bd5d5/e53a2fe46e68bb91506658f39aeeb04e/vs_enterprise.exe'
 
 $ErrorActionPreference = 'Stop'
 
@@ -134,47 +90,20 @@ Write-Host "Visual Studio version" $version "installed"
 
 # Updating content of MachineState.json file to disable autoupdate of VSIX extensions
 $newContent = '{"Extensions":[{"Key":"1e906ff5-9da8-4091-a299-5c253c55fdc9","Value":{"ShouldAutoUpdate":false}},{"Key":"Microsoft.VisualStudio.Web.AzureFunctions","Value":{"ShouldAutoUpdate":false}}],"ShouldAutoUpdate":false,"ShouldCheckForUpdates":false}'
-Set-Content -Path "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\MachineState.json" -Value $newContent
+Set-Content -Path "C:\Program Files (x86)\Microsoft Visual Studio\2019\$ReleaseInPath\Common7\IDE\Extensions\MachineState.json" -Value $newContent
 
 
 # Adding description of the software to Markdown
 
-$SoftwareName = "Visual Studio 2017 Enterprise"
+$SoftwareName = "Visual Studio 2019 Enterprise"
 
 $Description = @"
 _Version:_ $version<br/>
-_Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
+_Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2019\$ReleaseInPath
 
-The following workloads including required and recommended components are installed with Visual Studio 2017:
-
-* Universal Windows Platform development
-* .NET desktop development
-* Desktop development with C++
-* ASP.NET and web development
-* Azure development
-* Node.js development
-* Data storage and processing
-* Data science and analytical applications *
-* Game development with Unity *
-* Linux development with C++ *
-* Game development with C++ *
-* Mobile development with C++ *
-* Office/SharePoint development
-* Mobile development with .NET
-* .NET Core cross-platform development
-* Visual Studio extension development *
-* Python development *
-* Mobile development with JavaScript *
-
-In addition the following optional components are installed:
-
+All available workloads are installed with Visual Studio 2019.
 "@
 
 Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
-
-# Adding explicitly added Workloads details to markdown by parsing $Workloads
-Add-ContentToMarkdown -Content $($WorkLoads.Split('--') | % { if( ($_.Split(" "))[0] -like "add") { "* " +($_.Split(" "))[1] }  } )
-
-
 
 exit $exitCode
