@@ -41,8 +41,6 @@ $dotnetReleases | ForEach-Object {
             Push-Location -Path $projectPath
             & $env:ProgramFiles\dotnet\dotnet.exe new globaljson --sdk-version "$sdkVersion"
             & $env:ProgramFiles\dotnet\dotnet.exe new $template
-            & $env:ProgramFiles\dotnet\dotnet.exe restore
-            & $env:ProgramFiles\dotnet\dotnet.exe build
             Pop-Location
             Remove-Item $projectPath -Force -Recurse
         }
@@ -53,3 +51,4 @@ $dotnetReleases | ForEach-Object {
 }
 
 Add-MachinePathItem "C:\Program Files\dotnet"
+Add-MachinePathItem "%USERPROFILE%\.dotnet\tools"
