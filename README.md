@@ -1,8 +1,9 @@
-# Azure Pipelines VM images for Microsoft-hosted CI/CD
+
+# ![Azure Pipelines](/docs/resources/DevOpsIconPipelines40.png "Azure Pipelines") Azure Pipelines VM images for Microsoft-hosted CI/CD
 
 ## Overview
 
-This repo contains scripts that generate the Linux and Windows virtual machine images used by [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/?nav=min) for [Microsoft-hosted CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=vsts&tabs=yaml). The images are generated using [Packer](https://www.packer.io/).
+This repo contains scripts that generate the Linux and Windows virtual machine images used by [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/?nav=min) for [Microsoft-hosted CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=vsts&tabs=yaml). The macOS image scripts are not kept here, but its contents are documented here. The images are generated using [Packer](https://www.packer.io/).
 
 # Image contents
 
