@@ -9,7 +9,8 @@
 source $HELPER_SCRIPTS/document.sh
 
 # Install Azure CLI (instructions taken from https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
-apt-get install-module -name azpowershell -allowClobber
+pwsh
+echo "shivangi"
 
 # Run tests to determine that the software installed as expected
 echo "Testing to make sure that script performed as expected, and basic scenarios work"
@@ -20,4 +21,3 @@ fi
 
 # Document what was added to the image
 echo "Lastly, documenting what we added to the metadata file"
-DocumentInstalledItem "AzPowershell ($(azpowershell -v | head -n 1))"
