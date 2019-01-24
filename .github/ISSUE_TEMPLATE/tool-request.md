@@ -1,6 +1,6 @@
 ---
 name: Tool request
-about: Request a new tool and update to a tool on the hosted images
+about: Request a new tool or update a tool on the hosted images
 title: Update/Add [tool name]
 labels: t:Enhancement
 assignees: ''

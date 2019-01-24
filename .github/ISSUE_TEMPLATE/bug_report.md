@@ -11,10 +11,10 @@ assignees: ''
 A clear and concise description of what the bug is, and why you consider it to be a bug.
 
 **Expected behavior**
-A clear and concise description of what you expected to happen.
+A description of what you expected to happen.
 
 **Actual behavior**
-A clear and concise description with steps to reproduce the issues.
+A description with steps to reproduce the issue.
 
 1. Step 1
 2. Step 2
