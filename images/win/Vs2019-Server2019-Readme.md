@@ -1,6 +1,6 @@
-# VSTS Hosted VS2019 image
+# Azure Pipelines Hosted Windows 2019 with VS2019 image
 
-The following software is installed on machines in the VSTS **Hosted VS2019** pool.
+The following software is installed on machines in the Azure Pipelines **Hosted Windows 2019 with VS2019** pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
@@ -13,12 +13,11 @@ _Environment:_
 
 ## Powershell Core
 
-_Version:_ 6.1.1
-<br/>
+_Version:_ 6.1.1<br/>
 
 ## Visual Studio 2019 Enterprise
 
-_Version:_ VisualStudioPreview/16.0.0-pre.1.1+28408.50<br/>
+_Version:_ VisualStudioPreview/16.0.0-pre.2.0+28522.59<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview
 
 All available workloads are installed with Visual Studio 2019.
@@ -28,16 +27,16 @@ All available workloads are installed with Visual Studio 2019.
 _Version:_ 10.15.0<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
-* Gulp [[90m18:08:37[39m] CLI version 2.0.1<br/>
+* Gulp [[90m16:33:49[39m] CLI version 2.0.1<br/>
 * Grunt grunt-cli v1.3.2<br/>
-* Bower 1.8.7<br/>
+* Bower 1.8.8<br/>
 * Yarn 1.13.0<br/>
 
 > Note: You can install and use another version of Node.js on Microsoft-hosted agent pools using the [Node tool installer](https://docs.microsoft.com/vsts/pipelines/tasks/tool/node-js) task.
 
 ## npm
 
-_Version:_ 6.6.0<br/>
+_Version:_ 6.7.0<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
@@ -51,8 +50,7 @@ _Environment:_
 
 #### 2.1.0
 
-This version is installed and is available via Get-Module -ListAvailable
-
+This version is installed and is available via Get-Module -ListAvailable
 #### 3.8.0
 
 This version is saved but not installed

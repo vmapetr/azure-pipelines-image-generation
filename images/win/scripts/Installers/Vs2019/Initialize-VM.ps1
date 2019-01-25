@@ -116,9 +116,9 @@ wmic logicaldisk get size,freespace,caption
 # Adding description of the software to Markdown
 
 $Content = @"
-# VSTS Hosted VS2019 image
+# Azure Pipelines Hosted Windows 2019 with VS2019 image
 
-The following software is installed on machines in the VSTS **Hosted VS2019** pool.
+The following software is installed on machines in the Azure Pipelines **Hosted Windows 2019 with VS2019** pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
 
