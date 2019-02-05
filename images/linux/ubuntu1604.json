@@ -102,6 +102,7 @@
                 "{{template_dir}}/scripts/installers/dotnetcore-sdk.sh",
                 "{{template_dir}}/scripts/installers/erlang.sh",
                 "{{template_dir}}/scripts/installers/firefox.sh",
+                "{{template_dir}}/scripts/installers/gcc.sh",
                 "{{template_dir}}/scripts/installers/git.sh",
                 "{{template_dir}}/scripts/installers/go.sh",
                 "{{template_dir}}/scripts/installers/google-chrome.sh",
