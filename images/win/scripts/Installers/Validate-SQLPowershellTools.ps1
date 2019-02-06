@@ -14,7 +14,7 @@ Write-Host "The SQLServer Modules present are:"
 $modules | Select-Object Name,Version,Path | Format-Table
 
 if ($modules) {
-    $sqlServerPSModuleVersion = $modules.Versions
+    $sqlServerPSModuleVersion = $modules.Version
 }
 
 
