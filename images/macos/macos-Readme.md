@@ -4,7 +4,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ## Operating System
 
-- OS X 10.13.6 (17G65) **High Sierra**
+- OS X 10.13.6 (17G5019) **High Sierra**
 
 ## Installed Software
 
