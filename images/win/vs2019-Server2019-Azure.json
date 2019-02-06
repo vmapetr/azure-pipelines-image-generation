@@ -94,7 +94,7 @@
         },
         {
             "type": "windows-restart",
-            "restart_timeout": "30m"
+            "restart_timeout": "10m"
         },
         {
             "type": "powershell",
@@ -110,7 +110,7 @@
         },
         {
             "type": "windows-restart",
-            "restart_timeout": "30m"
+            "restart_timeout": "10m"
         },
         {
             "type": "powershell",
@@ -178,7 +178,7 @@
         },
         {
             "type": "windows-restart",
-            "restart_timeout": "30m"
+            "restart_timeout": "10m"
         },
         {
             "type": "powershell",
@@ -440,7 +440,7 @@
         },
         {
             "type": "windows-restart",
-            "restart_timeout": "30m"
+            "restart_timeout": "10m"
         },
         {
             "type": "powershell",

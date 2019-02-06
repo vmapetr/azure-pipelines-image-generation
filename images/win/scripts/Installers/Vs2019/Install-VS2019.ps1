@@ -158,9 +158,13 @@ $Description = @"
 _Version:_ $version<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2019\$ReleaseInPath
 
-All available workloads are installed with Visual Studio 2019.
+The following workloads and components are installed with Visual Studio 2019:
 "@
 
 Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
+
+# Adding explicitly added Workloads details to markdown by parsing $Workloads
+Add-ContentToMarkdown -Content $($WorkLoads.Split('--') | % { if( ($_.Split(" "))[0] -like "add") { "* " +($_.Split(" "))[1] }  } )
+
 
 exit $exitCode
