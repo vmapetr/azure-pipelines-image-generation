@@ -263,7 +263,7 @@
         {
             "type": "powershell",
             "scripts":[
-                "{{ template_dir }}/scripts/Installers/Install-Go.ps1"
+                "{{ template_dir }}/scripts/Installers/Vs2017/Install-Go.ps1"
             ]
         },
          {
