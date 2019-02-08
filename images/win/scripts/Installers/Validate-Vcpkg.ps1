@@ -15,6 +15,17 @@ else
     exit 1
 }
 
+if ($env:VCPKG_ROOT) 
+{
+    Write-Host "The VCPKG_ROOT environment variable is set"
+    Write-Host $env:VCPKG_ROOT
+}
+else
+{
+    Write-Host "The VCPKG_ROOT environment variable is not set"
+    exit 1
+}
+
 # Adding description of the software to Markdown
 
 # `vcpkg version` gives output like:
@@ -30,6 +41,7 @@ $Description = @"
 _Version:_ $VcpkgVersion<br/>
 _Environment:_
 * PATH: contains location of the vcpkg directory
+* VCPKG_ROOT: root directory of the vcpkg installation
 "@
 
 Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description

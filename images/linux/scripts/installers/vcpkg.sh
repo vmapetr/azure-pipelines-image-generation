@@ -8,14 +8,16 @@
 # Source the helpers for use with the script
 source $HELPER_SCRIPTS/document.sh
 
-VCPKG_BIN=/usr/local/share/vcpkg
+# Set env variable for vcpkg
+VCPKG_ROOT=/usr/local/share/vcpkg
+echo "VCPKG_ROOT=${VCPKG_ROOT}" | tee -a /etc/environment
 
 # Install vcpkg
-git clone --depth=1 https://github.com/Microsoft/vcpkg $VCPKG_BIN
-chmod 0755 $VCPKG_BIN
-$VCPKG_BIN/bootstrap-vcpkg.sh
-$VCPKG_BIN/vcpkg integrate install
-ln -sf /usr/local/share/vcpkg/vcpkg /usr/local/bin
+git clone --depth=1 https://github.com/Microsoft/vcpkg $VCPKG_ROOT
+chmod 0755 $VCPKG_ROOT
+$VCPKG_ROOT/bootstrap-vcpkg.sh
+$VCPKG_ROOT/vcpkg integrate install
+ln -sf $VCPKG_ROOT/vcpkg /usr/local/bin
 
 # Run tests to determine that the software installed as expected
 echo "Testing to make sure that script performed as expected, and basic scenarios work"

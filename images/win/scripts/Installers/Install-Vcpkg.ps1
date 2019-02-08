@@ -16,6 +16,7 @@ git clone --depth=1 $Uri $InstallDir -q
 Invoke-Expression "$InstallDir\bootstrap-vcpkg.bat"
 Invoke-Expression "$InstallDir\$VcpkgExecPath integrate install"
 
-# Add vcpkg to system path
+# Add vcpkg to system environment
 Add-MachinePathItem $InstallDir
 $env:Path = Get-MachinePath
+setx VCPKG_ROOT $InstallDir /M
