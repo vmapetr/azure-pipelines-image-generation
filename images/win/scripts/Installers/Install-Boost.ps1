@@ -30,8 +30,8 @@ function Install-BoostRelease
 
     # Move Boost binaries to release directory
     New-Item -Path $ReleaseDirectory\bin -ItemType Directory -Force
-    Get-ChildItem -Path $TempDirectory\b2.exe | Move-Item -Destination $ReleaseDirectory\bin
-    Get-ChildItem -Path $TempDirectory\bjam.exe | Move-Item -Destination $ReleaseDirectory\bin
+    Move-Item -Path $TempDirectory\b2.exe -Destination $ReleaseDirectory\bin
+    Move-Item -Path $TempDirectory\bjam.exe -Destination $ReleaseDirectory\bin
 
     # Delete Boost repo to conserve space
     Write-Host "Cleaning temp directory of Boost $ReleaseVersion..."
@@ -45,7 +45,7 @@ function Install-BoostRelease
     {
         Write-Host "Adding Boost $ReleaseVersion to the path..."
         # Add the Boost binaries to the path.
-        Add-MachinePathItem $ReleaseDirectory | Out-Null
+        Add-MachinePathItem "$ReleaseDirectory\bin" | Out-Null
         # Set the BOOST_ROOT environment variable.
         setx BOOST_ROOT $ReleaseDirectory /M | Out-Null
     }

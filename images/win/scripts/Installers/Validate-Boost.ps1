@@ -12,9 +12,9 @@ function Get-BoostVersion
         [String]$BoostRelease
     )
 
-    $ReleasePath = "$BoostRootPath\$BoostRelease"
+    $ReleaseBinPath = "$BoostRootPath\$BoostRelease\bin"
 
-    if (Test-Path "$ReleasePath\bin\b2.exe")
+    if (Test-Path "$ReleaseBinPath\b2.exe")
     {
         Write-Host "Boost.Build $BoostRelease is successfully installed"
     }
@@ -24,7 +24,7 @@ function Get-BoostVersion
         exit 1
     }
 
-    if (Test-Path "$ReleasePath\bin\bjam.exe")
+    if (Test-Path "$ReleaseBinPath\bjam.exe")
     {
         Write-Host "Boost.Jam $BoostRelease is successfully installed"
     }
@@ -37,14 +37,14 @@ function Get-BoostVersion
     return $BoostRelease
 }
 
-# Verify that Boost is on the path
+# Verify that Boost binaries is on the path
 if ((Get-Command -Name 'b2') -and (Get-Command -Name 'bjam'))
 {
-    Write-Host "Boost is on the path"
+    Write-Host "Boost binaries is on the path"
 }
 else 
 {
-    Write-Host "Boost is not on the path"
+    Write-Host "Boost binaries is not on the path"
     exit 1    
 }
 
