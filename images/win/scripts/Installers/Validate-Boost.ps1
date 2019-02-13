@@ -12,39 +12,29 @@ function Get-BoostVersion
         [String]$BoostRelease
     )
 
-    $ReleaseBinPath = "$BoostRootPath\$BoostRelease\bin"
+    $ReleasePath = "$BoostRootPath\$BoostRelease"
 
-    if (Test-Path "$ReleaseBinPath\b2.exe")
+    if (Test-Path $ReleasePath)
     {
-        Write-Host "Boost.Build $BoostRelease is successfully installed"
+        Write-Host "Boost $BoostRelease is successfully installed"
     }
     else 
     {
-        Write-Host "Boost.Build $BoostRelease is not installed"
-        exit 1
-    }
-
-    if (Test-Path "$ReleaseBinPath\bjam.exe")
-    {
-        Write-Host "Boost.Jam $BoostRelease is successfully installed"
-    }
-    else 
-    {
-        Write-Host "Boost.Jam $BoostRelease is not installed"
+        Write-Host "Boost $BoostRelease is not installed"
         exit 1
     }
 
     return $BoostRelease
 }
 
-# Verify that Boost binaries is on the path
-if ((Get-Command -Name 'b2') -and (Get-Command -Name 'bjam'))
+if ($env:BOOST_ROOT)
 {
-    Write-Host "Boost binaries is on the path"
+    Write-Host "The BOOST_ROOT environment variable is set"
+    Write-Host $env:BOOST_ROOT
 }
 else 
 {
-    Write-Host "Boost binaries is not on the path"
+    Write-Host "The BOOST_ROOT environment variable is not ser"
     exit 1    
 }
 
