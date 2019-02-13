@@ -439,6 +439,12 @@
             ]
         },
         {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Install-Boost.ps1"
+            ]
+        },
+        {
             "type": "windows-restart",
             "restart_timeout": "10m"
         },
@@ -626,6 +632,12 @@
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-CloudFoundryCli.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Validate-Boost.ps1"
             ]
         },
         {

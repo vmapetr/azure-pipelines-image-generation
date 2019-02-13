@@ -16,13 +16,29 @@ function Install-BoostRelease
 
     $SourceUri = 'https://github.com/boostorg/boost.git'
     $ReleaseDirectory = "$BoostRootDirectory\$ReleaseVersion"
+    $TempDirectory = "$BoostRootDirectory\Temp"
+
+    New-Item -Path $TempDirectory -ItemType Directory -Force
+    New-Item -Path $ReleaseDirectory -ItemType Directory -Force
 
     Write-Host "Downloading Boost $ReleaseVersion..."
-    git clone --recursive --branch "boost-$ReleaseVersion" $SourceUri $ReleaseDirectory --depth 1 -q
+    git clone --recursive --branch "boost-$ReleaseVersion" $SourceUri $TempDirectory --depth 1 -q
 
     # Build and integrate Boost release
-    Invoke-Expression "$ReleaseDirectory\bootstrap.bat"
-    Invoke-Expression "$ReleaseDirectory\b2 install --prefix=$ReleaseDirectory"
+    Invoke-Expression "$TempDirectory\bootstrap.bat"
+    Invoke-Expression "$TempDirectory\b2 install --prefix=$ReleaseDirectory"
+
+    # Move Boost binaries to release directory
+    New-Item -Path $ReleaseDirectory\bin -ItemType Directory -Force
+    Get-ChildItem -Path $TempDirectory\b2.exe | Move-Item -Destination $ReleaseDirectory\bin
+    Get-ChildItem -Path $TempDirectory\bjam.exe | Move-Item -Destination $ReleaseDirectory\bin
+
+    # Delete Boost repo to conserve space
+    Write-Host "Cleaning temp directory of Boost $ReleaseVersion..."
+    if (Test-Path $TempDirectory)
+    {
+        Remove-Item $TempDirectory -Recurse -Force
+    }
 
     # Make this the default version of Boost?
     if ($AddToDefaultPath)
