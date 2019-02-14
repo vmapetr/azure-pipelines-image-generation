@@ -14,7 +14,7 @@ function Get-BoostVersion
 
     $ReleasePath = "$BoostRootPath\$BoostRelease"
 
-    if (Test-Path "$ReleasePath\b2.exe")
+    if (Test-Path "$ReleasePath")
     {
         Write-Host "Boost $BoostRelease is successfully installed"
     }
