@@ -24,7 +24,7 @@ function Install-BoostRelease
 
     # Build and integrate Boost release
     Invoke-Expression "$ReleaseDirectory\bootstrap.bat"
-    Invoke-Expression "$ReleaseDirectory\b2 install"
+    Invoke-Expression "$ReleaseDirectory\b2 install --prefix=$ReleaseDirectory"
 
     # Make this the default version of Boost?
     if ($AddToDefaultPath)
