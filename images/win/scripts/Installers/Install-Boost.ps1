@@ -1,7 +1,7 @@
 ################################################################################
 ##  File:  Install-Boost.ps1
 ##  Team:  CI-Platform
-##  Desc:  Install Boost
+##  Desc:  Install Boost C++ Libraries
 ################################################################################
 
 Import-Module -Name ImageHelpers -Force
@@ -16,17 +16,15 @@ function Install-BoostRelease
 
     $SourceUri = 'https://github.com/boostorg/boost.git'
     $ReleaseDirectory = "$BoostRootDirectory\$ReleaseVersion"
-    $RepoDirectory = "$BoostRootDirectory\sources\$ReleaseVersion"
 
-    New-Item -Path $RepoDirectory -ItemType Directory -Force
     New-Item -Path $ReleaseDirectory -ItemType Directory -Force
 
     Write-Host "Downloading Boost $ReleaseVersion..."
-    git clone --recursive --branch "boost-$ReleaseVersion" $SourceUri $RepoDirectory --depth 1 -q
+    git clone --recursive --branch "boost-$ReleaseVersion" $SourceUri $ReleaseDirectory --depth 1 -q
 
     # Build and integrate Boost release
-    Invoke-Expression "$RepoDirectory\bootstrap.bat"
-    Invoke-Expression "$RepoDirectory\b2 install --prefix=$ReleaseDirectory"
+    Invoke-Expression "$ReleaseDirectory\bootstrap.bat"
+    Invoke-Expression "$ReleaseDirectory\b2 install"
 
     # Make this the default version of Boost?
     if ($AddToDefaultPath)
@@ -46,18 +44,18 @@ function Install-BoostRelease
 # Root folder of all Boost releases
 $BoostRootPath = 'C:\Program Files\Boost'
 
-# Install Boost 1.66.x
+# Install Boost 1.66.0
 $InstallDirectory = Install-BoostRelease -BoostRootDirectory $BoostRootPath -ReleaseVersion '1.66.0'
-setx BOOST_ROOT_1_66 $InstallDirectory /M
+setx BOOST_ROOT_1_66_0 $InstallDirectory /M
 
-# Install Boost 1.67.x
+# Install Boost 1.67.0
 $InstallDirectory = Install-BoostRelease -BoostRootDirectory $BoostRootPath -ReleaseVersion '1.67.0'
-setx BOOST_ROOT_1_67 $InstallDirectory /M
+setx BOOST_ROOT_1_67_0 $InstallDirectory /M
 
-# Install Boost 1.68.x
+# Install Boost 1.68.0
 $InstallDirectory = Install-BoostRelease -BoostRootDirectory $BoostRootPath -ReleaseVersion '1.68.0'
-setx BOOST_ROOT_1_68 $InstallDirectory /M
+setx BOOST_ROOT_1_68_0 $InstallDirectory /M
 
-# Install Boost 1.69.x
+# Install Boost 1.69.0
 $InstallDirectory = Install-BoostRelease -BoostRootDirectory $BoostRootPath -ReleaseVersion '1.69.0' -AddToDefaultPath
-setx BOOST_ROOT_1_69 $InstallDirectory /M
+setx BOOST_ROOT_1_69_0 $InstallDirectory /M

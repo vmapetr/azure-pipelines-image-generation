@@ -1,7 +1,7 @@
 ################################################################################
 ##  File:  Validate-Boost.ps1
 ##  Team:  CI-Platform
-##  Desc:  Validate Boost
+##  Desc:  Validate Boost C++ Libraries
 ################################################################################
 
 function Get-BoostVersion
@@ -14,7 +14,7 @@ function Get-BoostVersion
 
     $ReleasePath = "$BoostRootPath\$BoostRelease"
 
-    if (Test-Path $ReleasePath)
+    if (Test-Path "$ReleasePath\b2.exe")
     {
         Write-Host "Boost $BoostRelease is successfully installed"
     }
@@ -34,7 +34,7 @@ if ($env:BOOST_ROOT)
 }
 else 
 {
-    Write-Host "The BOOST_ROOT environment variable is not ser"
+    Write-Host "The BOOST_ROOT environment variable is not set"
     exit 1    
 }
 
@@ -52,22 +52,24 @@ $Description = @"
 #### $BoostVersion_1_66
 
 _Environment:_
-* BOOST_ROOT_1_66: root directory of the Boost version $BoostVersion_1_66 installation
+* BOOST_ROOT_1_66_0: root directory of the Boost version $BoostVersion_1_66 installation
 
 #### $BoostVersion_1_67
 
 _Environment:_
-* BOOST_ROOT_1_67: root directory of the Boost version $BoostVersion_1_67 installation
+* BOOST_ROOT_1_67_0: root directory of the Boost version $BoostVersion_1_67 installation
 
 #### $BoostVersion_1_68
 
 _Environment:_
-* BOOST_ROOT_1_68: root directory of the Boost version $BoostVersion_1_68 installation
+* BOOST_ROOT_1_68_0: root directory of the Boost version $BoostVersion_1_68 installation
 
 #### $BoostVersionOnPath
+
+_Environment:_
 * PATH: contains the location of Boost version $BoostVersionOnPath
 * BOOST_ROOT: root directory of the Boost version $BoostVersionOnPath installation
-* BOOST_ROOT_1_69: root directory of the Boost version $BoostVersionOnPath installation
+* BOOST_ROOT_1_69_0: root directory of the Boost version $BoostVersionOnPath installation
 "@
 
 Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
