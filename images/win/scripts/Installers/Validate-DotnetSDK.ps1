@@ -15,7 +15,7 @@ else
 }
 
 $CurrentPath = Get-MachinePath
-if (!($CurrentPath -Match "C:\Users\VssAdmisnitrator\.dotnet\tools"))
+if (!($CurrentPath -Like "*C:\Users\VssAdmisnitrator\.dotnet\tools*"))
 {
     Write-Host ".Net Core global tool path (C:\Users\VssAdmisnitrator\.dotnet\tools) is added to system path envrionment variable."
 }
