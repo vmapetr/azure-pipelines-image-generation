@@ -10,10 +10,20 @@ if(Get-Command -Name 'dotnet')
 }
 else
 {
-     Write-Host "dotnet is not on path"
+    Write-Host "dotnet is not on path"
     exit 1
 }
 
+$CurrentPath = Get-MachinePath
+if ($CurrentPath -Like "*C:\Users\VssAdmisnitrator\.dotnet\tools*")
+{
+    Write-Host ".Net Core global tool path (C:\Users\VssAdmisnitrator\.dotnet\tools) is added to system path envrionment variable."
+}
+else
+{
+    Write-Host ".Net Core global tool path is not on system path"
+    exit 1
+}
 
 # Adding description of the software to Markdown
 $SoftwareName = ".NET Core"
