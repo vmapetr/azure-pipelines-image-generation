@@ -241,7 +241,7 @@
                 "GO_DEFAULT=1.11.5"
             ],
             "scripts":[
-                "{{ template_dir }}/scripts/Installers/Vs2019/Install-Go.ps1"
+                "{{ template_dir }}/scripts/Installers/Install-Go.ps1"
             ]
         },
          {
