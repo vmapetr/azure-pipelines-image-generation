@@ -38,7 +38,12 @@ Expand-Archive -Path .\android-sdk-licenses.zip -DestinationPath 'C:\Program Fil
 $sdk_root = "C:\Program Files (x86)\Android\android-sdk"
 
 # The NDK is installed by Visual Studio at this location:
-$ndk_root = "C:\Microsoft\AndroidNDK64\"
+# The NDK is installed by Visual Studio at this location:
+$ndk_root = "C:\Microsoft\AndroidNDK64"
+
+if(-not (Test-Path $ndk_root)) {
+    $ndk_root = "C:\ProgramData\Microsoft\AndroidNDK64"
+}
 
 if(Test-Path $ndk_root){
 
