@@ -23,5 +23,7 @@ if ! command -v az; then
     exit 1
 fi
 
+az extension add -n azure-devops
+
 # Document what was added to the image
 DocumentInstalledItem "Azure CLI ($(az -v | head -n 1))"
