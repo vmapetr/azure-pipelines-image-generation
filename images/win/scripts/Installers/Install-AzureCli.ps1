@@ -6,3 +6,4 @@
 
 choco install azure-cli -y
 
+az extension add -n azure-devops
