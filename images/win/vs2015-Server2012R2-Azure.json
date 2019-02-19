@@ -197,6 +197,12 @@
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Vs2015/Install-Wix.ps1"
             ]
+        },	
+	{
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Update-DotnetTLS.ps1"
+            ]
         },
         {
             "type": "powershell",
@@ -306,12 +312,6 @@
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Install-AzureModules.ps1"
-            ]
-        },
-	{
-            "type": "powershell",
-            "scripts":[
-                "{{ template_dir }}/scripts/Installers/Update-DotnetTLS.ps1"
             ]
         },
         {
