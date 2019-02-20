@@ -381,7 +381,8 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 10.14.2<br/>
+_Version:_ 10.15.0<br/>
+_Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
 
