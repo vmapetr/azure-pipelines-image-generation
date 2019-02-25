@@ -25,13 +25,3 @@ fi
 
 # Document what was added to the image
 DocumentInstalledItem "Azure CLI ($(az -v | head -n 1))"
-
-az extension add -n azure-devops
-
-if [ $? -eq 0 ]
-then
-    echo "azure DevOps Cli extension was installed"
-else
-    echo "azure DevOps Cli extension was not installed"
-    exit 1
-fi
