@@ -1,7 +1,7 @@
 ################################################################################
-##  File:  Install-AzureCli.ps1
-##  Team:  ReleaseManagement
-##  Desc:  Install Azure CLI
+##  File:  Install-AzureDevOpsCli.ps1
+##  Team:  Protocol CLI
+##  Desc:  Install Azure DevOps CLI
 ################################################################################
 
-choco install azure-cli -y
+az extension add -n azure-devops
