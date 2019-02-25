@@ -14,19 +14,6 @@ else
     exit 1
 }
 
-az devops -h
-
-if($LastExitCode -ne 0)
-{
-    Write-Error "Azure DevOps Cli extension not present"
-    exit 1
-}
-else
-{
-    Write-Host "Azure DevOps Cli extension is present"
-}
-
-
 if( $($(az --version) | out-string)  -match  'azure-cli \((?<version>.*)\)' )
 {
    $azureCliVersion = $Matches.version
@@ -42,3 +29,15 @@ _Environment:_
 "@
 
 Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
+
+az devops -h
+
+if($LastExitCode -ne 0)
+{
+    Write-Error "Azure DevOps Cli extension not present"
+    exit 1
+}
+else
+{
+    Write-Host "Azure DevOps Cli extension is present"
+}
