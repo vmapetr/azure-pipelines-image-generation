@@ -5,6 +5,9 @@
 ##  Desc:  Installed Azure DevOps CLI (az devops)
 ################################################################################
 
+# Source the helpers for use with the script
+source $HELPER_SCRIPTS/document.sh
+
 # install azure devops Cli extension
 az extension add -n azure-devops
 
@@ -18,4 +21,4 @@ else
 fi
 
 # Document what was added to the image
-DocumentInstalledItem "Azure CLI ($(az -v | grep 'azure-devops'))"
+DocumentInstalledItem "Azure CLI ($(az -v | grep azure-devops))"
