@@ -28,7 +28,7 @@ Function Get-PackerTemplatePath {
             $relativePath = "\images\linux\ubuntu1604.json"
         }
         ([ImageType]::WinCon) {
-            $relativePath = "\images\linux\WindowsContainer1803-Azure.json"
+            $relativePath = "\images\win\WindowsContainer1803-Azure.json"
         }
     }
 
