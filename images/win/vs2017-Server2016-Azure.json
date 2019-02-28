@@ -268,10 +268,10 @@
         },
         {
             "type": "powershell",
-	    "environment_vars": [
-		"GO_VERSIONS=1.9.7,1.10.8,1.11.5",
-		"GO_DEFAULT=1.11.5"
-	    ],
+            "environment_vars": [
+                "GO_VERSIONS=1.9.7,1.10.8,1.11.5",
+                "GO_DEFAULT=1.11.5"
+            ],
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Install-Go.ps1"
             ]
@@ -312,7 +312,7 @@
                 "{{ template_dir }}/scripts/Installers/Install-SeleniumWebDrivers.ps1"
             ]
         },
-		{
+        {
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Enable-DeveloperMode.ps1"
@@ -320,13 +320,13 @@
             "elevated_user": "{{user `install_user`}}",
             "elevated_password": "{{user `install_password`}}"
         },
-		{
+        {
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Install-WinAppDriver.ps1"
             ]
         },
-		{
+        {
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-WinAppDriver.ps1"
@@ -428,6 +428,16 @@
         },
         {
             "type": "powershell",
+            "environment_vars": [
+                "BOOST_VERSIONS=1.66.0,1.67.0,1.68.0,1.69.0",
+                "BOOST_DEFAULT=1.69.0"
+            ],
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Install-Boost.ps1"
+            ]
+        },
+        {
+            "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Install-Mercurial.ps1"
             ]
@@ -474,7 +484,7 @@
                 "{{ template_dir }}/scripts/Installers/Install-CloudFoundryCli.ps1"
             ]
         },
-		{
+        {
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Install-Vcpkg.ps1"
@@ -522,15 +532,25 @@
         },
         {
             "type": "powershell",
-	    "environment_vars": [
-        	"GO_VERSIONS=1.9.7,1.10.8,1.11.5",
-        	"GO_DEFAULT=1.11.5"
-    	    ],
+            "environment_vars": [
+                "GO_VERSIONS=1.9.7,1.10.8,1.11.5",
+                "GO_DEFAULT=1.11.5"
+            ],
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-Go.ps1"
             ]
         },
-          {
+        {
+            "type": "powershell",
+            "environment_vars": [
+                "BOOST_VERSIONS=1.66.0,1.67.0,1.68.0,1.69.0",
+                "BOOST_DEFAULT=1.69.0"
+            ],
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Validate-Boost.ps1"
+            ]
+        },
+        {
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-PHP.ps1"

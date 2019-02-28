@@ -197,7 +197,7 @@
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Vs2015/Install-Wix.ps1"
             ]
-        },	
+        },
 	{
             "type": "powershell",
             "scripts":[
@@ -224,10 +224,10 @@
         },
         {
             "type": "powershell",
-	    "environment_vars": [
-        	"GO_VERSIONS=1.10.8,1.11.5",
-        	"GO_DEFAULT=1.11.5"
-    	    ],
+            "environment_vars": [
+                "GO_VERSIONS=1.10.8,1.11.5",
+                "GO_DEFAULT=1.11.5"
+            ],
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Install-Go.ps1"
             ]
@@ -286,7 +286,7 @@
                 "{{ template_dir }}/scripts/Installers/Update-AndroidSDK.ps1"
             ]
         },
-	{
+        {
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Install-MysqlCli.ps1"
@@ -350,11 +350,11 @@
         },
         {
             "type": "powershell",
-	    "environment_vars": [
-        	"GO_VERSIONS=1.10.8,1.11.5",
-        	"GO_DEFAULT=1.11.5"
-    	    ],            
-	    "scripts":[
+            "environment_vars": [
+                "GO_VERSIONS=1.10.8,1.11.5",
+                "GO_DEFAULT=1.11.5"
+            ],
+            "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-Go.ps1"
             ]
         },
@@ -430,7 +430,7 @@
                 "{{ template_dir }}/scripts/Installers/Validate-MysqlCli.ps1"
             ]
         },
-	{
+        {
             "type": "powershell",
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-DotnetTLS.ps1"

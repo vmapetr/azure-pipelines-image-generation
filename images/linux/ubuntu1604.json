@@ -154,6 +154,19 @@
             "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
         },
         {
+            "type": "shell",
+            "scripts":[
+                "{{template_dir}}/scripts/installers/boost.sh"
+            ],
+            "environment_vars": [
+                "METADATA_FILE={{user `metadata_file`}}",
+                "HELPER_SCRIPTS={{user `helper_script_folder`}}",
+                "BOOST_VERSIONS=1.66.0,1.67.0,1.68.0,1.69.0",
+                "BOOST_DEFAULT=1.69.0"
+            ],
+            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+        },
+        {
             "type": "file",
             "source": "{{user `metadata_file`}}",
             "destination": "./Ubuntu1604-README.md",
