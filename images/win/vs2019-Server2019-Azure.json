@@ -403,7 +403,7 @@
         {
             "type": "powershell",
             "environment_vars": [
-                "BOOST_VERSIONS=1.66.0,1.67.0,1.68.0,1.69.0",
+                "BOOST_VERSIONS=1.69.0",
                 "BOOST_DEFAULT=1.69.0"
             ],
             "scripts":[
@@ -511,7 +511,7 @@
         {
             "type": "powershell",
             "environment_vars": [
-                "BOOST_VERSIONS=1.66.0,1.67.0,1.68.0,1.69.0",
+                "BOOST_VERSIONS=1.69.0",
                 "BOOST_DEFAULT=1.69.0"
             ],
             "scripts":[
