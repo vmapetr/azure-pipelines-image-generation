@@ -132,7 +132,7 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
 
 $ReleaseInPath = 'Enterprise'
 $Sku = 'Enterprise'
-$VSBootstrapperURL = 'https://aka.ms/vs/16/RC/vs_Enterprise.exe'
+$VSBootstrapperURL = 'https://aka.ms/vs/16/release/vs_Enterprise.exe'
 
 $ErrorActionPreference = 'Stop'
 
