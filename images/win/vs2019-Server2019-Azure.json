@@ -675,6 +675,12 @@
             ]
         },
         {
+            "type": "powershell",
+            "scripts":[
+                "{{ template_dir }}/scripts/Installers/Validate-Vcpkg.ps1"
+            ]
+        },
+        {
             "type": "file",
             "source": "C:\\InstalledSoftware.md",
             "destination": "{{ template_dir }}/InstalledSoftware.md",
