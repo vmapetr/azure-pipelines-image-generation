@@ -13,7 +13,7 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 18.09.1<br/>
+_Version:_ 18.09.3<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
@@ -25,21 +25,21 @@ _Environment:_
 
 ## Powershell Core
 
-_Version:_ 6.1.2
+_Version:_ 6.1.3
 <br/>
 
 ## Docker images
 
 The following container images have been cached:
-* microsoft/dotnet-framework@sha256:f937dbfb092e5a04ca6ac93d49ab0b6c375bdaf9cd4d9f7bd9d4a9407eb36585
+* microsoft/aspnet@sha256:958114016f74f4ffc10b7f065ca4f340e0a0c390cb276c3659d5f8af43d388c7
+* microsoft/dotnet-framework@sha256:3c3fe0db41aa3500539a9667e0f1c2f6c2cc411bb658502bef8629f01f78b70e
 * microsoft/windowsservercore@sha256:05de0a0ac13d3652bd1f2281b8589459ebb611092e3fe4d8f1be91f1f6984266
-* microsoft/aspnet@sha256:a4d6856b978e5b9858ca294c97c5f4bc9ecfe3b062a7a015eaf625801573bc11
 * microsoft/nanoserver@sha256:2b783310e6c82de737e893abd53ae238ca56b5a96e2861558fb9a111d6691ddb
 * microsoft/aspnetcore-build@sha256:9ecc7c5a8a7a11dca5f08c860165646cb30d084606360a3a72b9cbe447241c0c
 
 ## Visual Studio 2017 Enterprise
 
-_Version:_ VisualStudio/15.9.6+28307.344<br/>
+_Version:_ VisualStudio/15.9.7+28307.423<br/>
 _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
 
 The following workloads including required and recommended components are installed with Visual Studio 2017:
@@ -126,7 +126,7 @@ In addition the following optional components are installed:
 
 ## SQL Server Data Tools for VS 2017
 
-_Version:_ 15.1.61901.3230<br/>
+_Version:_ 15.1.61901.24070<br/>
 
 The following components are installed:
 
@@ -353,9 +353,13 @@ _Description:_ .NET has been configured to use TLS 1.2 by default
 
 ## Azure CLI
 
-_Version:_ 2.0.57<br/>
+_Version:_ <br/>
 _Environment:_
 * PATH: contains location of az.cmd
+
+## Azure DevOps Cli extension
+
+_Version:_ azure-devops                       0.3.0
 
 ## Python
 
@@ -364,30 +368,45 @@ _Version:_ 2.7.14 (x86)<br/>_Version:_ 3.4.4 (x86)<br/>_Version:_ 3.5.4 (x86)<br
 
 ## Git
 
-_Version:_ 2.20.1<br/>
+_Version:_ 2.21.0<br/>
 _Environment:_
 * PATH: contains location of git.exe
 
 ## Git Large File Storage (LFS)
 
-_Version:_ 2.6.1<br/>
+_Version:_ 2.7.1<br/>
 _Environment:_
 * PATH: contains location of git-lfs.exe
 * GIT_LFS_PATH: location of git-lfs.exe
 
 ## Go (x64)
 
-#### 1.11.5
+#### 1.9.7
 
 _Environment:_
-* GOROOT_1_9_X64: root directory of the Go 1.11.5 installation
+* GOROOT_1_9_X64: root directory of the Go 1.9.7 installation
+
+#### 1.10.8
+
+_Environment:_
+* GOROOT_1_10_X64: root directory of the Go 1.10.8 installation
 
 #### 1.11.5
 
 _Environment:_
 * PATH: contains the location of go.exe version 1.11.5
 * GOROOT: root directory of the Go 1.11.5 installation
-* GOROOT_1_10_X64: root directory of the Go 1.11.5 installation
+* GOROOT_1_11_X64: root directory of the Go 1.11.5 installation
+
+
+## Boost
+
+#### 
+
+* PATH: contains the location of Boost version 
+* BOOST_ROOT: root directory of the Boost version  installation
+* BOOST_ROOT_1_69_0: root directory of the Boost version  installation
+
 
 ## PHP (x64)
 
@@ -455,10 +474,11 @@ _Environment:_
 
 ## Node.js
 
-_Version:_ 10.15.1<br/>
+_Version:_ 10.15.2<br/>
+_Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
-* Gulp [[90m23:15:50[39m] CLI version 2.0.1<br/>
+* Gulp [[90m21:46:04[39m] CLI version 2.0.1<br/>
 * Grunt grunt-cli v1.3.2<br/>
 * Bower 1.8.8<br/>
 * Yarn 1.13.0<br/>
@@ -467,7 +487,7 @@ _Environment:_
 
 ## npm
 
-_Version:_ 6.7.0<br/>
+_Version:_ 6.8.0<br/>
 _Environment:_
 * PATH: contains location of npm.cmd
 
@@ -500,7 +520,7 @@ _Environment:_
 
 ## Gradle
 
-_Version:_ 5.2<br/>
+_Version:_ 5.2.1<br/>
 _Environment:_
 * PATH: contains location of gradle
 
@@ -522,10 +542,12 @@ _Environment:_
 * PATH: contains location of dotnet.exe
 
 _SDK:_
+* 2.2.104 C:\Program Files\dotnet\sdk\2.2.104
 * 2.2.103 C:\Program Files\dotnet\sdk\2.2.103
 * 2.2.102 C:\Program Files\dotnet\sdk\2.2.102
 * 2.2.101 C:\Program Files\dotnet\sdk\2.2.101
 * 2.2.100 C:\Program Files\dotnet\sdk\2.2.100
+* 2.1.504 C:\Program Files\dotnet\sdk\2.1.504
 * 2.1.503 C:\Program Files\dotnet\sdk\2.1.503
 * 2.1.502 C:\Program Files\dotnet\sdk\2.1.502
 * 2.1.500 C:\Program Files\dotnet\sdk\2.1.500
@@ -554,14 +576,17 @@ _SDK:_
 * 1.1.7 C:\Program Files\dotnet\sdk\1.1.7
 * 1.1.5 C:\Program Files\dotnet\sdk\1.1.5
 * 1.1.4 C:\Program Files\dotnet\sdk\1.1.4
+* 1.1.12 C:\Program Files\dotnet\sdk\1.1.12
 * 1.1.11 C:\Program Files\dotnet\sdk\1.1.11
 * 1.1.10 C:\Program Files\dotnet\sdk\1.1.10
 * 1.0.4 C:\Program Files\dotnet\sdk\1.0.4
 * 1.0.1 C:\Program Files\dotnet\sdk\1.0.1
 
 _Runtime:_
+* 2.2.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.2
 * 2.2.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.1
 * 2.2.0 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.2.0
+* 2.1.8 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.8
 * 2.1.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.7
 * 2.1.6 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6
 * 2.1.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.5
@@ -583,6 +608,7 @@ _Runtime:_
 * 1.1.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.5
 * 1.1.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.4
 * 1.1.2 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.2
+* 1.1.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.11
 * 1.1.10 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.10
 * 1.1.1 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.1.1
 * 1.0.9 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.9
@@ -590,6 +616,7 @@ _Runtime:_
 * 1.0.7 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.7
 * 1.0.5 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.5
 * 1.0.4 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.4
+* 1.0.14 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.14
 * 1.0.13 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.13
 * 1.0.12 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.12
 * 1.0.11 C:\Program Files\dotnet\shared\Microsoft.NETCore.App\1.0.11
@@ -617,7 +644,7 @@ _Environment:_
 
 ## TypeScript
 
-_Version:_ Version 3.3.3<br/>
+_Version:_ Version 3.3.3333<br/>
 
 ## Miniconda
 
@@ -627,12 +654,12 @@ _Environment:_
 
 ## Azure CosmosDb Emulator
 
-_Version:_ 2.1.4.0<br/>
+_Version:_ 2.2.1.0<br/>
 _Location:_ C:\Program Files\Azure Cosmos DB Emulator\
 
 ## 7zip
 
-_Version:_ 18.06<br/>
+_Version:_ 19.00<br/>
 
 ## Mercurial
 
@@ -660,10 +687,11 @@ _Version:_ 1.1.1a at C:\Program Files\Git\usr\bin\openssl.exe<br/>_Version:_ 1.1
 
 ## Cloud Foundry CLI
 
-_Version:_ 6.42.0<br/>
+_Version:_ 6.43.0<br/>
 
 ## Vcpkg
 
 _Version:_ 2018.11.23-nohash<br/>
 _Environment:_
 * PATH: contains location of the vcpkg directory
+* VCPKG_ROOT: root directory of the vcpkg installation
