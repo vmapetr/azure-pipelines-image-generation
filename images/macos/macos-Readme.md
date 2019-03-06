@@ -18,12 +18,12 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Node.js 6.16.0
 - Node.js 8.11.3
 - NVM 0.33.11
-- PowerShell 6.1.2
+- PowerShell 6.1.3
 - Python 2.7.15
 - Python 3.7.2
 - Ruby 2.6.1p33
 - .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 1.1.12, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502, 2.1.504, 2.2.101, 2.2.102, 2.2.103, 2.2.104
-- Go 1.11.5
+- Go 1.12
 
 ### Package Management
 
@@ -45,15 +45,15 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 ### Utilities
 
 - curl 7.63.0 (libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
-- Git 2.20.1
+- Git 2.21.0
 - Git LFS 2.7.0
 - GNU Wget 1.20.1
 - Subversion (SVN) 1.11.1
 
 ### Tools
 
-- fastlane 2.116.0
-- App Center CLI 1.1.11
+- fastlane 2.116.1
+- App Center CLI 1.1.12
 - Azure-CLI 2.0.58
 
 ### Pre-cached tools
@@ -501,7 +501,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Visual Studio for Mac
 
-- 7.7.4.1
+- 7.8.0.1624
 
 ### Mono
 
@@ -518,7 +518,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Xamarin.iOS SDK
 
-- 12.2.1.13
+- 12.2.1.15
 - 12.2.1.11
 - 12.0.0.15
 - 12.0.0.10
@@ -550,7 +550,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Xamarin.Mac SDK
 
-- 5.2.1.13
+- 5.2.1.15
 - 5.3.1.28
 - 5.2.1.11
 - 4.99.3.740
