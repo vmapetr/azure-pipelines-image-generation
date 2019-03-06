@@ -2,6 +2,10 @@
 
 The following software is installed on machines in the Azure Pipelines **macOS-10.13** VM image ('Hosted macOS Preview' pool).
 
+## Upcoming Image Changes
+
+We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/blog/microsoft-and-azul-systems-bring-free-java-lts-support-to-azure/) in April 2019. We will support Azul OpenJDKs 7, 8, and 11 and will be deprecating support for Java 9 and 10.
+
 ## Operating System
 
 - OS X 10.13.6 (17G5019) **High Sierra**
