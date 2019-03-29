@@ -25,18 +25,18 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - PowerShell 6.1.3
 - Python 2.7.16
 - Python 3.7.2
-- Ruby 2.6.1p33
+- Ruby 2.6.2p47
 - .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 1.1.12, 1.1.13, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.504, 2.1.505, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502, 2.1.504, 2.2.101, 2.2.102, 2.2.103, 2.2.104, 2.2.105
-- Go 1.12
+- Go 1.12.1
 
 ### Package Management
 
 - Bundler 2.0.1
 - Carthage 0.32.0
-- CocoaPods 1.5.3
-- Homebrew 2.0.4
+- **CocoaPods 1.6.1** (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to CocoaPods 1.5.3 using this [post-clone script](https://github.com/Microsoft/appcenter-build-scripts-examples/tree/master/general/cocoapods-rollback))
+- Homebrew 2.0.5
 - NPM 3.10.10
-- Yarn 1.13.0
+- Yarn 1.15.2
 - NuGet 4.7.0.5148
 - pip 19.0.2
 - Miniconda 4.5.11
@@ -56,7 +56,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Tools
 
-- fastlane 2.117.1
+- fastlane 2.118.1
 - App Center CLI 1.1.13
 - Azure-CLI 2.0.60
 
@@ -80,7 +80,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Xcode Support Tools
 
-- Nomad CLI 3.0.2
+- Nomad CLI 3.0.3
 - Nomad CLI IPA 0.14.3
 - xcpretty 0.3.0
 - xctool 0.3.5
@@ -505,7 +505,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Visual Studio for Mac
 
-- 7.8.0.1624
+- 7.8.3.2
 
 ### Mono
 
@@ -525,7 +525,6 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - 12.2.1.15
 - 12.2.1.11
 - 12.0.0.15
-- 12.0.0.10
 - 11.14.0.13
 - 11.12.0.4
 - 11.9.1.24
@@ -539,8 +538,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Xamarin.Android SDK
 
-- 9.1.5-1
-- 9.1.0-38
+- 9.1.8.0
 - 9.0.0-20
 - 9.0.0-18
 - 8.3.3-2
@@ -554,10 +552,9 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Xamarin.Mac SDK
 
-- 5.2.1.15
 - 5.3.1.28
-- 5.2.1.11
-- 4.99.3.740
+- 5.2.1.15
+- 5.2.1.9
 - 4.6.0.13
 - 4.4.1.193
 - 4.2.1.28
