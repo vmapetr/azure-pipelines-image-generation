@@ -1,5 +1,5 @@
 
-# ![Azure Pipelines](/docs/resources/DevOpsIconPipelines40.png "Azure Pipelines") Azure Pipelines VM images for Microsoft-hosted CI/CD
+# ![Azure Pipelines](/help/resources/DevOpsIconPipelines40.png "Azure Pipelines") Azure Pipelines VM images for Microsoft-hosted CI/CD
 
 ## Overview
 
@@ -26,7 +26,7 @@ If you have an issue or request for an image, please create an issue in this rep
 
 ### Windows
 
-- [Instructions to build Windows images](docs/CreateImageAndAzureResources.md)
+- [Instructions to build Windows images](/help/CreateImageAndAzureResources.md)
 - [How to use Packer to create Windows VM images in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/build-image-with-packer)
 
 ## Contributing
