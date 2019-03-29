@@ -9,7 +9,7 @@ name: Azure Pipelines Image Generation
 description: Microsoft
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /help/resources/DevOpsIconPipelines40.png
+avatar: https://raw.githubusercontent.com/microsoft/azure-pipelines-image-generation/master/help/resources/DevOpsIconPipelines40.png
 
 #
 # Flags below are optional
