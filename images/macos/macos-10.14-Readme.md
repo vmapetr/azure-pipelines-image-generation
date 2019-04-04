@@ -1,6 +1,6 @@
 # Azure Pipelines hosted macOS image
 
-The following software is installed on machines in the Azure Pipelines **macOS-10.14** VM image ('Hosted macOS Preview' pool).
+The following software is installed on machines in the Azure Pipelines **macOS-10.14** VM image ('Hosted macOS' pool).
 
 ## Upcoming Image Changes
 
