@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Error: CocoaPods <podname> does not support provisioning profiles
+title: CocoaPods <podname> does not support provisioning profiles
 ---
 
 With the roll out of CocoaPods 1.6.1 on the Microsoft-hosted macOS image, your pipeline may encounter the following error code 65:
