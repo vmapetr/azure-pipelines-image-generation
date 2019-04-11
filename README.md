@@ -13,7 +13,8 @@ Subscribe to [this RSS feed](https://microsoft.github.io/azure-pipelines-image-g
 
 # Image contents
 
-- [macOS 10.13](images/macos/macos-Readme.md)
+- [macOS 10.13](images/macos/macos-10.13-Readme.md)
+- [macOS 10.14](images/macos/macos-10.14-Readme.md)
 - [Ubuntu 16.04](images/linux/Ubuntu1604-README.md)
 - [VS 2019 + Windows Server 2019](images/win/Vs2019-Server2019-Readme.md)
 - [VS 2017 + Windows Server 2016](images/win/Vs2017-Server2016-Readme.md)
