@@ -4,11 +4,15 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ## Upcoming Image Changes
 
-We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/blog/microsoft-and-azul-systems-bring-free-java-lts-support-to-azure/) in April 2019. We will support Azul OpenJDKs 7, 8, and 11 and will be deprecating support for Java 9 and 10.
+
+- We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/blog/microsoft-and-azul-systems-bring-free-java-lts-support-to-azure/) in April 2019. We will support Azul OpenJDKs 7, 8, and 11 and will be deprecating support for Java 9 and 10.
+
+- We will be switching to use Xcode 10.1 by default in two weeks.
 
 ## Operating System
 
-- OS X 10.13.6 (17G5019) **High Sierra**
+- OS X 10.13.6 (17G6029) **High Sierra**
+
 
 ## Installed Software
 
@@ -22,9 +26,10 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - Node.js 6.17.0
 - Node.js 8.11.3
 - NVM 0.33.11
-- PowerShell 6.1.3
+
+- PowerShell 6.2.0
 - Python 2.7.16
-- Python 3.7.2
+- Python 3.7.3
 - Ruby 2.6.2p47
 - .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 1.1.12, 1.1.13, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.504, 2.1.505, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502, 2.1.504, 2.2.101, 2.2.102, 2.2.103, 2.2.104, 2.2.105
 - Go 1.12.1
@@ -34,34 +39,36 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - Bundler 2.0.1
 - Carthage 0.32.0
 - **CocoaPods 1.6.1** (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to CocoaPods 1.5.3 using this [post-clone script](https://github.com/Microsoft/appcenter-build-scripts-examples/tree/master/general/cocoapods-rollback))
-- Homebrew 2.0.5
+- Homebrew 2.0.6
 - NPM 3.10.10
 - Yarn 1.15.2
 - NuGet 4.7.0.5148
-- pip 19.0.2
+- pip 19.0.3(python 2.7)
+- pip 19.0.3(python 3.7)
 - Miniconda 4.5.11
 
 ### Project Management
 
 - Apache Maven 3.6.0
-- Gradle 5.2.1
+- Gradle 5.3.1
 
 ### Utilities
 
-- curl 7.63.0 (libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
+- curl 7.64.1 (libcurl/7.64.1 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
 - Git 2.21.0
 - Git LFS 2.7.1
 - GNU Wget 1.20.1
 - Subversion (SVN) 1.11.1
+- GNU parallel 20190322
 
 ### Tools
 
-- fastlane 2.118.1
-- App Center CLI 1.1.13
-- Azure-CLI 2.0.60
+- fastlane 2.119.0
+- App Center CLI 1.1.14
+- Azure-CLI 2.0.61
 
 ### Pre-cached tools
-- Python 2.7.15 3.4.8 3.5.5 3.6.5 3.7.0
+- Python 2.7.15 3.4.8 3.5.5 3.6.8 3.7.2
 
 ### Xcode
 | Version                | Build   | Path                          |
@@ -481,7 +488,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 | lldb                  | 2.3.3614996                               |
 | ndk-bundle            | 18.1.5063045                              |
 | ProGuard              | 5.3.3                                     |
-| Android Emulator      | 28.0.23                                    |
+| Android Emulator      | 28.0.25                                    |
 
 ### Google APIs
 
@@ -509,7 +516,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Mono
 
-- 5.16.0
+- 5.16.1
 - 5.12.0
 - 5.10.1
 - 5.8.1
@@ -522,7 +529,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Xamarin.iOS SDK
 
-- 12.2.1.15
+- 12.2.1.16
 - 12.2.1.11
 - 12.0.0.15
 - 11.14.0.13
@@ -553,7 +560,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 ### Xamarin.Mac SDK
 
 - 5.3.1.28
-- 5.2.1.15
+- 5.2.1.16
 - 5.2.1.9
 - 4.6.0.13
 - 4.4.1.193
