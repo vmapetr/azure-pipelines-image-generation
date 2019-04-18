@@ -14,7 +14,12 @@ sudo pwsh -Command 'Save-Module -Name Az -LiteralPath /usr/share/az_1.6.0 -Requi
 
 # Run tests to determine that the software installed as expected
 echo "Testing to make sure that script performed as expected, and basic scenarios work"
-if ! pwsh -Command '$actualPSModulePath = $env:PSModulePath ; $env:PSModulePath = "/usr/share/az_1.6.0:" + "/usr/share/az_1.0.0:" + $env:PSModulePath;
+if ! pwsh -Command '$actualPSModulePath = $env:PSModulePath ; $env:PSModulePath = "/usr/share/az_1.0.0:" + $env:PSModulePath;
+    if (!(get-module -listavailable -name Az.accounts)) {
+        Write-Host "Az Module was not installed"; $env:PSModulePath = $actualPSModulePath; exit 1
+    }
+    $env:PSModulePath = $actualPSModulePath
+    $actualPSModulePath = $env:PSModulePath ; $env:PSModulePath = "/usr/share/az_1.6.0:" + $env:PSModulePath;
     if (!(get-module -listavailable -name Az.accounts)) {
         Write-Host "Az Module was not installed"; $env:PSModulePath = $actualPSModulePath; exit 1
     }
