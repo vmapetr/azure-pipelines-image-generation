@@ -4,6 +4,8 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - 7-Zip 9.20
 - Ansible (ansible 2.0.0.2)
 - AzCopy (azcopy 7.3.0-netcore)
+- Az Module (available through the [Azure PowerShell](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-powershell?view=azure-devops) task)
+  - Az 1.0.0
 - Azure CLI (azure-cli                         2.0.61)
 - Azure CLI (azure-devops                       0.4.0)
 - Basic CLI:
