@@ -45,6 +45,7 @@ _Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
 The following workloads and components are installed with Visual Studio 2019:
 * Component.CPython2.x64
 * Component.Linux.CMake
+* Component.Dotfuscator
 * Component.UnityEngine.x64
 * Component.UnityEngine.x86
 * Component.Unreal.Android
@@ -331,7 +332,7 @@ _Version:_ 2.7.14 (x86)<br/>_Version:_ 3.4.4 (x86)<br/>_Version:_ 3.5.4 (x86)<br
 
 ## Python (64 bit)
 
-#### 
+####
 _Environment:_
 * PATH: contains location of python.exe
 
@@ -369,9 +370,9 @@ _Environment:_
 
 ## Boost
 
-#### 
+####
 
-* PATH: contains the location of Boost version 
+* PATH: contains the location of Boost version
 * BOOST_ROOT: root directory of the Boost version  installation
 * BOOST_ROOT_1_69_0: root directory of the Boost version  installation
 
