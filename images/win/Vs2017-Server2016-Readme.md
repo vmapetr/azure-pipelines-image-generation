@@ -401,9 +401,9 @@ _Environment:_
 
 ## Boost
 
-#### 
+####
 
-* PATH: contains the location of Boost version 
+* PATH: contains the location of Boost version
 * BOOST_ROOT: root directory of the Boost version  installation
 * BOOST_ROOT_1_69_0: root directory of the Boost version  installation
 
@@ -694,4 +694,4 @@ _Version:_ 6.43.0<br/>
 _Version:_ 2018.11.23-nohash<br/>
 _Environment:_
 * PATH: contains location of the vcpkg directory
-* VCPKG_ROOT: root directory of the vcpkg installation
+* VCPKG_INSTALLATION_ROOT: root directory of the vcpkg installation
