@@ -267,8 +267,8 @@
         {
             "type": "powershell",
             "environment_vars": [
-                "GO_VERSIONS=1.9.7,1.10.8,1.11.6,1.12.1",
-                "GO_DEFAULT=1.12.1"
+                "GO_VERSIONS=1.9.7,1.10.8,1.11.9,1.12.4",
+                "GO_DEFAULT=1.12.4"
             ],
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Install-Go.ps1"
@@ -537,8 +537,8 @@
         {
             "type": "powershell",
             "environment_vars": [
-                "GO_VERSIONS=1.9.7,1.10.8,1.11.6,1.12.1",
-                "GO_DEFAULT=1.12.1"
+                "GO_VERSIONS=1.9.7,1.10.8,1.11.9,1.12.4",
+                "GO_DEFAULT=1.12.4"
             ],
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Validate-Go.ps1"
