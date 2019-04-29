@@ -356,12 +356,13 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - iPhone XS
 - iPhone XS Max
 - iPhone XR
-- iPad mini (5th generation)
 - iPad Air
+- iPad Air 2
+- iPad Air (3rd generation)
 - iPad mini 2
 - iPad mini 3
 - iPad mini 4
-- iPad Air 2
+- iPad mini (5th generation)
 - iPad (5th generation)
 - iPad Pro (9.7-inch)
 - iPad Pro (12.9-inch)
