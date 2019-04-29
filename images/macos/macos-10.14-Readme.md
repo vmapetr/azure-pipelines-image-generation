@@ -2,9 +2,12 @@
 
 The following software is installed on machines in the Azure Pipelines **macOS-10.14** VM image ('Hosted macOS' pool).
 
-## Upcoming Image Changes
+## Image Changes
 
-We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/blog/microsoft-and-azul-systems-bring-free-java-lts-support-to-azure/) in April 2019. We will support Azul OpenJDKs 7, 8, and 11 and will be deprecating support for Java 9 and 10.
+The following Java versions are available on the VM image: 7, 8, 11, 12.
+	Java 9 and 10 were deprecated.
+
+Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overloaded by complex licensing, end-user restrictions, and lack of long-term support. In this image change, we replaced the JDKs with tested, certified, LTS builds of OpenJDK from Azul Systems. Java developers can now build and run production Java applications using Azul Systems Zulu Enterprise builds of OpenJDK without incurring additional support costs. This new offering is designed to make Microsoft hosted Java builds and deployments worry-free by incorporating quarterly security updates and bug fixes as well as critical out-of-band updates and patches as needed.
 
 ## Operating System
 
@@ -14,11 +17,10 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Language and Runtime
 
-- Java 1.7.0_80
-- Java 1.8.0_202
-- Java 9.0.4
-- Java 10.0.2
-- Java 11.0.2
+- Java 1.7: OpenJDK RE (Zulu 7.29.0.5-CA) (build 1.7.0_222-b08)
+- Java 1.8: OpenJDK RE (Zulu 8.38.0.13-CA) (build 1.8.0_212-b04) (default)
+- Java 11: OpenJDK RE Zulu11.31+11-CA (build 11.0.3+7-LTS)
+- Java 12: OpenJDK RE Zulu12.2+3-CA (build 12.0.1+12)
 - Node.js 6.17.0
 - Node.js 8.11.3
 - NVM 0.33.11
@@ -27,14 +29,14 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - Python 3.7.3
 - Ruby 2.6.2p47
 - .NET Core SDK 1.0.1 1.0.4 1.1.10 1.1.11 1.1.12 1.1.13 1.1.4 1.1.5 1.1.7 1.1.8 1.1.9 2.0.0 2.0.3 2.1.100 2.1.101 2.1.102 2.1.103 2.1.104 2.1.105 2.1.2 2.1.200 2.1.201 2.1.202 2.1.300 2.1.301 2.1.302 2.1.4 2.1.400 2.1.401 2.1.402 2.1.403 2.1.500 2.1.502 2.1.503 2.1.504 2.1.505 2.2.100 2.2.101 2.2.102 2.2.103 2.2.104 2.2.105
-- Go 1.12.3
+- Go 1.12.4
 
 ### Package Management
 
 - Bundler 2.0.1
 - Carthage 0.33.0
 - CocoaPods 1.6.1
-- Homebrew 2.1.0
+- Homebrew 2.1.1
 - NPM 3.10.10
 - Yarn 1.15.2
 - NuGet 4.7.0.5148
@@ -43,8 +45,8 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Project Management
 
-- Apache Maven 3.6.0
-- Gradle 5.3.1
+- Apache Maven 3.6.1
+- Gradle 5.4
 
 ### Utilities
 
@@ -61,15 +63,16 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - Azure-CLI 2.0.62
 
 ### Pre-cached tools
-- Python 2.7.15 3.4.8 3.5.5 3.6.8 3.7.2
+- Python 2.7.16 3.4.8 3.5.7 3.6.8 3.7.3
 
 ### Xcode
-| Version                | Build   | Path                          |
-|------------------------|---------|-------------------------------|
-| 10.2                   | 10E125  | /Applications/Xcode_10.2.app  |
-| 10.1                   | 10B61   | /Applications/Xcode_10.1.app  |
-| 10.0                   | 10A255  | /Applications/Xcode_10.app    |
-| 9.4.1                  | 9F2000  | /Applications/Xcode_9.4.1.app |
+| Version                | Build   | Path                            |
+|------------------------|---------|---------------------------------|
+| 10.2.1                 | 10E1001 | /Applications/Xcode_10.2.1.app  |
+| 10.2                   | 10E125  | /Applications/Xcode_10.2.app    |
+| 10.1                   | 10B61   | /Applications/Xcode_10.1.app    |
+| 10.0                   | 10A255  | /Applications/Xcode_10.app      |
+| 9.4.1                  | 9F2000  | /Applications/Xcode_9.4.1.app   |
 
 ### Xcode Support Tools
 
@@ -95,6 +98,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 | tvOS 11.4                 | appletvos11.4 |
 | tvOS 12.0                 | appletvos12.0 |
 | tvOS 12.1                 | appletvos12.1 |
+| tvOS 12.2                 | appletvos12.2 |
 | tvOS Simulator 11.4       | appletvsimulator11.4 |
 | tvOS Simulator 12.0       | appletvsimulator12.0 |
 | tvOS Simulator 12.1       | appletvsimulator12.1 |
@@ -307,7 +311,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - iPad Pro (12.9-inch) (2nd generation)
 - iPad (6th generation)
 
-#### iOS 12.1, 12.2
+#### iOS 12.1
 
 - iPhone 5s
 - iPhone 6
@@ -325,6 +329,38 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - iPhone XS Max
 - iPhone XR
 - iPad Air
+- iPad Air 2
+- iPad (5th generation)
+- iPad Pro (9.7-inch)
+- iPad Pro (12.9-inch)
+- iPad Pro (12.9-inch) (2nd generation)
+- iPad Pro (10.5-inch)
+- iPad (6th generation)
+- iPad Pro (11-inch)
+- iPad Pro (12.9-inch) (3rd generation)
+
+#### iOS 12.2
+
+- iPhone 5s
+- iPhone 6
+- iPhone 6 Plus
+- iPhone 6s
+- iPhone 6s Plus
+- iPhone 7
+- iPhone 7 Plus
+- iPhone SE
+- iPhone 8
+- iPhone 8 Plus
+- iPhone X
+- iPhone X
+- iPhone XS
+- iPhone XS Max
+- iPhone XR
+- iPad mini (5th generation)
+- iPad Air
+- iPad mini 2
+- iPad mini 3
+- iPad mini 4
 - iPad Air 2
 - iPad (5th generation)
 - iPad Pro (9.7-inch)
