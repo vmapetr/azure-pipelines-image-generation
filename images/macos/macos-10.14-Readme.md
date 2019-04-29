@@ -9,6 +9,8 @@ The following Java versions are available on the VM image: 7, 8, 11, 12.
 
 Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overloaded by complex licensing, end-user restrictions, and lack of long-term support. In this image change, we replaced the JDKs with tested, certified, LTS builds of OpenJDK from Azul Systems. Java developers can now build and run production Java applications using Azul Systems Zulu Enterprise builds of OpenJDK without incurring additional support costs. This new offering is designed to make Microsoft hosted Java builds and deployments worry-free by incorporating quarterly security updates and bug fixes as well as critical out-of-band updates and patches as needed.
 
+#### Xcode 10.2.1 set by default
+
 ## Operating System
 
 - OS X 10.14.4 (18E226) **Mojave**
@@ -64,6 +66,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Pre-cached tools
 - Python 2.7.16 3.4.8 3.5.7 3.6.8 3.7.3
+- Ruby 2.3.8 2.4.6 2.5.5 2.6.2
 
 ### Xcode
 | Version                | Build   | Path                            |
