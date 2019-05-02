@@ -4,9 +4,10 @@
 ##  Desc:  Install various JDKs and java tools
 ################################################################################
 
-## Downloading azul jdks
-$azulJDK8Uri = 'https://repos.azul.com/azure-only/zulu/packages/zulu-8/8u192/zulu-8-azure-jdk_8.33.0.1-8.0.192-win_x64.zip'
-$azulJDK11Uri = 'https://repos.azul.com/azure-only/zulu/packages/zulu-11/11.0.1/zulu-11-azure-jdk_11.2.3-11.0.1-win_x64.zip'
+# Download the Azul Systems Zulu JDKs
+# See https://www.azul.com/downloads/azure-only/zulu/
+$azulJDK8Uri = 'https://repos.azul.com/azure-only/zulu/packages/zulu-8/8u212/zulu-8-azure-jdk_8.38.0.13-8.0.212-win_x64.zip'
+$azulJDK11Uri = 'https://repos.azul.com/azure-only/zulu/packages/zulu-11/11.0.3/zulu-11-azure-jdk_11.31.11-11.0.3-win_x64.zip'
 
 cd $env:TEMP
 
