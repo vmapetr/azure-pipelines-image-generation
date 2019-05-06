@@ -14,17 +14,13 @@ else
     exit 1
 }
 
-
-if( $($(az --version) | out-string)  -match  'azure-cli \((?<version>.*)\)' )
-{
-   $azureCliVersion = $Matches.version
-}
+$azureCliVersion = az -v | findstr azure-cli
 
 # Adding description of the software to Markdown
 $SoftwareName = "Azure CLI"
 
 $Description = @"
-_Version:_ $azureCliVersion<br/>
+_Version:_ $azureCliVersion
 _Environment:_
 * PATH: contains location of az.cmd
 "@
