@@ -19,7 +19,7 @@ function DockerPull {
     $results
 }
 
-DockerPull microsoft/windowsservercore
+DockerPull microsoft/windowsservercore:ltsc2019
 DockerPull microsoft/nanoserver
 DockerPull microsoft/aspnetcore-build:1.0-2.0
 DockerPull microsoft/aspnet
