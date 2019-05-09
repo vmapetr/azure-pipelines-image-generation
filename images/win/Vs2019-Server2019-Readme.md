@@ -115,9 +115,9 @@ _Toolset Version:_ 3.11.2318<br/>
 _Environment:_
 * WIX: Installation root of WIX
 
-## .NET 4.7.2
+## .NET 4.8
 
-_Version:_ 4.7.03190
+_Version:_ 4.8.03761
 
 ## Windows Driver Kit
 
