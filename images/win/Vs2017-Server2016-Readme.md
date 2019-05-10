@@ -74,7 +74,6 @@ In addition the following optional components are installed:
 * Microsoft.Net.Component.4.7.1.SDK
 * Microsoft.Net.Component.4.7.1.TargetingPack
 * Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools
-* Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools
 * Microsoft.Net.Core.Component.SDK.1x
 * Microsoft.NetCore.1x.ComponentGroup.Web
 * Microsoft.VisualStudio.Component.Azure.Storage.AzCopy
@@ -142,6 +141,10 @@ _Toolset Version:_ 3.11.2318<br/>
 _WIX Toolset Studio 2017 Extension Version:_ 0.9.21.62588<br/>
 _Environment:_
 * WIX: Installation root of WIX
+
+## .NET 4.7.2
+
+_Version:_ 4.7.03062
 
 ## Windows Driver Kit
 
