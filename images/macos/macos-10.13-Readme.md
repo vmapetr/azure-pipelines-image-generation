@@ -50,7 +50,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 ### Project Management
 
 - Apache Maven 3.6.1
-- Gradle 5.4
+- Gradle 5.4.1
 
 ### Utilities
 
@@ -58,8 +58,8 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Git 2.21.0
 - Git LFS 2.7.2
 - GNU Wget 1.20.3
-- Subversion (SVN) 1.11.1
-- GNU parallel 20190322
+- Subversion (SVN) 1.12.0
+- GNU parallel 20190422
 
 ### Tools
 
