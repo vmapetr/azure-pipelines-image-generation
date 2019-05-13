@@ -48,7 +48,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 ### Project Management
 
 - Apache Maven 3.6.1
-- Gradle 5.4
+- Gradle 5.4.1
 
 ### Utilities
 
@@ -56,8 +56,8 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Git 2.21.0
 - Git LFS 2.7.2
 - GNU Wget 1.20.3
-- Subversion (SVN) 1.11.1
-
+- Subversion (SVN) 1.12.0
+- GNU parallel 20190422
 ### Tools
 
 - fastlane 2.121.1
