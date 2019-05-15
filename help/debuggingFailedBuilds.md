@@ -1,5 +1,7 @@
 # Debugging Failed Packer Builds
 
+NOTE: You will need to use Packer v1.3.4 or earlier until #929 is resolved.
+
 ## Step 1: Run packer build `-on-error=ask`
 When you run the `packer build` command, give it the `-on-error=ask` flag.
 By default, `packer build` will delete the resource group as soon as the build fails.

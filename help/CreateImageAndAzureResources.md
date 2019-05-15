@@ -1,5 +1,7 @@
 # Build an image.
 
+NOTE: You will need to use Packer v1.3.4 or earlier until #929 is resolved.
+
 ## Create required Azure resources and generate an image
 
 1. Generating required Azure resources and running a packer build for a targeted image is automated [here](../helpers/GenerateResourcesAndImage.ps1).
