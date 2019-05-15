@@ -24,7 +24,6 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - java 11 : OpenJDK Runtime Environment Zulu11.31+11-CA (build 11.0.3+7-LTS)
 - java 12 : OpenJDK Runtime Environment Zulu12.2+3-CA (build 12.0.1+12)
 - Node.js 6.17.0
-- Node.js 8.11.3
 - NVM 0.33.11
 
 - PowerShell 6.2.0
