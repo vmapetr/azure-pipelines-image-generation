@@ -24,7 +24,6 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - java 11 : OpenJDK Runtime Environment Zulu11.31+11-CA (build 11.0.3+7-LTS)
 - java 12 : OpenJDK Runtime Environment Zulu12.2+3-CA (build 12.0.1+12)
 - Node.js 6.17.0
-- Node.js 8.11.3
 - NVM 0.33.11
 
 - PowerShell 6.2.0
@@ -32,14 +31,14 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Python 3.7.3
 - Ruby 2.6.3p62
 - .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 1.1.12, 1.1.13, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.504, 2.1.505, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502, 2.1.504, 2.2.101, 2.2.102, 2.2.103, 2.2.104, 2.2.105
-- Go 1.12.4
+- Go 1.12.5
 
 ### Package Management
 
 - Bundler 2.0.1
 - Carthage 0.33.0
 - **CocoaPods 1.6.1** (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to CocoaPods 1.5.3 using this [post-clone script](https://github.com/Microsoft/appcenter-build-scripts-examples/tree/master/general/cocoapods-rollback))
-- Homebrew 2.1.1
+- Homebrew 2.1.2
 - NPM 3.10.10
 - Yarn 1.15.2
 - NuGet 4.7.0.5148
@@ -63,9 +62,9 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Tools
 
-- fastlane 2.121.1
+- fastlane 2.122.0
 - App Center CLI 1.1.15
-- Azure-CLI 2.0.63
+- Azure-CLI 2.0.64
 
 ### Pre-cached tools
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
@@ -440,7 +439,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 28.0.2 |
+| platform-tools        | Android SDK Platform-tools, revision 28.0.3 |
 
 ### Android SDK Platforms
 
@@ -500,7 +499,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 | lldb                  | 2.3.3614996                               |
 | ndk-bundle            | 18.1.5063045                              |
 | ProGuard              | 5.3.3                                     |
-| Android Emulator      | 28.0.25                                    |
+| Android Emulator      | 29.0.9                                    |
 
 ### Google APIs
 
@@ -524,7 +523,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Visual Studio for Mac
 
-- 8.0.4.0
+- 8.0.5.9
 
 ### Mono
 
@@ -542,7 +541,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Xamarin.iOS SDK
 
-- 12.8.0.0
+- 12.8.0.2
 - 12.6.0.25
 - 12.2.1.16
 - 12.2.1.11
