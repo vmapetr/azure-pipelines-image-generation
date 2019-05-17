@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**Tool infomation**
+**Tool information**
 - Tool name: <!--- name -->
 - Add or update? <!--- add or update? -->
 - Desired version: <!--- version -->
