@@ -40,5 +40,8 @@ assignees: ''
 **Image impacted**
 Add the appropriate label for the image or images that should be updated (e.g., macOS 10.13, macOS 10.14, ubuntu, VS2017, VS2019, WINCON).
 
+**Workaround**
+<!--- Are there any workarounds (e.g. install during the build even though it adds time to the build)? -->
+
 **Are you willing to submit a PR?**
 <!--- We accept contributions! -->
