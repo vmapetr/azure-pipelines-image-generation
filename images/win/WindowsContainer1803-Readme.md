@@ -13,7 +13,7 @@ _Environment:_
 
 ## Docker
 
-_Version:_ 18.09.4<br/>
+_Version:_ 18.09.5<br/>
 _Environment:_
 * PATH: contains location of docker.exe
 
@@ -34,9 +34,9 @@ The following container images have been cached:
 * microsoft/aspnet:(sha256:723a020fc39c649619cecac367f4097362d2adcded30df778ac0c73694426821)
 * microsoft/dotnet-framework:(sha256:58a653c1e3437c164cc65aea6bef29ccf1f1ba51a836079cf266dc65a862ff70)
 * microsoft/windowsservercore:(sha256:5d6ed58d7f27598db7a61b7a38cd755fa8165ae726aff39f14aa52468f0248dd)
+* mcr.microsoft.com/windows/servercore:(sha256:5d6ed58d7f27598db7a61b7a38cd755fa8165ae726aff39f14aa52468f0248dd)
 * microsoft/nanoserver:(sha256:616085ca3a9b5ad23a93598348d118f7e4e86e0b26d3d7b43180ee7170efcf5e)
-* mcr.microsoft.com/windows/servercore:(sha256:14d01c7ccde17306129a6b8f22d3101d4fe2a5ccec46f9ee10023e5b3927afde)
-* mcr.microsoft.com/windows/nanoserver:(sha256:5ac0f612c2ad053cf8862c6fb827d90f011f65420df9c90040259560b3b25e32)
+* mcr.microsoft.com/windows/nanoserver:(sha256:616085ca3a9b5ad23a93598348d118f7e4e86e0b26d3d7b43180ee7170efcf5e)
 * microsoft/aspnetcore-build:(sha256:82ad5218bb554d0b44ca54c21aba78b5ae10b92cead389d71328614b99fc47af)
 
 ## Node.js
@@ -45,7 +45,7 @@ _Version:_ 10.15.3<br/>
 _Architecture:_ x64<br/>
 _Environment:_
 * PATH: contains location of node.exe<br/>
-* Gulp CLI version 2.1.0<br/>
+* Gulp CLI version: 2.2.0 Local version: Unknown<br/>
 * Grunt grunt-cli v1.3.2<br/>
 * Bower 1.8.8<br/>
 * Yarn 1.15.2<br/>
