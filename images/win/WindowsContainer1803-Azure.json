@@ -43,7 +43,6 @@
             "communicator": "winrm",
             "winrm_use_ssl": "true",
             "winrm_insecure": "true",
-            "winrm_timeout": "4h",
             "winrm_username": "packer"
         }
     ],
