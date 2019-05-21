@@ -6,7 +6,7 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - AzCopy (azcopy 7.3.0-netcore)
 - Azure CLI (azure-cli                         2.0.64)
 - Azure CLI (azure-devops                       0.8.0)
-- Basic CLI: 
+- Basic CLI:
   - curl
   - dnsutils
   - file
@@ -95,10 +95,10 @@ The following software is installed on machines in the Hosted Ubuntu 1604 pool
 - Azul Zulu OpenJDK (11) (openjdk version "11.0.3" 2019-04-16 LTS)
 - Azul Zulu OpenJDK (12) (openjdk version "12.0.1" 2019-04-16)
 - Ant (Apache Ant(TM) version 1.9.6 compiled on July 20 2018)
-- Gradle 
+- Gradle
 - Maven (Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-04T19:00:29Z))
 - kubectl (Client Version: v1.14.1)
-- helm (Client: v2.11.0+g2e55dbe)
+- helm (Client: v2.14.0)
 - Leiningen (Leiningen 2.9.1 on Java 1.8.0_212 OpenJDK 64-Bit Server VM)
 - Mercurial (Mercurial Distributed SCM (version 4.4.1))
 - Miniconda (conda 4.6.14)
