@@ -695,7 +695,7 @@
         {
             "type": "file",
             "source": "C:\\InstalledSoftware.md",
-            "destination": "{{ template_dir }}/InstalledSoftware.md",
+            "destination": "{{ template_dir }}/Vs2019-Server2019-Readme.md",
             "direction": "download"
         },
         {

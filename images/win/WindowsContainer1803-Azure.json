@@ -182,7 +182,7 @@
         {
             "type": "file",
             "source": "C:\\InstalledSoftware.md",
-            "destination": "{{ template_dir }}/InstalledSoftware.md",
+            "destination": "{{ template_dir }}/WindowsContainer1803-Readme.md",
             "direction": "download"
         },
         {
