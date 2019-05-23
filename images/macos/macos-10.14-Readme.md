@@ -13,7 +13,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ## Operating System
 
-- OS X 10.14.4 (18E226) **Mojave**
+- OS X 10.14.5 (18F132) **Mojave**
 
 ## Installed Software
 
@@ -39,7 +39,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - CocoaPods 1.6.1
 - Homebrew 2.1.2
 - NPM 3.10.10
-- Yarn 1.15.2
+- Yarn 1.16.0
 - NuGet 4.7.0.5148
 - pip 19.0.3
 - Miniconda 4.6.14
@@ -59,8 +59,8 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - GNU parallel 20190422
 ### Tools
 
-- fastlane 2.122.0
-- App Center CLI 1.1.15
+- fastlane 2.123.0
+- App Center CLI 1.1.16
 - Azure-CLI 2.0.64
 
 ### Pre-cached tools
