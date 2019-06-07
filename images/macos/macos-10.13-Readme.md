@@ -26,7 +26,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Node.js 6.17.0
 - NVM 0.33.11
 
-- PowerShell 6.2.0
+- PowerShell 6.2.1
 - Python 2.7.16
 - Python 3.7.3
 - Ruby 2.6.3p62
@@ -37,10 +37,10 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 - Bundler 2.0.1
 - Carthage 0.33.0
-- **CocoaPods 1.6.1** (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to CocoaPods 1.5.3 using this [post-clone script](https://github.com/Microsoft/appcenter-build-scripts-examples/tree/master/general/cocoapods-rollback))
-- Homebrew 2.1.2
+- CocoaPods (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to CocoaPods 1.5.3 using this [post-clone script](https://github.com/microsoft/appcenter/tree/master/sample-build-scripts/general/cocoapods-rollback))
+- Homebrew 2.1.4
 - NPM 3.10.10
-- Yarn 1.15.2
+- Yarn 1.16.0
 - NuGet 4.7.0.5148
 - pip 19.0.3(python 2.7)
 - pip 19.0.3(python 3.7)
@@ -58,12 +58,12 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 - Git LFS 2.7.2
 - GNU Wget 1.20.3
 - Subversion (SVN) 1.12.0
-- GNU parallel 20190422
+- GNU parallel 20190522
 
 ### Tools
 
-- fastlane 2.122.0
-- App Center CLI 1.1.15
+- fastlane 2.123.0
+- App Center CLI 1.1.18
 - Azure-CLI 2.0.64
 
 ### Pre-cached tools
@@ -499,7 +499,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 | lldb                  | 2.3.3614996                               |
 | ndk-bundle            | 18.1.5063045                              |
 | ProGuard              | 5.3.3                                     |
-| Android Emulator      | 29.0.9                                    |
+| Android Emulator      | 29.0.11                                   |
 
 ### Google APIs
 
@@ -523,7 +523,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Visual Studio for Mac
 
-- 8.0.5.9
+- 8.0.8.2
 
 ### Mono
 
