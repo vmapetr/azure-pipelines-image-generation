@@ -2,30 +2,34 @@
 
 The following software is installed on machines in the Azure Pipelines **macOS-10.13** VM image ('Hosted macOS High Sierra' pool).
 
-## Upcoming Image Changes
+## Image Changes
 
-- Switched to [Azul OpenJDKs](https://azure.microsoft.com/en-us/blog/microsoft-and-azul-systems-bring-free-java-lts-support-to-azure/)
-- Add support Azul OpenJDKs 7, 8, 11 and 12
-- Set Azul OpenJDKs 8 by default
-- Deprecated support for Java 9 and 10
-- Set Xcode 10.1 by default
+The following Java versions are available on the VM image: 7, 8, 11, 12.
+	Java 9 and 10 were deprecated.
+
+Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overloaded by complex licensing, end-user restrictions, and lack of long-term support. In this image change, we replaced the JDKs with tested, certified, LTS builds of OpenJDK from Azul Systems. Java developers can now build and run production Java applications using Azul Systems Zulu Enterprise builds of OpenJDK without incurring additional support costs. This new offering is designed to make Microsoft hosted Java builds and deployments worry-free by incorporating quarterly security updates and bug fixes as well as critical out-of-band updates and patches as needed.
+
+#### Xcode 10.1 set by default
 
 ## Operating System
 
 - OS X 10.13.6 (17G6029) **High Sierra**
 
-
 ## Installed Software
 
 ### Language and Runtime
 
-- java 1.7 : OpenJDK Runtime Environment (Zulu 7.29.0.5-CA-macosx) (build 1.7.0_222-b08)
-- java 1.8 : OpenJDK Runtime Environment (Zulu 8.38.0.13-CA-macosx) (build 1.8.0_212-b04) (default)
-- java 11 : OpenJDK Runtime Environment Zulu11.31+11-CA (build 11.0.3+7-LTS)
-- java 12 : OpenJDK Runtime Environment Zulu12.2+3-CA (build 12.0.1+12)
+- Java 1.7: OpenJDK RE (Zulu 7.29.0.5-CA) (build 1.7.0_222-b08)
+- Java 1.8: OpenJDK RE (Zulu 8.38.0.13-CA) (build 1.8.0_212-b04) (default)
+- Java 11: OpenJDK RE Zulu11.31+11-CA (build 11.0.3+7-LTS)
+- Java 12: OpenJDK RE Zulu12.2+3-CA (build 12.0.1+12)
 - Node.js 6.17.0
 - NVM 0.33.11
-
+- NVM - Installed node versions:
+	v6.17.1
+	v8.16.0
+	v10.16.0
+	v12.4.0
 - PowerShell 6.2.1
 - Python 2.7.16
 - Python 3.7.3
@@ -37,7 +41,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 - Bundler 2.0.1
 - Carthage 0.33.0
-- CocoaPods (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to CocoaPods 1.5.3 using this [post-clone script](https://github.com/microsoft/appcenter/tree/master/sample-build-scripts/general/cocoapods-rollback))
+- CocoaPods 1.7.1 (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to CocoaPods 1.5.3 using this [post-clone script](https://github.com/microsoft/appcenter/tree/master/sample-build-scripts/general/cocoapods-rollback))
 - Homebrew 2.1.4
 - NPM 3.10.10
 - Yarn 1.16.0
@@ -53,7 +57,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Utilities
 
-- curl 7.64.1 (libcurl/7.64.1 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0)
+- curl 7.65.1 (libcurl/7.65.1 SecureTransport zlib/1.2.11)
 - Git 2.21.0
 - Git LFS 2.7.2
 - GNU Wget 1.20.3
@@ -62,17 +66,17 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Tools
 
-- fastlane 2.123.0
+- fastlane 2.125.2
 - App Center CLI 1.1.18
-- Azure-CLI 2.0.64
+- Azure-CLI 2.0.66
 
 ### Pre-cached tools
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
-  - 2.7.16
+  - 2.7.15
   - 3.4.8
-  - 3.5.7
+  - 3.5.5
   - 3.6.8
-  - 3.7.3
+  - 3.7.2
   - pypy2
   - pypy3
 - Ruby (available through the [Use Ruby Version](https://go.microsoft.com/fwlink/?linkid=2005989) task)
@@ -439,7 +443,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 28.0.3 |
+| platform-tools        | Android SDK Platform-tools, revision 29.0.0 |
 
 ### Android SDK Platforms
 
@@ -523,7 +527,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ### Visual Studio for Mac
 
-- 8.0.8.2
+- 8.0.9.5
 
 ### Mono
 
