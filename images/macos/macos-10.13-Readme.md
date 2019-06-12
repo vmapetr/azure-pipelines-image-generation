@@ -41,7 +41,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 - Bundler 2.0.1
 - Carthage 0.33.0
-- CocoaPods 1.7.1 (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to CocoaPods 1.5.3 using this [post-clone script](https://github.com/microsoft/appcenter/tree/master/sample-build-scripts/general/cocoapods-rollback))
+- CocoaPods 1.7.1 (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to an older CocoaPods version using this [post-clone script](https://github.com/microsoft/appcenter/tree/master/sample-build-scripts/general/cocoapods-rollback))
 - Homebrew 2.1.4
 - NPM 3.10.10
 - Yarn 1.16.0
