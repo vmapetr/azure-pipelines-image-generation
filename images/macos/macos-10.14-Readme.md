@@ -29,7 +29,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 	v6.17.1
 	v8.16.0
 	v10.16.0
-	v12.3.1
+	v12.4.0
 - PowerShell 6.2.1
 - Python 2.7.16
 - Python 3.7.3
@@ -41,7 +41,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 - Bundler 2.0.1
 - Carthage 0.33.0
-- CocoaPods 1.7.0 (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to CocoaPods 1.5.3 using this [post-clone script](https://github.com/microsoft/appcenter/blob/master/sample-build-scripts/general/cocoapods-rollback/appcenter-post-clone.sh))
+- CocoaPods 1.7.1 (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to an older CocoaPods version using this [post-clone script](https://github.com/microsoft/appcenter/blob/master/sample-build-scripts/general/cocoapods-rollback/appcenter-post-clone.sh))
 - Homebrew 2.1.4
 - NPM 3.10.10
 - Yarn 1.16.0
@@ -56,27 +56,27 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Utilities
 
-- curl 7.65.0 (libcurl/7.65.0 SecureTransport zlib/1.2.11)
+- curl 7.65.1 (libcurl/7.65.1 SecureTransport zlib/1.2.11)
 - Git 2.21.0
 - Git LFS 2.7.2
 - GNU Wget 1.20.3
 - Subversion (SVN) 1.12.0
-- GNU parallel 20190422
+- GNU parallel 20190522
 
 ### Tools
 
-- fastlane 2.123.0
+- fastlane 2.125.2
 - App Center CLI 1.1.18
-- Azure-CLI 2.0.64
+- Azure-CLI 2.0.66
 
 ### Pre-cached tools
 
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
-  - 2.7.16
+  - 2.7.15
   - 3.4.8
-  - 3.5.7
+  - 3.5.5
   - 3.6.8
-  - 3.7.3
+  - 3.7.2
   - pypy2
   - pypy3
 - Ruby (available through the [Use Ruby Version](https://go.microsoft.com/fwlink/?linkid=2005989) task)
@@ -455,7 +455,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 28.0.3 |
+| platform-tools        | Android SDK Platform-tools, revision 29.0.0 |
 
 ### Android SDK Platforms
 
@@ -540,7 +540,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Visual Studio for Mac
 
-- 8.0.8.2
+- 8.0.9.5
 
 ### Mono
 
