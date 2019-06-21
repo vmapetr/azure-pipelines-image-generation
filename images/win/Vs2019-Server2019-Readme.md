@@ -1,5 +1,34 @@
 # Azure Pipelines Hosted Windows 2019 with VS2019 image
 
+## Known issues
+
+**Xamarin Android** builds might fail with to find Java
+
+`Error XA5300: The Java SDK Directory could not be found. Please set via /p:JavaSdkDirectory.`
+
+The [Xamarin Android task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/xamarin-android?view=azure-devops) allows specifying the Java version.
+We recommend setting this to ensure the pipelines are not relying on the JAVA version in the PATH on the Hosted VMs.
+
+**YAML**
+```json
+task: XamarinAndroid@1
+  inputs:
+    projectFile: '**/*droid*.csproj'
+    outputDirectory: '$(outputDirectory)'
+    configuration: '$(buildConfiguration)'
+    msbuildArguments: '/p:AndroidNdkDirectory=$(ANDROID_NDK_HOME)'
+    jdkVersionOption: 1.8
+```
+
+**Designer**
+
+![jdk options](./readme_img/xa_jdkversion.png)
+
+If you are using a script to run `msbuild` or the [MSBuild task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/msbuild?view=azure-devops), pass the msbuild argument
+`/p:JavaSdkDirectory="$(JAVA_HOME_8_X64)"`
+
+## Software
+
 The following software is installed on machines in the Azure Pipelines **Hosted Windows 2019 with VS2019** pool.
 
 Components marked with **\*** have been upgraded since the previous version of the image.
