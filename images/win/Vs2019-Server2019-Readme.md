@@ -22,7 +22,7 @@ task: XamarinAndroid@1
 
 **Designer**
 
-![jdk options](readme_img/xa_jdkversion.png)
+![jdk options](/readme_img/xa_jdkversion.png)
 
 If you are using a script to run `msbuild` or the [MSBuild task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/msbuild?view=azure-devops), pass the msbuild argument
 `/p:JavaSdkDirectory="$(JAVA_HOME_8_X64)"`
