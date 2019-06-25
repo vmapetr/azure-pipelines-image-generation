@@ -337,6 +337,19 @@ _Location:_ C:\Modules\azurerm_5.1.1\AzureRM\5.1.1\AzureRM.psd1
 This version is saved but not installed
 _Location:_ C:\Modules\azurerm_6.7.0\AzureRM\6.7.0\AzureRM.psd1
 
+## Az Powershell modules
+#### 1.0.0
+
+This version is saved but not installed
+_Location:_ C:\Modules\az_1.0.0\Az\1.0.0\Az.psd1
+
+#### 1.6.0
+
+This version is saved but not installed
+_Location:_ C:\Modules\az_1.6.0\Az\1.6.0\Az.psd1
+
+> Note: You can use a specific Az module version in Pipeline using [Azure PowerShell](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-powershell?view=azure-devops) task.
+
 ## TLS12
 
 _Version:_ 1.2<br/>
