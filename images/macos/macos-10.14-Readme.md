@@ -2,83 +2,108 @@
 
 The following software is installed on machines in the Azure Pipelines **macOS-10.14** VM image ('Hosted macOS' pool).
 
-## Upcoming Image Changes
+## Image Changes
 
-We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/blog/microsoft-and-azul-systems-bring-free-java-lts-support-to-azure/) in April 2019. We will support Azul OpenJDKs 7, 8, and 11 and will be deprecating support for Java 9 and 10.
+The following Java versions are available on the VM image: 7, 8, 11, 12.
+	Java 9 and 10 were deprecated.
+
+Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overloaded by complex licensing, end-user restrictions, and lack of long-term support. In this image change, we replaced the JDKs with tested, certified, LTS builds of OpenJDK from Azul Systems. Java developers can now build and run production Java applications using Azul Systems Zulu Enterprise builds of OpenJDK without incurring additional support costs. This new offering is designed to make Microsoft hosted Java builds and deployments worry-free by incorporating quarterly security updates and bug fixes as well as critical out-of-band updates and patches as needed.
+
+#### Xcode 10.2.1 set by default
 
 ## Operating System
 
-- OS X 10.14.4 (18E226) **Mojave**
+- OS X 10.14.5 (18F132) **Mojave**
 
 ## Installed Software
 
 ### Language and Runtime
 
-- Java 1.7.0_80
-- Java 1.8.0_202
-- Java 9.0.4
-- Java 10.0.2
-- Java 11.0.2
+- Java 1.7: OpenJDK RE (Zulu 7.29.0.5-CA) (build 1.7.0_222-b08)
+- Java 1.8: OpenJDK RE (Zulu 8.38.0.13-CA) (build 1.8.0_212-b04) (default)
+- Java 11: OpenJDK RE Zulu11.31+11-CA (build 11.0.3+7-LTS)
+- Java 12: OpenJDK RE Zulu12.2+3-CA (build 12.0.1+12)
 - Node.js 6.17.0
-- Node.js 8.11.3
 - NVM 0.33.11
-- PowerShell 6.2.0
+- NVM - Installed node versions:
+	v6.17.1
+	v8.16.0
+	v10.16.0
+	v12.4.0
+- PowerShell 6.2.1
 - Python 2.7.16
 - Python 3.7.3
-- Ruby 2.6.2p47
+- Ruby 2.6.3p62
 - .NET Core SDK 1.0.1 1.0.4 1.1.10 1.1.11 1.1.12 1.1.13 1.1.4 1.1.5 1.1.7 1.1.8 1.1.9 2.0.0 2.0.3 2.1.100 2.1.101 2.1.102 2.1.103 2.1.104 2.1.105 2.1.2 2.1.200 2.1.201 2.1.202 2.1.300 2.1.301 2.1.302 2.1.4 2.1.400 2.1.401 2.1.402 2.1.403 2.1.500 2.1.502 2.1.503 2.1.504 2.1.505 2.2.100 2.2.101 2.2.102 2.2.103 2.2.104 2.2.105
-- Go 1.12.3
+- Go 1.12.5
 
 ### Package Management
 
 - Bundler 2.0.1
 - Carthage 0.33.0
-- CocoaPods 1.6.1
-- Homebrew 2.1.0
+- CocoaPods 1.7.1 (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to an older CocoaPods version using this [post-clone script](https://github.com/microsoft/appcenter/blob/master/sample-build-scripts/general/cocoapods-rollback/appcenter-post-clone.sh))
+- Homebrew 2.1.4
 - NPM 3.10.10
-- Yarn 1.15.2
+- Yarn 1.16.0
 - NuGet 4.7.0.5148
 - pip 19.0.3
-- Miniconda 4.5.12
+- Miniconda 4.6.14
 
 ### Project Management
 
-- Apache Maven 3.6.0
-- Gradle 5.3.1
+- Apache Maven 3.6.1
+- Gradle 5.4.1
 
 ### Utilities
 
-- curl 7.64.1 (libcurl/7.64.1 SecureTransport zlib/1.2.11)
+- curl 7.65.1 (libcurl/7.65.1 SecureTransport zlib/1.2.11)
 - Git 2.21.0
-- Git LFS 2.7.1
+- Git LFS 2.7.2
 - GNU Wget 1.20.3
-- Subversion (SVN) 1.11.1
+- Subversion (SVN) 1.12.0
+- GNU parallel 20190522
 
 ### Tools
 
-- fastlane 2.120.0
-- App Center CLI 1.1.15
-- Azure-CLI 2.0.62
+- fastlane 2.125.2
+- App Center CLI 1.1.18
+- Azure-CLI 2.0.66
 
 ### Pre-cached tools
-- Python 2.7.15 3.4.8 3.5.5 3.6.8 3.7.2
+
+- Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
+  - 2.7.15
+  - 3.4.8
+  - 3.5.5
+  - 3.6.8
+  - 3.7.2
+  - pypy2
+  - pypy3
+- Ruby (available through the [Use Ruby Version](https://go.microsoft.com/fwlink/?linkid=2005989) task)
+  - 2.3.8
+  - 2.4.6
+  - 2.5.5
+  - 2.6.2
 
 ### Xcode
-| Version                | Build   | Path                          |
-|------------------------|---------|-------------------------------|
-| 10.2                   | 10E125  | /Applications/Xcode_10.2.app  |
-| 10.1                   | 10B61   | /Applications/Xcode_10.1.app  |
-| 10.0                   | 10A255  | /Applications/Xcode_10.app    |
-| 9.4.1                  | 9F2000  | /Applications/Xcode_9.4.1.app |
+
+| Version                | Build   | Path                            |
+|------------------------|---------|---------------------------------|
+| 10.2.1                 | 10E1001 | /Applications/Xcode_10.2.1.app  |
+| 10.2                   | 10E125  | /Applications/Xcode_10.2.app    |
+| 10.1                   | 10B61   | /Applications/Xcode_10.1.app    |
+| 10.0                   | 10A255  | /Applications/Xcode_10.app      |
+| 9.4.1                  | 9F2000  | /Applications/Xcode_9.4.1.app   |
 
 ### Xcode Support Tools
 
 - Nomad CLI 3.0.3
 - Nomad CLI IPA 0.14.3
 - xcpretty 0.3.0
-- xctool 0.3.5
+- xctool 0.3.6
 
 ### Installed SDKs
+
 | SDK                       | SDK name    |
 |---------------------------|-------------|
 | macOS 10.12               | macosx10.12 |
@@ -95,6 +120,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 | tvOS 11.4                 | appletvos11.4 |
 | tvOS 12.0                 | appletvos12.0 |
 | tvOS 12.1                 | appletvos12.1 |
+| tvOS 12.2                 | appletvos12.2 |
 | tvOS Simulator 11.4       | appletvsimulator11.4 |
 | tvOS Simulator 12.0       | appletvsimulator12.0 |
 | tvOS Simulator 12.1       | appletvsimulator12.1 |
@@ -153,6 +179,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - Apple Watch Series 4 - 44mm
 
 #### Runtimes
+
 | OS      | Version |
 |---------|---------|
 | iOS 8.4 | 12H141 |
@@ -307,7 +334,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - iPad Pro (12.9-inch) (2nd generation)
 - iPad (6th generation)
 
-#### iOS 12.1, 12.2
+#### iOS 12.1
 
 - iPhone 5s
 - iPhone 6
@@ -326,6 +353,39 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 - iPhone XR
 - iPad Air
 - iPad Air 2
+- iPad (5th generation)
+- iPad Pro (9.7-inch)
+- iPad Pro (12.9-inch)
+- iPad Pro (12.9-inch) (2nd generation)
+- iPad Pro (10.5-inch)
+- iPad (6th generation)
+- iPad Pro (11-inch)
+- iPad Pro (12.9-inch) (3rd generation)
+
+#### iOS 12.2
+
+- iPhone 5s
+- iPhone 6
+- iPhone 6 Plus
+- iPhone 6s
+- iPhone 6s Plus
+- iPhone 7
+- iPhone 7 Plus
+- iPhone SE
+- iPhone 8
+- iPhone 8 Plus
+- iPhone X
+- iPhone X
+- iPhone XS
+- iPhone XS Max
+- iPhone XR
+- iPad Air
+- iPad Air 2
+- iPad Air (3rd generation)
+- iPad mini 2
+- iPad mini 3
+- iPad mini 4
+- iPad mini (5th generation)
 - iPad (5th generation)
 - iPad Pro (9.7-inch)
 - iPad Pro (12.9-inch)
@@ -395,7 +455,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 28.0.2 |
+| platform-tools        | Android SDK Platform-tools, revision 29.0.0 |
 
 ### Android SDK Platforms
 
@@ -456,7 +516,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 | lldb                  | 2.3.3614996                               |
 | ndk-bundle            | 18.1.5063045                              |
 | ProGuard              | 5.3.3                                     |
-| Android Emulator      | 28.0.25                                    |
+| Android Emulator      | 29.0.11                                   |
 
 ### Google APIs
 
@@ -480,7 +540,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Visual Studio for Mac
 
-- 8.0.2.23
+- 8.0.9.5
 
 ### Mono
 
@@ -498,6 +558,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Xamarin.iOS SDK
 
+- 12.8.0.2
 - 12.6.0.25
 - 12.2.1.16
 - 12.2.1.11
@@ -515,7 +576,7 @@ We will be switching to use [Azul OpenJDKs](https://azure.microsoft.com/en-us/bl
 
 ### Xamarin.Android SDK
 
-- 9.2.0-5
+- 9.2.3-0
 - 9.1.8-0
 - 9.0.0-20
 - 9.0.0-18

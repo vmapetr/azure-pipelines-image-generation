@@ -63,6 +63,7 @@ Function InstallVS
 
 $WorkLoads = '--allWorkloads --includeRecommended ' + `
               '--add Component.CPython2.x64 ' + `
+              '--add Component.Dotfuscator ' + `
               '--add Component.Linux.CMake ' + `
               '--add Component.UnityEngine.x64 ' + `
               '--add Component.UnityEngine.x86 ' + `
@@ -105,8 +106,10 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
               '--add Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest ' + `
               '--add Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest ' + `
               '--add Microsoft.VisualStudio.Component.VC.v141 ' + `
+              '--add Microsoft.VisualStudio.Component.Windows10SDK.16299 ' + `
               '--add Microsoft.VisualStudio.Component.Windows10SDK.17134 ' + `
               '--add Microsoft.VisualStudio.Component.Windows10SDK.17763 ' + `
+              '--add Microsoft.VisualStudio.Component.Windows10SDK.18362 ' + `
               '--add Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices ' + `
               '--add Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools ' + `
               '--add Microsoft.VisualStudio.ComponentGroup.Web.CloudTools ' + `
@@ -154,6 +157,9 @@ $catalogContent = Get-Content -Path ($instanceFolders.FullName + '\catalog.json'
 $catalog = $catalogContent | ConvertFrom-Json
 $version = $catalog.info.id
 Write-Host "Visual Studio version" $version "installed"
+
+# Initialize Visual Studio Experimental Instance
+&"C:\Program Files (x86)\Microsoft Visual Studio\2019\$ReleaseInPath\Common7\IDE\devenv.exe" /RootSuffix Exp /ResetSettings General.vssettings /Command File.Exit | Wait-Process
 
 # Updating content of MachineState.json file to disable autoupdate of VSIX extensions
 $newContent = '{"Extensions":[{"Key":"1e906ff5-9da8-4091-a299-5c253c55fdc9","Value":{"ShouldAutoUpdate":false}},{"Key":"Microsoft.VisualStudio.Web.AzureFunctions","Value":{"ShouldAutoUpdate":false}}],"ShouldAutoUpdate":false,"ShouldCheckForUpdates":false}'
