@@ -5,3 +5,7 @@
 ################################################################################
 
 choco install hg -y
+
+$hgPath = "${env:ProgramFiles}\Mercurial\"
+Add-MachinePathItem $hgPath
+$env:Path = Get-MachinePath

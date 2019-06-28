@@ -1,20 +1,21 @@
-# Help us route
+---
+name: Tool request
+about: Request a new tool or update a tool on the hosted images
+title: Update/Add [tool name]
+labels: t:Enhancement
+assignees: ''
 
-This is the template for requesting new or updated tools on the hosted images.
-If you intended to file a bug, please switch to the Bugs template: https://github.com/Microsoft/azure-pipelines-image-generation/issues/new?template=bugs.md
+---
 
-# If this is a request for a new tool or tool version...
-
-## Tool info
+**Tool information**
 - Tool name: <!--- name -->
 - Add or update? <!--- add or update? -->
 - Desired version: <!--- version -->
 - If this is an add request:
   - Brief description of tool: <!--- description -->
   - URL for tool's homepage: <!--- url -->
-  - Open source license type (Apache, MIT, GPL, etc.): <!-- license -->
 
-## Areas and ecosystems
+**Areas and ecosystems**
 <!--- This helps us route to the right owner: check one or two, don't worry about getting it perfect -->
 
 - [ ] Android
@@ -36,9 +37,11 @@ If you intended to file a bug, please switch to the Bugs template: https://githu
 - [ ] Xamarin
 - [ ] Other
 
-## Hosted pools
-<!--- Where do you want to see this tool? Select all that apply -->
+**Image impacted**
+Add the appropriate label for the image or images that should be updated (e.g., macOS 10.13, macOS 10.14, ubuntu, VS2017, VS2019, WINCON).
 
-- [ ] macOS
-- [ ] Ubuntu
-- [ ] Windows
+**Workaround**
+<!--- Are there any workarounds (e.g. install during the build even though it adds time to the build)? -->
+
+**Are you willing to submit a PR?**
+<!--- We accept contributions! -->

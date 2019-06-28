@@ -17,6 +17,16 @@ Function InstallVS
 
   try
   {
+    Write-Host "Enable short name support on Windows needed for Xamarin Android AOT, defaults appear to have been changed in Azure VMs"
+    $shortNameEnableProcess = Start-Process -FilePath fsutil.exe -ArgumentList ('8dot3name', 'set', '0') -Wait -PassThru
+    $shortNameEnableExitCode = $shortNameEnableProcess.ExitCode
+
+    if ($shortNameEnableExitCode -ne 0)
+    {
+      Write-Host -Object 'Enabling short name support on Windows failed. This needs to be enabled prior to VS 2017 install for Xamarin Andriod AOT to work.'
+      exit $shortNameEnableExitCode
+    }
+
     Write-Host "Downloading Bootstrapper ..."
     Invoke-WebRequest -Uri $VSBootstrapperURL -OutFile "${env:Temp}\vs_$Sku.exe"
 
@@ -60,6 +70,7 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.Net.Component.4.7.1.SDK ' + `
                 '--add Microsoft.Net.Component.4.7.1.TargetingPack ' + `
                 '--add Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools ' + `
+                '--add Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools ' + `
                 '--add Microsoft.Net.Core.Component.SDK.1x ' + `
                 '--add Microsoft.NetCore.1x.ComponentGroup.Web ' + `
                 '--add Microsoft.VisualStudio.Component.Azure.Storage.AzCopy ' + `
@@ -81,7 +92,9 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.VisualStudio.Component.TestTools.WebLoadTest ' + `
                 '--add Microsoft.VisualStudio.Web.Mvc4.ComponentGroup ' + `
                 '--add Component.CPython2.x64 ' + `
+                '--add Component.Linux.CMake ' + `
                 '--add Microsoft.Component.PythonTools.UWP ' + `
+                '--remove Component.CPython3.x64 ' + `
                 '--add Microsoft.Component.VC.Runtime.OSSupport ' + `
                 '--add Microsoft.VisualStudio.Component.VC.Tools.ARM ' + `
                 '--add Microsoft.VisualStudio.ComponentGroup.UWP.VC ' + `
@@ -106,7 +119,9 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre ' + `
                 '--add Microsoft.VisualStudio.Component.Windows10SDK.17134 ' + `
                 '--add Microsoft.VisualStudio.Component.Windows10SDK.17763 ' + `
-                '--add Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre '
+                '--add Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre '+ `
+                '--add Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre ' + `
+                '--add Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre '
 
 $Sku = 'Enterprise'
 $VSBootstrapperURL = 'https://aka.ms/vs/15/release/vs_enterprise.exe'
@@ -130,11 +145,15 @@ if($instanceFolders -is [array])
 $catalogContent = Get-Content -Path ($instanceFolders.FullName + '\catalog.json')
 $catalog = $catalogContent | ConvertFrom-Json
 $version = $catalog.info.id
+$VSInstallRoot = "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise"
 Write-Host "Visual Studio version" $version "installed"
+
+# Initialize Visual Studio Experimental Instance for integration testing
+&"$VSInstallRoot\Common7\IDE\devenv.exe" /RootSuffix Exp /ResetSettings General.vssettings /Command File.Exit | Wait-Process
 
 # Updating content of MachineState.json file to disable autoupdate of VSIX extensions
 $newContent = '{"Extensions":[{"Key":"1e906ff5-9da8-4091-a299-5c253c55fdc9","Value":{"ShouldAutoUpdate":false}},{"Key":"Microsoft.VisualStudio.Web.AzureFunctions","Value":{"ShouldAutoUpdate":false}}],"ShouldAutoUpdate":false,"ShouldCheckForUpdates":false}'
-Set-Content -Path "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\MachineState.json" -Value $newContent
+Set-Content -Path "$VSInstallRoot\Common7\IDE\Extensions\MachineState.json" -Value $newContent
 
 
 # Adding description of the software to Markdown
@@ -143,7 +162,7 @@ $SoftwareName = "Visual Studio 2017 Enterprise"
 
 $Description = @"
 _Version:_ $version<br/>
-_Location:_ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
+_Location:_ $VSInstallRoot
 
 The following workloads including required and recommended components are installed with Visual Studio 2017:
 
