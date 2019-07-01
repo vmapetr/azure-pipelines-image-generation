@@ -170,13 +170,11 @@ $environmentPSModulePath = [Environment]::GetEnvironmentVariable("PSModulePath",
 $existingPaths = $environmentPSModulePath -split ';' -replace '\\$',''
 
 if ($existingPaths -notcontains $azureRMModulePath) {
-    $env:PSModulePath = $azureRMModulePath + ";" + $env:PSModulePath
-    [Environment]::SetEnvironmentVariable("PSModulePath", $env:PSModulePath, "Machine")
+    [Environment]::SetEnvironmentVariable("PSModulePath", $azureRMModulePath + ";" + $env:PSModulePath, "Machine")
 }
 
 if ($existingPaths -notcontains $azureModulePath) {
-    $env:PSModulePath = $azureModulePath + ";" + $env:PSModulePath
-    [Environment]::SetEnvironmentVariable("PSModulePath", $env:PSModulePath, "Machine")
+    [Environment]::SetEnvironmentVariable("PSModulePath", $azureModulePath + ";" + $env:PSModulePath, "Machine")
 }
 
 $env:PSModulePath = $env:PSModulePath.TrimStart(';')
