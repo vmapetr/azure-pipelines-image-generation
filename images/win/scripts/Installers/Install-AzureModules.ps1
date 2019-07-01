@@ -179,12 +179,8 @@ if ($existingPaths -notcontains $azureModulePath) {
 
 $env:PSModulePath = $env:PSModulePath.TrimStart(';')
 
-Write-Host "Downloading content from blob location $blobUri"
-$webClient = New-Object Net.WebClient
-$webClient.DownloadFile($blobUri, $downloadLocation)
-
-Write-Host "Unzipping Azure modules to folder $extractLocation"
-Add-Type -AssemblyName System.IO.Compression.FileSystem
-[System.IO.Compression.ZipFile]::ExtractToDirectory($downloadLocation, $extractLocation)
-
-Write-Host "Successfully unzipped modules to location $extractLocation"
+foreach ($uri in $azurePsUri)
+{
+    $targetFile = Download-Zip -BlobUri $uri
+    Extract-Zip -ZipFilePath $targetFile -TargetLocation $extractLocation
+}
