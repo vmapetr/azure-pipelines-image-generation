@@ -41,7 +41,7 @@
             "os_type": "Linux",
             "image_publisher": "Canonical",
             "image_offer": "UbuntuServer",
-            "image_sku": "16.04-LTS",
+            "image_sku": "18.04-LTS",
             "os_disk_size_gb": "128"
         }
     ],
@@ -60,6 +60,9 @@
             "type": "shell",
             "scripts":[
                 "{{template_dir}}/scripts/base/repos.sh"
+            ],
+            "environment_vars": [
+                "DEBIAN_FRONTEND=noninteractive"
             ],
             "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
         },
@@ -104,35 +107,35 @@
                 "{{template_dir}}/scripts/installers/azcopy.sh",
                 "{{template_dir}}/scripts/installers/azure-cli.sh",
                 "{{template_dir}}/scripts/installers/azure-devops-cli.sh",
-                "{{template_dir}}/scripts/installers/1604/basic.sh",
+                "{{template_dir}}/scripts/installers/1804/basic.sh",
                 "{{template_dir}}/scripts/installers/build-essential.sh",
                 "{{template_dir}}/scripts/installers/clang.sh",
                 "{{template_dir}}/scripts/installers/cmake.sh",
                 "{{template_dir}}/scripts/installers/docker-compose.sh",
                 "{{template_dir}}/scripts/installers/docker-moby.sh",
-                "{{template_dir}}/scripts/installers/1604/dotnetcore-sdk.sh",
+                "{{template_dir}}/scripts/installers/1804/dotnetcore-sdk.sh",
                 "{{template_dir}}/scripts/installers/erlang.sh",
                 "{{template_dir}}/scripts/installers/firefox.sh",
                 "{{template_dir}}/scripts/installers/gcc.sh",
                 "{{template_dir}}/scripts/installers/git.sh",
-                "{{template_dir}}/scripts/installers/1604/go.sh",
+                "{{template_dir}}/scripts/installers/1804/go.sh",
                 "{{template_dir}}/scripts/installers/google-chrome.sh",
                 "{{template_dir}}/scripts/installers/haskell.sh",
                 "{{template_dir}}/scripts/installers/heroku.sh",
                 "{{template_dir}}/scripts/installers/hhvm.sh",
                 "{{template_dir}}/scripts/installers/image-magick.sh",
-                "{{template_dir}}/scripts/installers/1604/java-tools.sh",
-                "{{template_dir}}/scripts/installers/1604/kubernetes-tools.sh",
+                "{{template_dir}}/scripts/installers/1804/java-tools.sh",
+                "{{template_dir}}/scripts/installers/1804/kubernetes-tools.sh",
                 "{{template_dir}}/scripts/installers/leiningen.sh",
-                "{{template_dir}}/scripts/installers/1604/mercurial.sh",
+                "{{template_dir}}/scripts/installers/1804/mercurial.sh",
                 "{{template_dir}}/scripts/installers/miniconda.sh",
                 "{{template_dir}}/scripts/installers/mono.sh",
                 "{{template_dir}}/scripts/installers/mysql.sh",
                 "{{template_dir}}/scripts/installers/nodejs.sh",
                 "{{template_dir}}/scripts/installers/phantomjs.sh",
-                "{{template_dir}}/scripts/installers/1604/php.sh",
+                "{{template_dir}}/scripts/installers/1804/php.sh",
                 "{{template_dir}}/scripts/installers/pollinate.sh",
-                "{{template_dir}}/scripts/installers/1604/powershellcore.sh",
+                "{{template_dir}}/scripts/installers/1804/powershellcore.sh",
                 "{{template_dir}}/scripts/installers/ruby.sh",
                 "{{template_dir}}/scripts/installers/rust.sh",
                 "{{template_dir}}/scripts/installers/scala.sh",
@@ -151,8 +154,8 @@
         {
             "type": "shell",
             "scripts":[
-                "{{template_dir}}/scripts/installers/1604/android.sh",
-                "{{template_dir}}/scripts/installers/1604/azpowershell.sh",
+                "{{template_dir}}/scripts/installers/1804/android.sh",
+                "{{template_dir}}/scripts/installers/1804/azpowershell.sh",
                 "{{template_dir}}/scripts/helpers/containercache.sh",
                 "{{template_dir}}/scripts/installers/hosted-tool-cache.sh",
                 "{{template_dir}}/scripts/installers/python.sh",
@@ -180,7 +183,7 @@
         {
             "type": "file",
             "source": "{{user `metadata_file`}}",
-            "destination": "./Ubuntu1604-README.md",
+            "destination": "./Ubuntu1804-README.md",
             "direction": "download"
         },
         {
@@ -195,14 +198,14 @@
         },
         {
             "type": "file",
-            "source": "{{template_dir}}/config/ubuntu1604.conf",
+            "source": "{{template_dir}}/config/ubuntu1804.conf",
             "destination": "/tmp/"
         },
         {
             "type": "shell",
             "inline": [
                 "mkdir -p /etc/vsts",
-                "cp /tmp/ubuntu1604.conf /etc/vsts/machine_instance.conf"
+                "cp /tmp/ubuntu1804.conf /etc/vsts/machine_instance.conf"
             ],
             "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
         },
