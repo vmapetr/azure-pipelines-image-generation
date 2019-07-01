@@ -166,15 +166,25 @@ $azurePsUri = @(
 
 $azureRMModulePath = "C:\Modules\azurerm_2.1.0"
 $azureModulePath = "C:\Modules\azure_2.1.0"
+$finalPath = ""
 $environmentPSModulePath = [Environment]::GetEnvironmentVariable("PSModulePath", "Machine")
 $existingPaths = $environmentPSModulePath -split ';' -replace '\\$',''
 
 if ($existingPaths -notcontains $azureRMModulePath) {
-    [Environment]::SetEnvironmentVariable("PSModulePath", $azureRMModulePath + ";" + $env:PSModulePath, "Machine")
+    $finalPath = $azureRMModulePath
 }
 
 if ($existingPaths -notcontains $azureModulePath) {
-    [Environment]::SetEnvironmentVariable("PSModulePath", $azureModulePath + ";" + $env:PSModulePath, "Machine")
+    if($finalPath -ne "") {
+        $finalPath = $finalPath + ";" + $azureModulePath
+    }
+    else {
+        $finalPath = $azureModulePath
+    }
+}
+
+if($finalPath -ne "") {
+    [Environment]::SetEnvironmentVariable("PSModulePath", $finalPath + ";" + $env:PSModulePath, "Machine")
 }
 
 $env:PSModulePath = $env:PSModulePath.TrimStart(';')
