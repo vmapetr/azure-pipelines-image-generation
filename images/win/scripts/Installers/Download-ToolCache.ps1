@@ -4,6 +4,23 @@
 ##  Desc:  Download tool cache
 ################################################################################
 
+Function InstallTool
+{
+    Param
+    (
+        [System.Object]$ExecutablePath
+    )
+
+    Write-Host $ExecutablePath.DirectoryName
+    Set-Location -Path $ExecutablePath.DirectoryName
+    Get-Location | Write-Host
+    if (Test-Path 'tool.zip')
+    {
+        Expand-Archive 'tool.zip' -DestinationPath '.'
+    }
+    cmd.exe /c 'install_to_tools_cache.bat'
+}
+
 $SourceUrl = "https://vstsagenttools.blob.core.windows.net/tools"
 
 $Dest = "C:/"
@@ -21,16 +38,19 @@ $ToolsDirectory = $Dest + $Path
 $current = Get-Location
 Set-Location -Path $ToolsDirectory
 
+$Python34x86Path
 Get-ChildItem -Recurse -Depth 4 -Filter install_to_tools_cache.bat | ForEach-Object {
-    Write-Host $_.DirectoryName
-    Set-Location -Path $_.DirectoryName
-    Get-Location | Write-Host
-    if (Test-Path 'tool.zip')
-    {
-        Expand-Archive 'tool.zip' -DestinationPath '.'
+    #Python 3.4.* x86 have to be installed after x64 since x64 breaks installed x86 version
+    if ($_.DirectoryName -Match "Python\\3.4.*\\x86") {
+        $Python34x86Path = $_
     }
-    cmd.exe /c 'install_to_tools_cache.bat'
+    else {
+        InstallTool($_)
+    }
 }
+
+InstallTool($Python34x86Path)
+
 Set-Location -Path $current
 
 setx AGENT_TOOLSDIRECTORY $ToolsDirectory /M

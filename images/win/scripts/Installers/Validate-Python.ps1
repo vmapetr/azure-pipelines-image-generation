@@ -26,7 +26,7 @@ if ($Python3Version -notlike "Python 3.*")
 $python2path = $Env:AGENT_TOOLSDIRECTORY + '/Python/2.7*/x64'
 $python2Dir = Get-Item -Path $python2path
 
-$env:Path = $python2Dir + ";" + $env:Path
+$env:Path = $python2Dir.FullName + ";" + $env:Path
 
 $Python2Version = & $env:comspec "/s /c python --version 2>&1"
 
