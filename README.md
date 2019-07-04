@@ -26,7 +26,6 @@ Subscribe to [this RSS feed](https://microsoft.github.io/azure-pipelines-image-g
 If you have an issue or request for an image, please create an issue in this repo. To add or change a tool yourself, see [Contributing](#contributing).
 
 ## Image generation help
-NOTE: You will need to use Packer v1.3.4 or earlier until #929 is resolved.
 
 ### Linux
 

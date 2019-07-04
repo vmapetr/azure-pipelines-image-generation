@@ -35,19 +35,19 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Python 3.7.3
 - Ruby 2.6.3p62
 - .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 1.1.12, 1.1.13, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.504, 2.1.505, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502, 2.1.504, 2.2.101, 2.2.102, 2.2.103, 2.2.104, 2.2.105
-- Go 1.12.5
+- Go 1.12.6
 
 ### Package Management
 
-- Bundler 2.0.1
+- Bundler 2.0.2
 - Carthage 0.33.0
-- CocoaPods 1.7.1 (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to an older CocoaPods version using this [post-clone script](https://github.com/microsoft/appcenter/tree/master/sample-build-scripts/general/cocoapods-rollback))
-- Homebrew 2.1.4
+- CocoaPods 1.7.2 (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to an older CocoaPods version using this [post-clone script](https://github.com/microsoft/appcenter/tree/master/sample-build-scripts/general/cocoapods-rollback))
+- Homebrew 2.1.6
 - NPM 3.10.10
 - Yarn 1.16.0
 - NuGet 4.7.0.5148
-- pip 19.0.3(python 2.7)
-- pip 19.0.3(python 3.7)
+- pip 19.1.1(python 2.7)
+- pip 19.1.1(python 3.7)
 - Miniconda 4.6.14
 
 ### Project Management
@@ -58,7 +58,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 ### Utilities
 
 - curl 7.65.1 (libcurl/7.65.1 SecureTransport zlib/1.2.11)
-- Git 2.21.0
+- Git 2.22.0
 - Git LFS 2.7.2
 - GNU Wget 1.20.3
 - Subversion (SVN) 1.12.0
@@ -67,8 +67,8 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 ### Tools
 
 - fastlane 2.125.2
-- App Center CLI 1.1.18
-- Azure-CLI 2.0.66
+- App Center CLI 1.1.19
+- Azure-CLI 2.0.67
 
 ### Pre-cached tools
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
@@ -443,7 +443,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 29.0.0 |
+| platform-tools        | Android SDK Platform-tools, revision 29.0.1 |
 
 ### Android SDK Platforms
 
@@ -462,6 +462,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 | android-25            | Android SDK Platform 25, Revision 3       |
 | android-26            | Android SDK Platform 26, Revision 2       |
 | android-27            | Android SDK Platform 27, Revision 3       |
+| android-28            | Android SDK Platform 28, Revision 6       |
 
 ### Android SDK Build-tools
 
@@ -494,6 +495,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 | build-tools-28.0.1    | Android SDK Build-tools, Revision 28.0.1  |
 | build-tools-28.0.2    | Android SDK Build-tools, Revision 28.0.2  |
 | build-tools-28.0.3    | Android SDK Build-tools, Revision 28.0.3  |
+| build-tools-29.0.0    | Android SDK Build-tools, Revision 29.0.0  |
 
 ### Utils
 
