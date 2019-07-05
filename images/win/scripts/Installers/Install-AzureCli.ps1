@@ -6,7 +6,7 @@
 
 choco install azure-cli -y
 
-$AzureCliExtensionPath = Join-Path $Env:HOMEDRIVE 'AzureCliExtensionDirectory'
+$AzureCliExtensionPath = Join-Path $Env:CommonProgramFiles 'AzureCliExtensionDirectory'
 New-Item -ItemType "directory" -Path $AzureCliExtensionPath
 
 $Env:AZURE_EXTENSION_DIR = $AzureCliExtensionPath
