@@ -49,7 +49,9 @@ Get-ChildItem -Recurse -Depth 4 -Filter install_to_tools_cache.bat | ForEach-Obj
     }
 }
 
-InstallTool($Python34x86Path)
+if ($Python34x86Path) {
+    InstallTool($Python34x86Path)
+}
 
 Set-Location -Path $current
 

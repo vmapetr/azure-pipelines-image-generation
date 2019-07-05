@@ -27,4 +27,3 @@ if ($currentPath | Select-String -SimpleMatch $pythonDir.FullName)
 
 Add-MachinePathItem -PathItem $pythonDir.FullName
 Add-MachinePathItem -PathItem "$($pythonDir.FullName)\Scripts"
-[System.Environment]::SetEnvironmentVariable('PYTHON_HOME', $pythonDir.FullName, [System.EnvironmentVariableTarget]::Machine)
