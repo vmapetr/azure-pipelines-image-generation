@@ -62,7 +62,6 @@ Function InstallVS
 }
 
 $WorkLoads = '--allWorkloads --includeRecommended ' + `
-              '--add Component.CPython2.x64 ' + `
               '--add Component.Dotfuscator ' + `
               '--add Component.Linux.CMake ' + `
               '--add Component.UnityEngine.x64 ' + `
