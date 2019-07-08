@@ -50,3 +50,6 @@ docker pull alpine:3.10
 echo "Documenting Docker version"
 DOCKER_VERSION=`docker -v`
 DocumentInstalledItem "Docker ($DOCKER_VERSION)"
+
+echo "Installed docker images"
+docker images
