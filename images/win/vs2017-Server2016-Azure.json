@@ -23,7 +23,7 @@
         "install_user": "installer",
         "install_password": null,
         "capture_name_prefix": "packer",
-        "image_version": null
+        "image_version": "dev"
     },
     "builders": [
         {
@@ -107,7 +107,7 @@
         {
             "type": "powershell",
             "inline": [
-              "setx ImageVersion {{user `image_version` }} /M"
+              "setx ImageVersion {{user `image_version` }} /m"
             ]
         },
         {
