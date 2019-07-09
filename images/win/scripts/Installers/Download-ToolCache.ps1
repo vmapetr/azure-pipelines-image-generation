@@ -38,19 +38,9 @@ $ToolsDirectory = $Dest + $Path
 $current = Get-Location
 Set-Location -Path $ToolsDirectory
 
-$Python34x86Path
 Get-ChildItem -Recurse -Depth 4 -Filter install_to_tools_cache.bat | ForEach-Object {
-    #Python 3.4.* x86 have to be installed after x64 since x64 breaks installed x86 version
-    if ($_.DirectoryName -Match "Python\\3.4.*\\x86") {
-        $Python34x86Path = $_
-    }
-    else {
-        InstallTool($_)
-    }
-}
-
-if ($Python34x86Path) {
-    InstallTool($Python34x86Path)
+    #In order to work correctly Python 3.4 x86 must be installed after x64, this is achieved by current toolcache catalog structure
+    InstallTool($_)
 }
 
 Set-Location -Path $current
