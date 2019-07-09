@@ -39,6 +39,7 @@ $current = Get-Location
 Set-Location -Path $ToolsDirectory
 
 Get-ChildItem -Recurse -Depth 4 -Filter install_to_tools_cache.bat | ForEach-Object {
+    #In order to work correctly Python 3.4 x86 must be installed after x64, this is achieved by current toolcache catalog structure
     InstallTool($_)
 }
 
