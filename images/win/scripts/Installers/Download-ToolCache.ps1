@@ -38,7 +38,6 @@ $ToolsDirectory = $Dest + $Path
 $current = Get-Location
 Set-Location -Path $ToolsDirectory
 
-$Python34x86Path
 Get-ChildItem -Recurse -Depth 4 -Filter install_to_tools_cache.bat | ForEach-Object {
     InstallTool($_)
 }
