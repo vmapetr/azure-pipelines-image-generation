@@ -53,3 +53,12 @@ DocumentInstalledItem "Docker ($DOCKER_VERSION)"
 
 echo "Installed docker images"
 docker images
+# Adding description of the software to Markdown
+
+$SoftwareName = "Docker images"
+$Description = @"
+The following container images have been cached:
+"@
+
+Add-SoftwareDetailsToMarkdown -SoftwareName $SoftwareName -DescriptionMarkdown $Description
+Add-ContentToMarkdown -Content $(docker images --digests --format "* {{.Repository}}:{{.Tag}} (Digest: {{.Digest}})")
