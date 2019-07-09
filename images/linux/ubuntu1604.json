@@ -18,7 +18,8 @@
         "installer_script_folder": "/imagegeneration/installers",
         "helper_script_folder": "/imagegeneration/helpers",
         "vm_size": "Standard_DS2_v2",
-        "capture_name_prefix": "packer"
+        "capture_name_prefix": "packer",
+        "image_version": "dev"
     },
     "builders": [
         {
@@ -93,6 +94,13 @@
             "environment_vars": [
                 "METADATA_FILE={{user `metadata_file`}}",
                 "HELPER_SCRIPTS={{user `helper_script_folder`}}"
+            ],
+            "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
+        },
+        {
+            "type": "shell",
+            "inline": [
+                "echo ImageVersion={{user `image_version`}} | tee -a /etc/environment"
             ],
             "execute_command": "sudo sh -c '{{ .Vars }} {{ .Path }}'"
         },
