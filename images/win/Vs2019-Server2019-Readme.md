@@ -323,6 +323,11 @@ _Location:_ C:\Modules\az_1.0.0\Az\1.0.0\Az.psd1
 This version is saved but not installed
 _Location:_ C:\Modules\az_1.6.0\Az\1.6.0\Az.psd1
 
+#### 2.3.2
+
+This version is saved but not installed
+_Location:_ C:\Modules\az_2.3.2\Az\2.3.2\Az.psd1
+
 > Note: You can use a specific Az module version in Pipeline using [Azure PowerShell](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-powershell?view=azure-devops) task.
 
 
@@ -358,7 +363,7 @@ _Version:_ 2.4.5 (x64)<br/>_Version:_ 2.5.3 (x64)<br/>_Version:_ 2.6.1 (x64)<br/
 
 ## Python (64 bit)
 
-#### 
+####
 _Environment:_
 * PATH: contains location of python.exe
 
@@ -401,9 +406,9 @@ _Environment:_
 
 ## Boost
 
-#### 
+####
 
-* PATH: contains the location of Boost version 
+* PATH: contains the location of Boost version
 * BOOST_ROOT: root directory of the Boost version  installation
 * BOOST_ROOT_1_69_0: root directory of the Boost version  installation
 
