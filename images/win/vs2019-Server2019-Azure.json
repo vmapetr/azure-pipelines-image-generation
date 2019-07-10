@@ -22,7 +22,8 @@
         "commit_id": "LATEST",
         "install_user": "installer",
         "install_password": null,
-        "capture_name_prefix": "packer"
+        "capture_name_prefix": "packer",
+        "image_version": "dev"
     },
     "sensitive-variables": ["install_password", "ssh_password", "client_secret"],
     "builders": [
@@ -103,6 +104,12 @@
         {
             "type": "windows-restart",
             "restart_timeout": "10m"
+        },
+        {
+            "type": "powershell",
+            "inline": [
+              "setx ImageVersion {{user `image_version` }} /m"
+            ]
         },
         {
             "type": "powershell",

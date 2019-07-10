@@ -62,7 +62,6 @@ Function InstallVS
 }
 
 $WorkLoads = '--allWorkloads --includeRecommended ' + `
-              '--add Component.CPython2.x64 ' + `
               '--add Component.Dotfuscator ' + `
               '--add Component.Linux.CMake ' + `
               '--add Component.UnityEngine.x64 ' + `
@@ -86,6 +85,7 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
               '--add Microsoft.VisualStudio.Component.EntityFramework ' + `
               '--add Microsoft.VisualStudio.Component.FSharp.Desktop ' + `
               '--add Microsoft.VisualStudio.Component.LinqToSql ' + `
+              '--add Microsoft.VisualStudio.Component.PortableLibrary ' + `
               '--add Microsoft.VisualStudio.Component.TeamOffice ' + `
               '--add Microsoft.VisualStudio.Component.TestTools.CodedUITest ' + `
               '--add Microsoft.VisualStudio.Component.TestTools.WebLoadTest ' + `
