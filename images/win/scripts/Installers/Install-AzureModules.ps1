@@ -245,7 +245,7 @@ else {
 # Download and unzip the stored AzurePSModules from the vstsagentools public blob
 $extractLocation = "C:\Modules"
 $azurePsUri = @(
-    "https://vstsagenttools.blob.core.windows.net/tools/azurepowershellmodules/AzPSModules.M151.20190418.18144.zip",
+    "https://vstsagenttools.blob.core.windows.net/tools/azurepowershellmodules/AzPSModules.M153.20190703.36963.zip",
     "https://vstsagenttools.blob.core.windows.net/tools/azurepowershellmodules/AzurePSModules.M151.20190415.40979.zip"
 )
 
