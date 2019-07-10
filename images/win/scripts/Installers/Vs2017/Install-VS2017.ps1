@@ -78,6 +78,8 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.VisualStudio.Component.VC.140 ' + `
                 '--add Component.Dotfuscator ' + `
                 '--add Microsoft.VisualStudio.Component.VC.ATL ' + `
+                '--add Microsoft.VisualStudio.Component.VC.ATL.ARM ' + `
+                '--add Microsoft.VisualStudio.Component.VC.ATL.ARM64 ' + `
                 '--add Microsoft.VisualStudio.Component.VC.ATLMFC ' + `
                 '--add Microsoft.VisualStudio.Component.VC.ClangC2 ' + `
                 '--add Microsoft.VisualStudio.Component.VC.CLI.Support ' + `
@@ -115,6 +117,8 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Microsoft.Component.Blend.SDK.WPF ' + `
                 '--add Microsoft.Component.VC.Runtime.UCRTSDK ' + `
                 '--add Microsoft.VisualStudio.Component.VC.ATL.Spectre ' + `
+                '--add Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre ' + `
+                '--add Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre ' + `
                 '--add Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre ' + `
                 '--add Microsoft.VisualStudio.Component.Windows10SDK.17134 ' + `
                 '--add Microsoft.VisualStudio.Component.Windows10SDK.17763 ' + `
