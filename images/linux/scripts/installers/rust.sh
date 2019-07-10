@@ -17,7 +17,7 @@ curl https://sh.rustup.rs -sSf | sh -s -- -y
 
 echo "RUSTUP_HOME=$RUSTUP_HOME" | tee -a /etc/environment
 echo "CARGO_HOME=$CARGO_HOME" | tee -a /etc/environment
-echo "PATH=\"$PATH:$CARGO_HOME/bin\"" | tee -a /etc/environment
+echo "PATH=$CARGO_HOME/bin:$PATH" | tee -a /etc/environment
 
 source $CARGO_HOME/env
 

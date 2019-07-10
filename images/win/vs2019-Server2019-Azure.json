@@ -7,8 +7,12 @@
         "object_id": "{{env `ARM_OBJECT_ID`}}",
         "resource_group": "{{env `ARM_RESOURCE_GROUP`}}",
         "storage_account": "{{env `ARM_STORAGE_ACCOUNT`}}",
+        "temp_resource_group_name": "{{env `TEMP_RESOURCE_GROUP_NAME`}}",
         "location": "{{env `ARM_RESOURCE_LOCATION`}}",
         "ssh_password": "{{env `SSH_PASSWORD`}}",
+        "virtual_network_name": "{{env `VNET_NAME`}}",
+        "virtual_network_resource_group_name": "{{env `VNET_RESOURCE_GROUP`}}",
+        "virtual_network_subnet_name": "{{env `VNET_SUBNET`}}",
         "vm_size": "Standard_DS4_v2",
 
         "image_folder": "C:\\image",
@@ -18,7 +22,8 @@
         "commit_id": "LATEST",
         "install_user": "installer",
         "install_password": null,
-        "capture_name_prefix": "packer"
+        "capture_name_prefix": "packer",
+        "image_version": "dev"
     },
     "sensitive-variables": ["install_password", "ssh_password", "client_secret"],
     "builders": [
@@ -35,8 +40,12 @@
             "vm_size": "{{user `vm_size`}}",
             "resource_group_name": "{{user `resource_group`}}",
             "storage_account": "{{user `storage_account`}}",
+            "temp_resource_group_name": "{{user `temp_resource_group_name`}}",
             "capture_container_name": "images",
             "capture_name_prefix": "{{user `capture_name_prefix`}}",
+            "virtual_network_name": "{{user `virtual_network_name`}}",
+            "virtual_network_resource_group_name": "{{user `virtual_network_resource_group_name`}}",
+            "virtual_network_subnet_name": "{{user `virtual_network_subnet_name`}}",
             "os_type": "Windows",
             "image_publisher": "MicrosoftWindowsServer",
             "image_offer": "WindowsServer",
@@ -44,7 +53,6 @@
             "communicator": "winrm",
             "winrm_use_ssl": "true",
             "winrm_insecure": "true",
-            "winrm_timeout": "4h",
             "winrm_username": "packer"
         }
     ],
@@ -96,6 +104,12 @@
         {
             "type": "windows-restart",
             "restart_timeout": "10m"
+        },
+        {
+            "type": "powershell",
+            "inline": [
+              "setx ImageVersion {{user `image_version` }} /m"
+            ]
         },
         {
             "type": "powershell",
@@ -696,7 +710,7 @@
         {
             "type": "file",
             "source": "C:\\InstalledSoftware.md",
-            "destination": "{{ template_dir }}/InstalledSoftware.md",
+            "destination": "{{ template_dir }}/Vs2019-Server2019-Readme.md",
             "direction": "download"
         },
         {

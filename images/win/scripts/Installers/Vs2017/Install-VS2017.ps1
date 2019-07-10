@@ -91,7 +91,7 @@ $WorkLoads = '--allWorkloads --includeRecommended ' + `
                 '--add Component.Android.SDK23 ' + `
                 '--add Microsoft.VisualStudio.Component.TestTools.WebLoadTest ' + `
                 '--add Microsoft.VisualStudio.Web.Mvc4.ComponentGroup ' + `
-                '--add Component.CPython2.x64 ' + `
+                '--add Component.Linux.CMake ' + `
                 '--add Microsoft.Component.PythonTools.UWP ' + `
                 '--remove Component.CPython3.x64 ' + `
                 '--add Microsoft.Component.VC.Runtime.OSSupport ' + `
