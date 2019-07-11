@@ -50,5 +50,4 @@ DOCKER_VERSION=`docker -v`
 DocumentInstalledItem "Docker ($DOCKER_VERSION)"
 
 echo "Documenting Docker images installed"
-DOCKER_IMAGES=`docker images`
-DocumentInstalledItem "Docker ($DOCKER_IMAGES)"
+docker images | tee $METADATA_FILE
