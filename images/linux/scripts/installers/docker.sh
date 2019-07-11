@@ -32,11 +32,9 @@ fi
 ## Always pull down latest docker image, as it will no-op if it already exists
 echo "Pulling down latest Docker image ($DEFAULT_DOCKER_IMAGE)"
 docker pull $DEFAULT_DOCKER_IMAGE
-docker pull node:8
 docker pull node:10
 docker pull node:12
 docker pull buildpack-deps:stretch
-docker pull node:8-alpine
 docker pull node:10-alpine
 docker pull node:12-alpine
 docker pull debian:8
