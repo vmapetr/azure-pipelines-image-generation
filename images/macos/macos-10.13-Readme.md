@@ -29,7 +29,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 	v6.17.1
 	v8.16.0
 	v10.16.0
-	v12.4.0
+	v12.5.0
 - PowerShell 6.2.1
 - Python 2.7.16
 - Python 3.7.3
@@ -41,7 +41,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 - Bundler 2.0.2
 - Carthage 0.33.0
-- CocoaPods 1.7.2 (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to an older CocoaPods version using this [post-clone script](https://github.com/microsoft/appcenter/tree/master/sample-build-scripts/general/cocoapods-rollback))
+- CocoaPods 1.7.3 (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to an older CocoaPods version using this [post-clone script](https://github.com/microsoft/appcenter/tree/master/sample-build-scripts/general/cocoapods-rollback))
 - Homebrew 2.1.6
 - NPM 3.10.10
 - Yarn 1.16.0
@@ -53,7 +53,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 ### Project Management
 
 - Apache Maven 3.6.1
-- Gradle 5.4.1
+- Gradle 5.5
 
 ### Utilities
 
@@ -62,11 +62,11 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Git LFS 2.7.2
 - GNU Wget 1.20.3
 - Subversion (SVN) 1.12.0
-- GNU parallel 20190522
+- GNU parallel 20190622
 
 ### Tools
 
-- fastlane 2.125.2
+- fastlane 2.126.0
 - App Center CLI 1.1.19
 - Azure-CLI 2.0.67
 
@@ -463,6 +463,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 | android-26            | Android SDK Platform 26, Revision 2       |
 | android-27            | Android SDK Platform 27, Revision 3       |
 | android-28            | Android SDK Platform 28, Revision 6       |
+| android-29            | Android SDK Platform 29, Revision 1       |
 
 ### Android SDK Build-tools
 
@@ -529,7 +530,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Visual Studio for Mac
 
-- 8.0.9.5
+- 8.1.3.19
 
 ### Mono
 
