@@ -188,13 +188,12 @@
         {
             "type": "file",
             "source": "{{user `metadata_file`}}",
-            "destination": "./Ubuntu1604-README.md",
+            "destination": "{{template_dir}}/Ubuntu1604-README.md",
             "direction": "download"
         },
         {
             "type": "shell",
             "inline": [
-                "rm {{user `metadata_file`}}",
                 "rm -rf {{user `helper_script_folder`}}",
                 "rm -rf {{user `installer_script_folder`}}",
                 "chmod 755 {{user `image_folder`}}"
