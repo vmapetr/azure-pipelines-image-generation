@@ -50,5 +50,5 @@ function Install-VsixExtension
 choco install wixtoolset -y --force
 
 #Installing VS extension 'Wix Toolset Visual Studio 2019 Extension'
-$exitCode = Install-VsixExtension -Url 'https://github.com/wixtoolset/VisualStudioExtension/releases/download/v0.9.28.58839/Votive2019.vsix' -Name 'Votive2019.vsix'
+$exitCode = Install-VsixExtension -Url 'https://wixtoolset.gallerycdn.vsassets.io/extensions/wixtoolset/wixtoolsetvisualstudio2019extension/1.0.0.4/1563296438961/Votive2019.vsix' -Name 'Votive2019.vsix'
 #return $exitCode
