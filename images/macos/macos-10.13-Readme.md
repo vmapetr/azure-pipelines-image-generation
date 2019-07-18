@@ -29,20 +29,20 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 	v6.17.1
 	v8.16.0
 	v10.16.0
-	v12.5.0
+	v12.6.0
 - PowerShell 6.2.1
 - Python 2.7.16
 - Python 3.7.3
 - Ruby 2.6.3p62
 - .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 1.1.12, 1.1.13, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.504, 2.1.505, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502, 2.1.504, 2.2.101, 2.2.102, 2.2.103, 2.2.104, 2.2.105
-- Go 1.12.6
+- Go 1.12.7
 
 ### Package Management
 
 - Bundler 2.0.2
 - Carthage 0.33.0
 - CocoaPods 1.7.3 (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to an older CocoaPods version using this [post-clone script](https://github.com/microsoft/appcenter/tree/master/sample-build-scripts/general/cocoapods-rollback))
-- Homebrew 2.1.6
+- Homebrew 2.1.7
 - NPM 3.10.10
 - Yarn 1.16.0
 - NuGet 4.7.0.5148
@@ -68,7 +68,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 - fastlane 2.126.0
 - App Center CLI 1.1.19
-- Azure-CLI 2.0.67
+- Azure-CLI 2.0.68
 
 ### Pre-cached tools
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
@@ -530,7 +530,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Visual Studio for Mac
 
-- 8.1.3.19
+- 8.1.4.5
 
 ### Mono
 
@@ -566,6 +566,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Xamarin.Android SDK
 
+- 9.3.0-23
 - 9.2.3-0
 - 9.1.8-0
 - 9.0.0-20
