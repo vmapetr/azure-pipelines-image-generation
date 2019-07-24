@@ -187,7 +187,7 @@
         {
             "type": "file",
             "source": "{{user `metadata_file`}}",
-            "destination": "./Ubuntu1804-README.md",
+            "destination": "{{template_dir}}/Ubuntu1804-README.md",
             "direction": "download"
         },
         {
