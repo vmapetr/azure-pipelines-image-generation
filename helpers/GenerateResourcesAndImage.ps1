@@ -14,7 +14,7 @@ Function Get-PackerTemplatePath {
         [Parameter(Mandatory = $True)]
         [ImageType] $ImageType
     )
-    
+
     $relativePath = "N/A"
 
     switch ($ImageType) {
@@ -71,9 +71,11 @@ Function GenerateResourcesAndImage {
         [Parameter(Mandatory = $True)]
         [ImageType] $ImageType,
         [Parameter(Mandatory = $True)]
-        [string] $AzureLocation
+        [string] $AzureLocation,
+        [Parameter(Mandatory = $False)]
+        [int]$SecondsToWaitForServicePrincipalSetup = 30
     )
-    
+
     $builderScriptPath = Get-PackerTemplatePath -RepositoryRoot $ImageGenerationRepositoryRoot -ImageType $ImageType
     $ServicePrincipalClientSecret = $env:UserName + [System.GUID]::NewGuid().ToString().ToUpper();
     $InstallPassword = $env:UserName + [System.GUID]::NewGuid().ToString().ToUpper();
@@ -108,7 +110,7 @@ Function GenerateResourcesAndImage {
     $spAppId = $sp.ApplicationId
     $spClientId = $sp.ApplicationId
     $spObjectId = $sp.Id
-    Sleep 60
+    Sleep -Seconds $SecondsToWaitForServicePrincipalSetup
 
     New-AzureRmRoleAssignment -RoleDefinitionName Contributor -ServicePrincipalName $spAppId
     $sub = Get-AzureRmSubscription -SubscriptionId $SubscriptionId
