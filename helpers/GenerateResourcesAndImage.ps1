@@ -71,7 +71,9 @@ Function GenerateResourcesAndImage {
         [Parameter(Mandatory = $True)]
         [ImageType] $ImageType,
         [Parameter(Mandatory = $True)]
-        [string] $AzureLocation
+        [string] $AzureLocation,
+        [Parameter(Mandatory = $False)]
+        [int]$SecondsToWaitForServicePrincipalSetup = 30
     )
 
     $builderScriptPath = Get-PackerTemplatePath -RepositoryRoot $ImageGenerationRepositoryRoot -ImageType $ImageType
@@ -108,7 +110,7 @@ Function GenerateResourcesAndImage {
     $spAppId = $sp.ApplicationId
     $spClientId = $sp.ApplicationId
     $spObjectId = $sp.Id
-    Sleep 120
+    Sleep -Seconds $SecondsToWaitForServicePrincipalSetup
 
     New-AzureRmRoleAssignment -RoleDefinitionName Contributor -ServicePrincipalName $spAppId
     $sub = Get-AzureRmSubscription -SubscriptionId $SubscriptionId
