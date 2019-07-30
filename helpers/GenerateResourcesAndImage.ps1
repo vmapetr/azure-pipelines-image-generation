@@ -113,6 +113,7 @@ Function GenerateResourcesAndImage {
     Sleep -Seconds $SecondsToWaitForServicePrincipalSetup
 
     New-AzureRmRoleAssignment -RoleDefinitionName Contributor -ServicePrincipalName $spAppId
+    Sleep -Seconds 60
     $sub = Get-AzureRmSubscription -SubscriptionId $SubscriptionId
     $tenantId = $sub.TenantId
     # "", "Note this variable-setting script for running Packer with these Azure resources in the future:", "==============================================================================================", "`$spClientId = `"$spClientId`"", "`$ServicePrincipalClientSecret = `"$ServicePrincipalClientSecret`"", "`$SubscriptionId = `"$SubscriptionId`"", "`$tenantId = `"$tenantId`"", "`$spObjectId = `"$spObjectId`"", "`$AzureLocation = `"$AzureLocation`"", "`$ResourceGroupName = `"$ResourceGroupName`"", "`$storageAccountName = `"$storageAccountName`"", "`$install_password = `"$install_password`"", ""
