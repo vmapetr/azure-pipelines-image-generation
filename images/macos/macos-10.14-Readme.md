@@ -4,8 +4,7 @@ The following software is installed on machines in the Azure Pipelines **macOS-1
 
 ## Image Changes
 
-The following Java versions are available on the VM image: 7, 8, 11, 12.
-	Java 9 and 10 were deprecated.
+The following Java versions are available on the VM image: 7, 8, 11, 12. Java 9 and 10 were deprecated.
 
 Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overloaded by complex licensing, end-user restrictions, and lack of long-term support. In this image change, we replaced the JDKs with tested, certified, LTS builds of OpenJDK from Azul Systems. Java developers can now build and run production Java applications using Azul Systems Zulu Enterprise builds of OpenJDK without incurring additional support costs. This new offering is designed to make Microsoft hosted Java builds and deployments worry-free by incorporating quarterly security updates and bug fixes as well as critical out-of-band updates and patches as needed.
 
@@ -13,39 +12,39 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ## Operating System
 
-- OS X 10.14.5 (18F132) **Mojave**
+- OS X 10.14.6 (18G84) **Mojave**
 
 ## Installed Software
 
 ### Language and Runtime
 
-- Java 1.7: OpenJDK RE (Zulu 7.29.0.5-CA) (build 1.7.0_222-b08)
-- Java 1.8: OpenJDK RE (Zulu 8.38.0.13-CA) (build 1.8.0_212-b04) (default)
-- Java 11: OpenJDK RE Zulu11.31+11-CA (build 11.0.3+7-LTS)
-- Java 12: OpenJDK RE Zulu12.2+3-CA (build 12.0.1+12)
+- Java 1.7: OpenJDK RE (Zulu 7.31.0.5-CA-macosx) (build 1.7.0_232-b6)
+- Java 1.8: OpenJDK RE (Zulu 8.40.0.25-CA-macosx) (build 1.8.0_222-b10) (default)
+- Java 11: OpenJDK RE (Zulu11.33+15-CA) (build 11.0.4+11-LTS)
+- Java 12: OpenJDK RE (Zulu12.3+11-CA) (build 12.0.2+3)
 - Node.js 6.17.0
 - NVM 0.33.11
 - NVM - Installed node versions:
 	v6.17.1
 	v8.16.0
 	v10.16.0
-	v12.4.0
-- PowerShell 6.2.1
+	v12.7.0
+- PowerShell 6.2.2
 - Python 2.7.16
-- Python 3.7.3
+- Python 3.7.4
 - Ruby 2.6.3p62
 - .NET Core SDK 1.0.1 1.0.4 1.1.10 1.1.11 1.1.12 1.1.13 1.1.4 1.1.5 1.1.7 1.1.8 1.1.9 2.0.0 2.0.3 2.1.100 2.1.101 2.1.102 2.1.103 2.1.104 2.1.105 2.1.2 2.1.200 2.1.201 2.1.202 2.1.300 2.1.301 2.1.302 2.1.4 2.1.400 2.1.401 2.1.402 2.1.403 2.1.500 2.1.502 2.1.503 2.1.504 2.1.505 2.2.100 2.2.101 2.2.102 2.2.103 2.2.104 2.2.105
-- Go 1.12.6
+- Go 1.12.7
 
 
 ### Package Management
 
 - Bundler 2.0.2
 - Carthage 0.33.0
-- CocoaPods 1.7.3 (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to an older CocoaPods version using this [post-clone script](https://github.com/microsoft/appcenter/blob/master/sample-build-scripts/general/cocoapods-rollback/appcenter-post-clone.sh))
-- Homebrew 2.1.6
+- CocoaPods 1.7.5 (Please, pay attention here. You may face an issue with pod install due to old dependencies in your pod file. In that case, you need to update your pod file with newer dependencies or rollback to an older CocoaPods version using this [post-clone script](https://github.com/microsoft/appcenter/blob/master/sample-build-scripts/general/cocoapods-rollback/appcenter-post-clone.sh))
+- Homebrew 2.1.8
 - NPM 3.10.10
-- Yarn 1.16.0
+- Yarn 1.17.3
 - NuGet 4.7.0.5148
 - pip 19.1.1
 - Miniconda 4.6.14
@@ -53,31 +52,31 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 ### Project Management
 
 - Apache Maven 3.6.1
-- Gradle 5.5
+- Gradle 5.5.1
 
 ### Utilities
 
-- curl 7.64.1 (libcurl/7.64.1 SecureTransport zlib/1.2.11)
+- curl 7.65.3 (libcurl/7.64.1 SecureTransport zlib/1.2.11)
 - Git 2.22.0
-- Git LFS 2.7.2
+- Git LFS 2.8.0
 - GNU Wget 1.20.3
-- Subversion (SVN) 1.12.0
+- Subversion (SVN) 1.12.2
 - GNU parallel 20190622
 
 ### Tools
 
-- fastlane 2.126.0
-- App Center CLI 1.1.19
-- Azure-CLI 2.0.67
+- fastlane 2.128.0
+- App Center CLI 1.2.2
+- Azure-CLI 2.0.69
 
 ### Pre-cached tools
 
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
-  - 2.7.15
-  - 3.4.8
-  - 3.5.5
-  - 3.6.8
-  - 3.7.2
+  - 2.7.16
+  - 3.4.10
+  - 3.5.7
+  - 3.6.9
+  - 3.7.4
   - pypy2
   - pypy3
 - Ruby (available through the [Use Ruby Version](https://go.microsoft.com/fwlink/?linkid=2005989) task)
@@ -90,7 +89,8 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 | Version                | Build   | Path                            |
 |------------------------|---------|---------------------------------|
-| 11_beta                | 11M337n | /Applications/Xcode_11.app      |
+| 11_beta                | 11M374r | /Applications/Xcode_11.app      |
+| 10.3                   | 10G8    | /Applications/Xcode_10.3.app    |
 | 10.2.1                 | 10E1001 | /Applications/Xcode_10.2.1.app  |
 | 10.2                   | 10E125  | /Applications/Xcode_10.2.app    |
 | 10.1                   | 10B61   | /Applications/Xcode_10.1.app    |
@@ -111,30 +111,43 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 | macOS 10.12               | macosx10.12 |
 | macOS 10.13               | macosx10.13 |
 | macOS 10.14               | macosx10.14 |
+| macOS 10.15               | macosx10.15 |
 | iOS 11.4                  | iphoneos11.4 |
 | iOS 12.0                  | iphoneos12.0 |
 | iOS 12.1                  | iphoneos12.1 |
 | iOS 12.2                  | iphoneos12.2 |
+| iOS 12.4                  | iphoneos12.4 |
+| iOS 13.0                  | iphoneos13.0 |
 | iOS Simulator 11.4        | iphonesimulator11.4 |
 | iOS Simulator 12.0        | iphonesimulator12.0 |
 | iOS Simulator 12.1        | iphonesimulator12.1 |
 | iOS Simulator 12.2        | iphonesimulator12.2 |
+| iOS Simulator 12.4        | iphonesimulator12.4 |
+| iOS Simulator 13.0        | iphonesimulator13.0 |
 | tvOS 11.4                 | appletvos11.4 |
 | tvOS 12.0                 | appletvos12.0 |
 | tvOS 12.1                 | appletvos12.1 |
 | tvOS 12.2                 | appletvos12.2 |
+| tvOS 12.4                 | appletvos12.4 |
+| tvOS 13.0                 | appletvos13.0 |
 | tvOS Simulator 11.4       | appletvsimulator11.4 |
 | tvOS Simulator 12.0       | appletvsimulator12.0 |
 | tvOS Simulator 12.1       | appletvsimulator12.1 |
 | tvOS Simulator 12.2       | appletvsimulator12.2 |
+| tvOS Simulator 12.4       | appletvsimulator12.4 |
+| tvOS Simulator 13.0       | appletvsimulator13.0 |
 | watchOS 4.3               | watchos4.3 |
 | watchOS 5.0               | watchos5.0 |
 | watchOS 5.1               | watchos5.1 |
 | watchOS 5.2               | watchos5.2 |
+| watchOS 5.3               | watchos5.3 |
+| watchOS 6.0               | watchos6.0 |
 | watchOS Simulator 4.3     | watchsimulator4.3 |
 | watchOS Simulator 5.0     | watchsimulator5.0 |
 | watchOS Simulator 5.1     | watchsimulator5.1 |
 | watchOS Simulator 5.2     | watchsimulator5.2 |
+| watchOS Simulator 5.3     | watchsimulator5.3 |
+| watchOS Simulator 6.0     | watchsimulator6.0 |
 
 ### Installed Simulators
 
@@ -192,7 +205,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 | iOS 10.0 | 14A345 |
 | iOS 10.1 | 14B72 |
 | iOS 10.2 | 14C89 |
-| iOS 10.3 | 14E269 |
+| iOS 10.3 | 14E8301 |
 | iOS 11.1 | 15B87 |
 | iOS 11.2 | 15C107 |
 | iOS 11.3 | 15E217 |
@@ -200,6 +213,8 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 | iOS 12.0 | 16A5288q |
 | iOS 12.1 | 16B91 |
 | iOS 12.2 | 16E226 |
+| iOS 12.4 | 16G73 |
+| iOS 13.0 | 17A5534d |
 | tvOS 10.2 | 14W260 |
 | tvOS 11.1 | 15J580 |
 | tvOS 11.2 | 15K104 |
@@ -208,6 +223,8 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 | tvOS 12.0 | 16J5283n |
 | tvOS 12.1 | 16J602 |
 | tvOS 12.2 | 16L225 |
+| tvOS 12.4 | 16M567 |
+| tvOS 13.0 | 17J5526d |
 | watchOS 3.2 | 14V243 |
 | watchOS 4.0 | 15R372 |
 | watchOS 4.1 | 15R844 |
@@ -216,6 +233,8 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 | watchOS 5.0 | 16R5283q |
 | watchOS 5.1 | 16R591 |
 | watchOS 5.2 | 16T224 |
+| watchOS 5.3 | 16U567 |
+| watchOS 6.0 | 17R5532d |
 
 #### Devices
 
@@ -273,7 +292,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - iPad Pro (9.7 inch)
 - iPad Pro (12.9 inch)
 
-#### iOS 10.1, 10.2, 10.3
+#### iOS 10.1, 10.2
 
 - iPhone 5
 - iPhone 5s
@@ -289,7 +308,26 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - iPad Pro (9.7 inch)
 - iPad Pro (12.9 inch)
 
-#### iOS 11.0, 11.1, 11.2, 11.3, 11.4
+#### iOS 10.3
+
+- iPhone 5
+- iPhone 5s
+- iPhone 6
+- iPhone 6 Plus
+- iPhone 6s
+- iPhone 6s Plus
+- iPhone 7
+- iPhone 7 Plus
+- iPhone SE
+- iPad Air
+- iPad Air 2
+- iPad Pro (9.7 inch)
+- iPad Pro (12.9 inch)
+- iPad (5th generation)
+- iPad Pro (12.9-inch) (2nd generation)
+- iPad Pro (10.5-inch)
+
+#### iOS 11.4
 
 - iPhone 5s
 - iPhone 6
@@ -364,7 +402,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - iPad Pro (11-inch)
 - iPad Pro (12.9-inch) (3rd generation)
 
-#### iOS 12.2
+#### iOS 12.2, 12.4
 
 - iPhone 5s
 - iPhone 6
@@ -397,24 +435,25 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - iPad Pro (11-inch)
 - iPad Pro (12.9-inch) (3rd generation)
 
-#### tvOS 10.2
+#### iOS 13.0
 
-- Apple TV 1080p
+- iPhone 8
+- iPhone 8 Plus
+- iPhone Xs
+- iPhone Xs Max
+- iPhone XR
+- iPad Pro (9.7-inch)
+- iPad Pro
+- iPad Pro (12.9-inch) (3rd
+- iPad Air (3rd generation)
 
-#### tvOS 11.0, 11.1, 11.2, 11.3, 11.4, 12, 12.1, 12.2
+#### tvOS 11.4, 12.0, 12.1, 12.2, 12.4, 13.0
 
 - Apple TV
 - Apple TV 4K
 - Apple TV 4K (at 1080p)
 
-#### watchOS 3.2
-
-- Apple Watch - 38mm
-- Apple Watch - 42mm
-- Apple Watch Series 2 - 38mm
-- Apple Watch Series 2 - 42mm
-
-#### watchOS 4.0, 4.1, 4.2, 4.3
+#### watchOS 4.3
 
 - Apple Watch - 38mm
 - Apple Watch - 42mm
@@ -423,7 +462,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Apple Watch Series 3 - 38mm
 - Apple Watch Series 3 - 42mm
 
-#### watchOS 5.0, 5.1, 5.2
+#### watchOS 5.0, 5.1, 5.2, 5.3. 6.0
 
 - Apple Watch Series 2 - 38mm
 - Apple Watch Series 2 - 42mm
@@ -544,7 +583,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Visual Studio for Mac
 
-- 8.1.3.19
+- 8.1.5.9
 
 
 ### Mono
@@ -563,6 +602,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Xamarin.iOS SDK
 
+- 12.10.0.157
 - 12.8.0.2
 - 12.6.0.25
 - 12.2.1.16
@@ -581,6 +621,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Xamarin.Android SDK
 
+- 9.3.0-23
 - 9.2.3-0
 - 9.1.8-0
 - 9.0.0-20
@@ -596,6 +637,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Xamarin.Mac SDK
 
+- 5.10.0.157
 - 5.8.0.0
 - 5.6.0.25
 - 5.3.1.28
