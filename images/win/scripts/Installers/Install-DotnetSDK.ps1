@@ -51,4 +51,14 @@ $dotnetReleases | ForEach-Object {
 }
 
 Add-MachinePathItem "C:\Program Files\dotnet"
-Add-MachinePathItem "C:\Users\VssAdministrator\.dotnet\tools"
+# Run script at startup for all users
+$cmdDotNetPath = @"
+@echo off
+SETX PATH "%USERPROFILE%\.dotnet\tools;%PATH%"
+"@
+
+$cmdPath = "C:\Program Files\dotnet\userpath.bat"
+$cmdDotNetPath | Out-File -Encoding ascii -FilePath $cmdPath
+
+# Update Run key to run a script at logon
+Set-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Run" -Name "DOTNETUSERPATH" -Value $cmdPath
