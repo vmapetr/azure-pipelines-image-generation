@@ -567,7 +567,6 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Xamarin.iOS SDK
 
-- 12.99.1.27
 - 12.8.0.2
 - 12.6.0.25
 - 12.2.1.16
@@ -602,7 +601,6 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Xamarin.Mac SDK
 
-- 5.99.1.27
 - 5.8.0.0
 - 5.6.0.25
 - 5.3.1.28
