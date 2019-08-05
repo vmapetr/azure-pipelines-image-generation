@@ -22,7 +22,8 @@ function Download-Zip
     $targetLocation = Join-Path $ENV:Temp -ChildPath $fileName
     Write-Host "Download target location: '$targetLocation'"
     $webClient = New-Object Net.WebClient
-    $null = $webClient.DownloadFile($BlobUri, $targetLocation)
+    $null = $webClient.DownloadFileAsync($BlobUri, $targetLocation)
+    while ($webClient.IsBusy) { }
     Write-Host "Download complete. Target Location: '$targetLocation'"
     return $targetLocation
 }
