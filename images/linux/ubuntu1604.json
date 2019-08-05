@@ -166,7 +166,7 @@
                 "{{template_dir}}/scripts/installers/1604/android.sh",
                 "{{template_dir}}/scripts/installers/1604/azpowershell.sh",
                 "{{template_dir}}/scripts/helpers/containercache.sh",
-                "{{template_dir}}/scripts/installers/hosted-tool-cache.sh",
+                "{{template_dir}}/scripts/installers/1604/hosted-tool-cache.sh",
                 "{{template_dir}}/scripts/installers/python.sh",
                 "{{template_dir}}/scripts/installers/test-toolcache.sh"
             ],
