@@ -161,8 +161,9 @@ else {
 # Download and unzip the stored AzurePSModules from the vstsagentools public blob
 $extractLocation = "C:\Modules"
 $azurePsUri = @(
-    "https://vstsagenttools.blob.core.windows.net/tools/azurepowershellmodules/AzPSModules.M153.20190703.36963.zip",
-    "https://vstsagenttools.blob.core.windows.net/tools/azurepowershellmodules/AzurePSModules.M153.20190703.38263.zip"
+    "https://vstsagenttools.blob.core.windows.net/tools/azurepowershellmodules/AzurePSModules.M157.20190808.27979.zip",
+    "https://vstsagenttools.blob.core.windows.net/tools/azurepowershellmodules/AzureRmPSModules.M157.20190808.27379.zip",
+    "https://vstsagenttools.blob.core.windows.net/tools/azurepowershellmodules/AzPSModules.M153.20190703.36963.zip"
 )
 
 $azureRMModulePath = "C:\Modules\azurerm_2.1.0"
