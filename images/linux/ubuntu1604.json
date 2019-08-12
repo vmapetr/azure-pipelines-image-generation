@@ -112,11 +112,11 @@
             "scripts": [
                 "{{template_dir}}/scripts/installers/7-zip.sh",
                 "{{template_dir}}/scripts/installers/ansible.sh",
-                "{{template_dir}}/scripts/installers/aws.sh",
                 "{{template_dir}}/scripts/installers/azcopy.sh",
                 "{{template_dir}}/scripts/installers/azure-cli.sh",
                 "{{template_dir}}/scripts/installers/azure-devops-cli.sh",
                 "{{template_dir}}/scripts/installers/1604/basic.sh",
+                "{{template_dir}}/scripts/installers/aws.sh",
                 "{{template_dir}}/scripts/installers/build-essential.sh",
                 "{{template_dir}}/scripts/installers/clang.sh",
                 "{{template_dir}}/scripts/installers/cmake.sh",
