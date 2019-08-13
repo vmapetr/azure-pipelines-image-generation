@@ -116,6 +116,7 @@
                 "{{template_dir}}/scripts/installers/azure-cli.sh",
                 "{{template_dir}}/scripts/installers/azure-devops-cli.sh",
                 "{{template_dir}}/scripts/installers/1604/basic.sh",
+                "{{template_dir}}/scripts/installers/aws.sh",
                 "{{template_dir}}/scripts/installers/build-essential.sh",
                 "{{template_dir}}/scripts/installers/clang.sh",
                 "{{template_dir}}/scripts/installers/cmake.sh",
@@ -129,6 +130,7 @@
                 "{{template_dir}}/scripts/installers/git.sh",
                 "{{template_dir}}/scripts/installers/1604/go.sh",
                 "{{template_dir}}/scripts/installers/google-chrome.sh",
+                "{{template_dir}}/scripts/installers/google-cloud-sdk.sh",
                 "{{template_dir}}/scripts/installers/haskell.sh",
                 "{{template_dir}}/scripts/installers/heroku.sh",
                 "{{template_dir}}/scripts/installers/hhvm.sh",
@@ -151,7 +153,8 @@
                 "{{template_dir}}/scripts/installers/sphinx.sh",
                 "{{template_dir}}/scripts/installers/subversion.sh",
                 "{{template_dir}}/scripts/installers/terraform.sh",
-                "{{template_dir}}/scripts/installers/vcpkg.sh"
+                "{{template_dir}}/scripts/installers/vcpkg.sh",
+                "{{template_dir}}/scripts/installers/zeit-now.sh"
             ],
             "environment_vars": [
                 "METADATA_FILE={{user `metadata_file`}}",
