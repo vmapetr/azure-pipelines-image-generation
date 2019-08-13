@@ -9,10 +9,7 @@
 source $HELPER_SCRIPTS/document.sh
 
 # Install the Zeit Now CLI
-curl -sfLS https://zeit.co/download.sh > download.sh
-chmod +x ./download.sh
-./download.sh --force
-rm ./download.sh
+npm i -g now
 
 # Validate the installation
 echo "Validate the installation"
