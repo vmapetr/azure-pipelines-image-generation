@@ -28,8 +28,8 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - NVM - Installed node versions:
 	v6.17.1
 	v8.16.0
-	v10.16.0
-	v12.7.0
+	v10.16.2
+	v12.8.0
 - PowerShell 6.2.2
 - Python 2.7.16
 - Python 3.7.4
@@ -42,13 +42,13 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Bundler 2.0.2
 - Carthage 0.33.0
 - CocoaPods 1.7.5
-- Homebrew 2.1.8
+- Homebrew 2.1.9
 - NPM 3.10.10
 - Yarn 1.17.3
 - NuGet 4.7.0.5148
 - pip 19.1.1(python 2.7)
 - pip 19.1.1(python 3.7)
-- Miniconda 4.6.14
+- Miniconda 4.7.10
 
 ### Project Management
 
@@ -66,9 +66,10 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Tools
 
-- fastlane 2.128.0
+- fastlane 2.128.1
 - App Center CLI 1.2.2
-- Azure-CLI 2.0.69
+- Azure-CLI 2.0.70
+- xcversion  2.6.0
 
 ### Pre-cached tools
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
@@ -462,7 +463,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 29.0.1 |
+| platform-tools        | Android SDK Platform-tools, revision 29.0.2 |
 
 ### Android SDK Platforms
 
@@ -549,10 +550,11 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Visual Studio for Mac
 
-- 8.1.5.9
+- 8.2.2.1
 
 ### Mono
 
+- 6.0.0
 - 5.18.1
 - 5.16.1
 - 5.12.0
@@ -567,6 +569,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Xamarin.iOS SDK
 
+- 12.14.0.114
 - 12.8.0.2
 - 12.6.0.25
 - 12.2.1.16
@@ -585,6 +588,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Xamarin.Android SDK
 
+- 9.4.1.0
 - 9.3.0-23
 - 9.2.3-0
 - 9.1.8-0
@@ -601,6 +605,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Xamarin.Mac SDK
 
+- 5.16.0.5
 - 5.8.0.0
 - 5.6.0.25
 - 5.3.1.28
