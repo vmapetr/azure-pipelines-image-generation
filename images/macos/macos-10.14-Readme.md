@@ -27,8 +27,8 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - NVM - Installed node versions:
 	v6.17.1
 	v8.16.0
-	v10.16.0
-	v12.7.0
+	v10.16.2
+	v12.8.0
 - PowerShell 6.2.2
 - Python 2.7.16
 - Python 3.7.4
@@ -42,12 +42,12 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Bundler 2.0.2
 - Carthage 0.33.0
 - CocoaPods 1.7.5
-- Homebrew 2.1.8
+- Homebrew 2.1.9
 - NPM 3.10.10
 - Yarn 1.17.3
 - NuGet 4.7.0.5148
 - pip 19.1.1
-- Miniconda 4.6.14
+- Miniconda 4.7.10
 
 ### Project Management
 
@@ -61,13 +61,13 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Git LFS 2.8.0
 - GNU Wget 1.20.3
 - Subversion (SVN) 1.12.2
-- GNU parallel 20190622
+- GNU parallel 20190722
 
 ### Tools
 
-- fastlane 2.128.0
+- fastlane 2.128.1
 - App Center CLI 1.2.2
-- Azure-CLI 2.0.69
+- Azure-CLI 2.0.70
 
 ### Pre-cached tools
 
@@ -103,6 +103,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Nomad CLI IPA 0.14.3
 - xcpretty 0.3.0
 - xctool 0.3.6
+- xcversion 2.6.0
 
 ### Installed SDKs
 
@@ -202,7 +203,7 @@ xcversion simulators --install='iOS 8.4'
 
 | Package name          | Description                                 |
 |-----------------------|---------------------------------------------|
-| platform-tools        | Android SDK Platform-tools, revision 29.0.1 |
+| platform-tools        | Android SDK Platform-tools, revision 29.0.2 |
 
 ### Android SDK Platforms
 
@@ -289,11 +290,12 @@ xcversion simulators --install='iOS 8.4'
 
 ### Visual Studio for Mac
 
-- 8.1.5.9
+- 8.2.2.21
 
 
 ### Mono
 
+- 6.0.0
 - 5.18.1
 - 5.16.1
 - 5.12.0
@@ -308,6 +310,7 @@ xcversion simulators --install='iOS 8.4'
 
 ### Xamarin.iOS SDK
 
+- 12.14.0.114
 - 12.10.0.157
 - 12.8.0.2
 - 12.6.0.25
@@ -327,6 +330,7 @@ xcversion simulators --install='iOS 8.4'
 
 ### Xamarin.Android SDK
 
+- 9.4.1.0
 - 9.3.0-23
 - 9.2.3-0
 - 9.1.8-0
@@ -343,6 +347,7 @@ xcversion simulators --install='iOS 8.4'
 
 ### Xamarin.Mac SDK
 
+- 5.16.0.5
 - 5.10.0.157
 - 5.8.0.0
 - 5.6.0.25
