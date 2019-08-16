@@ -69,7 +69,6 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - fastlane 2.128.1
 - App Center CLI 1.2.2
 - Azure-CLI 2.0.70
-- xcversion 2.6.0
 
 ### Pre-cached tools
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
@@ -107,6 +106,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Nomad CLI IPA 0.14.3
 - xcpretty 0.3.0
 - xctool 0.3.5
+- xcversion 2.6.0
 
 ### Installed SDKs
 | SDK                       | SDK name    | Xcode Version |
