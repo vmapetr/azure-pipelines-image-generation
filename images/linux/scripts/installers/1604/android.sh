@@ -27,6 +27,7 @@ rm -f android-sdk.zip
 echo "y" | ${ANDROID_ROOT}/tools/bin/sdkmanager --sdk_root=${ANDROID_SDK_ROOT} \
     "ndk-bundle" \
     "platform-tools" \
+    "platforms;android-29" \
     "platforms;android-28" \
     "platforms;android-27" \
     "platforms;android-26" \
