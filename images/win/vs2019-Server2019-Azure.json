@@ -87,6 +87,9 @@
         },
         {
             "type": "powershell",
+            "environment_vars": [
+                "ImageVersion={{user `image_version`}}"
+            ],
             "scripts":[
                 "{{ template_dir }}/scripts/Installers/Vs2019/Initialize-VM.ps1"
             ]
