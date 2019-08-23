@@ -27,22 +27,22 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - NVM 0.33.11
 - NVM - Installed node versions:
 	v6.17.1
-	v8.16.0
-	v10.16.2
-	v12.8.0
+	v8.16.1
+	v10.16.3
+	v12.8.1
 - PowerShell 6.2.2
 - Python 2.7.16
 - Python 3.7.4
 - Ruby 2.6.3p62
 - .NET Core SDK 1.0.1, 1.0.4, 1.1.4, 1.1.5, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.11, 1.1.12, 1.1.13, 2.0.0, 2.0.3, 2.1.100, 2.1.101, 2.1.102, 2.1.103, 2.1.104, 2.1.105, 2.1.503, 2.1.504, 2.1.505, 2.1.2, 2.1.200, 2.1.201, 2.1.300, 2.1.301, 2.1.4, 2.1.400, 2.1.401 2.1.402 2.1.502, 2.1.504, 2.2.101, 2.2.102, 2.2.103, 2.2.104, 2.2.105
-- Go 1.12.7
+- Go 1.12.9
 
 ### Package Management
 
 - Bundler 2.0.2
 - Carthage 0.33.0
 - CocoaPods 1.7.5
-- Homebrew 2.1.9
+- Homebrew 2.1.10
 - NPM 3.10.10
 - Yarn 1.17.3
 - NuGet 4.7.0.5148
@@ -53,12 +53,12 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 ### Project Management
 
 - Apache Maven 3.6.1
-- Gradle 5.5.1
+- Gradle 5.6
 
 ### Utilities
 
 - curl 7.65.3 (libcurl/7.65.3 SecureTransport zlib/1.2.11)
-- Git 2.22.0
+- Git 2.22.1
 - Git LFS 2.8.0
 - GNU Wget 1.20.3
 - Subversion (SVN) 1.12.2
@@ -66,9 +66,9 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ### Tools
 
-- fastlane 2.128.1
+- fastlane 2.129.0
 - App Center CLI 1.2.2
-- Azure-CLI 2.0.70
+- Azure-CLI 2.0.71
 
 ### Pre-cached tools
 - Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)
@@ -283,13 +283,15 @@ xcversion simulators --install='iOS 8.4'
 | build-tools-28.0.2    | Android SDK Build-tools, Revision 28.0.2  |
 | build-tools-28.0.3    | Android SDK Build-tools, Revision 28.0.3  |
 | build-tools-29.0.0    | Android SDK Build-tools, Revision 29.0.0  |
+| build-tools-29.0.1    | Android SDK Build-tools, Revision 29.0.1  |
+| build-tools-29.0.2    | Android SDK Build-tools, Revision 29.0.2  |
 
 ### Utils
 
 | Package name          | Description                               |
 |-----------------------|-------------------------------------------|
 | cmake                 | 3.6.4111459                               |
-| lldb                  | 2.3.3614996                               |
+| lldb                  | 3.1.4508709                               |
 | ndk-bundle            | 18.1.5063045                              |
 | ProGuard              | 5.3.3                                     |
 | Android Emulator      | 29.0.11                                   |
@@ -310,13 +312,13 @@ xcversion simulators --install='iOS 8.4'
 | extra-android-m2repository        | Android Support Repository, revision 47  |
 | extra-google-google_play_services | Google Play services, revision 49        |
 | extra-google-m2repository         | Google Repository, revision 58           |
-| Hardware_Accelerated_Execution_Manager | Intel x86 Emulator Accelerator 7.3.0     |
+| Hardware_Accelerated_Execution_Manager | Intel x86 Emulator Accelerator 7.5.1     |
 
 ## Xamarin
 
 ### Visual Studio for Mac
 
-- 8.2.2.1
+- 8.2.3.16
 
 ### Mono
 
