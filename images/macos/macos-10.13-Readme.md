@@ -29,7 +29,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 	v6.17.1
 	v8.16.1
 	v10.16.3
-	v12.8.1
+	v12.9.0
 - PowerShell 6.2.2
 - Python 2.7.16
 - Python 3.7.4
@@ -58,7 +58,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 ### Utilities
 
 - curl 7.65.3 (libcurl/7.65.3 SecureTransport zlib/1.2.11)
-- Git 2.22.1
+- Git 2.23.0
 - Git LFS 2.8.0
 - GNU Wget 1.20.3
 - Subversion (SVN) 1.12.2
@@ -83,7 +83,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
   - 2.3.8
   - 2.4.6
   - 2.5.5
-  - 2.6.2
+  - 2.6.3
 
 ### Xcode
 | Version                | Build   | Path                          |
@@ -318,7 +318,7 @@ xcversion simulators --install='iOS 8.4'
 
 ### Visual Studio for Mac
 
-- 8.2.3.16
+- 8.2.4.17
 
 ### Mono
 
