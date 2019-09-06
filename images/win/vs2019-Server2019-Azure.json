@@ -255,7 +255,7 @@
         {
             "type": "powershell",
             "environment_vars": [
-                "GO_VERSIONS=1.10.8,1.11.12,1.12.7",
+                "GO_VERSIONS=1.10.8,1.11.12,1.12.7,1.13",
                 "GO_DEFAULT=1.12.7"
             ],
             "scripts":[
@@ -531,7 +531,7 @@
         {
             "type": "powershell",
             "environment_vars": [
-                "GO_VERSIONS=1.10.8,1.11.12,1.12.7",
+                "GO_VERSIONS=1.10.8,1.11.12,1.12.7,1.13",
                 "GO_DEFAULT=1.12.7"
             ],
             "scripts":[

@@ -33,5 +33,5 @@ function InstallGo () {
 InstallGo 1.9 1.9.7 false
 InstallGo 1.10 1.10.8 false
 InstallGo 1.11 1.11.12 false
-InstallGo 1.12 1.12.7 false
-InstallGo 1.13 1.13 true
+InstallGo 1.12 1.12.7 true
+InstallGo 1.13 1.13 false
