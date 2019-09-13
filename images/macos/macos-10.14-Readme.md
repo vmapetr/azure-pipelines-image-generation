@@ -12,7 +12,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 ## Operating System
 
-- OS X 10.14.6 (18G87) **Mojave**
+- OS X 10.14.6 (18G95) **Mojave**
 
 ## Installed Software
 
@@ -28,11 +28,11 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 	v6.17.1
 	v8.16.1
 	v10.16.3
-	v12.9.0
+	v12.9.1
 - PowerShell 6.2.2
 - Python 2.7.16
 - Python 3.7.4
-- Ruby 2.6.3p62
+- Ruby 2.6.4p104
 - .NET Core SDK 1.0.1 1.0.4 1.1.10 1.1.11 1.1.12 1.1.13 1.1.4 1.1.5 1.1.7 1.1.8 1.1.9 2.0.0 2.0.3 2.1.100 2.1.101 2.1.102 2.1.103 2.1.104 2.1.105 2.1.2 2.1.200 2.1.201 2.1.202 2.1.300 2.1.301 2.1.302 2.1.4 2.1.400 2.1.401 2.1.402 2.1.403 2.1.500 2.1.502 2.1.503 2.1.504 2.1.505 2.2.100 2.2.101 2.2.102 2.2.103 2.2.104 2.2.105
 - Go 1.12.9
 
@@ -42,7 +42,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Bundler 2.0.2
 - Carthage 0.33.0
 - CocoaPods 1.7.5
-- Homebrew 2.1.10
+- Homebrew 2.1.11
 - NPM 3.10.10
 - Yarn 1.17.3
 - NuGet 4.7.0.5148
@@ -52,7 +52,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 ### Project Management
 
 - Apache Maven 3.6.1
-- Gradle 5.6
+- Gradle 5.6.1
 
 ### Utilities
 
@@ -61,13 +61,13 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 - Git LFS 2.8.0
 - GNU Wget 1.20.3
 - Subversion (SVN) 1.12.2
-- GNU parallel 20190722
+- GNU parallel 20190822
 
 ### Tools
 
-- fastlane 2.129.0
+- fastlane 2.130.0
 - App Center CLI 1.2.2
-- Azure-CLI 2.0.71
+- Azure-CLI 2.0.72
 
 ### Pre-cached tools
 
@@ -89,7 +89,7 @@ Previously, Microsoft hosted Mac machines had JDKs pre-installed that were overl
 
 | Version                | Build   | Path                            |
 |------------------------|---------|---------------------------------|
-| 11_beta 6              | 11M392q | /Applications/Xcode_11.app      |
+| 11_beta 7              | 11M392r | /Applications/Xcode_11.app      |
 | 10.3                   | 10G8    | /Applications/Xcode_10.3.app    |
 | 10.2.1                 | 10E1001 | /Applications/Xcode_10.2.1.app  |
 | 10.2                   | 10E125  | /Applications/Xcode_10.2.app    |
@@ -222,7 +222,7 @@ xcversion simulators --install='iOS 8.4'
 | android-26            | Android SDK Platform 26, Revision 2       |
 | android-27            | Android SDK Platform 27, Revision 3       |
 | android-28            | Android SDK Platform 28, Revision 6       |
-| android-29            | Android SDK Platform 29, Revision 1       |
+| android-29            | Android SDK Platform 29, Revision 3       |
 
 ### Android SDK Build-tools
 
@@ -267,7 +267,7 @@ xcversion simulators --install='iOS 8.4'
 | lldb                  | 2.3.3614996                               |
 | ndk-bundle            | 18.1.5063045                              |
 | ProGuard              | 5.3.3                                     |
-| Android Emulator      | 29.0.11                                   |
+| Android Emulator      | 29.1.12                                   |
 
 ### Google APIs
 
@@ -291,7 +291,7 @@ xcversion simulators --install='iOS 8.4'
 
 ### Visual Studio for Mac
 
-- 8.2.4.17
+- 8.2.5.5
 
 
 ### Mono
