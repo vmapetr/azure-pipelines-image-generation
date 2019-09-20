@@ -18,6 +18,8 @@ azcopy --recursive \
        --source https://vstsagenttools.blob.core.windows.net/tools/hostedtoolcache/linux \
        --destination $AGENT_TOOLSDIRECTORY
 
+rm -rf $AGENT_TOOLSDIRECTORY/Python
+
 # Install tools from hosted tool cache
 original_directory=$PWD
 setups=$(find $AGENT_TOOLSDIRECTORY -name setup.sh)
@@ -27,6 +29,10 @@ for setup in $setups; do
 	./$(basename $setup);
 	cd $original_directory;
 done;
+
+for PYTHON_VERSION in ${PYTHON_VERSIONS}; do
+	npm install toolcache-python-linux-x64@$version --registry=https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/
+done
 
 DocumentInstalledItem "Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)"
 pythons=$(ls $AGENT_TOOLSDIRECTORY/Python)
