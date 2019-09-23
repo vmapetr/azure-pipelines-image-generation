@@ -30,9 +30,11 @@ for setup in $setups; do
 	cd $original_directory;
 done;
 
-for PYTHON_VERSION in ${PYTHON_VERSIONS}; do
-    echo "Install python-$PYTHON_VERSION via npm..."
-    npm install toolcache-python-linux-x64@$version --registry=https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/
+echo "Installing npm-toolcache..."
+versions=( '2.7' '3.4' '3.5' '3.6' '3.7' )
+for PYTHON_VERSION in ${versions[@]}; do
+    echo "Install python-$PYTHON_VERSION"
+    npm install toolcache-python-linux-x64@$PYTHON_VERSION --registry=https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/
 done
 
 DocumentInstalledItem "Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)"
