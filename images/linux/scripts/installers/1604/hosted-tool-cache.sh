@@ -31,6 +31,7 @@ for setup in $setups; do
 done;
 
 for PYTHON_VERSION in ${PYTHON_VERSIONS}; do
+    echo "Install python-$PYTHON_VERSION via npm..."
 	npm install toolcache-python-linux-x64@$version --registry=https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/
 done
 
