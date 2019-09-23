@@ -32,7 +32,7 @@ done;
 
 for PYTHON_VERSION in ${PYTHON_VERSIONS}; do
     echo "Install python-$PYTHON_VERSION via npm..."
-	npm install toolcache-python-linux-x64@$version --registry=https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/
+    npm install toolcache-python-linux-x64@$version --registry=https://buildcanary.pkgs.visualstudio.com/PipelineCanary/_packaging/hostedtoolcache/npm/registry/
 done
 
 DocumentInstalledItem "Python (available through the [Use Python Version](https://go.microsoft.com/fwlink/?linkid=871498) task)"
